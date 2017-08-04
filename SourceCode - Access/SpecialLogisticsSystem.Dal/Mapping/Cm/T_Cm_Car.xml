@@ -1,0 +1,91 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Car.Count">
+    Select count(1) FROM T_Cm_Car where
+    $and{id = #id#}  $and{car_area_id = #car_area_id#}  $and{car_no = #car_no#}  $and{insurance_number = #insurance_number#}  $and{car_produce_no = #car_produce_no#}  $and{car_type = #car_type#}  $and{car_nature = #car_nature#}  $and{car_engine_number = #car_engine_number#}  $and{car_drive_no = #car_drive_no#}  $and{car_owner = #car_owner#}  $and{car_link = #car_link#}  $and{car_memo = #car_memo#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Car.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_Car) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{car_area_id = #car_area_id#}  $and{car_no = #car_no#}  $and{insurance_number = #insurance_number#}  $and{car_produce_no = #car_produce_no#}  $and{car_type = #car_type#}  $and{car_nature = #car_nature#}  $and{car_engine_number = #car_engine_number#}  $and{car_drive_no = #car_drive_no#}  $and{car_owner = #car_owner#}  $and{car_link = #car_link#}  $and{car_memo = #car_memo#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Car.Load">
+    SELECT *
+    FROM   T_Cm_Car  where
+    $and{id = #id#}  $and{car_area_id = #car_area_id#}  $and{car_no = #car_no#}  $and{insurance_number = #insurance_number#}  $and{car_produce_no = #car_produce_no#}  $and{car_type = #car_type#}  $and{car_nature = #car_nature#}  $and{car_engine_number = #car_engine_number#}  $and{car_drive_no = #car_drive_no#}  $and{car_owner = #car_owner#}  $and{car_link = #car_link#}  $and{car_memo = #car_memo#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Car.Select">
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM  ((((T_Cm_Car a
+    LEFT JOIN T_Cm_Link b ON a.car_link = b.id)
+    LEFT JOIN T_Cm_Branch c ON a.branch_id = c.id)
+    LEFT JOIN T_Cm_Code d ON (d.para_value=a.car_type AND d.para_type='car_type'))
+    LEFT JOIN T_Cm_Code e ON (e.para_value=a.car_type AND e.para_type='car_nature')) where
+    $and{a.id = #id#}  $and{car_area_id = #car_area_id#} $and{b.link_name like '%$link_name$%'} $and{car_no like '%$car_no$%'} $and{insurance_number = #insurance_number#}
+    $and{car_produce_no = #car_produce_no#}  $and{car_type = #car_type#}  $and{car_nature = #car_nature#}  $and{car_engine_number = #car_engine_number#}
+    $and{car_drive_no = #car_drive_no#}  $and{car_owner = #car_owner#}  $and{car_link = #car_link#}  $and{car_memo like '%$car_memo$%'} $and{branch_id = #branch_id#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Cm_Car.Insert">
+    insert into T_Cm_Car(
+    id
+    ,car_area_id
+    ,car_no
+    ,insurance_number
+    ,car_produce_no
+    ,car_type
+    ,car_nature
+    ,car_engine_number
+    ,car_drive_no
+    ,car_owner
+    ,car_link
+    ,car_memo
+    ,branch_id
+    )values (
+    #id#
+    ,#car_area_id#
+    ,#car_no#
+    ,#insurance_number#
+    ,#car_produce_no#
+    ,#car_type#
+    ,#car_nature#
+    ,#car_engine_number#
+    ,#car_drive_no#
+    ,#car_owner#
+    ,#car_link#
+    ,#car_memo#
+    ,#branch_id#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_Car.Update">
+    update T_Cm_Car set
+    id=#id#
+    ,car_area_id=#car_area_id#
+    ,car_no=#car_no#
+    ,insurance_number=#insurance_number#
+    ,car_produce_no=#car_produce_no#
+    ,car_type=#car_type#
+    ,car_nature=#car_nature#
+    ,car_engine_number=#car_engine_number#
+    ,car_drive_no=#car_drive_no#
+    ,car_owner=#car_owner#
+    ,car_link=#car_link#
+    ,car_memo=#car_memo#
+    ,branch_id=#branch_id#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Cm_Car.Delete">
+    delete
+    FROM T_Cm_Car
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

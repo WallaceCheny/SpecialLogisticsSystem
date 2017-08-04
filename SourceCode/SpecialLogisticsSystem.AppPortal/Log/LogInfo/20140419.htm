@@ -1,0 +1,716 @@
+<HR COLOR=blue>
+日志时间：2014-04-19 11:08:04,779 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceCustomer where  (receive_date >= '04/01/2014 11:07:56.140') and (receive_date <= dateadd(day,1,'04/19/2014 11:07:55.683')) 
+      and (settle_name = '未结算')
+          
+           ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 11:08:10,637 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 11:08:23,678 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 16:01:43,691 [97] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select  top (15-(0)) * FROM(
+    Select top (0) *
+    FROM vWayBill where  (receive_date >= '04/01/2014 16:01:39.521') and (receive_date <= dateadd(day,1,'04/19/2014 16:01:39.460'))   
+          
+            and (is_hide = 0)
+    ) as temptable
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:17:39,131 [80] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:19:32,180 [63] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    [vWayBill]
+    WHERE   [receive_date] > ( SELECT   MAX([receive_date])
+    FROM     ( SELECT TOP  top 0
+    [receive_date]
+    FROM      [vWayBill]
+    WHERE  (receive_date >= '04/01/2014 20:19:21.818') and (receive_date <= dateadd(day,1,'04/19/2014 20:19:21.355'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (receive_date >= '04/01/2014 20:19:21.818') and (receive_date <= dateadd(day,1,'04/19/2014 20:19:21.355'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:23:10,142 [74] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    [vWayBill]
+    WHERE   [receive_date] > ( SELECT   MAX([receive_date])
+    FROM     ( SELECT top 0
+    [receive_date]
+    FROM      [vWayBill]
+    WHERE  (receive_date >= '04/01/2014 20:23:06.518') and (receive_date <= dateadd(day,1,'04/19/2014 20:23:06.131'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (receive_date >= '04/01/2014 20:23:06.518') and (receive_date <= dateadd(day,1,'04/19/2014 20:23:06.131'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:23:34,181 [75] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    [vWayBill]
+    WHERE   [receive_date] > ( SELECT   MAX([receive_date])
+    FROM     ( SELECT top 0
+    [receive_date]
+    FROM      [vWayBill]
+    WHERE  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'04/19/2014 20:23:06.131'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'04/19/2014 20:23:06.131'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:24:55,817 [75] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    [vWayBill]
+    WHERE   [receive_date] > ( SELECT   MAX([receive_date])
+    FROM     ( SELECT top 0
+    [receive_date]
+    FROM      [vWayBill]
+    WHERE  (receive_date >= '04/01/2014 20:24:54.157') and (receive_date <= dateadd(day,1,'04/19/2014 20:24:54.124'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (receive_date >= '04/01/2014 20:24:54.157') and (receive_date <= dateadd(day,1,'04/19/2014 20:24:54.124'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:24:59,755 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    [vWayBill]
+    WHERE   [receive_date] > ( SELECT   MAX([receive_date])
+    FROM     ( SELECT top 0
+    [receive_date]
+    FROM      [vWayBill]
+    WHERE  (receive_date >= '02/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'04/19/2014 20:24:54.124'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (receive_date >= '02/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'04/19/2014 20:24:54.124'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:29:13,391 [77] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    [vWayBill]
+    WHERE   [receive_date] > ( SELECT   MAX([receive_date])
+    FROM     ( SELECT top 1
+    [receive_date]
+    FROM      [vWayBill]
+    WHERE  (receive_date >= '04/01/2014 20:29:10.959') and (receive_date <= dateadd(day,1,'04/19/2014 20:29:10.697'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (receive_date >= '04/01/2014 20:29:10.959') and (receive_date <= dateadd(day,1,'04/19/2014 20:29:10.697'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:29:29,387 [61] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    [vWayBill]
+    WHERE   [receive_date] > ( SELECT   MAX([receive_date])
+    FROM     ( SELECT top 1
+    [receive_date]
+    FROM      [vWayBill]
+    WHERE  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'04/19/2014 20:29:10.697'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'04/19/2014 20:29:10.697'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:32:58,089 [61] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    [vWayBill]
+    WHERE   [id] not in ( SELECT   id
+    FROM     ( SELECT top 1
+    [id]
+    FROM      [vWayBill]
+    WHERE  (receive_date >= '04/01/2014 20:32:56.406') and (receive_date <= dateadd(day,1,'04/19/2014 20:32:56.223'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (receive_date >= '04/01/2014 20:32:56.406') and (receive_date <= dateadd(day,1,'04/19/2014 20:32:56.223'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:33:01,434 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    [vWayBill]
+    WHERE   [id] not in ( SELECT   id
+    FROM     ( SELECT top 1
+    [id]
+    FROM      [vWayBill]
+    WHERE  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'04/19/2014 20:32:56.223'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'04/19/2014 20:32:56.223'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:34:39,499 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:35:08,166 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    [vWayBill]
+    WHERE   [id] not in ( SELECT   id
+    FROM     ( SELECT top 0
+    [id]
+    FROM      [vWayBill]
+    WHERE  (receive_date >= '04/01/2014 20:35:04.338') and (receive_date <= dateadd(day,1,'04/19/2014 20:35:03.995'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (receive_date >= '04/01/2014 20:35:04.338') and (receive_date <= dateadd(day,1,'04/19/2014 20:35:03.995'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:35:47,804 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    [vWayBill]
+    WHERE   [id] not in ( SELECT   id
+    FROM     ( SELECT top 0
+    [id]
+    FROM      [vWayBill]
+    WHERE  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'04/19/2014 20:35:03.995'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'04/19/2014 20:35:03.995'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:35:55,025 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:36:00,700 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:36:01,406 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:36:01,961 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:38:14,574 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:38:42,681 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:41:50,291 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:44:15,585 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:46:28,337 [4] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:48:07,893 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:51:37,659 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:53:22,002 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:53:22,701 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:53:25,154 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:53:29,626 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:53:41,487 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:55:34,988 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:55:36,457 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:57:14,922 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:58:23,018 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:58:26,135 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:58:27,128 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 20:58:43,283 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 21:00:11,589 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 21:06:59,506 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 21:07:25,604 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    [vWayBill]
+    WHERE   [id] not in ( SELECT   id
+    FROM     ( SELECT top 0
+    [id]
+    FROM      [vWayBill]
+    WHERE  (receive_date >= '04/01/2014 21:07:17.873') and (receive_date <= dateadd(day,1,'04/19/2014 21:07:17.416'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (receive_date >= '04/01/2014 21:07:17.873') and (receive_date <= dateadd(day,1,'04/19/2014 21:07:17.416'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 21:15:38,245 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    [vWayBill]
+    WHERE   [id] not in ( SELECT   id
+    FROM     ( SELECT top 0
+    [id]
+    FROM      [vWayBill]
+    WHERE  (receive_date >= '04/01/2014 21:15:32.988') and (receive_date <= dateadd(day,1,'04/19/2014 21:15:32.268'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (receive_date >= '04/01/2014 21:15:32.988') and (receive_date <= dateadd(day,1,'04/19/2014 21:15:32.268'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 21:55:17,675 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-19 21:55:45,540 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    [vWayBill]
+    WHERE   [id] not in ( SELECT   id
+    FROM     ( SELECT top 0
+    [id]
+    FROM      [vWayBill]
+    WHERE  (receive_date >= '04/01/2014 21:55:33.260') and (receive_date <= dateadd(day,1,'04/19/2014 21:55:32.707'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (receive_date >= '04/01/2014 21:55:33.260') and (receive_date <= dateadd(day,1,'04/19/2014 21:55:32.707'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1>

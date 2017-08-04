@@ -1,0 +1,2141 @@
+<HR COLOR=red>
+异常时间：2014-04-26 09:56:32,446 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Business/Arrival.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): Type mismatch in expression.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmEmpDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmEmpDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.UserControls.EmployeeLookUp.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\EmployeeLookUp.ascx.cs:行号 49
+   在 SpecialLogisticsSystem.AppPortal.UserControls.EmployeeLookUp.set_IsSetDefault(Boolean value) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\EmployeeLookUp.ascx.cs:行号 38
+   在 ASP.usercontrols_productionsign_ascx.__BuildControlemp_id() 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\ProductionSign.ascx:行号 50
+   在 ASP.usercontrols_productionsign_ascx.__BuildControl__control3() 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\ProductionSign.ascx:行号 10
+   在 ASP.usercontrols_productionsign_ascx.__BuildControl__control2(ContentControlCollection __ctrl) 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\ProductionSign.ascx:行号 5
+   在 ASP.usercontrols_productionsign_ascx.__BuildControlpop_Signer() 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\ProductionSign.ascx:行号 5
+   在 ASP.usercontrols_productionsign_ascx.__BuildControlTree(usercontrols_productionsign_ascx __ctrl) 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\ProductionSign.ascx:行号 1
+   在 ASP.usercontrols_productionsign_ascx.FrameworkInitialize() 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_productionsign.ascx.6bb32623.mbbrtlf9.0.cs:行号 0
+   在 System.Web.UI.UserControl.InitializeAsUserControlInternal()
+   在 System.Web.UI.UserControl.InitializeAsUserControl(Page page)
+   在 ASP.business_arrival_aspx.__BuildControlProductionSign1() 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Business\Arrival.aspx:行号 233
+   在 ASP.business_arrival_aspx.__BuildControlContent3(Control __ctrl) 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Business\Arrival.aspx:行号 50
+   在 System.Web.UI.CompiledTemplateBuilder.InstantiateIn(Control container)
+   在 System.Web.UI.MasterPage.InstantiateInContentPlaceHolder(Control contentPlaceHolder, ITemplate template)
+   在 ASP.menumaster_master.__BuildControlMainContent() 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\MenuMaster.master:行号 31
+   在 ASP.menumaster_master.__BuildControlSplitterContentControl1() 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\MenuMaster.master:行号 17
+   在 ASP.menumaster_master.__BuildControl__control4(ContentControlCollection __ctrl) 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\MenuMaster.master:行号 15
+   在 ASP.menumaster_master.__BuildControl__control3() 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\MenuMaster.master:行号 15
+   在 ASP.menumaster_master.__BuildControl__control2(SplitterPaneCollection __ctrl) 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\MenuMaster.master:行号 12
+   在 ASP.menumaster_master.__BuildControlviewSplitter() 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\MenuMaster.master:行号 12
+   在 ASP.menumaster_master.__BuildControlContent2(Control __ctrl) 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\MenuMaster.master:行号 11
+   在 System.Web.UI.CompiledTemplateBuilder.InstantiateIn(Control container)
+   在 System.Web.UI.MasterPage.InstantiateInContentPlaceHolder(Control contentPlaceHolder, ITemplate template)
+   在 ASP.site_master.__BuildControlMainContent() 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Site.Master:行号 21
+   在 ASP.site_master.__BuildControlForm1() 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Site.Master:行号 20
+   在 ASP.site_master.__BuildControlTree(site_master __ctrl) 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Site.Master:行号 1
+   在 ASP.site_master.FrameworkInitialize() 位置 c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_site.master.cdcab7d2.e7ul3ezr.0.cs:行号 0
+   在 System.Web.UI.UserControl.InitializeAsUserControlInternal()
+   在 System.Web.UI.MasterPage.CreateMaster(TemplateControl owner, HttpContext context, VirtualPath masterPageFile, IDictionary contentTemplateCollection)
+   在 System.Web.UI.MasterPage.get_Master()
+   在 System.Web.UI.MasterPage.ApplyMasterRecursive(MasterPage master, IList appliedMasterFilePaths)
+   在 System.Web.UI.Page.ApplyMasterPage()
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 09:56:32,866 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): Type mismatch in expression.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmEmpDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmEmpDal.cs:line 23
+   at SpecialLogisticsSystem.AppPortal.UserControls.EmployeeLookUp.BindData() in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\EmployeeLookUp.ascx.cs:line 49
+   at SpecialLogisticsSystem.AppPortal.UserControls.EmployeeLookUp.set_IsSetDefault(Boolean value) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\EmployeeLookUp.ascx.cs:line 38
+   at ASP.usercontrols_productionsign_ascx.__BuildControlemp_id() in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\ProductionSign.ascx:line 50
+   at ASP.usercontrols_productionsign_ascx.__BuildControl__control3() in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\ProductionSign.ascx:line 10
+   at ASP.usercontrols_productionsign_ascx.__BuildControl__control2(ContentControlCollection __ctrl) in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\ProductionSign.ascx:line 5
+   at ASP.usercontrols_productionsign_ascx.__BuildControlpop_Signer() in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\ProductionSign.ascx:line 5
+   at ASP.usercontrols_productionsign_ascx.__BuildControlTree(usercontrols_productionsign_ascx __ctrl) in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\ProductionSign.ascx:line 1
+   at ASP.usercontrols_productionsign_ascx.FrameworkInitialize() in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_productionsign.ascx.6bb32623.mbbrtlf9.0.cs:line 0
+   at System.Web.UI.UserControl.InitializeAsUserControlInternal()
+   at System.Web.UI.UserControl.InitializeAsUserControl(Page page)
+   at ASP.business_arrival_aspx.__BuildControlProductionSign1() in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Business\Arrival.aspx:line 233
+   at ASP.business_arrival_aspx.__BuildControlContent3(Control __ctrl) in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Business\Arrival.aspx:line 50
+   at System.Web.UI.CompiledTemplateBuilder.InstantiateIn(Control container)
+   at System.Web.UI.MasterPage.InstantiateInContentPlaceHolder(Control contentPlaceHolder, ITemplate template)
+   at ASP.menumaster_master.__BuildControlMainContent() in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\MenuMaster.master:line 31
+   at ASP.menumaster_master.__BuildControlSplitterContentControl1() in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\MenuMaster.master:line 17
+   at ASP.menumaster_master.__BuildControl__control4(ContentControlCollection __ctrl) in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\MenuMaster.master:line 15
+   at ASP.menumaster_master.__BuildControl__control3() in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\MenuMaster.master:line 15
+   at ASP.menumaster_master.__BuildControl__control2(SplitterPaneCollection __ctrl) in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\MenuMaster.master:line 12
+   at ASP.menumaster_master.__BuildControlviewSplitter() in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\MenuMaster.master:line 12
+   at ASP.menumaster_master.__BuildControlContent2(Control __ctrl) in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\MenuMaster.master:line 11
+   at System.Web.UI.CompiledTemplateBuilder.InstantiateIn(Control container)
+   at System.Web.UI.MasterPage.InstantiateInContentPlaceHolder(Control contentPlaceHolder, ITemplate template)
+   at ASP.site_master.__BuildControlMainContent() in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Site.Master:line 21
+   at ASP.site_master.__BuildControlForm1() in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Site.Master:line 20
+   at ASP.site_master.__BuildControlTree(site_master __ctrl) in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Site.Master:line 1
+   at ASP.site_master.FrameworkInitialize() in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_site.master.cdcab7d2.e7ul3ezr.0.cs:line 0
+   at System.Web.UI.UserControl.InitializeAsUserControlInternal()
+   at System.Web.UI.MasterPage.CreateMaster(TemplateControl owner, HttpContext context, VirtualPath masterPageFile, IDictionary contentTemplateCollection)
+   at System.Web.UI.MasterPage.get_Master()
+   at System.Web.UI.MasterPage.ApplyMasterRecursive(MasterPage master, IList appliedMasterFilePaths)
+   at System.Web.UI.Page.ApplyMasterPage()
+   at System.Web.UI.Page.PerformPreInit()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.business_arrival_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_arrival.aspx.36edc644.cyepjt8d.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:08:06,942 [33] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Syntax error (missing operator) in query expression 'rowNum BETWEEN  and @maxRows'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.StowageMainDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\StowageMainDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.StowageProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\StowageProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:08:09,162 [28] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Data type mismatch in criteria expression.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:12:20,237 [35] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.Data.WebDataProxy.set_FocusedRowVisibleIndex(Int32 value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:14:13,514 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.Data.WebDataProxy.set_FocusedRowVisibleIndex(Int32 value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:14:13,516 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.Data.WebDataProxy.set_FocusedRowVisibleIndex(Int32 value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:14:41,436 [29] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Branch.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80040E21): Cannot join on Memo, OLE, or Hyperlink Object (f.para_value=a.site_type And para_type='site_type').
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmBranchDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmBranchDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.Cm.Branch.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Branch.aspx.cs:行号 66
+   在 SpecialLogisticsSystem.AppPortal.Cm.Branch.Page_Init(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Branch.aspx.cs:行号 60
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnInit(EventArgs e)
+   在 System.Web.UI.Page.OnInit(EventArgs e)
+   在 System.Web.UI.Control.InitRecursive(Control namingContainer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:14:41,505 [29] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80040E21): Cannot join on Memo, OLE, or Hyperlink Object (f.para_value=a.site_type And para_type='site_type').
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmBranchDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmBranchDal.cs:line 23
+   at SpecialLogisticsSystem.AppPortal.Cm.Branch.BindData() in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Branch.aspx.cs:line 66
+   at SpecialLogisticsSystem.AppPortal.Cm.Branch.Page_Init(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Branch.aspx.cs:line 60
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at System.Web.UI.Page.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_branch_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_branch.aspx.2e93d82d.vlvsy9f1.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:14:43,037 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Customer.aspx <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:14:43,040 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   at DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   at DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   at DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   at DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_customer_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_customer.aspx.2e93d82d.zd7xy4oa.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:14:44,178 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Employee.aspx <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:14:44,183 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   at DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   at DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   at DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   at DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_employee_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_employee.aspx.2e93d82d.of_ocz86.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:14:45,023 [27] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Car.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80040E21): Cannot join on Memo, OLE, or Hyperlink Object (d.para_value=a.car_type And d.para_type='car_type').
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmCarDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmCarDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.Cm.Car.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Car.aspx.cs:行号 46
+   在 SpecialLogisticsSystem.AppPortal.Cm.Car.Page_Init(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Car.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnInit(EventArgs e)
+   在 System.Web.UI.Page.OnInit(EventArgs e)
+   在 System.Web.UI.Control.InitRecursive(Control namingContainer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:14:45,087 [27] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80040E21): Cannot join on Memo, OLE, or Hyperlink Object (d.para_value=a.car_type And d.para_type='car_type').
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmCarDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmCarDal.cs:line 23
+   at SpecialLogisticsSystem.AppPortal.Cm.Car.BindData() in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Car.aspx.cs:line 46
+   at SpecialLogisticsSystem.AppPortal.Cm.Car.Page_Init(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Car.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at System.Web.UI.Page.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_car_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_car.aspx.2e93d82d.xcfc__l9.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:14:45,871 [35] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Servicer.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80040E21): Cannot join on Memo, OLE, or Hyperlink Object (f.para_value=a.credit_level And para_type='customer_credit').
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmServicerDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmServicerDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Cm.Servicer.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Servicer.aspx.cs:行号 41
+   在 SpecialLogisticsSystem.AppPortal.Cm.Servicer.Page_Init(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Servicer.aspx.cs:行号 30
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnInit(EventArgs e)
+   在 System.Web.UI.Page.OnInit(EventArgs e)
+   在 System.Web.UI.Control.InitRecursive(Control namingContainer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:14:45,921 [35] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80040E21): Cannot join on Memo, OLE, or Hyperlink Object (f.para_value=a.credit_level And para_type='customer_credit').
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmServicerDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmServicerDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Cm.Servicer.BindData() in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Servicer.aspx.cs:line 41
+   at SpecialLogisticsSystem.AppPortal.Cm.Servicer.Page_Init(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Servicer.aspx.cs:line 30
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at System.Web.UI.Page.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_servicer_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_servicer.aspx.2e93d82d.btnyqrvx.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:16:09,074 [29] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Employee.aspx <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:16:09,083 [29] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   at DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   at DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   at DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   at DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_employee_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_employee.aspx.2e93d82d.of_ocz86.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:16:10,170 [31] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Car.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80040E21): Cannot join on Memo, OLE, or Hyperlink Object (d.para_value=a.car_type And d.para_type='car_type').
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmCarDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmCarDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.Cm.Car.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Car.aspx.cs:行号 46
+   在 SpecialLogisticsSystem.AppPortal.Cm.Car.Page_Init(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Car.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnInit(EventArgs e)
+   在 System.Web.UI.Page.OnInit(EventArgs e)
+   在 System.Web.UI.Control.InitRecursive(Control namingContainer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:16:10,214 [31] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80040E21): Cannot join on Memo, OLE, or Hyperlink Object (d.para_value=a.car_type And d.para_type='car_type').
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmCarDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmCarDal.cs:line 23
+   at SpecialLogisticsSystem.AppPortal.Cm.Car.BindData() in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Car.aspx.cs:line 46
+   at SpecialLogisticsSystem.AppPortal.Cm.Car.Page_Init(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Car.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at System.Web.UI.Page.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_car_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_car.aspx.2e93d82d.xcfc__l9.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:16:10,456 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Customer.aspx <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:16:10,460 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   at DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   at DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   at DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   at DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_customer_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_customer.aspx.2e93d82d.zd7xy4oa.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:16:10,952 [27] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Servicer.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80040E21): Cannot join on Memo, OLE, or Hyperlink Object (f.para_value=a.credit_level And para_type='customer_credit').
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmServicerDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmServicerDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Cm.Servicer.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Servicer.aspx.cs:行号 41
+   在 SpecialLogisticsSystem.AppPortal.Cm.Servicer.Page_Init(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Servicer.aspx.cs:行号 30
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnInit(EventArgs e)
+   在 System.Web.UI.Page.OnInit(EventArgs e)
+   在 System.Web.UI.Control.InitRecursive(Control namingContainer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:16:10,957 [27] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80040E21): Cannot join on Memo, OLE, or Hyperlink Object (f.para_value=a.credit_level And para_type='customer_credit').
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmServicerDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmServicerDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Cm.Servicer.BindData() in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Servicer.aspx.cs:line 41
+   at SpecialLogisticsSystem.AppPortal.Cm.Servicer.Page_Init(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\Servicer.aspx.cs:line 30
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at System.Web.UI.Page.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_servicer_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_servicer.aspx.2e93d82d.btnyqrvx.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:20:04,025 [32] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Customer.aspx <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:20:04,030 [32] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   at DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   at DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   at DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   at DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_customer_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_customer.aspx.2e93d82d.zd7xy4oa.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:21:08,248 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Customer.aspx <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:21:08,257 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   at DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   at DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   at DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   at DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_customer_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_customer.aspx.2e93d82d.zd7xy4oa.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:21:16,174 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Customer.aspx <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:21:16,182 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   at DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   at DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   at DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   at DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_customer_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_customer.aspx.2e93d82d.zd7xy4oa.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:21:36,378 [22] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Customer.aspx <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:21:36,386 [22] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   at DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   at DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   at DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   at DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_customer_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_customer.aspx.2e93d82d.zd7xy4oa.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:22:16,779 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Customer.aspx <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:22:16,790 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   at DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   at DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   at DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   at DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_customer_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_customer.aspx.2e93d82d.zd7xy4oa.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:22:27,197 [32] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/User.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80040E21): Cannot join on Memo, OLE, or Hyperlink Object (a.user_status=c.para_value And para_type='user_status').
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmUserDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmUserDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.Cm.User.UserDataBind() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:行号 114
+   在 SpecialLogisticsSystem.AppPortal.Cm.User.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:行号 86
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:22:27,262 [32] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80040E21): Cannot join on Memo, OLE, or Hyperlink Object (a.user_status=c.para_value And para_type='user_status').
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmUserDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmUserDal.cs:line 23
+   at SpecialLogisticsSystem.AppPortal.Cm.User.UserDataBind() in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 114
+   at SpecialLogisticsSystem.AppPortal.Cm.User.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 86
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_user_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_user.aspx.2e93d82d.lksd3_45.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:22:34,273 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 SpecialLogisticsSystem.AppPortal.Cm.RoleMenu.treeListMenu_CustomCallback(Object sender, TreeListCustomCallbackEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Cm\RoleMenu.aspx.cs:行号 41
+   在 DevExpress.Web.ASPxTreeList.ASPxTreeList.RaiseCustomCallback(TreeListCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxTreeList.Internal.TreeListCustomCallbackCommand.Execute()
+   在 DevExpress.Web.ASPxTreeList.ASPxTreeList.RaisePostBackEventCore(String arg)
+   在 DevExpress.Web.ASPxTreeList.ASPxTreeList.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:26:10,600 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.Data.WebDataProxy.set_FocusedRowVisibleIndex(Int32 value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:26:10,604 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.Data.WebDataProxy.set_FocusedRowVisibleIndex(Int32 value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:29:46,619 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.ThrowMissingPrimaryKey()
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.Data.WebDataProxy.set_FocusedRowVisibleIndex(Int32 value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:31:21,989 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Customer.aspx <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.ThrowMissingPrimaryKey()
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:31:22,430 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   at DevExpress.Web.Data.WebDataProxy.ThrowMissingPrimaryKey()
+   at DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   at DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   at DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   at DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_customer_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_customer.aspx.2e93d82d.zd7xy4oa.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:33:54,710 [21] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Customer.aspx <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.ThrowMissingPrimaryKey()
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:33:55,183 [21] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   at DevExpress.Web.Data.WebDataProxy.ThrowMissingPrimaryKey()
+   at DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   at DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   at DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   at DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_customer_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_customer.aspx.2e93d82d.zd7xy4oa.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:38:15,883 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Cm/Customer.aspx <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 10:38:16,007 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   at DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   at DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   at DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   at DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_customer_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_customer.aspx.2e93d82d.zd7xy4oa.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 10:42:29,449 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.StringToValue(String columnName, String strValue)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SelectionStrategyOwner.GetKeyValueFromScript(String value)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SingleSelectionStrategy.SetSelectionFromClientKeyValue(String clientKeyValue)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SingleSelectionStrategy.ApplyGridViewChanges(String appliedRowValue)
+   在 DevExpress.Web.ASPxGridLookup.ASPxGridLookup.OnGridViewApplyChanges(String appliedRowValue)
+   在 DevExpress.Web.ASPxGridLookup.ASPxGridLookup.GridViewCustomCallback(Object sender, ASPxGridViewCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridViewCustomCallbackEventHandler.Invoke(Object sender, ASPxGridViewCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCustomCallback(ASPxGridViewCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBCustomCallBack(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:43:15,504 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.StringToValue(String columnName, String strValue)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SelectionStrategyOwner.GetKeyValueFromScript(String value)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SingleSelectionStrategy.SetSelectionFromClientKeyValue(String clientKeyValue)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SingleSelectionStrategy.ApplyGridViewChanges(String appliedRowValue)
+   在 DevExpress.Web.ASPxGridLookup.ASPxGridLookup.OnGridViewApplyChanges(String appliedRowValue)
+   在 DevExpress.Web.ASPxGridLookup.ASPxGridLookup.GridViewCustomCallback(Object sender, ASPxGridViewCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridViewCustomCallbackEventHandler.Invoke(Object sender, ASPxGridViewCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCustomCallback(ASPxGridViewCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBCustomCallBack(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:44:33,054 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80040E14): The Microsoft Jet database engine could not find the object 'spGetSequenceNumber'.  Make sure the object exists and that you spell its name and the path name correctly.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmSequenceNumberDal.GetNumber(CodeTable table) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmSequenceNumberDal.cs:行号 59
+   在 SpecialLogisticsSystem.AppPortal.UserControls.GeneralNumber.GetNewNumber() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\GeneralNumber.ascx.cs:行号 55
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.TryUpdateModel`1.ToUpdateModel(T model, ASPxGridView grid) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\UpdateModel.cs:行号 173
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 133
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:54:42,827 [22] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Syntax error (missing operator) in query expression 'rowNum BETWEEN  and @maxRows'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.StowageMainDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\StowageMainDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.StowageProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\StowageProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:55:12,916 [28] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Syntax error (missing operator) in query expression 'rowNum BETWEEN  and @maxRows'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.StowageMainDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\StowageMainDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.StowageProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\StowageProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:55:21,887 [22] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Syntax error (missing operator) in query expression 'rowNum BETWEEN  and @maxRows'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.TransferMainDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\TransferMainDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.TransferProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\TransferProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 10:55:27,903 [17] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Syntax error (missing operator) in query expression 'rowNum BETWEEN  and @maxRows'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.StowageMainDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\StowageMainDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.StowageProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\StowageProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 19:48:45,438 [7] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.FormatException: 索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object arg0)
+   在 SpecialLogisticsSystem.Dal.CmSequenceNumberDal.GetNumber(CodeTable table) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmSequenceNumberDal.cs:行号 66
+   在 SpecialLogisticsSystem.AppPortal.UserControls.GeneralNumber.GetNewNumber() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\GeneralNumber.ascx.cs:行号 55
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.TryUpdateModel`1.ToUpdateModel(T model, ASPxGridView grid) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\UpdateModel.cs:行号 173
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 133
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 19:53:45,130 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.FormatException: 索引(从零开始)必须大于或等于零，且小于参数列表的大小。
+   在 System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(IFormatProvider provider, String format, Object[] args)
+   在 System.String.Format(String format, Object arg0)
+   在 SpecialLogisticsSystem.Dal.CmSequenceNumberDal.GetNumber(CodeTable table) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmSequenceNumberDal.cs:行号 66
+   在 SpecialLogisticsSystem.AppPortal.UserControls.GeneralNumber.GetNewNumber() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\GeneralNumber.ascx.cs:行号 55
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.TryUpdateModel`1.ToUpdateModel(T model, ASPxGridView grid) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\UpdateModel.cs:行号 173
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 133
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 20:01:44,057 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Cm_Customer(
+    id
+    ,customer_name
+    ,credit_level
+    ,customer_type
+    ,emp_id
+    ,link_id
+    ,sender_id
+    ,bank_username
+    ,bank_name
+    ,bank_number
+    ,bank_index
+    )values (
+    '1af6ea86-c83d-40fe-9bb3-255132fec16c'
+    ,444
+    ,''
+    ,'Consignee'
+    ,'00000000-0000-0000-0000-000000000000'
+    ,'bd3d9810-db43-4e96-9b40-7abda4bd933b'
+    ,'a007824d-b3c5-4f03-8c6b-0026e3ec1df1'
+    ,''
+    ,''
+    ,''
+    ,''
+    )
+   <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): The field 'T_Cm_Customer.create_date' cannot contain a Null value because the Required property for this field is set to True.  Enter a value in this field.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-04-26 20:01:44,087 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): The field 'T_Cm_Customer.create_date' cannot contain a Null value because the Required property for this field is set to True.  Enter a value in this field.
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.CmCustomerDal.Insert(T_Cm_Customer item) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmCustomerDal.cs:行号 48
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.InsertOrUpdateCustomer(Nullable`1 id, String name, String mobile, String area, String address, CustomerType type, Nullable`1 sendID) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 189
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 140
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 20:08:01,194 [23] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Cm_Customer(
+    id
+    ,customer_name
+    ,credit_level
+    ,customer_type
+    ,emp_id
+    ,link_id
+    ,sender_id
+    ,bank_username
+    ,bank_name
+    ,bank_number
+    ,bank_index
+    )values (
+    'ce63ef7a-ecd3-4a08-ba0a-d0f4d3762d9f'
+    ,'ww'
+    ,''
+    ,'Consignee'
+    ,'00000000-0000-0000-0000-000000000000'
+    ,'9c0e651a-7a61-4be4-9abd-774015b01eca'
+    ,'9b0714b3-c6fd-4ab0-b932-03ac122dade8'
+    ,''
+    ,''
+    ,''
+    ,''
+    )
+   <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): The field 'T_Cm_Customer.create_date' cannot contain a Null value because the Required property for this field is set to True.  Enter a value in this field.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-04-26 20:08:01,238 [23] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): The field 'T_Cm_Customer.create_date' cannot contain a Null value because the Required property for this field is set to True.  Enter a value in this field.
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.CmCustomerDal.Insert(T_Cm_Customer item) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmCustomerDal.cs:行号 48
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.InsertOrUpdateCustomer(Nullable`1 id, String name, String mobile, String area, String address, CustomerType type, Nullable`1 sendID) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 190
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 140
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 20:09:19,594 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: The table 'T_Cm_Customer' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 20:09:38,581 [19] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: The table 'T_Cm_Customer' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 20:10:42,255 [17] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Print/PrintWay.aspx?id=fee68ac4-1312-4a49-b013-d64453f534e3 <BR>
+ <HR Size=1>System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ASP.print_printway_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Print\PrintWay.aspx:行号 33
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 20:10:42,264 [17] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   at ASP.print_printway_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Print\PrintWay.aspx:line 33
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.print_printway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_printway.aspx.af37c923.f1gzodr9.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 20:10:46,142 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Print/PrintWay.aspx?id=fee68ac4-1312-4a49-b013-d64453f534e3 <BR>
+ <HR Size=1>System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ASP.print_printway_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Print\PrintWay.aspx:行号 33
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 20:10:46,146 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   at ASP.print_printway_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Print\PrintWay.aspx:line 33
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.print_printway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_printway.aspx.af37c923.f1gzodr9.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 20:22:25,074 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Print/PrintWay.aspx?id=fee68ac4-1312-4a49-b013-d64453f534e3 <BR>
+ <HR Size=1>System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ASP.print_printway_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Print\PrintWay.aspx:行号 33
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 20:22:25,078 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   at ASP.print_printway_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Print\PrintWay.aspx:line 33
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.print_printway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_printway.aspx.af37c923.f1gzodr9.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 20:22:43,742 [28] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Print/PrintWay.aspx?id=fee68ac4-1312-4a49-b013-d64453f534e3 <BR>
+ <HR Size=1>System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 ASP.print_printway_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Print\PrintWay.aspx:行号 33
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 20:22:43,761 [28] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   at ASP.print_printway_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in e:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Print\PrintWay.aspx:line 33
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.print_printway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_printway.aspx.af37c923.f1gzodr9.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 20:26:17,412 [23] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Syntax error (missing operator) in query expression 'rowNum BETWEEN  and @maxRows'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.StowageMainDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\StowageMainDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.StowageProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\StowageProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 20:26:25,093 [18] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Syntax error (missing operator) in query expression 'rowNum BETWEEN  and @maxRows'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.TransferMainDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\TransferMainDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.TransferProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\TransferProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 20:26:33,174 [24] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Syntax error (missing operator) in query expression 'rowNum BETWEEN  and @maxRows'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.StowageMainDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\StowageMainDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.StowageProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\StowageProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 20:26:34,116 [18] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Data type mismatch in criteria expression.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 20:33:47,490 [21] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Business/Stowage.aspx <BR>
+ <HR Size=1>Microsoft.Practices.Unity.ResolutionFailedException: Resolution of the dependency failed, type = "SpecialLogisticsSystem.AppPortal.Business.Stowage", name = "(none)".
+Exception occurred while: Calling constructor SpecialLogisticsSystem.Dal.Dao().
+Exception is: ArgumentException - 已添加了具有相同键的项。
+-----------------------------------------------
+At the time of the exception, the container was:
+
+  Resolving SpecialLogisticsSystem.AppPortal.Business.Stowage,(none)
+  Resolving value for property Stowage._way
+    Resolving SpecialLogisticsSystem.Dal.WayBillDal,(none) (mapped from SpecialLogisticsSystem.IDal.IWayBillDal, (none))
+    Resolving parameter "dao" of constructor DynamicModule.ns.Wrapped_WayBillDal_961fd18ca61142b0b7d11ba285ea611f(SpecialLogisticsSystem.IDal.IDao dao)
+      Resolving SpecialLogisticsSystem.Dal.Dao,(none) (mapped from SpecialLogisticsSystem.IDal.IDao, (none))
+      Calling constructor SpecialLogisticsSystem.Dal.Dao()
+ ---> System.ArgumentException: 已添加了具有相同键的项。
+   在 System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   在 System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   在 System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   在 CallSite.Target(Closure , CallSite , IDictionary`2 , Object , Object )
+   在 SpecialLogisticsSystem.Dal.LoadMapping.SetMappingModel() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Mapping\LoadMapping.cs:行号 39
+   在 SpecialLogisticsSystem.Dal.LoadMapping.GetMappingModel() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Mapping\LoadMapping.cs:行号 61
+   在 SpecialLogisticsSystem.Dal.DaoInfo..ctor() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\DaoInfo.cs:行号 19
+   在 SpecialLogisticsSystem.Dal.Dao..ctor()
+   在 BuildUp_SpecialLogisticsSystem.Dal.Dao(IBuilderContext )
+   在 Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)
+   在 Microsoft.Practices.Unity.ObjectBuilder.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   在 BuildUp_SpecialLogisticsSystem.Dal.WayBillDal(IBuilderContext )
+   在 Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)
+   在 Microsoft.Practices.Unity.ObjectBuilder.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   在 BuildUp_SpecialLogisticsSystem.AppPortal.Business.Stowage(IBuilderContext )
+   在 Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   在 Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)
+   在 Microsoft.Practices.Unity.UnityContainer.BuildUp(Type t, Object existing, String name, ResolverOverride[] resolverOverrides)
+   在 Microsoft.Practices.Unity.UnityContainerExtensions.BuildUp[T](IUnityContainer container, T existing, ResolverOverride[] resolverOverrides)
+   在 SpecialLogisticsSystem.AppPortal.BasePage`1.InjectDependencies() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\BasePage.cs:行号 50
+   在 SpecialLogisticsSystem.AppPortal.BasePage`1.OnPreInit(EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\BasePage.cs:行号 22
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-26 20:33:47,689 [21] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> Microsoft.Practices.Unity.ResolutionFailedException: Resolution of the dependency failed, type = "SpecialLogisticsSystem.AppPortal.Business.Stowage", name = "(none)".
+Exception occurred while: Calling constructor SpecialLogisticsSystem.Dal.Dao().
+Exception is: ArgumentException - 已添加了具有相同键的项。
+-----------------------------------------------
+At the time of the exception, the container was:
+
+  Resolving SpecialLogisticsSystem.AppPortal.Business.Stowage,(none)
+  Resolving value for property Stowage._way
+    Resolving SpecialLogisticsSystem.Dal.WayBillDal,(none) (mapped from SpecialLogisticsSystem.IDal.IWayBillDal, (none))
+    Resolving parameter "dao" of constructor DynamicModule.ns.Wrapped_WayBillDal_961fd18ca61142b0b7d11ba285ea611f(SpecialLogisticsSystem.IDal.IDao dao)
+      Resolving SpecialLogisticsSystem.Dal.Dao,(none) (mapped from SpecialLogisticsSystem.IDal.IDao, (none))
+      Calling constructor SpecialLogisticsSystem.Dal.Dao()
+ ---> System.ArgumentException: 已添加了具有相同键的项。
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at CallSite.Target(Closure , CallSite , IDictionary`2 , Object , Object )
+   at SpecialLogisticsSystem.Dal.LoadMapping.SetMappingModel() in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Mapping\LoadMapping.cs:line 39
+   at SpecialLogisticsSystem.Dal.LoadMapping.GetMappingModel() in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Mapping\LoadMapping.cs:line 61
+   at SpecialLogisticsSystem.Dal.DaoInfo..ctor() in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\DaoInfo.cs:line 19
+   at SpecialLogisticsSystem.Dal.Dao..ctor()
+   at BuildUp_SpecialLogisticsSystem.Dal.Dao(IBuilderContext )
+   at Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)
+   at Microsoft.Practices.Unity.ObjectBuilder.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   at BuildUp_SpecialLogisticsSystem.Dal.WayBillDal(IBuilderContext )
+   at Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)
+   at Microsoft.Practices.Unity.ObjectBuilder.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   at BuildUp_SpecialLogisticsSystem.AppPortal.Business.Stowage(IBuilderContext )
+   at Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   at Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)
+   --- End of inner exception stack trace ---
+   at Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)
+   at Microsoft.Practices.Unity.UnityContainer.BuildUp(Type t, Object existing, String name, ResolverOverride[] resolverOverrides)
+   at Microsoft.Practices.Unity.UnityContainerExtensions.BuildUp[T](IUnityContainer container, T existing, ResolverOverride[] resolverOverrides)
+   at SpecialLogisticsSystem.AppPortal.BasePage`1.InjectDependencies() in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\BasePage.cs:line 50
+   at SpecialLogisticsSystem.AppPortal.BasePage`1.OnPreInit(EventArgs e) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\BasePage.cs:line 22
+   at System.Web.UI.Page.PerformPreInit()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.business_stowage_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_stowage.aspx.36edc644.0gc9lp0y.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-26 20:46:27,542 [21] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Data type mismatch in criteria expression.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.QuerySingle[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetTotal[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 42
+   在 SpecialLogisticsSystem.Dal.StowageMainDal.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\StowageMainDal.cs:行号 55
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.StowageProvider.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\StowageProvider.cs:行号 20
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetRowsCount(String filter) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 37
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.QueryTotalRowCount(IOrderedDictionary mergedParameters, DataSourceSelectArguments arguments, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 21:07:02,842 [23] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Data type mismatch in criteria expression.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.QuerySingle[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetTotal[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 42
+   在 SpecialLogisticsSystem.Dal.StowageMainDal.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\StowageMainDal.cs:行号 55
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.StowageProvider.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\StowageProvider.cs:行号 20
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetRowsCount(String filter) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 37
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.QueryTotalRowCount(IOrderedDictionary mergedParameters, DataSourceSelectArguments arguments, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 21:10:07,330 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Data type mismatch in criteria expression.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.QuerySingle[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetTotal[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 42
+   在 SpecialLogisticsSystem.Dal.StowageMainDal.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\StowageMainDal.cs:行号 55
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.StowageProvider.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\StowageProvider.cs:行号 20
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetRowsCount(String filter) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 37
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.QueryTotalRowCount(IOrderedDictionary mergedParameters, DataSourceSelectArguments arguments, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-26 21:13:43,588 [23] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Data type mismatch in criteria expression.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.QuerySingle[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetTotal[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 42
+   在 SpecialLogisticsSystem.Dal.StowageMainDal.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\StowageMainDal.cs:行号 55
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.StowageProvider.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\StowageProvider.cs:行号 20
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetRowsCount(String filter) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 37
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.QueryTotalRowCount(IOrderedDictionary mergedParameters, DataSourceSelectArguments arguments, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)

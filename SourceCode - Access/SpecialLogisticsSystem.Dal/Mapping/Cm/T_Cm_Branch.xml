@@ -1,0 +1,94 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Branch.Count">
+    Select count(1) FROM T_Cm_Branch where
+    $and{id = #id#}  $and{name = #name#}  $and{code = #code#}  $and{industry = #industry#}  $and{ownership = #ownership#}  $and{abbreviation = #abbreviation#}  $and{customer_level = #customer_level#}  $and{link_id = #link_id#}  $and{site_type = #site_type#}  $and{parent_id = #parent_id#}  $and{credit_level = #credit_level#}  $and{type = #type#}  $and{is_headquarters = #is_headquarters#}  $and{is_stop = #is_stop#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Branch.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_Branch) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{name = #name#}  $and{code = #code#}  $and{industry = #industry#}  $and{ownership = #ownership#}  $and{abbreviation = #abbreviation#}  $and{customer_level = #customer_level#}  $and{link_id = #link_id#}  $and{site_type = #site_type#}  $and{parent_id = #parent_id#}  $and{credit_level = #credit_level#}  $and{type = #type#}  $and{is_headquarters = #is_headquarters#}  $and{is_stop = #is_stop#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Branch.Load">
+    SELECT *
+    FROM   T_Cm_Branch  where
+    $and{id = #id#}  $and{name = #name#}  $and{code = #code#}  $and{industry = #industry#}  $and{ownership = #ownership#}  $and{abbreviation = #abbreviation#}  $and{customer_level = #customer_level#}  $and{link_id = #link_id#}  $and{site_type = #site_type#}  $and{parent_id = #parent_id#}  $and{credit_level = #credit_level#}  $and{type = #type#}  $and{is_headquarters = #is_headquarters#}  $and{is_stop = #is_stop#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Branch.Select">
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   (T_Cm_Branch a
+    LEFT JOIN T_Cm_Link b ON a.link_id = b.id)
+    LEFT JOIN T_Cm_Code f ON (f.para_value = a.site_type
+    AND para_type = 'site_type') where
+    $and{a.id = #id#}  $and{name = #name#}  $and{code = #code#}  $and{industry = #industry#}  $and{ownership = #ownership#}  $and{abbreviation = #abbreviation#}  $and{customer_level = #customer_level#}  $and{link_id = #link_id#}  $and{site_type = #site_type#}  $and{parent_id = #parent_id#}  $and{credit_level = #credit_level#}  $and{type = #type#}  $and{is_headquarters = #is_headquarters#}  $and{is_stop = #is_stop#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Cm_Branch.Insert">
+    insert into T_Cm_Branch(
+    id
+    ,name
+    ,code
+    ,industry
+    ,ownership
+    ,abbreviation
+    ,customer_level
+    ,link_id
+    ,site_type
+    ,parent_id
+    ,credit_level
+    ,type
+    ,is_headquarters
+    ,is_stop
+    )values (
+    #id#
+    ,#name#
+    ,#code#
+    ,#industry#
+    ,#ownership#
+    ,#abbreviation#
+    ,#customer_level#
+    ,#link_id#
+    ,#site_type#
+    ,#parent_id#
+    ,#credit_level#
+    ,#type#
+    ,#is_headquarters#
+    ,#is_stop#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_Branch.Update">
+    update T_Cm_Branch set
+    id=#id#
+    ,name=#name#
+    ,code=#code#
+    ,industry=#industry#
+    ,ownership=#ownership#
+    ,abbreviation=#abbreviation#
+    ,customer_level=#customer_level#
+    ,link_id=#link_id#
+    ,site_type=#site_type#
+    ,parent_id=#parent_id#
+    ,credit_level=#credit_level#
+    ,type=#type#
+    ,is_headquarters=#is_headquarters#
+    ,is_stop=#is_stop#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Cm_Branch.Delete">
+    delete
+    FROM T_Cm_Branch
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

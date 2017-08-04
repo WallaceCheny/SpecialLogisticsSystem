@@ -1,0 +1,47 @@
+<HR COLOR=red>
+异常时间：2014-03-12 21:05:54,385 [18] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Stowage_Detail(
+    id
+    ,main_id
+    ,bill_id
+    ,production_number
+    ,production_id
+    )values (
+    '01d55305-0db5-4b5f-87e3-e77c903a4407'
+    ,'2fd33aef-6e90-468a-98d3-04cc6aa3f135'
+    ,'9fc292a4-a1b1-4410-a7fa-0878542db8f4'
+    ,1602
+    ,'a9a981b4-3e45-430e-b244-2afa51a5cf8e'
+    )
+   <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_T_Stowage_Detail'. Cannot insert duplicate key in object 'dbo.T_Stowage_Detail'.
+The statement has been terminated.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-03-12 21:05:54,563 [18] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_T_Stowage_Detail'. Cannot insert duplicate key in object 'dbo.T_Stowage_Detail'.
+The statement has been terminated.
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.StowageDetailDal.Insert(T_Stowage_Detail item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\StowageDetailDal.cs:行号 33
+   在 SpecialLogisticsSystem.AppPortal.Business.Stowage.<>c__DisplayClass2.<gridStowage_RowInserting>b__0(T_Stowage_Detail p) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Stowage.aspx.cs:行号 122
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 SpecialLogisticsSystem.AppPortal.Business.Stowage.gridStowage_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Stowage.aspx.cs:行号 119
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)

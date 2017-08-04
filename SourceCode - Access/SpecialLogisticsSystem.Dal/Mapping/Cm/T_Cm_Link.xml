@@ -1,0 +1,88 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Link.Count">
+    Select count(1) FROM T_Cm_Link where
+    $and{id = #id#}  $and{link_name = #link_name#}  $and{link_telephone = #link_telephone#}  $and{link_mobilephone = #link_mobilephone#}  $and{link_province = #link_province#}  $and{link_city = #link_city#}  $and{link_district = #link_district#}  $and{link_area = #link_area#}  $and{link_address = #link_address#}  $and{link_email = #link_email#}  $and{link_fax = #link_fax#}  $and{link_longitude = #link_longitude#}  $and{link_latitude = #link_latitude#}  $and{link_QQ = #link_QQ#}  $and{link_memo = #link_memo#}  $and{link_identity_number = #link_identity_number#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Link.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_Link) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{link_name = #link_name#}  $and{link_telephone = #link_telephone#}  $and{link_mobilephone = #link_mobilephone#}  $and{link_province = #link_province#}  $and{link_city = #link_city#}  $and{link_district = #link_district#}  $and{link_area = #link_area#}  $and{link_address = #link_address#}  $and{link_email = #link_email#}  $and{link_fax = #link_fax#}  $and{link_longitude = #link_longitude#}  $and{link_latitude = #link_latitude#}  $and{link_QQ = #link_QQ#}  $and{link_memo = #link_memo#}  $and{link_identity_number = #link_identity_number#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Link.Load">
+    SELECT *
+    FROM   T_Cm_Link  where
+    $and{id = #id#}  $and{link_name = #link_name#}  $and{link_telephone = #link_telephone#}  $and{link_mobilephone = #link_mobilephone#}  $and{link_province = #link_province#}  $and{link_city = #link_city#}  $and{link_district = #link_district#}  $and{link_area = #link_area#}  $and{link_address = #link_address#}  $and{link_email = #link_email#}  $and{link_fax = #link_fax#}  $and{link_longitude = #link_longitude#}  $and{link_latitude = #link_latitude#}  $and{link_QQ = #link_QQ#}  $and{link_memo = #link_memo#}  $and{link_identity_number = #link_identity_number#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Link.Select">
+    SELECT *
+    FROM   T_Cm_Link  where
+    $and{id = #id#}  $and{link_name = #link_name#}  $and{link_telephone = #link_telephone#}  $and{link_mobilephone = #link_mobilephone#}  $and{link_province = #link_province#}  $and{link_city = #link_city#}  $and{link_district = #link_district#}  $and{link_area = #link_area#}  $and{link_address = #link_address#}  $and{link_email = #link_email#}  $and{link_fax = #link_fax#}  $and{link_longitude = #link_longitude#}  $and{link_latitude = #link_latitude#}  $and{link_QQ = #link_QQ#}  $and{link_memo = #link_memo#}  $and{link_identity_number = #link_identity_number#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Cm_Link.Insert">
+    insert into T_Cm_Link(
+    id
+    ,link_name
+    ,link_telephone
+    ,link_mobilephone
+    ,link_province
+    ,link_city
+    ,link_district
+    ,link_area
+    ,link_address
+    ,link_email
+    ,link_fax
+    ,link_longitude
+    ,link_latitude
+    ,link_QQ
+    ,link_memo
+    ,link_identity_number
+    )values (
+    #id#
+    ,#link_name#
+    ,#link_telephone#
+    ,#link_mobilephone#
+    ,#link_province#
+    ,#link_city#
+    ,#link_district#
+    ,#link_area#
+    ,#link_address#
+    ,#link_email#
+    ,#link_fax#
+    ,#link_longitude#
+    ,#link_latitude#
+    ,#link_QQ#
+    ,#link_memo#
+    ,#link_identity_number#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_Link.Update">
+    update T_Cm_Link set
+    id=#id#
+    ,link_name=#link_name#
+    ,link_telephone=#link_telephone#
+    ,link_mobilephone=#link_mobilephone#
+    ,link_province=#link_province#
+    ,link_city=#link_city#
+    ,link_district=#link_district#
+    ,link_area=#link_area#
+    ,link_address=#link_address#
+    ,link_email=#link_email#
+    ,link_fax=#link_fax#
+    ,link_longitude=#link_longitude#
+    ,link_latitude=#link_latitude#
+    ,link_QQ=#link_QQ#
+    ,link_memo=#link_memo#
+    ,link_identity_number=#link_identity_number#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Cm_Link.Delete">
+    delete
+    FROM T_Cm_Link
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

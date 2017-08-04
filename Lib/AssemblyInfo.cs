@@ -1,0 +1,20 @@
+﻿// Assembly Ms.Data, Version 2.3.0.0
+
+[assembly: System.Reflection.AssemblyAlgorithmId(0)]
+[assembly: System.Reflection.AssemblyCopyright("Copyright \x00a9 zhangs 2012")]
+[assembly: System.Reflection.AssemblyTrademark("")]
+[assembly: System.Reflection.AssemblyCompany("zhangs")]
+[assembly: System.Reflection.AssemblyProduct("Ms.Data")]
+[assembly: Xenocode.Client.Attributes.AssemblyAttributes.ProcessedByXenocode]
+[assembly: Xenocode.Client.Attributes.AssemblyAttributes.SuppressDisassembly]
+[assembly: System.Runtime.InteropServices.ComVisible(false)]
+[assembly: System.Runtime.InteropServices.Guid("bfaa4bfe-2830-420e-805e-d579d8729b09")]
+[assembly: System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)]
+[assembly: System.Reflection.AssemblyFileVersion("2.3.0.0")]
+[assembly: System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute.DebuggingModes.DisableOptimizations | System.Diagnostics.DebuggableAttribute.DebuggingModes.EnableEditAndContinue | System.Diagnostics.DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints | System.Diagnostics.DebuggableAttribute.DebuggingModes.Default)]
+[assembly: System.Runtime.CompilerServices.CompilationRelaxations(8)]
+[assembly: System.Reflection.AssemblyDescription("")]
+[assembly: System.Reflection.AssemblyConfiguration("")]
+[assembly: System.Runtime.Versioning.TargetFramework(".NETFramework,Version=v4.0", FrameworkDisplayName=".NET Framework 4")]
+[assembly: System.Reflection.AssemblyTitle("Ms.Data")]
+

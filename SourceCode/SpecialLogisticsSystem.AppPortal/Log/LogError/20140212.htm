@@ -1,0 +1,305 @@
+<HR COLOR=red>
+异常时间：2014-02-12 19:06:51,990 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpParseException (0x80004005): Type 'DevExpress.Web.ASPxGridView.GridViewDataTextColumn' does not have a public property named 'PropertiesSpinEdit-DisplayFormatString'. ---> System.Web.HttpParseException (0x80004005): Type 'DevExpress.Web.ASPxGridView.GridViewDataTextColumn' does not have a public property named 'PropertiesSpinEdit-DisplayFormatString'. ---> System.Web.HttpException (0x80004005): Type 'DevExpress.Web.ASPxGridView.GridViewDataTextColumn' does not have a public property named 'PropertiesSpinEdit-DisplayFormatString'.
+   at System.Web.UI.ControlBuilder.AddProperty(String filter, String name, String value, Boolean mainDirectiveMode)
+   at System.Web.UI.ControlBuilder.PreprocessAttribute(String filter, String attribname, String attribvalue, Boolean mainDirectiveMode)
+   at System.Web.UI.ControlBuilder.PreprocessAttributes(ParsedAttributeCollection attribs)
+   at System.Web.UI.ControlBuilder.Init(TemplateParser parser, ControlBuilder parentBuilder, Type type, String tagName, String id, IDictionary attribs)
+   at System.Web.UI.ControlBuilder.CreateBuilderFromType(TemplateParser parser, ControlBuilder parentBuilder, Type type, String tagName, String id, IDictionary attribs, Int32 line, String sourceFileName)
+   at System.Web.UI.ControlBuilder.CreateChildBuilder(String filter, String tagName, IDictionary attribs, TemplateParser parser, ControlBuilder parentBuilder, String id, Int32 line, VirtualPath virtualPath, Type& childType, Boolean defaultProperty)
+   at System.Web.UI.TemplateParser.ProcessBeginTag(Match match, String inputText)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.ParseInternal()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-12 19:59:27,316 [23] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:7065/Analyze/FinanceGraphic.aspx <BR>
+ <HR Size=1>System.InvalidOperationException: ExecuteReader: CommandText 属性尚未初始化
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.FinanceDailyDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\FinanceDailyDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:行号 43
+   在 SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:行号 29
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-02-12 19:59:27,777 [23] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: ExecuteReader: CommandText 属性尚未初始化
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.FinanceDailyDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\FinanceDailyDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.BindData() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:line 43
+   at SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:line 29
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.analyze_financegraphic_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_financegraphic.aspx.5d23a138.elvjf1gc.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-12 20:12:02,991 [7] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:7065/Analyze/FinanceGraphic.aspx <BR>
+ <HR Size=1>System.InvalidOperationException: ExecuteReader: CommandText 属性尚未初始化
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.FinanceDailyDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\FinanceDailyDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:行号 43
+   在 SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:行号 29
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-02-12 20:12:03,054 [7] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: ExecuteReader: CommandText 属性尚未初始化
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.FinanceDailyDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\FinanceDailyDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.BindData() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:line 43
+   at SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:line 29
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.analyze_financegraphic_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_financegraphic.aspx.5d23a138.rbq43inv.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-12 20:12:29,780 [21] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:7065/Analyze/FinanceGraphic.aspx <BR>
+ <HR Size=1>System.InvalidOperationException: ExecuteReader: CommandText 属性尚未初始化
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.FinanceDailyDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\FinanceDailyDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:行号 43
+   在 SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:行号 29
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-02-12 20:12:29,781 [21] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: ExecuteReader: CommandText 属性尚未初始化
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.FinanceDailyDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\FinanceDailyDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.BindData() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:line 43
+   at SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:line 29
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.analyze_financegraphic_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_financegraphic.aspx.5d23a138.0cbyeclv.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-12 20:12:33,894 [7] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:7065/Analyze/FinanceGraphic.aspx <BR>
+ <HR Size=1>System.InvalidOperationException: ExecuteReader: CommandText 属性尚未初始化
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.FinanceDailyDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\FinanceDailyDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:行号 43
+   在 SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:行号 29
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-02-12 20:12:33,896 [7] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: ExecuteReader: CommandText 属性尚未初始化
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.FinanceDailyDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\FinanceDailyDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.BindData() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:line 43
+   at SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:line 29
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.analyze_financegraphic_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_financegraphic.aspx.5d23a138.0cbyeclv.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-12 20:15:07,142 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:7065/Analyze/FinanceGraphic.aspx <BR>
+ <HR Size=1>System.InvalidOperationException: ExecuteReader: CommandText 属性尚未初始化
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.FinanceDailyDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\FinanceDailyDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:行号 43
+   在 SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:行号 29
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-02-12 20:15:07,249 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: ExecuteReader: CommandText 属性尚未初始化
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.FinanceDailyDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\FinanceDailyDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.BindData() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:line 43
+   at SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:line 29
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.analyze_financegraphic_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_financegraphic.aspx.5d23a138.0cbyeclv.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-12 20:15:30,160 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:7065/Analyze/FinanceGraphic.aspx <BR>
+ <HR Size=1>System.InvalidOperationException: ExecuteReader: CommandText 属性尚未初始化
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.FinanceDailyDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\FinanceDailyDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:行号 43
+   在 SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:行号 29
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-02-12 20:15:30,162 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.InvalidOperationException: ExecuteReader: CommandText 属性尚未初始化
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.FinanceDailyDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\FinanceDailyDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.BindData() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:line 43
+   at SpecialLogisticsSystem.AppPortal.Analyze.FinanceGraphic.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Analyze\FinanceGraphic.aspx.cs:line 29
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.analyze_financegraphic_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_financegraphic.aspx.5d23a138.0cbyeclv.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

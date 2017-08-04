@@ -1,0 +1,9 @@
+E:\DinnerManage\Common\bin\Debug\Common.dll
+E:\DinnerManage\Common\bin\Debug\Common.pdb
+E:\DinnerManage\Common\bin\Debug\COM.Excel.dll
+E:\DinnerManage\Common\bin\Debug\Excel.dll
+E:\DinnerManage\Common\bin\Debug\OpenSmtp.dll
+E:\DinnerManage\Common\bin\Debug\OWC10Chart.dll
+E:\DinnerManage\Common\obj\Debug\Dinner.Common.csprojResolveAssemblyReference.cache
+E:\DinnerManage\Common\obj\Debug\Common.dll
+E:\DinnerManage\Common\obj\Debug\Common.pdb

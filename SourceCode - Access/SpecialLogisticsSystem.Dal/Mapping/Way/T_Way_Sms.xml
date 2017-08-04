@@ -1,0 +1,39 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Sms.Count">
+    Select count(1) FROM T_Way_Sms where
+      $and{id = #id#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Sms.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Way_Sms) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+     $and{id = #id#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Sms.Load">
+    SELECT *
+    FROM   T_Way_Sms  where
+    $and{id = #id#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Sms.Select">
+    SELECT *
+    FROM   T_Way_Sms  where
+    $and{id = #id#}    </select>
+   <insert id="SpecialLogisticsSystem.Model.T_Way_Sms.Insert">
+    insert into T_Way_Sms(
+    id
+    )values (
+     #id#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Way_Sms.Update">
+    update T_Way_Sms set
+      id=#id#
+    WHERE
+    id = #id#
+  </update>
+   <delete id="SpecialLogisticsSystem.Model.T_Way_Sms.Delete">
+    delete
+    FROM T_Way_Sms
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

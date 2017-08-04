@@ -1,0 +1,4750 @@
+<HR COLOR=blue>
+日志时间：2014-02-25 18:42:46,702 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:43:58,256 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:44:02,311 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:44:02,585 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (stowage_statue = 'Sended')
+     
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:44:02,851 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:44:02,944 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 18:43:59.205'))   
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:44:03,470 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:44:04,109 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM vArrivalDeliver 
+                      ) as temptable
+    where rowNum BETWEEN (0) and 15
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:44:04,608 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:44:36,496 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:44:36,507 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:44:36,516 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:45:06,408 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 18:45:05.804'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:11,339 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:11,346 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:11,354 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:23,087 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:23,093 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:23,102 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:28,223 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:28,687 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:28,796 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:35,815 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:35,821 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:35,830 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:39,095 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:39,101 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:39,110 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:44,456 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:44,462 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:46:44,471 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:35,778 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:35,784 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:35,793 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:37,988 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:38,002 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:38,012 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:45,109 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:45,114 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:45,130 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:47,671 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:47,678 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:47,689 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:50,572 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:50,578 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:47:50,587 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:48:13,467 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:48:13,474 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:48:13,483 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:48:20,647 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:48:20,653 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:48:20,661 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:48:30,545 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:48:30,551 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:48:30,570 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:48:32,857 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:48:32,863 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:48:32,872 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:49:13,042 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:49:13,049 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:49:13,058 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:49:17,446 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:49:17,452 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:49:17,462 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:51:25,755 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:51:25,761 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:51:25,772 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:51:27,114 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.production_name ,
+    b.production_number ,
+    b.production_weight ,
+    b.production_size ,
+    b.freight ,
+    c.way_number ,
+    c.start_city ,
+    c.end_city ,
+    c.pick_payment,
+    c.spot_payment,
+    c.back_payment,
+    d.customer_name AS deliver_name ,
+    e.customer_name AS consignee_name
+    FROM    T_Arrival_DeliverGoods a
+    LEFT JOIN dbo.T_Way_Production b ON b.id = a.production_id
+    LEFT JOIN dbo.T_Way_Bill c ON c.id = b.bill_id
+    LEFT JOIN dbo.T_Cm_Customer d ON d.id = c.deliver_id
+    LEFT JOIN dbo.T_Cm_Customer e ON e.id = c.consignee_id <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:53:05,804 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceCustomer where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 18:53:05.56')) 
+      and (settle_name = '未结算')
+          
+           ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:53:12,826 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:53:12,942 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceCustomer where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 18:53:05.56')) 
+      and (settle_name = '未结算')
+          
+           ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:53:12,978 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:55:18,636 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:55:18,722 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceCustomer where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 18:53:05.56')) 
+      and (settle_name = '未结算')
+          
+           ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:55:23,270 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:55:23,378 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceCustomer where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 18:53:05.56')) 
+      and (settle_name = '未结算')
+          
+           ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:55:23,412 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:58:21,960 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:58:22,110 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceCustomer where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 18:53:05.56')) 
+      and (settle_name = '未结算')
+          
+           ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:58:26,933 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:58:27,042 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceCustomer where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 18:53:05.56')) 
+      and (settle_name = '未结算')
+          
+           ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 18:58:27,116 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:07:58,782 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:07:59,420 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vFinanceDriver 
+      
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:07:59,948 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:23:21,990 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:23:22,083 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vFinanceDriver 
+      
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:23:22,106 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:24:41,195 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:24:41,236 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vFinanceDriver 
+      
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:24:41,278 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:24:43,365 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:24:43,428 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vFinanceDriver 
+      
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:24:43,462 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:24:46,015 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:24:46,093 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vFinanceDriver 
+      
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:24:46,115 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:24:49,561 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:24:49,639 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vFinanceDriver 
+      
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:24:51,980 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:24:52,080 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vFinanceDriver 
+      
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:24:52,108 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:27:01,172 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:27:01,922 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vFinanceDriver 
+      
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:27:02,436 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:27:04,203 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:27:04,303 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vFinanceDriver 
+      
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:27:04,325 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:27:10,524 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:27:10,565 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vFinanceDriver 
+      
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:27:10,599 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:30:48,222 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by transfer_date desc) as rowNum
+    FROM vFinanceService where  (transfer_date >= '01/01/2014 00:00:00') and (transfer_date <= dateadd(day,1,'02/25/2014 19:30:47.742'))  
+      
+      
+        and (settle_name = '未结算')
+         ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:31:29,228 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by transfer_date desc) as rowNum
+    FROM vFinanceService where  (transfer_date >= '01/01/2014 00:00:00') and (transfer_date <= dateadd(day,1,'02/25/2014 19:31:28.643'))  
+      
+      
+        and (settle_name = '未结算')
+         ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:31:52,065 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by transfer_date desc) as rowNum
+    FROM vFinanceService where  (transfer_date >= '01/01/2014 00:00:00') and (transfer_date <= dateadd(day,1,'02/25/2014 19:31:51.536'))  
+      
+      
+        and (settle_name = '未结算')
+         ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:32:02,356 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:32:02,444 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by transfer_date desc) as rowNum
+    FROM vFinanceService where  (transfer_date >= '01/01/2014 00:00:00') and (transfer_date <= dateadd(day,1,'02/25/2014 19:31:51.536'))  
+      
+      
+        and (settle_name = '未结算')
+         ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:32:02,460 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:32:50,232 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceDiscount where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 19:32:49.685'))
+        
+        
+    ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:33:51,902 [31] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:33:55,982 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/25/2014 19:33:51.496'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:34:08,745 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowageGross where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/25/2014 19:34:08.242'))
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:34:22,766 [31] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:34:26,641 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:34:26,696 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:34:26,824 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:34:47,594 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:34:47,657 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:34:47,673 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:35:14,161 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:35:14,230 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceCustomer where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 18:53:05.56')) 
+      and (settle_name = '未结算')
+          
+           ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:36:44,635 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:36:44,732 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceCustomer where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 18:53:05.56')) 
+      and (settle_name = '未结算')
+          
+           ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:36:44,764 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:38:43,538 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by transfer_date desc) as rowNum
+    FROM vFinanceService where  (transfer_date >= '01/01/2014 00:00:00') and (transfer_date <= dateadd(day,1,'02/25/2014 19:38:42.940'))  
+      
+      
+        and (settle_name = '未结算')
+         ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:41:36,881 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:41:37,265 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:41:37,295 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:41:42,948 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:41:42,990 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:41:43,030 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:42:11,756 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:42:11,825 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:42:11,841 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:44:05,561 [37] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:24,296 [34] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'office_statue')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:24,734 [34] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'office_statue')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:24,804 [37] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'office_statue')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:24,812 [37] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'site_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:25,254 [37] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'site_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:25,398 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'site_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:25,753 [37] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'site_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:25,814 [38] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'site_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:25,830 [38] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'site_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:26,859 [37] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'site_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:27,388 [34] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'site_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:27,443 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'site_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:27,452 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'finance_settle_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:27,659 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'finance_settle_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:28,200 [38] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'finance_settle_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:28,717 [34] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'finance_settle_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:28,780 [38] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'finance_settle_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:28,787 [38] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'car_nature')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:29,234 [39] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'car_nature')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:29,305 [34] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'car_nature')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:29,315 [34] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'car_nature')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:46:29,369 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'car_nature')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:47:20,008 [37] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 19:47:20,062 [37] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:15:10,677 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceDiscount where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 20:15:09.490'))
+        
+        
+    ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:02,379 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceDiscount where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 20:21:45.745'))
+    and (settle_name = '未结算')     
+        
+    ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:07,200 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceDiscount where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 20:21:45.745'))
+    and (settle_name = '已结算')     
+        
+    ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:10,774 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceDiscount where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 20:21:45.745'))
+    and (settle_name = '未结算')     
+        
+    ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:26,962 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 20:22:25.620'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:30,386 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:30,540 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:30,605 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:30,668 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:30,858 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:31,434 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 20:22:25.620'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:31,512 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:31,575 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:31,637 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:31,706 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:31,728 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:31,785 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:40,220 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:40,288 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:40,351 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:40,406 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:40,561 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:40,578 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:41,280 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:41,338 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:41,387 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:41,430 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:41,548 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:41,563 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:41,649 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:41,697 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:41,767 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:41,817 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:41,831 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:41,883 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:42,592 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 20:22:25.620'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:42,665 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 20:22:25.620'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:44,753 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceDiscount where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 20:22:44.138'))
+    and (settle_name = '未结算')     
+        
+    ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:55,031 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:55,168 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceDiscount where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 20:22:44.138'))
+    and (settle_name = '未结算')     
+        
+    ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:22:55,190 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:24:17,630 [39] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceDiscount where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 20:24:16.941'))
+    and (settle_name = '未结算')     
+        
+    ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:24:36,889 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:24:36,983 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceDiscount where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 20:24:16.941'))
+    and (settle_name = '未结算')     
+        
+    ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:24:37,013 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:30:18,293 [38] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:30:19,506 [38] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:30:19,668 [38] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (stowage_statue = 'Sended')
+     
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:30:20,923 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:30:21,098 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 20:30:18.550'))   
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:30:23,333 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:30:24,320 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM vArrivalDeliver 
+                      ) as temptable
+    where rowNum BETWEEN (0) and 15
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:30:24,789 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:30:26,741 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceDaily 
+       
+         
+       ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:37:22,553 [34] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:37:22,587 [34] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:37:22,734 [34] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowage <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:47:21,789 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:47:23,718 [36] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/25/2014 20:47:21.694'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:47:32,606 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/25/2014 20:47:21.694'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:47:33,492 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/25/2014 20:47:21.694'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:47:35,385 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/25/2014 20:47:21.694'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:47:39,565 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '01/01/2013 00:00:00') and (departure_time <= dateadd(day,1,'02/25/2014 20:47:21.694'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:47:51,183 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '01/01/2013 00:00:00') and (departure_time <= dateadd(day,1,'09/25/2013 00:00:00'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:48:17,315 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '09/01/2013 00:00:00') and (departure_time <= dateadd(day,1,'09/25/2013 00:00:00'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:48:21,614 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '09/06/2013 00:00:00') and (departure_time <= dateadd(day,1,'09/25/2013 00:00:00'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:48:26,905 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '09/20/2013 00:00:00') and (departure_time <= dateadd(day,1,'09/25/2013 00:00:00'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:49:18,612 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '09/10/2013 00:00:00') and (departure_time <= dateadd(day,1,'09/20/2013 00:00:00'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:49:24,813 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '09/10/2013 00:00:00') and (departure_time <= dateadd(day,1,'09/15/2013 00:00:00'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:49:58,138 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowageGross where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/25/2014 20:49:57.423'))
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:50:20,080 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowageGross where  (departure_time >= '09/10/2013 00:00:00') and (departure_time <= dateadd(day,1,'09/15/2013 00:00:00'))
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:54:07,379 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:55:27,911 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT SUM(input_money) AS input_money,
+    SUM(output_money) AS output_money,CONVERT(varchar(100),
+    input_date, 23) AS input_date
+    FROM   vFinanceAll
+        
+        
+          
+    GROUP BY CONVERT(varchar(100), input_date, 23)
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:55:28,707 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT SUM(input_money) AS input_money,
+    SUM(output_money) AS output_money,CONVERT(varchar(100),
+    input_date, 23) AS input_date
+    FROM   vFinanceAll
+        
+        
+          
+    GROUP BY CONVERT(varchar(100), input_date, 23)
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:55:50,780 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT SUM(input_money) AS input_money,
+    SUM(output_money) AS output_money,CONVERT(varchar(100),
+    input_date, 23) AS input_date
+    FROM   vFinanceAll
+        
+        
+          
+    GROUP BY CONVERT(varchar(100), input_date, 23)
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:56:26,230 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceAll 
+        
+         
+       ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:56:26,978 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceAll 
+        
+         
+       ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:56:29,326 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceAll 
+        
+         
+       ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:57:12,687 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:57:13,117 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:57:13,167 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:59:28,221 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:59:28,805 [28] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:59:28,847 [28] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:59:47,393 [28] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:59:47,480 [28] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:59:47,540 [28] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' where  (a.id = '1326724d-df6b-4a9d-93e2-998f772ea320')                          
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:59:50,699 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:59:50,778 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:59:50,809 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' where  (a.id = '1326724d-df6b-4a9d-93e2-998f772ea320')                          
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 20:59:50,845 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:03:10,070 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:03:10,156 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:03:10,214 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' where  (a.id = '1326724d-df6b-4a9d-93e2-998f772ea320')                          
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:03:10,230 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:03:12,649 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:03:12,732 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:03:12,777 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' where  (a.id = '1326724d-df6b-4a9d-93e2-998f772ea320')                          
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:03:14,870 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_memo,
+    f.para_name AS creditlevel_name
+    FROM    T_Cm_Servicer a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.credit_level
+    AND para_type = 'customer_credit' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:03:15,325 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_memo,
+    f.para_name AS creditlevel_name
+    FROM    T_Cm_Servicer a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.credit_level
+    AND para_type = 'customer_credit' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:03:15,348 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_memo,
+    f.para_name AS creditlevel_name
+    FROM    T_Cm_Servicer a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.credit_level
+    AND para_type = 'customer_credit' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:03:43,276 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_memo,
+    f.para_name AS creditlevel_name
+    FROM    T_Cm_Servicer a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.credit_level
+    AND para_type = 'customer_credit' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:03:43,328 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:07:41,872 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'price_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:07:42,200 [30] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'price_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:07:42,272 [30] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'price_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:07:42,291 [30] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'date_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:07:42,701 [30] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'date_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:07:42,786 [30] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'date_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:07:42,796 [30] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'date_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:07:43,211 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'date_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:21:35,401 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:21:35,957 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:21:35,987 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:22:24,702 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT    a.* ,
+    b.name AS branch_name ,
+    d.name AS def_branch_name ,
+    c.para_name AS status_name ,
+    e.emp_name AS employee_name ,
+    g.id as role_id,
+    g.is_admin AS role_is_admin,
+    g.role_name
+    FROM      dbo.T_Cm_User a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Branch d ON a.def_show_branch = d.id
+    LEFT JOIN dbo.T_Cm_Code c ON a.user_status = c.para_value
+    AND para_type = 'user_status'
+    LEFT JOIN dbo.T_Cm_Emp e ON e.id = a.emp_Info_Id
+    LEFT JOIN dbo.T_Cm_UserRole_Relation f ON a.id = f.user_id
+    LEFT JOIN dbo.T_Cm_Role g ON g.id = f.role_id
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:22:24,727 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:22:25,226 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT    a.* ,
+    b.name AS branch_name ,
+    d.name AS def_branch_name ,
+    c.para_name AS status_name ,
+    e.emp_name AS employee_name ,
+    g.id as role_id,
+    g.is_admin AS role_is_admin,
+    g.role_name
+    FROM      dbo.T_Cm_User a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Branch d ON a.def_show_branch = d.id
+    LEFT JOIN dbo.T_Cm_Code c ON a.user_status = c.para_value
+    AND para_type = 'user_status'
+    LEFT JOIN dbo.T_Cm_Emp e ON e.id = a.emp_Info_Id
+    LEFT JOIN dbo.T_Cm_UserRole_Relation f ON a.id = f.user_id
+    LEFT JOIN dbo.T_Cm_Role g ON g.id = f.role_id
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:23:29,926 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 21:23:29.249'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:13,112 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:13,169 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:13,248 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:13,312 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:13,325 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:13,390 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:13,784 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 21:23:29.249'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:13,862 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:13,922 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:13,978 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:14,029 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:14,043 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:14,093 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:18,671 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:18,727 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:18,773 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    dbo.T_Cm_District a
+    LEFT JOIN dbo.T_Cm_City b ON a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:18,826 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:18,952 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:18,965 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM   T_Cm_Customer a
+    LEFT JOIN dbo.T_Cm_Link l ON a.link_id = l.id
+    LEFT JOIN dbo.T_Cm_Code b ON a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'  where  (customer_type = 'Consignee')
+        and (sender_id = '705bc090-02cb-4eb8-a01e-29ce7153a12d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:28:19,049 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 21:23:29.249'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:32:01,030 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 21:32:00.38'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:34:37,915 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 21:34:36.125'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:34:52,754 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:34:54,061 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/25/2014 21:34:52.676'))
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:34:54,595 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:35:02,781 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:35:09,631 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:35:09,644 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/25/2014 21:34:52.676'))
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:35:09,668 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:35:09,685 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/25/2014 21:34:52.676'))
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:35:09,704 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:41:18,591 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:41:24,779 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/25/2014 21:41:22.487'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:41:57,096 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:41:57,936 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/25/2014 21:41:56.989'))
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:41:58,419 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:42:06,212 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:42:07,691 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:42:08,152 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-25 21:42:08,187 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1>

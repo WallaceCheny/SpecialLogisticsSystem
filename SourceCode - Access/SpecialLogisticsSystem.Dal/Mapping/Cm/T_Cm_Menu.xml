@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Menu.Count">
+    Select count(1) FROM T_Cm_Menu where
+    $and{id = #id#} $and{type = #type#} $and{name = #name#} $and{remark = #remark#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Menu.PageLoad">
+    Select id,branch_id,type,name,remark FROM(
+    Select id,branch_id,type,name,remark
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_Menu) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#} $and{branch_id in(#branch_id#)} $and{type = #type#} $and{name = #name#} $and{remark = #remark#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Menu.Load">
+    SELECT *
+    FROM   T_Cm_Menu  where
+    $and{id = #id#}  $and{branch_id = #branch_id#}  $and{name = #name#}  $and{menu_order = #menu_order#}
+    $and{icon = #icon#} $and{action like '%$action$%'} $and{is_main = #is_main#}  $and{tip = #tip#}
+    $and{parent_id = #parent_id#}  $and{help_html = #help_html#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Menu.Select">
+    SELECT menu.*
+    FROM   (T_Cm_UserRole_Relation a
+    LEFT JOIN T_Cm_RoleMenu_Relation rela ON a.role_id = rela.role_id)
+    LEFT JOIN T_cm_menu menu ON rela.menu_id = menu.id
+    where $and{menu.id = #id#}  $and{a.user_id = #user_id#} order by menu.menu_order asc
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Menu.SelectByAdmin">
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+    where $and{menu.id = #id#}  $and{a.user_id = #user_id#} order by menu.menu_order asc
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Cm_Menu.Insert">
+    insert into T_Cm_Menu(
+    id
+    ,branch_id
+    ,name
+    ,menu_order
+    ,icon
+    ,action
+    ,is_main
+    ,tip
+    ,parent_id
+    ,help_html
+    )values (
+    #id#
+    ,#branch_id#
+    ,#name#
+    ,#menu_order#
+    ,#icon#
+    ,#action#
+    ,#is_main#
+    ,#tip#
+    ,#parent_id#
+    ,#help_html#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_Menu.Update">
+    update T_Cm_Menu set
+    id=#id#
+    ,branch_id=#branch_id#
+    ,name=#name#
+    ,menu_order=#menu_order#
+    ,icon=#icon#
+    ,action=#action#
+    ,is_main=#is_main#
+    ,tip=#tip#
+    ,parent_id=#parent_id#
+    ,help_html=#help_html#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Cm_Menu.Delete">
+    delete
+    FROM T_Cm_Menu
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

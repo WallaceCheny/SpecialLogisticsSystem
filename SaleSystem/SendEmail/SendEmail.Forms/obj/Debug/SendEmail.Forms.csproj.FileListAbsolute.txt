@@ -1,0 +1,14 @@
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\obj\Debug\SendEmail.Forms.csprojResolveAssemblyReference.cache
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\obj\Debug\SendEmail.Forms.frmMain.resources
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\obj\Debug\SendEmail.Forms.Properties.Resources.resources
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\obj\Debug\SendEmail.Forms.csproj.GenerateResource.Cache
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\bin\Debug\SendEmail.Forms.exe.config
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\bin\Debug\SendEmail.Forms.exe
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\bin\Debug\SendEmail.Forms.pdb
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\bin\Debug\Common.dll
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\bin\Debug\OpenSmtp.dll
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\bin\Debug\Excel.dll
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\bin\Debug\COM.Excel.dll
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\bin\Debug\Common.pdb
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\obj\Debug\SendEmail.Forms.exe
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\obj\Debug\SendEmail.Forms.pdb

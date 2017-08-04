@@ -1,0 +1,99 @@
+<HR COLOR=red>
+异常时间：2014-01-07 20:17:50,024 [9] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.DivideByZeroException: 尝试除以零。
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetDataByPaging(String filter, String sorter, Int32 PageSize, Int32 StartRow) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\WayProvider.cs:行号 25
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(IRuntimeMethodInfo method, Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeType typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(IRuntimeMethodInfo method, Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeType typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelectCore(DataSourceSelectArguments select, DataSourceViewSelectCallback callBack)
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.RetrieveTotalCount()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.CreateDataSourceSelectArguments()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.Internal.DataContainer.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.DataBindCore()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.DataBindInternal()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.DataBind()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBind()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewPrinter.PrepareGridForExport()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewPrinter.BeforeCreate()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewPrinter..ctor(ASPxGridViewExporter exporter, ASPxGridView grid, BrickGraphics graph, ExportStyleHelper styleHelper, GridViewPrinterDrawDetailGrid onDrawDetailGrid, Int32 level, Int32 indent)
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewLink.AddPrinter(ASPxGridView grid, Int32 detailGridIndent)
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewLink.get_ActivePrinter()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewLink.CreateDetailHeader(BrickGraphics graph)
+   在 DevExpress.XtraPrinting.LinkBase.CreateReportArea(CreateAreaDelegate proc, BrickGraphics gr, BrickModifier modifier)
+   在 DevExpress.XtraPrinting.LinkBase.CreateDocumentCore()
+   在 DevExpress.XtraPrinting.LinkBase.CreateDocument(Boolean buildPagesInBackground)
+   在 DevExpress.XtraPrinting.LinkBase.<CreateDocument>b__0()
+   在 DevExpress.XtraPrinting.LinkBase.ExecuteActivity(PrintingSystemActivity activity, Action0 callback)
+   在 DevExpress.XtraPrinting.LinkBase.CreateDocument()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewLink.CreatePS()
+   在 DevExpress.Web.ASPxGridView.Export.ASPxGridViewExporter.WriteXlsCore(Stream stream, ExportOptionsBase exportOptions)
+   在 DevExpress.Web.ASPxGridView.Export.ASPxGridViewExporter.WriteToResponse(String fileName, Boolean saveAsFile, String fileFormat, ExportToStream getStream, ExportOptionsBase options)
+   在 DevExpress.Web.ASPxGridView.Export.ASPxGridViewExporter.WriteXlsToResponse(String fileName, Boolean saveAsFile)
+   在 DevExpress.Web.ASPxGridView.Export.ASPxGridViewExporter.WriteXlsToResponse()
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_CustomCallback(Object sender, ASPxGridViewCustomCallbackEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 64
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCustomCallback(ASPxGridViewCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBCustomCallBack(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-01-07 20:23:05,430 [20] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.SqlClient.SqlException: Incorrect syntax near '*'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 62
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetDataByPaging(String filter, String sorter, Int32 PageSize, Int32 StartRow) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\WayProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(IRuntimeMethodInfo method, Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeType typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(IRuntimeMethodInfo method, Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeType typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelectCore(DataSourceSelectArguments select, DataSourceViewSelectCallback callBack)
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.RetrieveTotalCount()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.CreateDataSourceSelectArguments()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.Internal.DataContainer.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.DataBindCore()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.DataBindInternal()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.DataBind()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBind()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewPrinter.PrepareGridForExport()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewPrinter.BeforeCreate()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewPrinter..ctor(ASPxGridViewExporter exporter, ASPxGridView grid, BrickGraphics graph, ExportStyleHelper styleHelper, GridViewPrinterDrawDetailGrid onDrawDetailGrid, Int32 level, Int32 indent)
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewLink.AddPrinter(ASPxGridView grid, Int32 detailGridIndent)
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewLink.get_ActivePrinter()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewLink.CreateDetailHeader(BrickGraphics graph)
+   在 DevExpress.XtraPrinting.LinkBase.CreateReportArea(CreateAreaDelegate proc, BrickGraphics gr, BrickModifier modifier)
+   在 DevExpress.XtraPrinting.LinkBase.CreateDocumentCore()
+   在 DevExpress.XtraPrinting.LinkBase.CreateDocument(Boolean buildPagesInBackground)
+   在 DevExpress.XtraPrinting.LinkBase.<CreateDocument>b__0()
+   在 DevExpress.XtraPrinting.LinkBase.ExecuteActivity(PrintingSystemActivity activity, Action0 callback)
+   在 DevExpress.XtraPrinting.LinkBase.CreateDocument()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewLink.CreatePS()
+   在 DevExpress.Web.ASPxGridView.Export.ASPxGridViewExporter.WriteXlsCore(Stream stream, ExportOptionsBase exportOptions)
+   在 DevExpress.Web.ASPxGridView.Export.ASPxGridViewExporter.WriteToResponse(String fileName, Boolean saveAsFile, String fileFormat, ExportToStream getStream, ExportOptionsBase options)
+   在 DevExpress.Web.ASPxGridView.Export.ASPxGridViewExporter.WriteXlsToResponse(String fileName, Boolean saveAsFile)
+   在 DevExpress.Web.ASPxGridView.Export.ASPxGridViewExporter.WriteXlsToResponse()
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_CustomCallback(Object sender, ASPxGridViewCustomCallbackEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 64
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCustomCallback(ASPxGridViewCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBCustomCallBack(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52FEC955-BDFA-4B9F-9DF6-480E62726704}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpecialLogisticsSystem.IDal</RootNamespace>
+    <AssemblyName>SpecialLogisticsSystem.IDal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ms.Data">
+      <HintPath>..\..\Lib\Ms.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Ms.Data.Common">
+      <HintPath>..\..\Lib\Ms.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IArrivalMainDal.cs" />
+    <Compile Include="ICmMenuDal.cs" />
+    <Compile Include="ICmSequenceNumberDal.cs" />
+    <Compile Include="ICmServicerDal.cs" />
+    <Compile Include="ICmUserDal.cs" />
+    <Compile Include="IDao.cs" />
+    <Compile Include="IFinanceDiscountDal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IArrivalDeliverDal.cs" />
+    <Compile Include="IArrivalDeliverGoodsDal.cs" />
+    <Compile Include="IArrivalSignDal.cs" />
+    <Compile Include="ICmBranchDal.cs" />
+    <Compile Include="ICmCarDal.cs" />
+    <Compile Include="ICmCarAreaDal.cs" />
+    <Compile Include="ICmCityDal.cs" />
+    <Compile Include="ICmCodeDal.cs" />
+    <Compile Include="ICmConfigDal.cs" />
+    <Compile Include="ICmCustomerDal.cs" />
+    <Compile Include="ICmDistrictDal.cs" />
+    <Compile Include="ICmEmpDal.cs" />
+    <Compile Include="ICmFeeTypeDal.cs" />
+    <Compile Include="ICmLinkDal.cs" />
+    <Compile Include="ICmProvinceDal.cs" />
+    <Compile Include="ICmRoleDal.cs" />
+    <Compile Include="ICmRoleMenuRelationDal.cs" />
+    <Compile Include="ICmTemplateDal.cs" />
+    <Compile Include="ICmUserBranchRelationDal.cs" />
+    <Compile Include="ICmUserRoleRelationDal.cs" />
+    <Compile Include="IFinanceCustomerDal.cs" />
+    <Compile Include="IFinanceDailyDal.cs" />
+    <Compile Include="IFinanceDriverDal.cs" />
+    <Compile Include="IFinanceGoodsDal.cs" />
+    <Compile Include="IFinanceServiceDal.cs" />
+    <Compile Include="IStowageDetailDal.cs" />
+    <Compile Include="IStowageMainDal.cs" />
+    <Compile Include="IStowageSiteDal.cs" />
+    <Compile Include="ITransferDetailDal.cs" />
+    <Compile Include="ITransferMainDal.cs" />
+    <Compile Include="IWayBillDal.cs" />
+    <Compile Include="IWayProductionDal.cs" />
+    <Compile Include="IWaySmsDal.cs" />
+    <Compile Include="IWayTrackDal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpecialLogisticsSystem.Model\SpecialLogisticsSystem.Model.csproj">
+      <Project>{11A5E6F7-42AE-41AD-B410-DAF56E1B3EED}</Project>
+      <Name>SpecialLogisticsSystem.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

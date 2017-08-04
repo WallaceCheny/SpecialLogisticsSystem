@@ -1,0 +1,189 @@
+C:\Users\Public\Documents\DXperience 12.1 Demos\XtraReports\CS\RibbonReportDesigner\bin\Debug\RibbonReportDesigner.exe
+C:\Users\Public\Documents\DXperience 12.1 Demos\XtraReports\CS\RibbonReportDesigner\bin\Debug\RibbonReportDesigner.pdb
+C:\Users\Public\Documents\DXperience 12.1 Demos\XtraReports\CS\RibbonReportDesigner\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Public\Documents\DXperience 12.1 Demos\XtraReports\CS\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.MainForm.resources
+C:\Users\Public\Documents\DXperience 12.1 Demos\XtraReports\CS\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.PrintRibbonControllerResources.resources
+C:\Users\Public\Documents\DXperience 12.1 Demos\XtraReports\CS\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.Properties.Resources.resources
+C:\Users\Public\Documents\DXperience 12.1 Demos\XtraReports\CS\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.XRDesignRibbonControllerResources.resources
+C:\Users\Public\Documents\DXperience 12.1 Demos\XtraReports\CS\RibbonReportDesigner\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\Public\Documents\DXperience 12.1 Demos\XtraReports\CS\RibbonReportDesigner\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\Public\Documents\DXperience 12.1 Demos\XtraReports\CS\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.exe
+C:\Users\Public\Documents\DXperience 12.1 Demos\XtraReports\CS\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.pdb
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\RibbonReportDesigner.exe
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\RibbonReportDesigner.pdb
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.MainForm.resources
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.PrintRibbonControllerResources.resources
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.Properties.Resources.resources
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.XRDesignRibbonControllerResources.resources
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.exe
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.pdb
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.BonusSkins.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.Charts.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.Data.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.PivotGrid.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.Printing.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.Reports.v12.1.Designer.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.Utils.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.XtraBars.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.XtraCharts.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.XtraEditors.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.XtraPivotGrid.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.XtraPrinting.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.XtraReports.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.XtraReports.v12.1.Extensions.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\System.Data.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\System.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\System.Drawing.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\System.Windows.Forms.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\System.Xml.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.Data.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.Printing.v12.1.Core.xml
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.Reports.v12.1.Designer.xml
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.Utils.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.XtraBars.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.XtraEditors.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.XtraPrinting.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.XtraCharts.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.PivotGrid.v12.1.Core.xml
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.XtraPivotGrid.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.XtraReports.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\DevExpress.XtraReports.v12.1.Extensions.xml
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\de\DevExpress.Data.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\es\DevExpress.Data.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ja\DevExpress.Data.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ru\DevExpress.Data.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\de\DevExpress.Printing.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\es\DevExpress.Printing.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ja\DevExpress.Printing.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ru\DevExpress.Printing.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\de\DevExpress.Utils.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\es\DevExpress.Utils.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ja\DevExpress.Utils.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ru\DevExpress.Utils.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\de\DevExpress.XtraBars.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\es\DevExpress.XtraBars.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ja\DevExpress.XtraBars.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ru\DevExpress.XtraBars.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\de\DevExpress.XtraEditors.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\es\DevExpress.XtraEditors.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ja\DevExpress.XtraEditors.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ru\DevExpress.XtraEditors.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\de\DevExpress.XtraPrinting.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\es\DevExpress.XtraPrinting.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ja\DevExpress.XtraPrinting.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ru\DevExpress.XtraPrinting.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\de\DevExpress.XtraCharts.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\es\DevExpress.XtraCharts.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ja\DevExpress.XtraCharts.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ru\DevExpress.XtraCharts.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\de\DevExpress.PivotGrid.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\es\DevExpress.PivotGrid.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ja\DevExpress.PivotGrid.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ru\DevExpress.PivotGrid.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\de\DevExpress.XtraPivotGrid.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\es\DevExpress.XtraPivotGrid.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ja\DevExpress.XtraPivotGrid.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ru\DevExpress.XtraPivotGrid.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\de\DevExpress.XtraReports.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\es\DevExpress.XtraReports.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ja\DevExpress.XtraReports.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ru\DevExpress.XtraReports.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\de\DevExpress.XtraReports.v12.1.Extensions.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\es\DevExpress.XtraReports.v12.1.Extensions.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ja\DevExpress.XtraReports.v12.1.Extensions.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\ru\DevExpress.XtraReports.v12.1.Extensions.resources.dll
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\RibbonReportDesigner.exe.manifest
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\bin\Debug\RibbonReportDesigner.application
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.exe.manifest
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.application
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.csprojResolveAssemblyReference.cache
+E:\SpecialLogisticsSystem\SourceCode\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.csproj.GenerateResource.Cache
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\RibbonReportDesigner.exe.manifest
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\RibbonReportDesigner.application
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\RibbonReportDesigner.exe
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\RibbonReportDesigner.pdb
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.BonusSkins.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.Charts.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.Data.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.PivotGrid.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.Printing.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.Reports.v12.1.Designer.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.Utils.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.XtraBars.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.XtraCharts.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.XtraEditors.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.XtraPivotGrid.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.XtraPrinting.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.XtraReports.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.XtraReports.v12.1.Extensions.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\System.Data.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\System.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\System.Drawing.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\System.Windows.Forms.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\System.Xml.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.Data.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.Printing.v12.1.Core.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.Reports.v12.1.Designer.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.Utils.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.XtraBars.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.XtraEditors.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.XtraPrinting.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.XtraCharts.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.PivotGrid.v12.1.Core.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.XtraPivotGrid.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.XtraReports.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\DevExpress.XtraReports.v12.1.Extensions.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\de\DevExpress.Data.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\es\DevExpress.Data.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ja\DevExpress.Data.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ru\DevExpress.Data.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\de\DevExpress.Printing.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\es\DevExpress.Printing.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ja\DevExpress.Printing.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ru\DevExpress.Printing.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\de\DevExpress.Utils.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\es\DevExpress.Utils.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ja\DevExpress.Utils.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ru\DevExpress.Utils.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\de\DevExpress.XtraBars.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\es\DevExpress.XtraBars.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ja\DevExpress.XtraBars.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ru\DevExpress.XtraBars.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\de\DevExpress.XtraEditors.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\es\DevExpress.XtraEditors.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ja\DevExpress.XtraEditors.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ru\DevExpress.XtraEditors.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\de\DevExpress.XtraPrinting.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\es\DevExpress.XtraPrinting.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ja\DevExpress.XtraPrinting.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ru\DevExpress.XtraPrinting.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\de\DevExpress.XtraCharts.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\es\DevExpress.XtraCharts.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ja\DevExpress.XtraCharts.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ru\DevExpress.XtraCharts.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\de\DevExpress.PivotGrid.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\es\DevExpress.PivotGrid.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ja\DevExpress.PivotGrid.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ru\DevExpress.PivotGrid.v12.1.Core.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\de\DevExpress.XtraPivotGrid.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\es\DevExpress.XtraPivotGrid.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ja\DevExpress.XtraPivotGrid.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ru\DevExpress.XtraPivotGrid.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\de\DevExpress.XtraReports.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\es\DevExpress.XtraReports.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ja\DevExpress.XtraReports.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ru\DevExpress.XtraReports.v12.1.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\de\DevExpress.XtraReports.v12.1.Extensions.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\es\DevExpress.XtraReports.v12.1.Extensions.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ja\DevExpress.XtraReports.v12.1.Extensions.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\bin\Debug\ru\DevExpress.XtraReports.v12.1.Extensions.resources.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.csprojResolveAssemblyReference.cache
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.MainForm.resources
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.PrintRibbonControllerResources.resources
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.Properties.Resources.resources
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.XRDesignRibbonControllerResources.resources
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.csproj.GenerateResource.Cache
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.exe.manifest
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.application
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.exe
+E:\SpecialLogisticsSystem\SourceCode - Access\RibbonReportDesigner\obj\Debug\RibbonReportDesigner.pdb

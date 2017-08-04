@@ -1,0 +1,1157 @@
+<HR COLOR=red>
+异常时间：2014-04-19 20:19:33,086 [63] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.SqlClient.SqlException: Incorrect syntax near the keyword 'top'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-19 20:23:34,279 [75] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.Data.WebDataProxy.set_FocusedRowVisibleIndex(Int32 value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-19 20:24:59,778 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.OnFocusedRowChanged()
+   在 DevExpress.Web.Data.WebDataProxy.set_FocusedRowVisibleIndex(Int32 value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-19 20:36:53,923 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Business/Way.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity,TList](Action`2 customMapper)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetList[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 58
+   在 SpecialLogisticsSystem.Dal.CmConfigDal.GetList(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmConfigDal.cs:行号 19
+   在 SpecialLogisticsSystem.AppPortal.UserControls.DateRange.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\DateRange.ascx.cs:行号 32
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:36:54,428 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity,TList](Action`2 customMapper)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity](Action`2 customMapper)
+   at SpecialLogisticsSystem.Dal.Dao.GetList[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 58
+   at SpecialLogisticsSystem.Dal.CmConfigDal.GetList(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmConfigDal.cs:line 19
+   at SpecialLogisticsSystem.AppPortal.UserControls.DateRange.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\DateRange.ascx.cs:line 32
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.business_way_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_way.aspx.36edc644.cefwiyzl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:38:15,602 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:38:15,984 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:38:43,019 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:38:43,062 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:41:51,407 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:41:52,007 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:44:16,440 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:44:16,678 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:46:28,570 [4] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:46:28,629 [4] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:48:08,885 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:48:09,254 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:49:19,218 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Account/Login.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity,TList](Action`2 customMapper)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetList[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 58
+   在 SpecialLogisticsSystem.Dal.CmUserDal.GetList(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmUserDal.cs:行号 19
+   在 SpecialLogisticsSystem.AppPortal.Account.Login.login_Authenticate(Object sender, AuthenticateEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Account\Login.aspx.cs:行号 31
+   在 System.Web.UI.WebControls.Login.OnAuthenticate(AuthenticateEventArgs e)
+   在 System.Web.UI.WebControls.Login.AttemptLogin()
+   在 System.Web.UI.WebControls.Login.OnBubbleEvent(Object source, EventArgs e)
+   在 System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   在 System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   在 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:49:19,421 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity,TList](Action`2 customMapper)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity](Action`2 customMapper)
+   at SpecialLogisticsSystem.Dal.Dao.GetList[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 58
+   at SpecialLogisticsSystem.Dal.CmUserDal.GetList(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmUserDal.cs:line 19
+   at SpecialLogisticsSystem.AppPortal.Account.Login.login_Authenticate(Object sender, AuthenticateEventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Account\Login.aspx.cs:line 31
+   at System.Web.UI.WebControls.Login.OnAuthenticate(AuthenticateEventArgs e)
+   at System.Web.UI.WebControls.Login.AttemptLogin()
+   at System.Web.UI.WebControls.Login.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_login_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_login.aspx.dae9cef9.6jo-u-hi.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:50:45,339 [7] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Account/Login.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): Not a valid file name.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity,TList](Action`2 customMapper)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetList[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 58
+   在 SpecialLogisticsSystem.Dal.CmUserDal.GetList(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmUserDal.cs:行号 19
+   在 SpecialLogisticsSystem.AppPortal.Account.Login.login_Authenticate(Object sender, AuthenticateEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Account\Login.aspx.cs:行号 31
+   在 System.Web.UI.WebControls.Login.OnAuthenticate(AuthenticateEventArgs e)
+   在 System.Web.UI.WebControls.Login.AttemptLogin()
+   在 System.Web.UI.WebControls.Login.OnBubbleEvent(Object source, EventArgs e)
+   在 System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   在 System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   在 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:50:45,562 [7] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): Not a valid file name.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity,TList](Action`2 customMapper)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity](Action`2 customMapper)
+   at SpecialLogisticsSystem.Dal.Dao.GetList[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 58
+   at SpecialLogisticsSystem.Dal.CmUserDal.GetList(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmUserDal.cs:line 19
+   at SpecialLogisticsSystem.AppPortal.Account.Login.login_Authenticate(Object sender, AuthenticateEventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Account\Login.aspx.cs:line 31
+   at System.Web.UI.WebControls.Login.OnAuthenticate(AuthenticateEventArgs e)
+   at System.Web.UI.WebControls.Login.AttemptLogin()
+   at System.Web.UI.WebControls.Login.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_login_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_login.aspx.dae9cef9.6jo-u-hi.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:51:37,897 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): Not a valid file name.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:51:37,950 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): Not a valid file name.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:53:22,118 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): Not a valid file name.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:53:22,140 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): Not a valid file name.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:53:22,750 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): Not a valid file name.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:53:22,756 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): Not a valid file name.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:53:25,207 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): Not a valid file name.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:53:25,212 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): Not a valid file name.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:53:29,676 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): Not a valid file name.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:53:29,681 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): Not a valid file name.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:53:41,725 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:53:41,739 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:55:35,248 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:55:35,257 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:55:36,610 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:55:36,617 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:57:15,060 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:57:15,073 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:58:23,221 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:58:23,242 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:58:26,249 [17] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:58:26,253 [17] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:58:27,280 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:58:27,331 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 20:58:43,439 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 20:58:43,454 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 21:00:12,307 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/default.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 22
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 35
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-19 21:00:12,488 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): ODBC--connection to 'SQL ServerWALLACE-PC\WALLACE' failed.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 64
+   at SpecialLogisticsSystem.Dal.CmMenuDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 35
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.kn4hibgl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-19 21:07:26,970 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: The Microsoft Jet database engine cannot find the input table or query 'vWayBill'.  Make sure it exists and that its name is spelled correctly.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-19 21:15:39,175 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: The Microsoft Jet database engine cannot find the input table or query 'vWayBill'.  Make sure it exists and that its name is spelled correctly.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-19 21:55:46,002 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)

@@ -1,0 +1,12 @@
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Forms\obj\x64\Debug\CassiniDev.Resources.CassiniDev.resources
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Forms\obj\x64\Debug\CassiniDev.Lib4.csproj.GenerateResource.Cache
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Forms\obj\x64\Debug\CassiniDev.Lib4.csprojResolveAssemblyReference.cache
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Forms\bin\x64\Debug\Common.Logging.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Forms\obj\x64\Debug\CassiniDev4-lib.pdb
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Forms\bin\x64\Debug\CassiniDev4-lib.pdb
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Forms\obj\x64\Debug\CassiniDev.ServerLog.BodyView.resources
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Forms\obj\x64\Debug\CassiniDev.FormView.resources
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Forms\obj\x64\Debug\CassiniDev.ServerLog.LogView.resources
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Forms\bin\x64\Debug\CassiniDev4-lib.exe.config
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Forms\bin\x64\Debug\CassiniDev4-lib.exe
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Forms\obj\x64\Debug\CassiniDev4-lib.exe

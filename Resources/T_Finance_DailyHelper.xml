@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TFinanceDaily" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TFinanceDaily" type="MyNamespace.Data.TFinanceDaily, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TFinanceDaily">
+			<result property="Id" column="id" />
+			<result property="Costtype" column="cost_type" />
+			<result property="Dailyamount" column="daily_amount" />
+			<result property="Dailynumber" column="daily_number" />
+			<result property="Dailydatetime" column="daily_datetime" />
+			<result property="Empid" column="emp_id" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,cost_type,daily_amount,daily_number,daily_datetime,emp_id from T_Finance_Daily
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TFinanceDaily" resultClass="int">
+		 		insert into T_Finance_Daily( id,cost_type,daily_amount,daily_number,daily_datetime,emp_id ) values ( #Id#,#Costtype#,#Dailyamount#,#Dailynumber#,#Dailydatetime#,#Empid# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TFinanceDaily" resultClass="int">
+			update T_Finance_Daily set cost_type=#Costtype#,daily_amount=#Dailyamount#,daily_number=#Dailynumber#,daily_datetime=#Dailydatetime#,emp_id=#Empid# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Finance_Daily where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

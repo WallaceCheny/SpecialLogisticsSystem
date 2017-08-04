@@ -1,0 +1,80 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Driver.Count">
+    Select count(1) FROM vFinanceDriver where
+    $and{id = #id#}  $and{deduct_money = #deduct_money#}  $and{settle_mode = #settle_mode#}
+    $and{pay_date = #pay_date#}  $and{driver_memo = #driver_memo#}
+    $eq{order by $OrderBy$}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Driver.SelectPaging">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vFinanceDriver where
+    $and{id = #id#}  $and{deduct_money = #deduct_money#}
+    $and{settle_mode = #settle_mode#}  $and{pay_date = #pay_date#}  $and{driver_memo = #driver_memo#}) as temptable
+    where rowNum BETWEEN $eg{#startRow#} and $eq{#maxRows#}
+    $eq{order by $OrderBy$}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Driver.Load">
+    SELECT *
+    FROM   T_Finance_Driver  where
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{stowage_id = #stowage_id#}  $and{deduct_money = #deduct_money#}  $and{settle_money = #settle_money#}  $and{real_money = #real_money#}  $and{settle_mode = #settle_mode#}  $and{settle_type = #settle_type#}  $and{driver_memo = #driver_memo#}  $and{branch_id = #branch_id#}  $and{input_date = #input_date#}  $and{operator_man = #operator_man#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Driver.Select">
+    SELECT *
+    FROM   T_Finance_Driver  where
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{stowage_id = #stowage_id#}  $and{deduct_money = #deduct_money#}  $and{settle_money = #settle_money#}  $and{real_money = #real_money#}  $and{settle_mode = #settle_mode#}  $and{settle_type = #settle_type#}  $and{driver_memo = #driver_memo#}  $and{branch_id = #branch_id#}  $and{input_date = #input_date#}  $and{operator_man = #operator_man#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Finance_Driver.Insert">
+    insert into T_Finance_Driver(
+    id
+    ,settle_number
+    ,stowage_id
+    ,deduct_money
+    ,settle_money
+    ,real_money
+    ,settle_mode
+    ,settle_type
+    ,driver_memo
+    ,branch_id
+    ,input_date
+    ,operator_man
+    )values (
+    #id#
+    ,#settle_number#
+    ,#stowage_id#
+    ,#deduct_money#
+    ,#settle_money#
+    ,#real_money#
+    ,#settle_mode#
+    ,#settle_type#
+    ,#driver_memo#
+    ,#branch_id#
+    ,#input_date#
+    ,#operator_man#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Finance_Driver.Update">
+    update T_Finance_Driver set
+    id=#id#
+    ,settle_number=#settle_number#
+    ,stowage_id=#stowage_id#
+    ,deduct_money=#deduct_money#
+    ,settle_money=#settle_money#
+    ,real_money=#real_money#
+    ,settle_mode=#settle_mode#
+    ,settle_type=#settle_type#
+    ,driver_memo=#driver_memo#
+    ,branch_id=#branch_id#
+    ,input_date=#input_date#
+    ,operator_man=#operator_man#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Finance_Driver.Delete">
+    delete
+    FROM T_Finance_Driver
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

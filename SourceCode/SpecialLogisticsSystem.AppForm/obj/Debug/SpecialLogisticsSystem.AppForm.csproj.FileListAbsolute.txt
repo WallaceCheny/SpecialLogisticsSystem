@@ -1,0 +1,14 @@
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppForm\bin\Debug\SpecialLogisticsSystem.AppForm.exe
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppForm\bin\Debug\SpecialLogisticsSystem.AppForm.pdb
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppForm\obj\Debug\ResolveAssemblyReference.cache
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppForm\obj\Debug\SpecialLogisticsSystem.AppForm.Form1.resources
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppForm\obj\Debug\SpecialLogisticsSystem.AppForm.Properties.Resources.resources
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppForm\obj\Debug\GenerateResource-ResGen.read.1.tlog
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppForm\obj\Debug\GenerateResource-ResGen.read.7.tlog
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppForm\obj\Debug\GenerateResource-ResGen.write.1.tlog
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppForm\obj\Debug\SpecialLogisticsSystem.AppForm.exe.licenses
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppForm\obj\Debug\SpecialLogisticsSystem.AppForm.exe
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppForm\obj\Debug\SpecialLogisticsSystem.AppForm.pdb
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppForm\obj\Debug\SpecialLogisticsSystem.AppForm.MainForm.resources
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppForm\obj\Debug\SpecialLogisticsSystem.AppForm.PrintLayoutDetail.resources
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppForm\obj\Debug\GenerateResource-ResGen.read.4.tlog

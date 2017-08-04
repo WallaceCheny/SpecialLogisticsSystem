@@ -1,0 +1,258 @@
+02.03.14 18:36:50.829	================================================================================
+02.03.14 18:36:51.021	Trace Log for Bluegrid.Wuliu.Win.exe is started
+02.03.14 18:36:51.021	================================================================================
+02.03.14 18:36:51.041	System Environment
+	OS Version: Microsoft Windows NT 6.1.7600.0
+	.Net Framework Versions: v2.0.50727, v4.0.30319
+
+	CLR Version: 2.0.50727.4984
+	eXpressApp Version: 12.1.6.0
+Application config
+	Modules=
+	NewVersionServer=
+	EnableDiagnosticActions=False
+02.03.14 18:36:51.042	Initialize application
+02.03.14 18:36:51.042	=======================
+02.03.14 18:36:51.045		Command line arguments: 
+		E:\SpecialLogisticsSystem\Requirements\蓝格物流软件v20131019\Bluegrid.Wuliu.Win.exe
+02.03.14 18:37:01.563	--------------------------------------------------------------------------------
+02.03.14 18:37:01.563	Initialize Modules Manager
+02.03.14 18:37:01.566	--------------------------------------------------------------------------------
+02.03.14 18:37:01.566	
+02.03.14 18:37:01.766	--------------------------------------------------------------------------------
+Loaded assemblies
+	Bluegrid.Locker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null, Location=E:\SpecialLogisticsSystem\Requirements\蓝格物流软件v20131019\Bluegrid.Locker.dll
+	Bluegrid.Wuliu.Module, Version=1.0.5033.17663, Culture=neutral, PublicKeyToken=null, Location=E:\SpecialLogisticsSystem\Requirements\蓝格物流软件v20131019\Bluegrid.Wuliu.Module.dll
+	Bluegrid.Wuliu.Module.Win, Version=1.0.5040.17450, Culture=neutral, PublicKeyToken=null, Location=E:\SpecialLogisticsSystem\Requirements\蓝格物流软件v20131019\Bluegrid.Wuliu.Module.Win.dll
+	Bluegrid.Wuliu.Win, Version=1.0.5040.17450, Culture=neutral, PublicKeyToken=null, Location=E:\SpecialLogisticsSystem\Requirements\蓝格物流软件v20131019\Bluegrid.Wuliu.Win.exe
+	DevExpress.Data.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.Data.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.Data.v12.1.dll
+	DevExpress.ExpressApp.ConditionalAppearance.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.ExpressApp.ConditionalAppearance.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.ConditionalAppearance.v12.1.dll
+	DevExpress.ExpressApp.Reports.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.ExpressApp.Reports.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Reports.v12.1.dll
+	DevExpress.ExpressApp.Reports.Win.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.ExpressApp.Reports.Win.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Reports.Win.v12.1.dll
+	DevExpress.ExpressApp.Security.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.ExpressApp.Security.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Security.v12.1.dll
+	DevExpress.ExpressApp.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.ExpressApp.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.v12.1.dll
+	DevExpress.ExpressApp.Validation.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.ExpressApp.Validation.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Validation.v12.1.dll
+	DevExpress.ExpressApp.Validation.Win.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.ExpressApp.Validation.Win.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Validation.Win.v12.1.dll
+	DevExpress.ExpressApp.ViewVariantsModule.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.ExpressApp.ViewVariantsModule.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.ViewVariantsModule.v12.1.dll
+	DevExpress.ExpressApp.Win.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.ExpressApp.Win.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Win.v12.1.dll
+	DevExpress.ExpressApp.Xpo.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.ExpressApp.Xpo.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.ExpressApp.Xpo.v12.1.dll
+	DevExpress.Localization.v12.1, Version=12.1.6.35, Culture=neutral, PublicKeyToken=63213b87812c7912, Location=E:\SpecialLogisticsSystem\Requirements\蓝格物流软件v20131019\DevExpress.Localization.v12.1.dll
+	DevExpress.Persistent.Base.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.Persistent.Base.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.Persistent.Base.v12.1.dll
+	DevExpress.Utils.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.Utils.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.Utils.v12.1.dll
+	DevExpress.Xpo.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.Xpo.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.Xpo.v12.1.dll
+	DevExpress.XtraBars.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.XtraBars.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.XtraBars.v12.1.dll
+	DevExpress.XtraEditors.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.XtraEditors.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.XtraEditors.v12.1.dll
+	DevExpress.XtraGrid.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.XtraGrid.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.XtraGrid.v12.1.dll
+	DevExpress.XtraLayout.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.XtraLayout.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.XtraLayout.v12.1.dll
+	DevExpress.XtraNavBar.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.XtraNavBar.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.XtraNavBar.v12.1.dll
+	DevExpress.XtraReports.v12.1, Version=12.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, Location=C:\Windows\assembly\GAC_MSIL\DevExpress.XtraReports.v12.1\12.1.6.0__b88d1754d700e49a\DevExpress.XtraReports.v12.1.dll
+	mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\Microsoft.NET\Framework\v2.0.50727\mscorlib.dll
+	System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\assembly\GAC_MSIL\System\2.0.0.0__b77a5c561934e089\System.dll
+	System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Windows\assembly\GAC_MSIL\System.Configuration\2.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll
+	System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\assembly\GAC_MSIL\System.Core\3.5.0.0__b77a5c561934e089\System.Core.dll
+	System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\assembly\GAC_32\System.Data\2.0.0.0__b77a5c561934e089\System.Data.dll
+	System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, Location=C:\Windows\assembly\GAC_MSIL\System.Drawing\2.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll
+	System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\assembly\GAC_MSIL\System.Windows.Forms\2.0.0.0__b77a5c561934e089\System.Windows.Forms.dll
+	System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, Location=C:\Windows\assembly\GAC_MSIL\System.Xml\2.0.0.0__b77a5c561934e089\System.Xml.dll
+02.03.14 18:37:04.575	Resolve the '{5a9c4a15-8bf7-4822-87fb-c32aba6fa9cd}, PublicKeyToken=3e56350693f7355e' assembly
+02.03.14 18:37:08.067	SetupModules
+02.03.14 18:37:09.380	Customize TypesInfo
+02.03.14 18:37:09.463	The ValueManagerType is initialized by the default value: SimpleValueManager.
+02.03.14 18:37:09.537	Stack trace:
+   at DevExpress.Persistent.Base.ValueManager.CreateValueManager[ValueType](String key)
+   at DevExpress.Persistent.Base.ValueManager.GetValueManager[ValueType](String key)
+   at DevExpress.ExpressApp.SecuritySystem.SetInstance(ISecurityStrategyBase instance)
+   at DevExpress.ExpressApp.XafApplication.Setup(ExpressApplicationSetupParameters parameters)
+   at DevExpress.ExpressApp.XafApplication.Setup(String applicationName, IObjectSpaceProvider objectSpaceProvider, ApplicationModulesManager modulesManager, ISecurityStrategyBase security)
+   at DevExpress.ExpressApp.XafApplication.Setup(String applicationName, IObjectSpaceProvider objectSpaceProvider, String[] moduleAssemblies, ISecurityStrategyBase security)
+   at DevExpress.ExpressApp.XafApplication.Setup(String applicationName, String connectionString, String[] moduleAssemblies, ISecurityStrategyBase security)
+   at DevExpress.ExpressApp.XafApplication.Setup()
+   at Bluegrid.Wuliu.Win.Program.Main()
+
+02.03.14 18:37:11.074	Logon With Parameters
+02.03.14 18:37:11.077	--------------------------------------------------------------------------------
+02.03.14 18:37:11.077	->GetPopupWindowParams
+02.03.14 18:37:11.078		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+02.03.14 18:37:11.078		ID: 4a367a0f-fd58-427b-b535-b8a03fab89a5
+02.03.14 18:37:11.079		Category: Unspecified
+02.03.14 18:37:11.493	--------------------------------------------------------------------------------
+02.03.14 18:37:11.493	<- GetPopupWindowParams
+02.03.14 18:37:12.300	Generate default Model for Action containers
+02.03.14 18:37:18.038	--------------------------------------------------------------------------------
+02.03.14 18:37:18.039	Execute action
+02.03.14 18:37:18.039		Type: DevExpress.ExpressApp.Actions.SimpleAction
+02.03.14 18:37:18.039		ID: Logon
+02.03.14 18:37:18.039		Category: PopupActions
+02.03.14 18:37:18.039		ContextName: 登录蓝格物流软件
+02.03.14 18:37:18.059		IsRoot: True
+02.03.14 18:37:18.059		Selection.Count: 1
+02.03.14 18:37:18.059		CurrentObject: DevExpress.ExpressApp.Security.AuthenticationStandardLogonParameters
+02.03.14 18:37:18.061	--------------------------------------------------------------------------------
+02.03.14 18:37:18.061	Execute action
+02.03.14 18:37:18.061		Type: DevExpress.ExpressApp.Actions.PopupWindowShowAction
+02.03.14 18:37:18.061		ID: 4a367a0f-fd58-427b-b535-b8a03fab89a5
+02.03.14 18:37:18.061		Category: Unspecified
+02.03.14 18:37:18.073	--------------------------------------------------------------------------------
+02.03.14 18:37:18.073	Start logon process
+02.03.14 18:37:18.074	--------------------------------------------------------------------------------
+02.03.14 18:37:18.074	Checking Compatibility
+02.03.14 18:37:18.075		ConnectionString: Provider=Microsoft.Jet.OLEDB.4.0;User ID=Admin;Data Source=Bluegrid.Wuliu.mdb;Mode=Share Deny None;
+02.03.14 18:37:20.019	Check App Name Compatibility
+02.03.14 18:37:20.022	Check stored module versions against the versions of the loaded modules
+02.03.14 18:37:20.022	module 'SystemModule' (DevExpress.ExpressApp.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:20.022	module 'SystemWindowsFormsModule' (DevExpress.ExpressApp.Win.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:20.022	module 'WuliuModule' (Bluegrid.Wuliu.Module). Local version: 1.0.5033.17663, Version on DB: 1.0.5033.17663
+02.03.14 18:37:20.022	module 'WuliuWindowsFormsModule' (Bluegrid.Wuliu.Module.Win). Local version: 1.0.5040.17450, Version on DB: 1.0.5040.17450
+02.03.14 18:37:20.022	module 'ConditionalAppearanceModule' (DevExpress.ExpressApp.ConditionalAppearance.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:20.022	module 'ReportsModule' (DevExpress.ExpressApp.Reports.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:20.022	module 'ReportsWindowsFormsModule' (DevExpress.ExpressApp.Reports.Win.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:20.023	module 'ValidationModule' (DevExpress.ExpressApp.Validation.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:20.023	module 'ValidationWindowsFormsModule' (DevExpress.ExpressApp.Validation.Win.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:20.023	module 'SecurityModule' (DevExpress.ExpressApp.Security.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:20.023	module 'ViewVariantsModule' (DevExpress.ExpressApp.ViewVariantsModule.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:20.326	--------------------------------------------------------------------------------
+02.03.14 18:37:20.326	Logon successful
+02.03.14 18:37:20.366	--------------------------------------------------------------------------------
+02.03.14 18:37:20.366	Logon completed
+02.03.14 18:37:20.568	Action '4a367a0f-fd58-427b-b535-b8a03fab89a5' done
+02.03.14 18:37:20.591	Window closing: 登录蓝格物流软件
+02.03.14 18:37:20.604	Action 'Logon' done
+02.03.14 18:37:20.605	Window closed: 登录蓝格物流软件
+02.03.14 18:37:20.816		startUpActions: 1
+02.03.14 18:37:20.871	--------------------------------------------------------------------------------
+02.03.14 18:37:20.871	Initialize 'ShowNavigationItem' action items
+02.03.14 18:37:21.159	--------------------------------------------------------------------------------
+02.03.14 18:37:21.159	Execute action
+02.03.14 18:37:21.159		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+02.03.14 18:37:21.159		ID: ChooseSkin
+02.03.14 18:37:21.159		Category: Appearance
+02.03.14 18:37:21.160		SelectedItem: Office 2010 Blue
+02.03.14 18:37:21.161	Action 'ChooseSkin' done
+02.03.14 18:37:22.968	--------------------------------------------------------------------------------
+02.03.14 18:37:22.968	Execute action
+02.03.14 18:37:22.968		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+02.03.14 18:37:22.968		ID: ShowNavigationItem
+02.03.14 18:37:22.969		Category: ViewsNavigation
+02.03.14 18:37:22.969		SelectedItem: 欢迎界面
+02.03.14 18:37:23.798	Action 'ShowNavigationItem' done
+02.03.14 18:37:24.148	Application startup done
+02.03.14 18:37:24.148	=========================
+02.03.14 18:37:24.148	Application running
+02.03.14 18:37:24.148	====================
+02.03.14 18:37:37.137	--------------------------------------------------------------------------------
+02.03.14 18:37:37.137	Execute action
+02.03.14 18:37:37.137		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+02.03.14 18:37:37.137		ID: ShowNavigationItem
+02.03.14 18:37:37.137		Category: ViewsNavigation
+02.03.14 18:37:37.137		ContextName: 欢迎界面
+02.03.14 18:37:37.137		IsRoot: True
+02.03.14 18:37:37.137		Selection.Count: 1
+02.03.14 18:37:37.137		CurrentObject: Bluegrid.Wuliu.Module.BusinessObjects.Info.SysNavigation(800a8f5b-2a31-44be-ac0f-222d9e0c973b)
+02.03.14 18:37:37.137		SelectedItem: 托运单
+02.03.14 18:37:37.766	--------------------------------------------------------------------------------
+02.03.14 18:37:37.766	Execute action
+02.03.14 18:37:37.766		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+02.03.14 18:37:37.766		ID: FilterDate_SingleChoiceAction
+02.03.14 18:37:37.766		Category: FullTextSearch
+02.03.14 18:37:37.766		ContextName: 托运单
+02.03.14 18:37:37.766		IsRoot: True
+02.03.14 18:37:37.766		Selection.Count: 0
+02.03.14 18:37:37.766		CurrentObject: <not specified>
+02.03.14 18:37:37.766		SelectedItem: 托运日期：不限
+02.03.14 18:37:37.771	Action 'FilterDate_SingleChoiceAction' done
+02.03.14 18:37:39.531	Action 'ShowNavigationItem' done
+02.03.14 18:37:45.698	--------------------------------------------------------------------------------
+02.03.14 18:37:45.698	Execute action
+02.03.14 18:37:45.698		Type: DevExpress.ExpressApp.Actions.SingleChoiceAction
+02.03.14 18:37:45.698		ID: New
+02.03.14 18:37:45.698		Category: ObjectsCreation
+02.03.14 18:37:45.698		ContextName: 托运单
+02.03.14 18:37:45.698		IsRoot: True
+02.03.14 18:37:45.698		Selection.Count: 1
+02.03.14 18:37:45.698		CurrentObject: TY201401010001
+02.03.14 18:37:45.699		SelectedItem: 托运单
+02.03.14 18:37:46.009	Check App Name Compatibility
+02.03.14 18:37:46.009	Check stored module versions against the versions of the loaded modules
+02.03.14 18:37:46.009	module 'SystemModule' (DevExpress.ExpressApp.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:46.009	module 'SystemWindowsFormsModule' (DevExpress.ExpressApp.Win.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:46.009	module 'WuliuModule' (Bluegrid.Wuliu.Module). Local version: 1.0.5033.17663, Version on DB: 1.0.5033.17663
+02.03.14 18:37:46.009	module 'WuliuWindowsFormsModule' (Bluegrid.Wuliu.Module.Win). Local version: 1.0.5040.17450, Version on DB: 1.0.5040.17450
+02.03.14 18:37:46.009	module 'ConditionalAppearanceModule' (DevExpress.ExpressApp.ConditionalAppearance.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:46.009	module 'ReportsModule' (DevExpress.ExpressApp.Reports.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:46.009	module 'ReportsWindowsFormsModule' (DevExpress.ExpressApp.Reports.Win.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:46.009	module 'ValidationModule' (DevExpress.ExpressApp.Validation.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:46.009	module 'ValidationWindowsFormsModule' (DevExpress.ExpressApp.Validation.Win.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:46.009	module 'SecurityModule' (DevExpress.ExpressApp.Security.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:46.009	module 'ViewVariantsModule' (DevExpress.ExpressApp.ViewVariantsModule.v12.1). Local version: 12.1.6.0, Version on DB: 12.1.6.0
+02.03.14 18:37:47.208	Action 'New' done
+02.03.14 18:37:52.900	--------------------------------------------------------------------------------
+02.03.14 18:37:52.900	Execute action
+02.03.14 18:37:52.901		Type: DevExpress.ExpressApp.Actions.SimpleAction
+02.03.14 18:37:52.901		ID: ListViewShowObject
+02.03.14 18:37:52.901		Category: ListView
+02.03.14 18:37:52.901		ContextName: 客户
+02.03.14 18:37:52.901		IsRoot: False
+02.03.14 18:37:52.901		Selection.Count: 1
+02.03.14 18:37:52.901		CurrentObject: 雷小文
+02.03.14 18:37:52.993	'Consignor' property editor: new value is '雷小文'
+02.03.14 18:37:53.101	Action 'ListViewShowObject' done
+02.03.14 18:37:54.469	'Consignor' property editor: new value is '雷小文'
+02.03.14 18:37:55.701	--------------------------------------------------------------------------------
+02.03.14 18:37:55.702	Execute action
+02.03.14 18:37:55.702		Type: DevExpress.ExpressApp.Actions.SimpleAction
+02.03.14 18:37:55.702		ID: ListViewShowObject
+02.03.14 18:37:55.702		Category: ListView
+02.03.14 18:37:55.702		ContextName: 收货人
+02.03.14 18:37:55.702		IsRoot: False
+02.03.14 18:37:55.702		Selection.Count: 1
+02.03.14 18:37:55.702		CurrentObject: 贺宏文
+02.03.14 18:37:55.728	'Consignee' property editor: new value is '贺宏文'
+02.03.14 18:37:55.790	Action 'ListViewShowObject' done
+02.03.14 18:37:56.773	'Consignee' property editor: new value is '贺宏文'
+02.03.14 18:37:59.871	--------------------------------------------------------------------------------
+02.03.14 18:37:59.871	Execute action
+02.03.14 18:37:59.871		Type: DevExpress.ExpressApp.Actions.SimpleAction
+02.03.14 18:37:59.871		ID: Close
+02.03.14 18:37:59.871		Category: Close
+02.03.14 18:37:59.871		ContextName: 托运单
+02.03.14 18:37:59.871		IsRoot: True
+02.03.14 18:37:59.871		Selection.Count: 1
+02.03.14 18:37:59.871		CurrentObject: TY201403020001
+02.03.14 18:37:59.874	Window closing: TY201403020001 - 托运单
+02.03.14 18:37:59.880	ConfirmationRequest: NeedSaveChanges
+02.03.14 18:37:59.880		DefaultConfirmationResult: No
+02.03.14 18:38:00.927		UserConfirmationResult: No
+02.03.14 18:38:00.938	Window closed: TY201403020001 - 托运单
+02.03.14 18:38:01.040	Action 'Close' done
+02.03.14 18:38:19.659	--------------------------------------------------------------------------------
+02.03.14 18:38:19.660	Execute action
+02.03.14 18:38:19.660		Type: DevExpress.ExpressApp.Actions.SimpleAction
+02.03.14 18:38:19.660		ID: ReceivingBill_ShowLogistics_SimpleAction
+02.03.14 18:38:19.660		Category: Reports
+02.03.14 18:38:19.660		ContextName: 托运单
+02.03.14 18:38:19.660		IsRoot: True
+02.03.14 18:38:19.660		Selection.Count: 1
+02.03.14 18:38:19.660		CurrentObject: TY201401010001
+02.03.14 18:38:27.453	--------------------------------------------------------------------------------
+02.03.14 18:38:27.454	Execute action
+02.03.14 18:38:27.454		Type: DevExpress.ExpressApp.Actions.SimpleAction
+02.03.14 18:38:27.454		ID: PreviewReport
+02.03.14 18:38:27.454		Category: PopupActions
+02.03.14 18:38:27.454		ContextName: 托运单物流跟踪报表
+02.03.14 18:38:27.454		IsRoot: False
+02.03.14 18:38:27.454		Selection.Count: 1
+02.03.14 18:38:27.454		CurrentObject: Bluegrid.Wuliu.Module.BusinessObjects.Report.ReceivingBill_Logistics_ReportParametersObject()
+02.03.14 18:38:31.009	Window closing: 托运单物流跟踪报表
+02.03.14 18:38:31.010	Window closed: 托运单物流跟踪报表
+02.03.14 18:38:31.035	Action 'PreviewReport' done
+02.03.14 18:38:31.035	Action 'ReceivingBill_ShowLogistics_SimpleAction' done
+02.03.14 18:43:55.243	Window closing: 托运单 - 蓝格物流管理软件[试用版本]
+02.03.14 18:43:55.268	Window closed: 托运单 - 蓝格物流管理软件[试用版本]
+02.03.14 18:43:55.307	Save model changes
+02.03.14 18:43:55.307	===================
+02.03.14 18:43:55.580	Save model changes
+02.03.14 18:43:55.580	===================
+02.03.14 18:43:55.613	--------------------------------------------------------------------------------
+02.03.14 18:43:55.613	Logoff completed
+02.03.14 18:43:55.615	Application stopping
+02.03.14 18:43:55.615	=====================

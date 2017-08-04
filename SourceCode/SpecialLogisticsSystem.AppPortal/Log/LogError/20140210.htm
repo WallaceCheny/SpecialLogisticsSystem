@@ -1,0 +1,634 @@
+<HR COLOR=red>
+异常时间：2014-02-10 20:09:30,525 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Exception: Error when trying to populate the datasource. The following exception was thrown: 
+未能启用约束。一行或多行中包含违反非空、唯一或外键约束的值。 ---> System.Data.ConstraintException: 未能启用约束。一行或多行中包含违反非空、唯一或外键约束的值。
+   在 System.Data.DataSet.EnableConstraints()
+   在 System.Data.DataSet.set_EnforceConstraints(Boolean value)
+   在 System.Data.DataTable.EndLoadData()
+   在 System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   在 System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, IDataAdapter dataAdapter)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, Object dataAdapter)
+   在 DevExpress.XtraReports.Native.DataSourceFiller.Fill(Object dataSource, String dataMember, Object dataAdapter, IServiceProvider servProvider)
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   在 DevExpress.XtraReports.UI.XtraReport.FillDataSources()
+   在 DevExpress.XtraReports.UI.XtraReport.OnBeforePrint(PrintEventArgs e)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocumentCore(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.ForcePSDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-02-10 20:09:30,620 [9] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): The length of the query string for this request exceeds the configured maxQueryStringLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-10 20:13:43,775 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Exception: Error when trying to populate the datasource. The following exception was thrown: 
+未能启用约束。一行或多行中包含违反非空、唯一或外键约束的值。 ---> System.Data.ConstraintException: 未能启用约束。一行或多行中包含违反非空、唯一或外键约束的值。
+   在 System.Data.DataSet.EnableConstraints()
+   在 System.Data.DataSet.set_EnforceConstraints(Boolean value)
+   在 System.Data.DataTable.EndLoadData()
+   在 System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   在 System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, IDataAdapter dataAdapter)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, Object dataAdapter)
+   在 DevExpress.XtraReports.Native.DataSourceFiller.Fill(Object dataSource, String dataMember, Object dataAdapter, IServiceProvider servProvider)
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   在 DevExpress.XtraReports.UI.XtraReport.FillDataSources()
+   在 DevExpress.XtraReports.UI.XtraReport.OnBeforePrint(PrintEventArgs e)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocumentCore(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.ForcePSDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-02-10 20:13:43,859 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): The length of the query string for this request exceeds the configured maxQueryStringLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-10 20:15:06,954 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Exception: Error when trying to populate the datasource. The following exception was thrown: 
+未能启用约束。一行或多行中包含违反非空、唯一或外键约束的值。 ---> System.Data.ConstraintException: 未能启用约束。一行或多行中包含违反非空、唯一或外键约束的值。
+   在 System.Data.DataSet.EnableConstraints()
+   在 System.Data.DataSet.set_EnforceConstraints(Boolean value)
+   在 System.Data.DataTable.EndLoadData()
+   在 System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   在 System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, IDataAdapter dataAdapter)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, Object dataAdapter)
+   在 DevExpress.XtraReports.Native.DataSourceFiller.Fill(Object dataSource, String dataMember, Object dataAdapter, IServiceProvider servProvider)
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   在 DevExpress.XtraReports.UI.XtraReport.FillDataSources()
+   在 DevExpress.XtraReports.UI.XtraReport.OnBeforePrint(PrintEventArgs e)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocumentCore(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.ForcePSDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-02-10 20:15:07,009 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): The length of the query string for this request exceeds the configured maxQueryStringLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-10 20:15:30,100 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Exception: Error when trying to populate the datasource. The following exception was thrown: 
+未能启用约束。一行或多行中包含违反非空、唯一或外键约束的值。 ---> System.Data.ConstraintException: 未能启用约束。一行或多行中包含违反非空、唯一或外键约束的值。
+   在 System.Data.DataSet.EnableConstraints()
+   在 System.Data.DataSet.set_EnforceConstraints(Boolean value)
+   在 System.Data.DataTable.EndLoadData()
+   在 System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   在 System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, IDataAdapter dataAdapter)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, Object dataAdapter)
+   在 DevExpress.XtraReports.Native.DataSourceFiller.Fill(Object dataSource, String dataMember, Object dataAdapter, IServiceProvider servProvider)
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   在 DevExpress.XtraReports.UI.XtraReport.FillDataSources()
+   在 DevExpress.XtraReports.UI.XtraReport.OnBeforePrint(PrintEventArgs e)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocumentCore(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.ForcePSDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-02-10 20:15:30,163 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): The length of the query string for this request exceeds the configured maxQueryStringLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-10 20:15:56,160 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Exception: Error when trying to populate the datasource. The following exception was thrown: 
+未能启用约束。一行或多行中包含违反非空、唯一或外键约束的值。 ---> System.Data.ConstraintException: 未能启用约束。一行或多行中包含违反非空、唯一或外键约束的值。
+   在 System.Data.DataSet.EnableConstraints()
+   在 System.Data.DataSet.set_EnforceConstraints(Boolean value)
+   在 System.Data.DataTable.EndLoadData()
+   在 System.Data.Common.DataAdapter.FillFromReader(DataSet dataset, DataTable datatable, String srcTable, DataReaderContainer dataReader, Int32 startRecord, Int32 maxRecords, DataColumn parentChapterColumn, Object parentChapterValue)
+   在 System.Data.Common.DataAdapter.Fill(DataSet dataSet, String srcTable, IDataReader dataReader, Int32 startRecord, Int32 maxRecords)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, IDataAdapter dataAdapter)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, Object dataAdapter)
+   在 DevExpress.XtraReports.Native.DataSourceFiller.Fill(Object dataSource, String dataMember, Object dataAdapter, IServiceProvider servProvider)
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   在 DevExpress.XtraReports.UI.XtraReport.FillDataSources()
+   在 DevExpress.XtraReports.UI.XtraReport.OnBeforePrint(PrintEventArgs e)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocumentCore(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.ForcePSDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-02-10 20:15:56,278 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): The length of the query string for this request exceeds the configured maxQueryStringLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-10 21:33:59,936 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:7065/Reports/ReportStowage.aspx?id=7be1e200-d68f-4eef-807f-df9a002426af <BR>
+ <HR Size=1>DevExpress.XtraReports.Serialization.XRSerializationException: 979:  'XtraReportSerialization.stowageDataSet' does not contain a definition for 'tableInitVars' and no extension method 'tableInitVars' accepting a first argument of type 'XtraReportSerialization.stowageDataSet' could be found (are you missing a using directive or an assembly reference?)
+1714:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableidColumn' and no extension method 'tableidColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1717:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableidColumn' and no extension method 'tableidColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1724:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablemain_idColumn' and no extension method 'tablemain_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1727:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablemain_idColumn' and no extension method 'tablemain_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1735:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_idColumn' and no extension method 'tablebill_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1742:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_idColumn' and no extension method 'tablebill_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1750:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_numberColumn' and no extension method 'tableproduction_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1757:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_numberColumn' and no extension method 'tableproduction_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1765:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_idColumn' and no extension method 'tableproduction_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1772:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_idColumn' and no extension method 'tableproduction_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1780:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_nameColumn' and no extension method 'tableproduction_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1787:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_nameColumn' and no extension method 'tableproduction_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1795:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_weightColumn' and no extension method 'tableproduction_weightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1802:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_weightColumn' and no extension method 'tableproduction_weightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1810:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_sizeColumn' and no extension method 'tableproduction_sizeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1817:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_sizeColumn' and no extension method 'tableproduction_sizeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1825:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablefreightColumn' and no extension method 'tablefreightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1832:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablefreightColumn' and no extension method 'tablefreightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1840:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableway_numberColumn' and no extension method 'tableway_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1847:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableway_numberColumn' and no extension method 'tableway_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1855:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestart_cityColumn' and no extension method 'tablestart_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1862:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestart_cityColumn' and no extension method 'tablestart_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1870:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_cityColumn' and no extension method 'tableend_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1877:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_cityColumn' and no extension method 'tableend_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1885:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablepick_paymentColumn' and no extension method 'tablepick_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1892:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablepick_paymentColumn' and no extension method 'tablepick_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1900:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablespot_paymentColumn' and no extension method 'tablespot_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1907:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablespot_paymentColumn' and no extension method 'tablespot_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1915:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableback_paymentColumn' and no extension method 'tableback_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1922:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableback_paymentColumn' and no extension method 'tableback_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1930:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_memoColumn' and no extension method 'tablebill_memoColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1937:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_memoColumn' and no extension method 'tablebill_memoColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1945:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_nameColumn' and no extension method 'tabledeliver_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1952:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_nameColumn' and no extension method 'tabledeliver_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1960:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_nameColumn' and no extension method 'tableconsignee_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1967:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_nameColumn' and no extension method 'tableconsignee_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1975:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_mobilephoneColumn' and no extension method 'tableconsignee_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1983:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_mobilephoneColumn' and no extension method 'tableconsignee_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1991:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeparture_timeColumn' and no extension method 'tabledeparture_timeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1998:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeparture_timeColumn' and no extension method 'tabledeparture_timeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2006:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestowage_numberColumn' and no extension method 'tablestowage_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2013:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestowage_numberColumn' and no extension method 'tablestowage_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2021:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablecar_noColumn' and no extension method 'tablecar_noColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2028:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablecar_noColumn' and no extension method 'tablecar_noColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2036:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliverColumn' and no extension method 'tabledeliverColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2043:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliverColumn' and no extension method 'tabledeliverColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2051:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_mobilephoneColumn' and no extension method 'tabledeliver_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2058:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_mobilephoneColumn' and no extension method 'tabledeliver_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2066:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablelink_areaColumn' and no extension method 'tablelink_areaColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2073:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablelink_areaColumn' and no extension method 'tablelink_areaColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2081:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_addressColumn' and no extension method 'tableend_addressColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2088:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_addressColumn' and no extension method 'tableend_addressColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2096:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linknameColumn' and no extension method 'tableend_branch_linknameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2103:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linknameColumn' and no extension method 'tableend_branch_linknameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2111:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linktelephoneColumn' and no extension method 'tableend_branch_linktelephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2119:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linktelephoneColumn' and no extension method 'tableend_branch_linktelephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2127:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableprepayColumn' and no extension method 'tableprepayColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2134:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableprepayColumn' and no extension method 'tableprepayColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2142:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_mobilephoneColumn' and no extension method 'tableoperation_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2150:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_mobilephoneColumn' and no extension method 'tableoperation_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2158:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_manColumn' and no extension method 'tableoperation_manColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2165:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_manColumn' and no extension method 'tableoperation_manColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2171:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_idColumn' and no extension method 'tablebill_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2176:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_idColumn' and no extension method 'tablebill_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2181:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_numberColumn' and no extension method 'tableproduction_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2186:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_numberColumn' and no extension method 'tableproduction_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2191:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_idColumn' and no extension method 'tableproduction_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2196:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_idColumn' and no extension method 'tableproduction_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2201:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_nameColumn' and no extension method 'tableproduction_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2206:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_nameColumn' and no extension method 'tableproduction_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2211:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_weightColumn' and no extension method 'tableproduction_weightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2216:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_weightColumn' and no extension method 'tableproduction_weightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2221:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_sizeColumn' and no extension method 'tableproduction_sizeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2226:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_sizeColumn' and no extension method 'tableproduction_sizeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2231:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablefreightColumn' and no extension method 'tablefreightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2236:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablefreightColumn' and no extension method 'tablefreightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2241:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableway_numberColumn' and no extension method 'tableway_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2246:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableway_numberColumn' and no extension method 'tableway_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2251:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestart_cityColumn' and no extension method 'tablestart_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2256:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestart_cityColumn' and no extension method 'tablestart_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2261:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_cityColumn' and no extension method 'tableend_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2266:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_cityColumn' and no extension method 'tableend_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2271:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablepick_paymentColumn' and no extension method 'tablepick_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2276:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablepick_paymentColumn' and no extension method 'tablepick_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2281:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablespot_paymentColumn' and no extension method 'tablespot_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2286:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablespot_paymentColumn' and no extension method 'tablespot_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2291:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableback_paymentColumn' and no extension method 'tableback_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2296:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableback_paymentColumn' and no extension method 'tableback_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2301:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_memoColumn' and no extension method 'tablebill_memoColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2306:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_memoColumn' and no extension method 'tablebill_memoColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2311:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_nameColumn' and no extension method 'tabledeliver_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2316:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_nameColumn' and no extension method 'tabledeliver_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2321:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_nameColumn' and no extension method 'tableconsignee_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2326:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_nameColumn' and no extension method 'tableconsignee_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2331:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_mobilephoneColumn' and no extension method 'tableconsignee_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2336:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_mobilephoneColumn' and no extension method 'tableconsignee_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2341:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeparture_timeColumn' and no extension method 'tabledeparture_timeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2346:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeparture_timeColumn' and no extension method 'tabledeparture_timeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2351:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestowage_numberColumn' and no extension method 'tablestowage_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2356:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestowage_numberColumn' and no extension method 'tablestowage_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2361:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablecar_noColumn' and no extension method 'tablecar_noColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2366:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablecar_noColumn' and no extension method 'tablecar_noColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2371:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliverColumn' and no extension method 'tabledeliverColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2376:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliverColumn' and no extension method 'tabledeliverColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2381:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_mobilephoneColumn' and no extension method 'tabledeliver_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2386:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_mobilephoneColumn' and no extension method 'tabledeliver_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2391:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablelink_areaColumn' and no extension method 'tablelink_areaColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2396:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablelink_areaColumn' and no extension method 'tablelink_areaColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2401:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_addressColumn' and no extension method 'tableend_addressColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2406:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_addressColumn' and no extension method 'tableend_addressColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2411:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linknameColumn' and no extension method 'tableend_branch_linknameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2416:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linknameColumn' and no extension method 'tableend_branch_linknameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2421:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linktelephoneColumn' and no extension method 'tableend_branch_linktelephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2426:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linktelephoneColumn' and no extension method 'tableend_branch_linktelephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2431:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableprepayColumn' and no extension method 'tableprepayColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2436:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableprepayColumn' and no extension method 'tableprepayColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2441:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_mobilephoneColumn' and no extension method 'tableoperation_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2446:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_mobilephoneColumn' and no extension method 'tableoperation_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2451:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_manColumn' and no extension method 'tableoperation_manColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2456:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_manColumn' and no extension method 'tableoperation_manColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+
+   在 DevExpress.XtraReports.Native.ReportCompiler.Compile(String streamString, IServiceProvider serviceProvider)
+   在 DevExpress.XtraReports.UI.XtraReport.LoadLayoutInternal(Stream stream, XtraReport& source, Boolean forceDataSource)
+   在 DevExpress.XtraReports.UI.XtraReport.LoadLayout(String fileName)
+   在 SpecialLogisticsSystem.AppPortal.UserControls.ReportViewerControl.set_Report(XtraReport value) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\ReportViewerControl.ascx.cs:行号 39
+   在 ASP.reports_reportstowage_aspx.__DataBindingReportViewerControl1(Object sender, EventArgs e) 位置 e:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Reports\ReportStowage.aspx:行号 12
+   在 System.Web.UI.Control.OnDataBinding(EventArgs e)
+   在 System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   在 System.Web.UI.Control.DataBind()
+   在 SpecialLogisticsSystem.AppPortal.UserControls.ReportViewerControl.OnInit(EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\ReportViewerControl.ascx.cs:行号 68
+   在 System.Web.UI.Control.InitRecursive(Control namingContainer)
+   在 System.Web.UI.Control.InitRecursive(Control namingContainer)
+   在 System.Web.UI.Control.InitRecursive(Control namingContainer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-02-10 21:34:00,047 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> DevExpress.XtraReports.Serialization.XRSerializationException: 979:  'XtraReportSerialization.stowageDataSet' does not contain a definition for 'tableInitVars' and no extension method 'tableInitVars' accepting a first argument of type 'XtraReportSerialization.stowageDataSet' could be found (are you missing a using directive or an assembly reference?)
+1714:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableidColumn' and no extension method 'tableidColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1717:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableidColumn' and no extension method 'tableidColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1724:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablemain_idColumn' and no extension method 'tablemain_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1727:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablemain_idColumn' and no extension method 'tablemain_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1735:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_idColumn' and no extension method 'tablebill_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1742:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_idColumn' and no extension method 'tablebill_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1750:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_numberColumn' and no extension method 'tableproduction_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1757:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_numberColumn' and no extension method 'tableproduction_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1765:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_idColumn' and no extension method 'tableproduction_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1772:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_idColumn' and no extension method 'tableproduction_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1780:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_nameColumn' and no extension method 'tableproduction_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1787:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_nameColumn' and no extension method 'tableproduction_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1795:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_weightColumn' and no extension method 'tableproduction_weightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1802:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_weightColumn' and no extension method 'tableproduction_weightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1810:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_sizeColumn' and no extension method 'tableproduction_sizeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1817:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_sizeColumn' and no extension method 'tableproduction_sizeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1825:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablefreightColumn' and no extension method 'tablefreightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1832:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablefreightColumn' and no extension method 'tablefreightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1840:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableway_numberColumn' and no extension method 'tableway_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1847:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableway_numberColumn' and no extension method 'tableway_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1855:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestart_cityColumn' and no extension method 'tablestart_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1862:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestart_cityColumn' and no extension method 'tablestart_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1870:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_cityColumn' and no extension method 'tableend_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1877:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_cityColumn' and no extension method 'tableend_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1885:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablepick_paymentColumn' and no extension method 'tablepick_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1892:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablepick_paymentColumn' and no extension method 'tablepick_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1900:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablespot_paymentColumn' and no extension method 'tablespot_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1907:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablespot_paymentColumn' and no extension method 'tablespot_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1915:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableback_paymentColumn' and no extension method 'tableback_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1922:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableback_paymentColumn' and no extension method 'tableback_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1930:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_memoColumn' and no extension method 'tablebill_memoColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1937:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_memoColumn' and no extension method 'tablebill_memoColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1945:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_nameColumn' and no extension method 'tabledeliver_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1952:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_nameColumn' and no extension method 'tabledeliver_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1960:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_nameColumn' and no extension method 'tableconsignee_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1967:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_nameColumn' and no extension method 'tableconsignee_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1975:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_mobilephoneColumn' and no extension method 'tableconsignee_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1983:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_mobilephoneColumn' and no extension method 'tableconsignee_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1991:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeparture_timeColumn' and no extension method 'tabledeparture_timeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+1998:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeparture_timeColumn' and no extension method 'tabledeparture_timeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2006:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestowage_numberColumn' and no extension method 'tablestowage_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2013:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestowage_numberColumn' and no extension method 'tablestowage_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2021:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablecar_noColumn' and no extension method 'tablecar_noColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2028:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablecar_noColumn' and no extension method 'tablecar_noColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2036:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliverColumn' and no extension method 'tabledeliverColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2043:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliverColumn' and no extension method 'tabledeliverColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2051:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_mobilephoneColumn' and no extension method 'tabledeliver_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2058:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_mobilephoneColumn' and no extension method 'tabledeliver_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2066:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablelink_areaColumn' and no extension method 'tablelink_areaColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2073:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablelink_areaColumn' and no extension method 'tablelink_areaColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2081:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_addressColumn' and no extension method 'tableend_addressColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2088:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_addressColumn' and no extension method 'tableend_addressColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2096:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linknameColumn' and no extension method 'tableend_branch_linknameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2103:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linknameColumn' and no extension method 'tableend_branch_linknameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2111:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linktelephoneColumn' and no extension method 'tableend_branch_linktelephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2119:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linktelephoneColumn' and no extension method 'tableend_branch_linktelephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2127:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableprepayColumn' and no extension method 'tableprepayColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2134:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableprepayColumn' and no extension method 'tableprepayColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2142:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_mobilephoneColumn' and no extension method 'tableoperation_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2150:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_mobilephoneColumn' and no extension method 'tableoperation_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2158:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_manColumn' and no extension method 'tableoperation_manColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2165:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_manColumn' and no extension method 'tableoperation_manColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2171:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_idColumn' and no extension method 'tablebill_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2176:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_idColumn' and no extension method 'tablebill_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2181:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_numberColumn' and no extension method 'tableproduction_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2186:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_numberColumn' and no extension method 'tableproduction_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2191:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_idColumn' and no extension method 'tableproduction_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2196:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_idColumn' and no extension method 'tableproduction_idColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2201:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_nameColumn' and no extension method 'tableproduction_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2206:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_nameColumn' and no extension method 'tableproduction_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2211:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_weightColumn' and no extension method 'tableproduction_weightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2216:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_weightColumn' and no extension method 'tableproduction_weightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2221:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_sizeColumn' and no extension method 'tableproduction_sizeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2226:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableproduction_sizeColumn' and no extension method 'tableproduction_sizeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2231:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablefreightColumn' and no extension method 'tablefreightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2236:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablefreightColumn' and no extension method 'tablefreightColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2241:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableway_numberColumn' and no extension method 'tableway_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2246:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableway_numberColumn' and no extension method 'tableway_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2251:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestart_cityColumn' and no extension method 'tablestart_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2256:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestart_cityColumn' and no extension method 'tablestart_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2261:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_cityColumn' and no extension method 'tableend_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2266:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_cityColumn' and no extension method 'tableend_cityColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2271:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablepick_paymentColumn' and no extension method 'tablepick_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2276:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablepick_paymentColumn' and no extension method 'tablepick_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2281:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablespot_paymentColumn' and no extension method 'tablespot_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2286:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablespot_paymentColumn' and no extension method 'tablespot_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2291:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableback_paymentColumn' and no extension method 'tableback_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2296:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableback_paymentColumn' and no extension method 'tableback_paymentColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2301:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_memoColumn' and no extension method 'tablebill_memoColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2306:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablebill_memoColumn' and no extension method 'tablebill_memoColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2311:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_nameColumn' and no extension method 'tabledeliver_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2316:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_nameColumn' and no extension method 'tabledeliver_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2321:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_nameColumn' and no extension method 'tableconsignee_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2326:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_nameColumn' and no extension method 'tableconsignee_nameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2331:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_mobilephoneColumn' and no extension method 'tableconsignee_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2336:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableconsignee_mobilephoneColumn' and no extension method 'tableconsignee_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2341:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeparture_timeColumn' and no extension method 'tabledeparture_timeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2346:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeparture_timeColumn' and no extension method 'tabledeparture_timeColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2351:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestowage_numberColumn' and no extension method 'tablestowage_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2356:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablestowage_numberColumn' and no extension method 'tablestowage_numberColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2361:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablecar_noColumn' and no extension method 'tablecar_noColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2366:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablecar_noColumn' and no extension method 'tablecar_noColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2371:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliverColumn' and no extension method 'tabledeliverColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2376:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliverColumn' and no extension method 'tabledeliverColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2381:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_mobilephoneColumn' and no extension method 'tabledeliver_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2386:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tabledeliver_mobilephoneColumn' and no extension method 'tabledeliver_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2391:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablelink_areaColumn' and no extension method 'tablelink_areaColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2396:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tablelink_areaColumn' and no extension method 'tablelink_areaColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2401:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_addressColumn' and no extension method 'tableend_addressColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2406:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_addressColumn' and no extension method 'tableend_addressColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2411:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linknameColumn' and no extension method 'tableend_branch_linknameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2416:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linknameColumn' and no extension method 'tableend_branch_linknameColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2421:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linktelephoneColumn' and no extension method 'tableend_branch_linktelephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2426:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableend_branch_linktelephoneColumn' and no extension method 'tableend_branch_linktelephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2431:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableprepayColumn' and no extension method 'tableprepayColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2436:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableprepayColumn' and no extension method 'tableprepayColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2441:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_mobilephoneColumn' and no extension method 'tableoperation_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2446:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_mobilephoneColumn' and no extension method 'tableoperation_mobilephoneColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2451:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_manColumn' and no extension method 'tableoperation_manColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+2456:  'XtraReportSerialization.stowageDataSet.vStowageDetailRow' does not contain a definition for 'tableoperation_manColumn' and no extension method 'tableoperation_manColumn' accepting a first argument of type 'XtraReportSerialization.stowageDataSet.vStowageDetailRow' could be found (are you missing a using directive or an assembly reference?)
+
+   at DevExpress.XtraReports.Native.ReportCompiler.Compile(String streamString, IServiceProvider serviceProvider)
+   at DevExpress.XtraReports.UI.XtraReport.LoadLayoutInternal(Stream stream, XtraReport& source, Boolean forceDataSource)
+   at DevExpress.XtraReports.UI.XtraReport.LoadLayout(String fileName)
+   at SpecialLogisticsSystem.AppPortal.UserControls.ReportViewerControl.set_Report(XtraReport value) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\ReportViewerControl.ascx.cs:line 39
+   at ASP.reports_reportstowage_aspx.__DataBindingReportViewerControl1(Object sender, EventArgs e) in e:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Reports\ReportStowage.aspx:line 12
+   at System.Web.UI.Control.OnDataBinding(EventArgs e)
+   at System.Web.UI.Control.DataBind(Boolean raiseOnDataBinding)
+   at System.Web.UI.Control.DataBind()
+   at SpecialLogisticsSystem.AppPortal.UserControls.ReportViewerControl.OnInit(EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\ReportViewerControl.ascx.cs:line 68
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.reports_reportstowage_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_reportstowage.aspx.dfa151d5.zdfndjhc.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-10 22:27:46,533 [20] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Exception: Error when trying to populate the datasource. The following exception was thrown: 
+Invalid column name 'rowNum'. ---> System.Data.SqlClient.SqlException: Invalid column name 'rowNum'.
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, IDataAdapter dataAdapter)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, Object dataAdapter)
+   在 DevExpress.XtraReports.Native.DataSourceFiller.Fill(Object dataSource, String dataMember, Object dataAdapter, IServiceProvider servProvider)
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   在 DevExpress.XtraReports.UI.XtraReport.FillDataSources()
+   在 DevExpress.XtraReports.UI.XtraReport.OnBeforePrint(PrintEventArgs e)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocumentCore(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.ForcePSDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-02-10 22:27:46,590 [25] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): The length of the query string for this request exceeds the configured maxQueryStringLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-10 22:30:29,453 [25] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Exception: Error when trying to populate the datasource. The following exception was thrown: 
+Invalid column name 'rowNum'. ---> System.Data.SqlClient.SqlException: Invalid column name 'rowNum'.
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, IDataAdapter dataAdapter)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, Object dataAdapter)
+   在 DevExpress.XtraReports.Native.DataSourceFiller.Fill(Object dataSource, String dataMember, Object dataAdapter, IServiceProvider servProvider)
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   在 DevExpress.XtraReports.UI.XtraReport.FillDataSources()
+   在 DevExpress.XtraReports.UI.XtraReport.OnBeforePrint(PrintEventArgs e)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocumentCore(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.ForcePSDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-02-10 22:30:29,505 [25] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): The length of the query string for this request exceeds the configured maxQueryStringLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-10 22:32:31,546 [23] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Exception: Error when trying to populate the datasource. The following exception was thrown: 
+Invalid column name 'rowNum'. ---> System.Data.SqlClient.SqlException: Invalid column name 'rowNum'.
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, IDataAdapter dataAdapter)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, Object dataAdapter)
+   在 DevExpress.XtraReports.Native.DataSourceFiller.Fill(Object dataSource, String dataMember, Object dataAdapter, IServiceProvider servProvider)
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   在 DevExpress.XtraReports.UI.XtraReport.FillDataSources()
+   在 DevExpress.XtraReports.UI.XtraReport.OnBeforePrint(PrintEventArgs e)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocumentCore(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.ForcePSDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-02-10 22:32:31,579 [21] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): The length of the query string for this request exceeds the configured maxQueryStringLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-10 22:35:14,813 [24] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): The length of the query string for this request exceeds the configured maxQueryStringLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

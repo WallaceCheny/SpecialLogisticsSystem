@@ -1,0 +1,575 @@
+﻿html, body
+{
+    font-size: 12px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-weight: normal;
+    font-size: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+a
+{
+    text-decoration:none;
+}
+img
+{
+    border: 0;
+}
+fieldset
+{
+    margin-bottom: 1em;
+    padding: .5em;
+}
+pre, code
+{
+    font-size: 11px;
+}
+hr
+{
+    height: 1px;
+    border: 1px solid gray;
+}
+p
+{
+    margin: 0 0 .8em;
+    padding: 0;
+}
+
+.hide
+{
+    display: none;
+}
+.clear
+{
+    clear: both;
+}
+.clearfix:after
+{
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+.red
+{
+    color: Red;
+}
+.clearfix
+{
+    display: inline-block;
+}
+.clearfix
+{
+    display: block;
+}
+
+/*.dxgvEditForm_DevEx td.dxgv{padding:0px 0px 10px 0px;}*/
+.editTable
+{
+    width: 100%;
+    padding: 10px 12px 12px 12px;
+}
+.editTable1
+{
+    width: 100%;
+    padding: 10px 30px 12px 12px;
+}
+.left
+{
+    float: left;
+}
+.textPanding
+{
+    padding-left: 5px;
+}
+.itemPanding
+{
+    padding-left: 20px;
+}
+.viewdisable
+{
+    display: none;
+}
+
+.gvw_header
+{
+    position: relative;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    font-weight: bold;
+    background: url(/scripts/themes/tanblue/images/nav_bg.gif) repeat-x;
+    border: 0px;
+    padding: 0px;
+}
+.title_bg
+{
+    position: relative;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #F1F2F6 url(/scripts/themes/tanblue/images/title_bg.png) repeat-x;
+    border: 0px;
+    padding: 0px;
+}
+
+.frmCustom
+{
+    overflow: hidden;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-size: 12px;
+}
+.frmCustom li
+{
+    float: left;
+    width: 230px;
+    height: 27px;
+}
+.frmCustom li label
+{
+    float: left;
+    padding: 0px 4px 0px 0px;
+    width: 90px;
+    text-align: right;
+    line-height: 27px;
+}
+.frmCustom li.btn
+{
+    width: 65px;
+}
+.frmCustom li.btn button, .frmCustom li.btn .button
+{
+    float: left;
+    border: 1px solid #fff;
+    background: #fff;
+    height: 24px;
+    color: #444;
+    padding: 0px;
+    _border: 0px;
+}
+.frmCustom li.btn button:hover, .frmCustom li.btn .button:hover
+{
+    border: 1px solid #7EABCD;
+    background: url(/images/button_plain_hover.png) repeat-x left bottom;
+    _padding: 0px 5px 0px 0px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.frmCustom li .combo
+{
+    margin: 2px 0 0 0;
+}
+
+
+.editFormCaption
+{
+    padding: 4px 2px 4px 2px;
+    white-space: nowrap;
+    text-align: right;
+}
+.editFormTh
+{
+    padding: 4px 2px 4px 2px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 15px;
+    color: #1F497D;
+    font-weight: bold;
+}
+.editFormCell
+{
+    padding: 4px 2px 4px 2px;
+    border: 0;
+}
+
+.cars
+{
+    width: 550px;
+    list-style-type: none;
+    height: 26px;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 4px;
+    font-size: 12px;
+    border-bottom: 1px solid #BAC6D4;
+}
+.cars li
+{
+    float: left;
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: -1px;
+    padding: 0;
+    position: relative;
+    width: 90px;
+}
+.cars li span
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #3F3F3F;
+    margin: 0px;
+    padding: 0px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    white-space: nowrap;
+}
+.cars .close
+{
+    position: absolute;
+    font-size: 1px;
+    display: block;
+    padding: 0px;
+    width: 11px;
+    height: 11px;
+    top: 7px;
+    right: 0px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    background: url(/images/mini_delete.gif) no-repeat 2px 2px;
+}
+.cars .edit
+{
+    position: absolute;
+    font-size: 1px;
+    display: block;
+    padding: 0px;
+    width: 11px;
+    height: 11px;
+    top: 7px;
+    right: 10px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    background: url(/images/mini_edit.png) no-repeat 2px 2px;
+}
+
+.show_shop
+{
+    width: 550px;
+    list-style-type: none;
+    height: 26px;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 4px;
+    font-size: 12px;
+    border-bottom: 1px solid #BAC6D4;
+}
+.show_shop li
+{
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: -1px;
+    padding: 0;
+    position: relative;
+}
+.show_shop li span
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #3F3F3F;
+    margin: 0px;
+    padding: 0px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    white-space: nowrap;
+}
+.show_shop .close
+{
+    position: absolute;
+    font-size: 1px;
+    display: block;
+    padding: 0px;
+    width: 11px;
+    height: 11px;
+    top: 7px;
+    right: 0px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    background: url(/images/mini_delete.gif) no-repeat 2px 2px;
+}
+.show_shop .edit
+{
+    position: absolute;
+    font-size: 1px;
+    display: block;
+    padding: 0px;
+    width: 11px;
+    height: 11px;
+    top: 7px;
+    right: 10px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    background: url(/images/mini_edit.png) no-repeat 2px 2px;
+}
+
+.bgcss li div
+{
+    background: url(/Images/new/middle_tab.png) no-repeat left bottom;
+    width: 102px;
+    height: 36px;
+    text-align: center;
+    color: White;
+}
+.bgcss li.first div
+{
+    border-top: none;
+    width: 118px;
+    background: url(/Images/new/first_tab.png);
+}
+.bgcss li.first div:hover, .bgcss li.first div.selected
+{
+    border-top: none;
+    width: 118px;
+    background: url(/Images/new/first_tab_selected.png);
+}
+.bgcss li.last div
+{
+    border-top: none;
+    border-right: none;
+    width: 125px;
+    background: url(/Images/new/last_tab.png);
+}
+.bgcss li.last div.selected, .bgcss li.last div:hover
+{
+    border-top: none;
+    border-right: none;
+    width: 125px;
+    background: url(/Images/new/last_tab_selected.png) no-repeat left bottom;
+}
+.bgcss li div.selected, .bgcss li div:hover
+{
+    background: url(/Images/new/middle_tab_selected.png) no-repeat left bottom;
+    width: 102px;
+    height: 36px;
+}
+
+.bgcss li div.selected a
+{
+    color: #fff;
+}
+
+
+
+.main_top
+{
+    width: 100%;
+}
+.last_menu
+{
+    padding-top: 4px;
+    margin-left: 640px;
+}
+.last_menu1
+{
+    padding-top: 4px;
+    margin-left: 500px;
+}
+
+
+/* Theme selector */
+
+.ThemeSprite
+{
+    background-image: url(/Images/Sprite.png);
+    background-repeat: no-repeat;
+}
+
+.ThemeSelectorPopup, .ThemeSelectorPopup.dxpc-mainDiv
+{
+    background: #2f2f2f;
+    color: White;
+    padding: 0 12px;
+}
+
+.ThemeSelectorPopup.dxpc-mainDiv
+{
+    float: left;
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#ThemesContainer
+{
+    font-size: 16px;
+    padding: 6px 3px 18px;
+    width: 480px;
+}
+
+.ThemeGroupMenu
+{
+    padding-top: 28px;
+}
+
+.ThemeGroupMenu ul
+{
+    padding: 0;
+}
+
+.ThemeGroupMenu li
+{
+    float: left;
+}
+
+.ThemeGroupMenu .dxm-item
+{
+    color: white;
+    cursor: pointer;
+    font-size: 11px;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+}
+
+.ThemeGroupMenu .dxm-item img
+{
+    margin-bottom: 4px;
+}
+
+.ThemeGroupMenu .dxm-hovered
+{
+    background-color: white;
+    color: #2f2f2f;
+    padding: 5px;
+}
+
+.ThemeGroupMenu .dxm-selected
+{
+    background-color: #b71d1d;
+    color: White;
+    cursor: default;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.ThemeDefaultImage, .ThemeDevExImage, .ThemeOffice2010BlueImage, .ThemeOffice2010BlackImage, .ThemeOffice2010SilverImage, .ThemeOffice2003BlueImage, .ThemeOffice2003OliveImage, .ThemeOffice2003SilverImage, .ThemeAquaImage, .ThemeGlassImage, .ThemeBlackGlassImage, .ThemePlasticBlueImage, .ThemeRedWineImage, .ThemeSoftOrangeImage, .ThemeYouthfulImage
+{
+    width: 150px;
+    height: 50px;
+}
+
+.ThemeDefaultImage
+{
+    background-position: 0 0;
+}
+
+.ThemeOffice2003BlueImage
+{
+    background-position: 0 -51px;
+}
+
+.ThemeOffice2003OliveImage
+{
+    background-position: 0 -102px;
+}
+
+.ThemeOffice2003SilverImage
+{
+    background-position: 0 -153px;
+}
+
+.ThemeYouthfulImage
+{
+    background-position: 0 -204px;
+}
+
+.ThemePlasticBlueImage
+{
+    background-position: 0 -255px;
+}
+
+.ThemeGlassImage
+{
+    background-position: 0 -306px;
+}
+
+.ThemeBlackGlassImage
+{
+    background-position: 0 -357px;
+}
+
+.ThemeDevExImage
+{
+    background-position: -151px 0;
+}
+
+.ThemeOffice2010BlueImage
+{
+    background-position: -151px -51px;
+}
+
+.ThemeOffice2010BlackImage
+{
+    background-position: -151px -102px;
+}
+
+.ThemeOffice2010SilverImage
+{
+    background-position: -151px -153px;
+}
+
+.ThemeAquaImage
+{
+    background-position: -151px -204px;
+}
+
+.ThemeRedWineImage
+{
+    background-position: -151px -255px;
+}
+
+.ThemeSoftOrangeImage
+{
+    background-position: -151px -306px;
+}
+/****************************************/
+/*****Search 
+/*****************************************/
+.mainSearch
+{
+    background: url(/scripts/themes/icons/search.png) no-repeat;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#viewSearch
+{
+    display: block;
+    margin: 0px 0 0 10px;
+    padding: 0;
+}
+#viewSearch li
+{
+    float: left;
+    display: block;
+    list-style: none;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+#viewSearch li.caption
+{
+    padding-top: 3px;
+}
+#viewSearch li ul
+{
+    float: left;
+    display: block;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+

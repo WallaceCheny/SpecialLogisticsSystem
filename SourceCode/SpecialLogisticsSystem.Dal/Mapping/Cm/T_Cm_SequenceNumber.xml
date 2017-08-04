@@ -1,0 +1,67 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_SequenceNumber.Count">
+    Select count(1) FROM T_Cm_SequenceNumber where
+    $and{id = #id#}  $and{code = #code#}  $and{prefix = #prefix#}  $and{date_type = #date_type#}  $and{infix = #infix#}  $and{index_length = #index_length#}  $and{suffix = #suffix#}  $and{max_date = #max_date#}  $and{max_index = #max_index#}  $and{CurrentMaxValue = #CurrentMaxValue#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_SequenceNumber.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_SequenceNumber) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{code = #code#}  $and{prefix = #prefix#}  $and{date_type = #date_type#}  $and{infix = #infix#}  $and{index_length = #index_length#}  $and{suffix = #suffix#}  $and{max_date = #max_date#}  $and{max_index = #max_index#}  $and{CurrentMaxValue = #CurrentMaxValue#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_SequenceNumber.Load">
+    SELECT *
+    FROM   T_Cm_SequenceNumber  where
+    $and{id = #id#}  $and{code in(#code#)}  $and{prefix = #prefix#}  $and{date_type = #date_type#}  $and{infix = #infix#}  $and{index_length = #index_length#}  $and{suffix = #suffix#}  $and{max_date = #max_date#}  $and{max_index = #max_index#}  $and{CurrentMaxValue = #CurrentMaxValue#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_SequenceNumber.Select">
+    SELECT *
+    FROM   T_Cm_SequenceNumber  where
+    $and{id = #id#}  $and{code = #code#}  $and{prefix = #prefix#}  $and{date_type = #date_type#}  $and{infix = #infix#}  $and{index_length = #index_length#}  $and{suffix = #suffix#}  $and{max_date = #max_date#}  $and{max_index = #max_index#}  $and{CurrentMaxValue = #CurrentMaxValue#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_SequenceNumber.GetNumber">
+    EXEC dbo.spGetSequenceNumber @Code, 1
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Cm_SequenceNumber.Insert">
+    insert into T_Cm_SequenceNumber(
+    code
+    ,prefix
+    ,date_type
+    ,infix
+    ,index_length
+    ,suffix
+    ,max_date
+    ,max_index
+    )values (
+    #code#
+    ,#prefix#
+    ,#date_type#
+    ,#infix#
+    ,#index_length#
+    ,#suffix#
+    ,#max_date#
+    ,#max_index#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_SequenceNumber.Update">
+    update T_Cm_SequenceNumber set
+    code=#code#
+    ,prefix=#prefix#
+    ,date_type=#date_type#
+    ,infix=#infix#
+    ,index_length=#index_length#
+    ,suffix=#suffix#
+    ,max_date=#max_date#
+    ,max_index=#max_index#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Cm_SequenceNumber.Delete">
+    delete
+    FROM T_Cm_SequenceNumber
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

@@ -1,0 +1,45 @@
+<HR COLOR=red>
+异常时间：2014-02-08 19:30:53,025 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpCompileException (0x80004005): e:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Finance\OtherPay.aspx(114): error CS1061: 'ASP.finance_otherpay_aspx' does not contain a definition for 'deliverDataSourceDataSource_Selecting' and no extension method 'deliverDataSourceDataSource_Selecting' accepting a first argument of type 'ASP.finance_otherpay_aspx' could be found (are you missing a using directive or an assembly reference?)
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-08 20:30:14,100 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 System.Guid.GuidResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName, Exception innerException)
+   在 System.Guid.TryParseGuidWithDashes(String guidString, GuidResult& result)
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid.Parse(String input)
+   在 SpecialLogisticsSystem.Tool.ConvertHelper.ObjectToGuid(Object guid) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Tool\ConvertHelper.cs:行号 272
+   在 SpecialLogisticsSystem.AppPortal.UserControls.CustomerLookUp.grdView_GridViewCustomCallback(Object sender, ASPxGridViewCustomCallbackEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\CustomerLookUp.ascx.cs:行号 81
+<HR COLOR=red>
+异常时间：2014-02-08 21:05:31,478 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.NotSupportedException: Inserting is not supported by ObjectDataSource 'dailyDataSource' unless the InsertMethod is specified.
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteInsert(IDictionary values)
+   在 System.Web.UI.DataSourceView.Insert(IDictionary values, DataSourceViewOperationCallback callback)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)

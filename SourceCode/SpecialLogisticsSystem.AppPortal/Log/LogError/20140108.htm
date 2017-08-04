@@ -1,0 +1,31 @@
+<HR COLOR=red>
+异常时间：2014-01-08 09:50:30,394 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.GetKeyValueCore(Int32 index, GetKeyValueCallback getKeyValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowKeyValue(Int32 visibleIndex)
+   在 DevExpress.Web.Data.WebDataProxy.CheckFocusedRowChanged()
+   在 DevExpress.Web.Data.WebDataProxy.ExpandAll()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewPrinter.PrepareGridForExport()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewPrinter.BeforeCreate()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewPrinter..ctor(ASPxGridViewExporter exporter, ASPxGridView grid, BrickGraphics graph, ExportStyleHelper styleHelper, GridViewPrinterDrawDetailGrid onDrawDetailGrid, Int32 level, Int32 indent)
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewLink.AddPrinter(ASPxGridView grid, Int32 detailGridIndent)
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewLink.get_ActivePrinter()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewLink.CreateDetailHeader(BrickGraphics graph)
+   在 DevExpress.XtraPrinting.LinkBase.CreateReportArea(CreateAreaDelegate proc, BrickGraphics gr, BrickModifier modifier)
+   在 DevExpress.XtraPrinting.LinkBase.CreateDocumentCore()
+   在 DevExpress.XtraPrinting.LinkBase.CreateDocument(Boolean buildPagesInBackground)
+   在 DevExpress.XtraPrinting.LinkBase.<CreateDocument>b__0()
+   在 DevExpress.XtraPrinting.LinkBase.ExecuteActivity(PrintingSystemActivity activity, Action0 callback)
+   在 DevExpress.XtraPrinting.LinkBase.CreateDocument()
+   在 DevExpress.Web.ASPxGridView.Export.Helper.GridViewLink.CreatePS()
+   在 DevExpress.Web.ASPxGridView.Export.ASPxGridViewExporter.WriteXlsCore(Stream stream, ExportOptionsBase exportOptions)
+   在 DevExpress.Web.ASPxGridView.Export.ASPxGridViewExporter.WriteToResponse(String fileName, Boolean saveAsFile, String fileFormat, ExportToStream getStream, ExportOptionsBase options)
+   在 DevExpress.Web.ASPxGridView.Export.ASPxGridViewExporter.WriteXlsToResponse(String fileName, Boolean saveAsFile)
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.cbk_input_Callback(Object sender, CallbackEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 60
+   在 DevExpress.Web.ASPxCallback.ASPxCallback.OnCallback(CallbackEventArgs e)
+   在 DevExpress.Web.ASPxCallback.ASPxCallback.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)

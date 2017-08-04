@@ -1,0 +1,10 @@
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Web\bin\SendEmail.Web.dll
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Web\bin\SendEmail.Web.pdb
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Web\bin\Common.dll
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Web\bin\Excel.dll
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Web\bin\COM.Excel.dll
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Web\bin\OpenSmtp.dll
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Web\bin\Common.pdb
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Web\obj\Debug\SendEmail.Web.csprojResolveAssemblyReference.cache
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Web\obj\Debug\SendEmail.Web.dll
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Web\obj\Debug\SendEmail.Web.pdb

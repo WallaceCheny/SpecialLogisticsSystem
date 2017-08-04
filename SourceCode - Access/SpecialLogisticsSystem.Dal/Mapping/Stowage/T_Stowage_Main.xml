@@ -1,0 +1,153 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Main.Count">
+    Select count(1) FROM vStowage where
+    $and{id = #id#}  $and{stowage_number like '%$stowage_number$%'} $and{stowage_statue = #stowage_statue#} $and{DateDiff("d",departure_time,  #departure_time_begin#) &lt; 0}
+    $and{departure_time &lt;= dateadd("d",1,#departure_time_end#)} $and{car_id = #car_id#} $and{DateDiff("d",plan_arrivle,  #plan_arrivle_start#) &lt; 0}
+    $and{plan_arrivle &lt;= dateadd("d",1,#plan_arrivle_end#)} $and{emp_id = #emp_id#} $and{start_city = #start_city#} $and{start_branch = #start_branch#}
+    $and{end_branch = #end_branch#} $and{end_branch_linkname = #end_branch_linkname#} $and{end_branch_linktelephone = #end_branch_linktelephone#} $and{main_memo = #main_memo#}
+    $and{freight = #freight#} $and{prepay = #prepay#} $and{other_payment = #other_payment#} $and{back_payment = #back_payment#} $and{arrive_payment = #arrive_payment#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Main.SelectPaging">
+    SELECT $eq{top $maxRows$}
+    *
+    FROM    vStowage
+    WHERE   1=1 $eq{and [id] not in ( SELECT   id
+    FROM     ( SELECT top $startRow$
+    [id]
+    FROM      vStowage
+    WHERE    1=1  $and{id = #id#}  $and{stowage_number like '%$stowage_number$%'}  $and{stowage_statue = #stowage_statue#}  $and{DateDiff("d",departure_time,  #departure_time_begin#) &lt; 0} $and{departure_time &lt;= dateadd("d",1,#departure_time_end#)}
+    $and{car_id = #car_id#} $and{plan_arrivle = #plan_arrivle#}  $and{emp_id = #emp_id#}  $and{start_city = #start_city#}
+    $and{start_branch = #start_branch#}  $and{end_branch = #end_branch#}  $and{end_branch_linkname = #end_branch_linkname#}
+    $and{end_branch_linktelephone = #end_branch_linktelephone#}  $and{main_memo = #main_memo#}  $and{freight = #freight#}
+    $and{prepay = #prepay#}  $and{other_payment = #other_payment#}  $and{back_payment = #back_payment#}
+    $and{arrive_payment = #arrive_payment#}   $eq{order by $OrderBy$}
+    ) AS tblTmp
+    )}
+    $and{id = #id#} $and{stowage_number like '%$stowage_number$%'}  $and{stowage_statue = #stowage_statue#}  $and{departure_time = #departure_time#}  $and{car_id = #car_id#}  $and{plan_arrivle = #plan_arrivle#}  $and{emp_id = #emp_id#}  $and{start_city = #start_city#}  $and{start_branch = #start_branch#}  $and{end_branch = #end_branch#}  $and{end_branch_linkname = #end_branch_linkname#}  $and{end_branch_linktelephone = #end_branch_linktelephone#}  $and{main_memo = #main_memo#}  $and{freight = #freight#}  $and{prepay = #prepay#}  $and{other_payment = #other_payment#}  $and{back_payment = #back_payment#}  $and{arrive_payment = #arrive_payment#}      $eq{order by $OrderBy$}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Main.CountGross">
+    Select count(1) FROM vStowageGross where
+    $and{id = #id#}  $and{stowage_number like '%$stowage_number$%'}  $and{stowage_statue = #stowage_statue#}
+    $and{DateDiff("d",departure_time,  #departure_time_begin#) &lt; 0} $and{departure_time &lt;= dateadd("d",1,#departure_time_end#)} $and{car_id = #car_id#}  $and{emp_id = #emp_id#}  $and{start_city = #start_city#}
+    $and{start_branch = #start_branch#}  $and{end_branch = #end_branch#}  $and{end_branch_linkname = #end_branch_linkname#}
+    $and{end_branch_linktelephone = #end_branch_linktelephone#}  $and{main_memo = #main_memo#}  $and{freight = #freight#}  $and{prepay = #prepay#}
+    $and{other_payment = #other_payment#}  $and{back_payment = #back_payment#}  $and{arrive_payment = #arrive_payment#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Main.SelectGross">
+    SELECT $eq{top $maxRows$}
+    *
+    FROM    vStowageGross
+    WHERE   1=1 $eq{and [id] not in ( SELECT   id
+    FROM     ( SELECT top $startRow$
+    [id]
+    FROM      vStowageGross
+    WHERE    1=1  $and{id = #id#}  $and{stowage_number like '%$stowage_number$%'}  $and{DateDiff("d",departure_time,  #departure_time_begin#) &lt; 0} $and{departure_time &lt;= dateadd("d",1,#departure_time_end#)}  $and{car_id = #car_id#}  $and{car_no = #car_no#}
+    $and{link_name = #link_name#}  $and{total_payment = #total_payment#}  $and{rebate_payment = #rebate_payment#}  $and{deliver_payment = #deliver_payment#}
+    $and{unload_fee = #unload_fee#}  $and{outside_fee = #outside_fee#}  $and{transfer_bill = #transfer_bill#}  $and{out_payment = #out_payment#}  $and{gross = #gross#}
+    $eq{order by $OrderBy$}
+    ) AS tblTmp
+    )}
+    $and{id = #id#} $and{stowage_number like '%$stowage_number$%'}  $and{DateDiff("d",departure_time,  #departure_time_begin#) &lt; 0} $and{departure_time &lt;= dateadd("d",1,#departure_time_end#)}  $and{car_id = #car_id#}  $and{car_no = #car_no#}
+    $and{link_name = #link_name#}  $and{total_payment = #total_payment#}  $and{rebate_payment = #rebate_payment#}  $and{deliver_payment = #deliver_payment#}
+    $and{unload_fee = #unload_fee#}  $and{outside_fee = #outside_fee#}  $and{transfer_bill = #transfer_bill#}  $and{out_payment = #out_payment#}  $and{gross = #gross#}
+    $eq{order by $OrderBy$}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Main.Chart">
+    SELECT *
+    FROM   vStowageGross  where
+    $and{id = #id#}  $and{stowage_number like '%$stowage_number$%'}  $and{stowage_statue = #stowage_statue#}  $and{DateDiff("d",departure_time,  #departure_time_begin#) &lt; 0} $and{departure_time &lt;= dateadd("d",1,#departure_time_end#)}
+    $and{car_id = #car_id#}  $and{emp_id = #emp_id#}  $and{start_city = #start_city#}  $and{start_branch = #start_branch#}  $and{end_branch = #end_branch#}  $and{end_branch_linkname = #end_branch_linkname#}
+    $and{end_branch_linktelephone = #end_branch_linktelephone#}  $and{main_memo = #main_memo#}  $and{freight = #freight#}  $and{prepay = #prepay#}  $and{other_payment = #other_payment#}  $and{back_payment = #back_payment#}  $and{arrive_payment = #arrive_payment#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Main.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Stowage_Main) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{stowage_number = #stowage_number#}  $and{stowage_statue = #stowage_statue#}  $and{departure_time = #departure_time#}  $and{car_id = #car_id#}  $and{emp_id = #emp_id#}  $and{start_city = #start_city#}  $and{start_branch = #start_branch#}  $and{end_branch = #end_branch#}  $and{end_branch_linkname = #end_branch_linkname#}  $and{end_branch_linktelephone = #end_branch_linktelephone#}  $and{main_memo = #main_memo#}  $and{freight = #freight#}  $and{prepay = #prepay#}  $and{other_payment = #other_payment#}  $and{back_payment = #back_payment#}  $and{arrive_payment = #arrive_payment#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Main.Load">
+    SELECT *
+    FROM   T_Stowage_Main  where
+    $and{id = #id#}  $and{stowage_number = #stowage_number#}  $and{stowage_statue = #stowage_statue#}  $and{departure_time = #departure_time#}
+    $and{car_id = #car_id#}  $and{emp_id = #emp_id#}  $and{start_city = #start_city#}  $and{start_branch = #start_branch#}
+    $and{end_branch = #end_branch#}  $and{end_branch_linkname = #end_branch_linkname#} $and{end_branch_linktelephone = #end_branch_linktelephone#}
+    $and{main_memo = #main_memo#}  $and{freight = #freight#}  $and{prepay = #prepay#}  $and{other_payment = #other_payment#}  $and{back_payment = #back_payment#}  $and{arrive_payment = #arrive_payment#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Main.Select">
+    SELECT *
+    FROM   vStowage  where
+    $and{id = #id#}  $and{stowage_number = #stowage_number#}  $and{stowage_statue = #stowage_statue#}  $and{departure_time = #departure_time#}  $and{car_id = #car_id#}  $and{emp_id = #emp_id#}  $and{start_city = #start_city#}  $and{start_branch = #start_branch#}  $and{end_branch = #end_branch#}  $and{end_branch_linkname = #end_branch_linkname#}  $and{end_branch_linktelephone = #end_branch_linktelephone#}  $and{main_memo = #main_memo#}  $and{freight = #freight#}  $and{prepay = #prepay#}  $and{other_payment = #other_payment#}  $and{back_payment = #back_payment#}  $and{arrive_payment = #arrive_payment#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Stowage_Main.Insert">
+    insert into T_Stowage_Main(
+    id
+    ,stowage_number
+    ,stowage_statue
+    ,departure_time
+    ,car_id
+    ,plan_arrivle
+    ,emp_id
+    ,start_city
+    ,start_branch
+    ,end_branch
+    ,end_branch_linkname
+    ,end_branch_linktelephone
+    ,main_memo
+    ,freight
+    ,prepay
+    ,other_payment
+    ,back_payment
+    ,arrive_payment
+    )values (
+    #id#
+    ,#stowage_number#
+    ,#stowage_statue#
+    ,#departure_time#
+    ,#car_id#
+    ,#plan_arrivle#
+    ,#emp_id#
+    ,#start_city#
+    ,#start_branch#
+    ,#end_branch#
+    ,#end_branch_linkname#
+    ,#end_branch_linktelephone#
+    ,#main_memo#
+    ,#freight#
+    ,#prepay#
+    ,#other_payment#
+    ,#back_payment#
+    ,#arrive_payment#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Stowage_Main.Update">
+    update T_Stowage_Main set
+    id=#id#
+    ,stowage_number=#stowage_number#
+    ,stowage_statue=#stowage_statue#
+    ,departure_time=#departure_time#
+    ,car_id=#car_id#
+    ,plan_arrivle=#plan_arrivle#
+    ,emp_id=#emp_id#
+    ,start_city=#start_city#
+    ,start_branch=#start_branch#
+    ,end_branch=#end_branch#
+    ,end_branch_linkname=#end_branch_linkname#
+    ,end_branch_linktelephone=#end_branch_linktelephone#
+    ,main_memo=#main_memo#
+    ,freight=#freight#
+    ,prepay=#prepay#
+    ,other_payment=#other_payment#
+    ,back_payment=#back_payment#
+    ,arrive_payment=#arrive_payment#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Stowage_Main.Delete">
+    delete
+    FROM T_Stowage_Main
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

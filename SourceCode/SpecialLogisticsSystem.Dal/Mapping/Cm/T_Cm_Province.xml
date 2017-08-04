@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Province.Count">
+    Select count(1) FROM T_Cm_Province where
+      $and{ProvinceID = #ProvinceID#}  $and{ProvinceName = #ProvinceName#}  $and{DateCreated = #DateCreated#}  $and{DateUpdated = #DateUpdated#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Province.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_Province) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+     $and{ProvinceID = #ProvinceID#}  $and{ProvinceName = #ProvinceName#}  $and{DateCreated = #DateCreated#}  $and{DateUpdated = #DateUpdated#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Province.Load">
+    SELECT *
+    FROM   T_Cm_Province  where
+    $and{ProvinceID = #ProvinceID#}  $and{ProvinceName = #ProvinceName#}  $and{DateCreated = #DateCreated#}  $and{DateUpdated = #DateUpdated#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Province.Select">
+    SELECT *
+    FROM   T_Cm_Province  where
+    $and{ProvinceID = #ProvinceID#}  $and{ProvinceName = #ProvinceName#}  $and{DateCreated = #DateCreated#}  $and{DateUpdated = #DateUpdated#}    </select>
+   <insert id="SpecialLogisticsSystem.Model.T_Cm_Province.Insert">
+    insert into T_Cm_Province(
+    ,ProvinceID
+,ProvinceName
+,DateCreated
+,DateUpdated
+    )values (
+     ,#ProvinceID#
+,#ProvinceName#
+,#DateCreated#
+,#DateUpdated#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_Province.Update">
+    update T_Cm_Province set
+      ,ProvinceID=#ProvinceID#
+,ProvinceName=#ProvinceName#
+,DateCreated=#DateCreated#
+,DateUpdated=#DateUpdated#
+    WHERE
+    id = #id#
+  </update>
+   <delete id="SpecialLogisticsSystem.Model.T_Cm_Province.Delete">
+    delete
+    FROM T_Cm_Province
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

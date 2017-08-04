@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmBranch" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmBranch" type="MyNamespace.Data.TCmBranch, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmBranch">
+			<result property="Id" column="id" />
+			<result property="Name" column="name" />
+			<result property="Code" column="code" />
+			<result property="Industry" column="industry" />
+			<result property="Ownership" column="ownership" />
+			<result property="Abbreviation" column="abbreviation" />
+			<result property="Customerlevel" column="customer_level" />
+			<result property="Linkid" column="link_id" />
+			<result property="Sitetype" column="site_type" />
+			<result property="Parentid" column="parent_id" />
+			<result property="Creditlevel" column="credit_level" />
+			<result property="Type" column="type" />
+			<result property="Isheadquarters" column="is_headquarters" />
+			<result property="Isstop" column="is_stop" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,name,code,industry,ownership,abbreviation,customer_level,link_id,site_type,parent_id,credit_level,type,is_headquarters,is_stop from T_Cm_Branch
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmBranch" resultClass="int">
+		 		insert into T_Cm_Branch( id,name,code,industry,ownership,abbreviation,customer_level,link_id,site_type,parent_id,credit_level,type,is_headquarters,is_stop ) values ( #Id#,#Name#,#Code#,#Industry#,#Ownership#,#Abbreviation#,#Customerlevel#,#Linkid#,#Sitetype#,#Parentid#,#Creditlevel#,#Type#,#Isheadquarters#,#Isstop# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmBranch" resultClass="int">
+			update T_Cm_Branch set name=#Name#,code=#Code#,industry=#Industry#,ownership=#Ownership#,abbreviation=#Abbreviation#,customer_level=#Customerlevel#,link_id=#Linkid#,site_type=#Sitetype#,parent_id=#Parentid#,credit_level=#Creditlevel#,type=#Type#,is_headquarters=#Isheadquarters#,is_stop=#Isstop# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_Branch where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Template.Count">
+    Select count(1) FROM T_Cm_Template where
+      $and{id = #id#}  $and{template_name = #template_name#}  $and{template_type = #template_type#}  $and{is_used = #is_used#}  $and{is_system = #is_system#}  $and{template_width = #template_width#}  $and{template_height = #template_height#}  $and{template_content = #template_content#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Template.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_Template) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+     $and{id = #id#}  $and{template_name = #template_name#}  $and{template_type = #template_type#}  $and{is_used = #is_used#}  $and{is_system = #is_system#}  $and{template_width = #template_width#}  $and{template_height = #template_height#}  $and{template_content = #template_content#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Template.Load">
+    SELECT *
+    FROM   T_Cm_Template  where
+    $and{id = #id#}  $and{template_name = #template_name#}  $and{template_type = #template_type#}  $and{is_used = #is_used#}  $and{is_system = #is_system#}  $and{template_width = #template_width#}  $and{template_height = #template_height#}  $and{template_content = #template_content#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Template.Select">
+    SELECT *
+    FROM   T_Cm_Template  where
+    $and{id = #id#}  $and{template_name = #template_name#}  $and{template_type = #template_type#}  $and{is_used = #is_used#}  $and{is_system = #is_system#}  $and{template_width = #template_width#}  $and{template_height = #template_height#}  $and{template_content = #template_content#}    </select>
+   <insert id="SpecialLogisticsSystem.Model.T_Cm_Template.Insert">
+    insert into T_Cm_Template(
+    id
+,template_name
+,template_type
+,is_used
+,is_system
+,template_width
+,template_height
+,template_content
+    )values (
+     #id#
+,#template_name#
+,#template_type#
+,#is_used#
+,#is_system#
+,#template_width#
+,#template_height#
+,#template_content#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_Template.Update">
+    update T_Cm_Template set
+      id=#id#
+,template_name=#template_name#
+,template_type=#template_type#
+,is_used=#is_used#
+,is_system=#is_system#
+,template_width=#template_width#
+,template_height=#template_height#
+,template_content=#template_content#
+    WHERE
+    id = #id#
+  </update>
+   <delete id="SpecialLogisticsSystem.Model.T_Cm_Template.Delete">
+    delete
+    FROM T_Cm_Template
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

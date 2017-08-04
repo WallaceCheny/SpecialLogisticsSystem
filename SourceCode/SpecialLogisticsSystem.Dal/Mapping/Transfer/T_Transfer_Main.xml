@@ -1,0 +1,80 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Transfer_Main.Count">
+    Select count(1) FROM T_Transfer_Main where
+    $and{id = #id#}  $and{transfer_number = #transfer_number#}  $and{transfer_statue = #transfer_statue#}  $and{transfer_date = #transfer_date#}  $and{service_id = #service_id#}  $and{get_address = #get_address#}  $and{link_men = #link_men#}  $and{link_mobilephone = #link_mobilephone#}  $and{go_type = #go_type#}  $and{settle_type = #settle_type#}  $and{connect_type = #connect_type#}  $and{transfer_operator = #transfer_operator#}  $and{transfer_memo = #transfer_memo#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Transfer_Main.SelectPaging">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by transfer_date desc) as rowNum
+    FROM vTransfer where  $and{id = #id#}  $and{transfer_number = #transfer_number#}  $and{transfer_statue = #transfer_statue#}  $and{transfer_date = #transfer_date#}
+    $and{service_id = #service_id#}  $and{get_address = #get_address#}  $and{link_men = #link_men#}  $and{link_mobilephone = #link_mobilephone#}  $and{go_type = #go_type#}
+    $and{settle_type = #settle_type#}  $and{connect_type = #connect_type#}  $and{transfer_operator = #transfer_operator#}  $and{transfer_memo = #transfer_memo#}) as temptable
+    where rowNum BETWEEN $eg{#startRow#} and $eq{#maxRows#}
+    $eq{order by $OrderBy$}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Transfer_Main.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Transfer_Main) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{transfer_number = #transfer_number#}  $and{transfer_statue = #transfer_statue#}  $and{transfer_date = #transfer_date#}  $and{service_id = #service_id#}  $and{get_address = #get_address#}  $and{link_men = #link_men#}  $and{link_mobilephone = #link_mobilephone#}  $and{go_type = #go_type#}  $and{settle_type = #settle_type#}  $and{connect_type = #connect_type#}  $and{transfer_operator = #transfer_operator#}  $and{transfer_memo = #transfer_memo#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Transfer_Main.Load">
+    SELECT *
+    FROM   T_Transfer_Main  where
+    $and{id = #id#}  $and{transfer_number = #transfer_number#}  $and{transfer_statue = #transfer_statue#}  $and{transfer_date = #transfer_date#}  $and{service_id = #service_id#}  $and{get_address = #get_address#}  $and{link_men = #link_men#}  $and{link_mobilephone = #link_mobilephone#}  $and{go_type = #go_type#}  $and{settle_type = #settle_type#}  $and{connect_type = #connect_type#}  $and{transfer_operator = #transfer_operator#}  $and{transfer_memo = #transfer_memo#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Transfer_Main.Select">
+    SELECT *
+    FROM   T_Transfer_Main  where
+    $and{id = #id#}  $and{transfer_number = #transfer_number#}  $and{transfer_statue = #transfer_statue#}  $and{transfer_date = #transfer_date#}  $and{service_id = #service_id#}  $and{get_address = #get_address#}  $and{link_men = #link_men#}  $and{link_mobilephone = #link_mobilephone#}  $and{go_type = #go_type#}  $and{settle_type = #settle_type#}  $and{connect_type = #connect_type#}  $and{transfer_operator = #transfer_operator#}  $and{transfer_memo = #transfer_memo#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Transfer_Main.Insert">
+    insert into T_Transfer_Main(
+    id
+    ,transfer_number
+    ,transfer_statue
+    ,transfer_date
+    ,service_id
+    ,go_type
+    ,settle_type
+    ,connect_type
+    ,transfer_operator
+    ,transfer_memo
+    )values (
+    #id#
+    ,#transfer_number#
+    ,#transfer_statue#
+    ,#transfer_date#
+    ,#service_id#
+    ,#go_type#
+    ,#settle_type#
+    ,#connect_type#
+    ,#transfer_operator#
+    ,#transfer_memo#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Transfer_Main.Update">
+    update T_Transfer_Main set
+    id=#id#
+    ,transfer_number=#transfer_number#
+    ,transfer_statue=#transfer_statue#
+    ,transfer_date=#transfer_date#
+    ,service_id=#service_id#
+    ,go_type=#go_type#
+    ,settle_type=#settle_type#
+    ,connect_type=#connect_type#
+    ,transfer_operator=#transfer_operator#
+    ,transfer_memo=#transfer_memo#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Transfer_Main.Delete">
+    delete
+    FROM T_Transfer_Main
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

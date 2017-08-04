@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmCode" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmCode" type="MyNamespace.Data.TCmCode, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmCode">
+			<result property="Id" column="id" />
+			<result property="Paratype" column="para_type" />
+			<result property="Paravalue" column="para_value" />
+			<result property="Paratypename" column="para_type_name" />
+			<result property="Paraname" column="para_name" />
+			<result property="Parademo" column="para_demo" />
+			<result property="Updateopr" column="update_opr" />
+			<result property="Updatedate" column="update_date" />
+			<result property="Sort" column="sort" />
+			<result property="Effind" column="eff_ind" />
+			<result property="Parentvalue" column="parent_value" />
+			<result property="Isactive" column="is_active" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,para_type,para_value,para_type_name,para_name,para_demo,update_opr,update_date,sort,eff_ind,parent_value,is_active from T_Cm_Code
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmCode" resultClass="int">
+		 		insert into T_Cm_Code( id,para_type,para_value,para_type_name,para_name,para_demo,update_opr,update_date,sort,eff_ind,parent_value,is_active ) values ( #Id#,#Paratype#,#Paravalue#,#Paratypename#,#Paraname#,#Parademo#,#Updateopr#,#Updatedate#,#Sort#,#Effind#,#Parentvalue#,#Isactive# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmCode" resultClass="int">
+			update T_Cm_Code set para_type=#Paratype#,para_value=#Paravalue#,para_type_name=#Paratypename#,para_name=#Paraname#,para_demo=#Parademo#,update_opr=#Updateopr#,update_date=#Updatedate#,sort=#Sort#,eff_ind=#Effind#,parent_value=#Parentvalue#,is_active=#Isactive# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_Code where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

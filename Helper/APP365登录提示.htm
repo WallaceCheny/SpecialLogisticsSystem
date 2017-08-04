@@ -1,0 +1,133 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0046)http://www.app365.com/t/app365/browserTips.jsp -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD>
+<META content="text/html; charset=utf-8" http-equiv="Content-Type">
+<TITLE>APP365登录提示</TITLE><LINK rel="stylesheet" type="text/css" href="APP365登录提示_files/app.css">
+<SCRIPT type="text/javascript" src="APP365登录提示_files/jquery-1.7.2.min.js"></SCRIPT>
+
+<SCRIPT type="text/javascript" src="APP365登录提示_files/jquery.cycle.lite.min.js"></SCRIPT>
+
+<META name="GENERATOR" content="MSHTML 9.00.8112.16496"></HEAD>
+<BODY>
+<DIV id="box">
+<DIV class="top">
+<DIV><A style="cursor: pointer;" href="http://www.app365.com/">
+<DIV class="logo"></DIV></A></DIV>
+<DIV class="nav fr">
+<UL>
+  <LI class="icon-a fl"><A href="http://www.app365.com/">APP365首页</A></LI>
+  <LI class="icon-b fl"><A href="http://www.app365.com/about/aboutus/index.jhtml">联系我们</A></LI></UL></DIV></DIV>
+<DIV class="notice clear">
+<DIV style="left: 40px; top: -38px; position: relative;" class="fl"><IMG src="APP365登录提示_files/js.gif"></DIV>
+<DIV style="width: 585px;" class="fr">
+<DIV class="fl">
+<H1>尊敬的用户:</H1>
+<P>为了最佳的用户体验和更好的支持手机、平板等移动设备，我们目前仅支持以webkit为内核的浏览器（谷歌chrome浏览器、360浏览器、苹果Safari浏览器）。</P></DIV>
+<DIV class="link clear fl">
+<LI class="fl ln-b"><A id="downloadChromeId" onclick="downloadBrowser('chrome')" 
+href="http://www.app365.com/t/app365/browserTips.jsp#">谷歌浏览器</A></LI>
+<LI class="fl ln-a"><A id="downloadIEId" onclick="downloadBrowser('360')" href="http://www.app365.com/t/app365/browserTips.jsp#">360浏览器</A></LI></DIV></DIV></DIV>
+<DIV class="bot clear">
+<DIV class="prompt fl">
+<H1>谷歌浏览器安装示例</H1>
+<P><BR>1. 点击页面中部下载谷歌浏览器图标下载谷歌Chrome浏览器；                <BR>2. 
+下载完成后，进入下载目录，点击安装文件进行安装；                <BR>3. 打开桌面上的"Google Chrome "图标，进入<A 
+href="http://www.app365.com/">http://www.app365.com/</A>网站;                
+<BR>4. 点击网站右上角的"登录"链接，输入你注册的qq号和密码，即可进入app365物流系统。              </P></DIV>
+<DIV class="contact fr">
+<P>咨询热线：025-86639185(南京)</P><!--
+               <p>在线客服：</p> 
+                --></DIV></DIV></DIV>
+<SCRIPT type="text/javascript">
+function SetCookie(name,value){
+    var Days = 30; //此 cookie 将被保存 30 天
+    var exp = new Date();    
+    exp.setTime(exp.getTime() + Days*24*60*60*1000);
+    document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString() + ";path=/";
+}
+function getCookie(name){
+    var arr = document.cookie.match(new RegExp("(^| )"+name+"=([^;]*)(;|$)"));
+     if(arr != null) return unescape(arr[2]); return null;
+}
+
+function delCookie(name){
+    var exp = new Date();
+    exp.setTime(exp.getTime() - 1);
+    var cval=getCookie(name);
+    if(cval!=null) document.cookie= name + "="+cval+";expires="+exp.toGMTString();
+}
+var viewId = new Date().getTime(),
+	app365UserId = getCookie('app365UserId'),
+	app365UserName = getCookie('app365UserName'),
+	app365ComName = getCookie('app365ComName'),
+	app365ContactName = getCookie('app365ContactName'),
+	app365ContactPhone = getCookie('app365ContactPhone'),
+	app365ContactMobile = getCookie('app365ContactMobile'),
+	app365ProvinceName = getCookie('app365ProvinceName'),
+	app365CityName = getCookie('app365CityName'),
+	app365DistrictName = getCookie('app365DistrictName'),
+	app365ContactLocationName = getCookie('app365ContactLocationName'),
+	app365ContactHttp = getCookie('app365ContactHttp'),
+	app365ServiceType = getCookie('app365ServiceType');
+
+var params = {
+		"userId" : app365UserId,
+		"viewId" : viewId,
+		"userName" : app365UserName, 
+		"comName" : app365ComName,
+		"contactName" : app365ContactName,
+		"contactMobile" : app365ContactMobile,
+		"contactPhone" : app365ContactPhone,
+		"provinceName" : app365ProvinceName,
+		"cityName" : app365CityName, 
+		"districtName" : app365DistrictName,
+		"contactLocationName" : app365ContactLocationName,
+		"contactHttp" : app365ContactHttp,
+		"serviceType" : app365ServiceType
+};
+function toJsonStr(params){
+    var str = "{";
+    var i=0;
+    for(var x in params){
+        if(i > 0){
+            str = str + ",";
+        }
+        str = str + '"' + x + '"' + ':' + '"' + params[x] + '"';
+        i++;
+    }
+    str = str + "}";
+    return str;
+}
+function downloadBrowser(type){
+	var file_name = null;
+	params['download_chrome'] = false;
+	params['download_360'] = false;
+	if(type == 'chrome'){
+		params['download_chrome'] = true;
+		file_name = "ChromeStandaloneSetup";
+	}
+	if(type == '360'){
+		params['download_360'] = true;
+		file_name = "360se";
+	}
+	window.location.href = "http://web.app365.com/downloads/" + file_name + ".exe";
+	setTimeout(saveBrowserTips, 1000);
+	//saveBrowserTips();
+}
+function saveBrowserTips(){
+	$.post('/service/api.jsp',{fun:'browserTipsIn', params : toJsonStr(params) },     
+	        function (data, textStatus){
+	            if(data.userId){
+	            	SetCookie('app365UserId', data.userId);
+	            }
+	 }, "json");
+}
+saveBrowserTips();
+</SCRIPT>
+
+<SCRIPT type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb4a3742f260e69a7118585d9641c66f9' type='text/javascript'%3E%3C/script%3E"));
+</SCRIPT>
+</BODY></HTML>

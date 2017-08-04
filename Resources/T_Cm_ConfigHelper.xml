@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmConfig" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmConfig" type="MyNamespace.Data.TCmConfig, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmConfig">
+			<result property="Id" column="id" />
+			<result property="Parametername" column="parameter_name" />
+			<result property="Parametervalue" column="parameter_value" />
+			<result property="Parameterdescription" column="parameter_description" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,parameter_name,parameter_value,parameter_description from T_Cm_Config
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmConfig" resultClass="int">
+		 		insert into T_Cm_Config( id,parameter_name,parameter_value,parameter_description ) values ( #Id#,#Parametername#,#Parametervalue#,#Parameterdescription# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmConfig" resultClass="int">
+			update T_Cm_Config set parameter_name=#Parametername#,parameter_value=#Parametervalue#,parameter_description=#Parameterdescription# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_Config where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

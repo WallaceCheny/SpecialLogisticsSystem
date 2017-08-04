@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmCarArea" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmCarArea" type="MyNamespace.Data.TCmCarArea, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmCarArea">
+			<result property="Id" column="cararea_id" />
+			<result property="Name" column="name" />
+			<result property="Province" column="province" />
+			<result property="Istop" column="is_top" />
+			<result property="Isdefault" column="is_default" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select cararea_id,name,province,is_top,is_default from T_Cm_CarArea
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 cararea_id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmCarArea" resultClass="int">
+		 		insert into T_Cm_CarArea( cararea_id,name,province,is_top,is_default ) values ( #Carareaid#,#Name#,#Province#,#Istop#,#Isdefault# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmCarArea" resultClass="int">
+			update T_Cm_CarArea set name=#Name#,province=#Province#,is_top=#Istop#,is_default=#Isdefault# where cararea_id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_CarArea where cararea_id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

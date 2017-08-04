@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmFeeType" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmFeeType" type="MyNamespace.Data.TCmFeeType, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmFeeType">
+			<result property="Id" column="id" />
+			<result property="Feename" column="fee_name" />
+			<result property="Feeunit" column="fee_unit" />
+			<result property="Feetype" column="fee_type" />
+			<result property="Feesort" column="fee_sort" />
+			<result property="Feeamount" column="fee_amount" />
+			<result property="Feenote" column="fee_note" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,fee_name,fee_unit,fee_type,fee_sort,fee_amount,fee_note from T_Cm_FeeType
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmFeeType" resultClass="int">
+		 		insert into T_Cm_FeeType( id,fee_name,fee_unit,fee_type,fee_sort,fee_amount,fee_note ) values ( #Id#,#Feename#,#Feeunit#,#Feetype#,#Feesort#,#Feeamount#,#Feenote# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmFeeType" resultClass="int">
+			update T_Cm_FeeType set fee_name=#Feename#,fee_unit=#Feeunit#,fee_type=#Feetype#,fee_sort=#Feesort#,fee_amount=#Feeamount#,fee_note=#Feenote# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_FeeType where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

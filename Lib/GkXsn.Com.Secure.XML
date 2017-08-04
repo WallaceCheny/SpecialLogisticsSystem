@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GkXsn.Com.Secure</name>
+    </assembly>
+    <members>
+        <member name="T:GkXsn.Com.Secure.AES">
+            <summary>
+            AES加密解密
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.AES.Encrypt(System.String)">
+            <summary>
+            AES加密函数
+            </summary>
+            <param name="toEncrypt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.Secure.AES.Decrypt(System.String)">
+            <summary>
+            AES解密函数
+            </summary>
+            <param name="toDecrypt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.Secure.AES.EncryptBinaryFormatterToFile(System.Object,System.String)">
+            <summary>
+            AES加密函数
+            </summary>
+            <param name="data">输入的数据</param>
+            <param name="filePath">文件路径如:files\\viewstate\\z.zip</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.Secure.AES.DecryptBinaryFormatterFromFile(System.String)">
+            <summary>
+            AES解密函数
+            </summary>
+            <param name="filePath">文件路径如:\\viewstate\\z.zip</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.Secure.AES.DecryptBinaryFormatterFromFile(System.String,System.String)">
+            <summary>
+            AES解密函数
+            </summary>
+            <param name="path">绝对位置</param>
+            <param name="filePath">文件路径如:\\viewstate\\z.zip</param>
+            <returns></returns>
+        </member>
+        <member name="F:GkXsn.Com.Secure.AES._dispose">
+            <summary>
+            避免用户多次调用Dispose()或Close()接口导致多次释放的问题
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.AES.Finalize">
+            <summary>
+            析构函数
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.AES.System#IDisposable#Dispose">
+            <summary>
+            支持调用方显示调用，释放所有资源
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.AES.Dispose(System.Boolean)">
+            <summary>
+            选择释放托管资源或非托管资源
+            </summary>
+            <param name="disposing">true：释放所有资源；false：只释放非托管资源</param>
+        </member>
+        <member name="T:GkXsn.Com.Secure.DES">
+            <summary>
+            DES加密 解密
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.DES.Encrypt(System.String)">
+            <summary>
+            DES加密
+            </summary>
+            <param name="strValue">要加密的字符串</param>
+            <returns>返回加密完成的字符串</returns>
+        </member>
+        <member name="M:GkXsn.Com.Secure.DES.Decode(System.String)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="strText">要加密的字符串</param>
+            <returns>返回解密完成的字符串</returns>
+        </member>
+        <member name="M:GkXsn.Com.Secure.DES.DeserializeBinaryFormatterToFile(System.Object,System.String)">
+            <summary>
+            将数据序列化为Bin文件
+            </summary>
+            <param name="data">object类型的数据</param>
+            <param name="filePath">文件路径如:files\\viewstate\\z.zip</param>
+        </member>
+        <member name="M:GkXsn.Com.Secure.DES.SerializeBinaryFormatterFromFile(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="filePath">文件路径如:files\\viewstate\\z.zip</param>
+        </member>
+        <member name="F:GkXsn.Com.Secure.DES._dispose">
+            <summary>
+            避免用户多次调用Dispose()或Close()接口导致多次释放的问题
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.DES.Finalize">
+            <summary>
+            析构函数
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.DES.System#IDisposable#Dispose">
+            <summary>
+            支持调用方显示调用，释放所有资源
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.DES.Dispose(System.Boolean)">
+            <summary>
+            选择释放托管资源或非托管资源
+            </summary>
+            <param name="disposing">true：释放所有资源；false：只释放非托管资源</param>
+        </member>
+        <member name="T:GkXsn.Com.Secure.MD5">
+            <summary>
+            加密
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.MD5.MD5Encrypt(System.String)">
+            <summary>
+            MD5加密
+            </summary>
+            <param name="strMD5">要加密的字符串</param>
+            <returns>返回加密完成的字符串</returns>
+        </member>
+        <member name="F:GkXsn.Com.Secure.MD5._dispose">
+            <summary>
+            避免用户多次调用Dispose()或Close()接口导致多次释放的问题
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.MD5.Finalize">
+            <summary>
+            析构函数
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.MD5.System#IDisposable#Dispose">
+            <summary>
+            支持调用方显示调用，释放所有资源
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.MD5.Dispose(System.Boolean)">
+            <summary>
+            选择释放托管资源或非托管资源
+            </summary>
+            <param name="disposing">true：释放所有资源；false：只释放非托管资源</param>
+        </member>
+        <member name="T:GkXsn.Com.Secure.RightKey">
+            <summary>
+            获取授权信息
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.RightKey.GetRightKey(System.String)">
+            <summary>
+            获取授权信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:GkXsn.Com.Secure.RightKey._dispose">
+            <summary>
+            避免用户多次调用Dispose()或Close()接口导致多次释放的问题
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.RightKey.Finalize">
+            <summary>
+            析构函数
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.RightKey.System#IDisposable#Dispose">
+            <summary>
+            支持调用方显示调用，释放所有资源
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.Secure.RightKey.Dispose(System.Boolean)">
+            <summary>
+            选择释放托管资源或非托管资源
+            </summary>
+            <param name="disposing">true：释放所有资源；false：只释放非托管资源</param>
+        </member>
+    </members>
+</doc>

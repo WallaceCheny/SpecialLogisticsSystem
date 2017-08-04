@@ -1,0 +1,57 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Role.Count">
+    Select count(1) FROM T_Cm_Role where
+      $and{id = #id#}  $and{branch_id = #branch_id#}  $and{role_type = #role_type#}  $and{role_name = #role_name#}  $and{description = #description#}  $and{update_date = #update_date#}  $and{is_admin = #is_admin#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Role.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_Role) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+     $and{id = #id#}  $and{branch_id = #branch_id#}  $and{role_type = #role_type#}  $and{role_name = #role_name#}  $and{description = #description#}  $and{update_date = #update_date#}  $and{is_admin = #is_admin#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Role.Load">
+    SELECT *
+    FROM   T_Cm_Role  where
+    $and{id = #id#}  $and{branch_id = #branch_id#}  $and{role_type = #role_type#}  $and{role_name = #role_name#}  $and{description = #description#}  $and{update_date = #update_date#}  $and{is_admin = #is_admin#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Role.Select">
+    SELECT *
+    FROM   T_Cm_Role  where
+    $and{id = #id#}  $and{branch_id = #branch_id#}  $and{role_type = #role_type#}  $and{role_name = #role_name#}  $and{description = #description#}  $and{update_date = #update_date#}  $and{is_admin = #is_admin#}    </select>
+   <insert id="SpecialLogisticsSystem.Model.T_Cm_Role.Insert">
+    insert into T_Cm_Role(
+    id
+,branch_id
+,role_type
+,role_name
+,description
+,update_date
+,is_admin
+    )values (
+     #id#
+,#branch_id#
+,#role_type#
+,#role_name#
+,#description#
+,#update_date#
+,#is_admin#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_Role.Update">
+    update T_Cm_Role set
+      id=#id#
+,branch_id=#branch_id#
+,role_type=#role_type#
+,role_name=#role_name#
+,description=#description#
+,update_date=#update_date#
+,is_admin=#is_admin#
+    WHERE
+    id = #id#
+  </update>
+   <delete id="SpecialLogisticsSystem.Model.T_Cm_Role.Delete">
+    delete
+    FROM T_Cm_Role
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

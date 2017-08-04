@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmTemplate" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmTemplate" type="MyNamespace.Data.TCmTemplate, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmTemplate">
+			<result property="Id" column="id" />
+			<result property="Templatename" column="template_name" />
+			<result property="Templatetype" column="template_type" />
+			<result property="Isused" column="is_used" />
+			<result property="Issystem" column="is_system" />
+			<result property="Templatewidth" column="template_width" />
+			<result property="Templateheight" column="template_height" />
+			<result property="Templatecontent" column="template_content" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,template_name,template_type,is_used,is_system,template_width,template_height,template_content from T_Cm_Template
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmTemplate" resultClass="int">
+		 		insert into T_Cm_Template( id,template_name,template_type,is_used,is_system,template_width,template_height,template_content ) values ( #Id#,#Templatename#,#Templatetype#,#Isused#,#Issystem#,#Templatewidth#,#Templateheight#,#Templatecontent# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmTemplate" resultClass="int">
+			update T_Cm_Template set template_name=#Templatename#,template_type=#Templatetype#,is_used=#Isused#,is_system=#Issystem#,template_width=#Templatewidth#,template_height=#Templateheight#,template_content=#Templatecontent# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_Template where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Site.Count">
+    Select count(1) FROM T_Stowage_Site where
+    $and{id = #id#}  $and{main_id = #main_id#}  $and{site_order = #site_order#}  $and{compay_ide = #compay_ide#}  $and{unload_number = #unload_number#}  $and{reach_payment = #reach_payment#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Site.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Stowage_Site) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{main_id = #main_id#}  $and{site_order = #site_order#}  $and{compay_ide = #compay_ide#}  $and{unload_number = #unload_number#}  $and{reach_payment = #reach_payment#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Site.Load">
+    SELECT *
+    FROM   T_Stowage_Site  where
+    $and{id = #id#}  $and{main_id = #main_id#}  $and{site_order = #site_order#}  $and{compay_ide = #compay_ide#}  $and{unload_number = #unload_number#}  $and{reach_payment = #reach_payment#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Site.Select">
+    SELECT *
+    FROM   T_Stowage_Site  where
+    $and{id = #id#}  $and{main_id = #main_id#}  $and{site_order = #site_order#}  $and{compay_ide = #compay_ide#}  $and{unload_number = #unload_number#}  $and{reach_payment = #reach_payment#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Stowage_Site.Insert">
+    insert into T_Stowage_Site(
+    id
+    ,main_id
+    ,site_order
+    ,compay_ide
+    ,unload_number
+    ,reach_payment
+    )values (
+    #id#
+    ,#main_id#
+    ,#site_order#
+    ,#compay_ide#
+    ,#unload_number#
+    ,#reach_payment#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Stowage_Site.Update">
+    update T_Stowage_Site set
+    id=#id#
+    ,main_id=#main_id#
+    ,site_order=#site_order#
+    ,compay_ide=#compay_ide#
+    ,unload_number=#unload_number#
+    ,reach_payment=#reach_payment#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Stowage_Site.Delete">
+    delete
+    FROM T_Stowage_Site
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

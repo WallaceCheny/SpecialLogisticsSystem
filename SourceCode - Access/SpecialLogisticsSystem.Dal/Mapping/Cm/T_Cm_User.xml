@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_User.Count">
+    Select count(1) FROM T_Cm_User where
+    $and{id = #id#} $and{type = #type#} $and{name = #name#} $and{remark = #remark#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_User.PageLoad">
+    Select id,branch_id,type,name,remark FROM(
+    Select id,branch_id,type,name,remark
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_User) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#} $and{branch_id in(#branch_id#)} $and{type = #type#} $and{name = #name#} $and{remark = #remark#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_User.Load">
+    SELECT *
+    FROM  T_Cm_User a
+    where  $and{id = #id#}  $and{branch_id = #branch_id#} $and{user_name = #user_name#} $and{password = #password#}  $and{update_date = #update_date#}  $and{emp_Info_Id = #emp_Info_Id#}  $and{emp_name = #emp_name#}  $and{user_status = #user_status#}  $and{add_date = #add_date#}  $and{update_opr = #update_opr#}  $and{can_show_branch = #can_show_branch#}  $and{accesskey = #accesskey#}  $and{def_show_branch = #def_show_branch#}  $and{is_admin = #is_admin#}
+    order by a.add_date asc
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_User.Select">
+    SELECT    a.* ,
+    b.name AS branch_name ,
+    d.name AS def_branch_name ,
+    c.para_name AS status_name ,
+    e.emp_name AS employee_name ,
+    g.id as role_id,
+    g.is_admin AS role_is_admin,
+    g.role_name
+    FROM  (((((T_Cm_User a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Branch d ON a.def_show_branch = d.id)
+    LEFT JOIN T_Cm_Code c ON (a.user_status = c.para_value
+    AND para_type = 'user_status'))
+    LEFT JOIN T_Cm_Emp e ON e.id = a.emp_Info_Id)
+    LEFT JOIN T_Cm_UserRole_Relation f ON a.id = f.user_id)
+    LEFT JOIN T_Cm_Role g ON g.id = f.role_id
+    where
+    $and{a.id = #id#}  $and{a.branch_id = #branch_id#}  $and{password = #password#}  $and{user_name = #user_name#}  $and{update_date = #update_date#}  $and{emp_Info_Id = #emp_Info_Id#}  $and{emp_name = #emp_name#}  $and{user_status = #user_status#}  $and{add_date = #add_date#}  $and{update_opr = #update_opr#}  $and{can_show_branch = #can_show_branch#}  $and{accesskey = #accesskey#}  $and{def_show_branch = #def_show_branch#}  $and{is_admin = #is_admin#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Cm_User.Insert">
+    insert into T_Cm_User(
+    id
+    ,branch_id
+    ,password
+    ,user_name
+    ,update_date
+    ,emp_Info_Id
+    ,emp_name
+    ,user_status
+    ,def_show_branch
+    ,add_date
+    ,update_opr
+    ,can_show_branch
+    ,accesskey
+    )values (
+    #id#
+    ,#branch_id#
+    ,#password#
+    ,#user_name#
+    ,#update_date#
+    ,#emp_Info_Id#
+    ,#emp_name#
+    ,#user_status#
+    ,#def_show_branch#
+    ,#add_date#
+    ,#update_opr#
+    ,#can_show_branch#
+    ,#accesskey#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_User.Update">
+    update T_Cm_User set
+    id=#id#
+    ,branch_id=#branch_id#
+    ,password=#password#
+    ,user_name=#user_name#
+    ,update_date=#update_date#
+    ,emp_Info_Id=#emp_Info_Id#
+    ,emp_name=#emp_name#
+    ,user_status=#user_status#
+    ,def_show_branch=#def_show_branch#
+    ,add_date=#add_date#
+    ,update_opr=#update_opr#
+    ,can_show_branch=#can_show_branch#
+    ,accesskey=#accesskey#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Cm_User.Delete">
+    delete
+    FROM T_Cm_User
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

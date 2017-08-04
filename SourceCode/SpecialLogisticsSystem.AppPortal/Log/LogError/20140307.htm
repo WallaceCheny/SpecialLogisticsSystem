@@ -1,0 +1,492 @@
+<HR COLOR=red>
+异常时间：2014-03-07 20:03:13,975 [17] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): A field or property with name 'id' was not found in the selected data source. Possible causes of this error may be the following: an incorrect or case-insensitive spelling of the grid column name; assigning a wrong or not properly initialized data source to the grid.
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValueByControllerRow(Int32 controllerRow, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValue(Int32 visibleIndex, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowValue(Int32 visibleIndex, String fieldName)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowValuesCore(Int32 index, String[] fieldNames, GetRowValueMethod getValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowValues(Int32 visibleIndex, String[] fieldNames)
+   在 DevExpress.Web.Data.WebDataProxy.GetValues(Int32 visibleIndex, String[] fieldNames)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetRowValues(Int32 visibleIndex, String[] fieldNames)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SelectionStrategyOwner.GetRowValues(Int32 visibleIndex, String[] fieldNames)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SingleSelectionStrategy.get_Value()
+   在 DevExpress.Web.ASPxGridLookup.ASPxGridLookup.get_Value()
+   在 SpecialLogisticsSystem.AppPortal.BaseLookUp.GetValue() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\BaseLookUp.cs:行号 66
+   在 SpecialLogisticsSystem.AppPortal.UserControls.CustomerLookUp.GetValue() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\CustomerLookUp.ascx.cs:行号 66
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.TryUpdateModel`1.ToUpdateModel(T model, ASPxGridView grid) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\UpdateModel.cs:行号 166
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_RowUpdating(Object sender, ASPxDataUpdatingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 207
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowUpdating(ASPxDataUpdatingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowUpdating(ASPxDataUpdatingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowUpdating(ASPxDataUpdatingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.UpdateRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-07 20:05:40,799 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): A field or property with name 'id' was not found in the selected data source. Possible causes of this error may be the following: an incorrect or case-insensitive spelling of the grid column name; assigning a wrong or not properly initialized data source to the grid.
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValueByControllerRow(Int32 controllerRow, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValue(Int32 visibleIndex, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowValue(Int32 visibleIndex, String fieldName)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowValuesCore(Int32 index, String[] fieldNames, GetRowValueMethod getValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowValues(Int32 visibleIndex, String[] fieldNames)
+   在 DevExpress.Web.Data.WebDataProxy.GetValues(Int32 visibleIndex, String[] fieldNames)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SelectionStrategyOwner.GetRowValues(Int32 visibleIndex, String[] fieldNames)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SingleSelectionStrategy.get_Value()
+   在 DevExpress.Web.ASPxGridLookup.ASPxGridLookup.get_Value()
+   在 SpecialLogisticsSystem.AppPortal.BaseLookUp.GetValue() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\BaseLookUp.cs:行号 66
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.TryUpdateModel`1.ToUpdateModel(T model, ASPxGridView grid) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\UpdateModel.cs:行号 166
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_RowUpdating(Object sender, ASPxDataUpdatingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 207
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowUpdating(ASPxDataUpdatingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowUpdating(ASPxDataUpdatingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowUpdating(ASPxDataUpdatingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.UpdateRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-07 20:14:46,108 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    update T_Cm_Customer set
+    id='07bd0925-1e48-4b92-bb9d-01e7399b8412'
+    ,customer_name='批量'
+    ,credit_level=''
+    ,customer_type='Deliver'
+    ,emp_id='00000000-0000-0000-0000-000000000000'
+    ,link_id='6dccddae-e3a8-4a81-b5ca-04c8acf72c79'
+    ,sender_id='00000000-0000-0000-0000-000000000000'
+    ,bank_username=''
+    ,bank_name=''
+    ,bank_number=''
+    ,bank_index=''
+    WHERE
+    id = '07bd0925-1e48-4b92-bb9d-01e7399b8412'
+   <BR>
+ <HR Size=1>System.InvalidOperationException: 此 SqlTransaction 已完成；它再也无法使用。
+   在 System.Data.SqlClient.SqlTransaction.ZombieCheck()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 Ms.Data.DbContext.x17faf562711bea62()
+   在 Ms.Data.DbContext.xa8e906fe362fe704(Action xab8fe3cd8c5556fb)
+   在 Ms.Data.DbContext.Rollback()
+   在 Ms.Data.DbContext.x20842211e363c9b2()
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Update[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 172
+<HR COLOR=red>
+异常时间：2014-03-07 20:14:46,164 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.InvalidOperationException: 此 SqlTransaction 已完成；它再也无法使用。
+   在 System.Data.SqlClient.SqlTransaction.ZombieCheck()
+   在 System.Data.SqlClient.SqlTransaction.Rollback()
+   在 Ms.Data.DbContext.x17faf562711bea62()
+   在 Ms.Data.DbContext.xa8e906fe362fe704(Action xab8fe3cd8c5556fb)
+   在 Ms.Data.DbContext.Rollback()
+   在 Ms.Data.DbContext.x20842211e363c9b2()
+   在 Ms.Data.DbContext.Dispose()
+   在 SpecialLogisticsSystem.Dal.CmCustomerDal.Update(T_Cm_Customer item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmCustomerDal.cs:行号 64
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.InsertOrUpdateLink(Nullable`1 id, String name, String mobile, String area, String address, CustomerType type, Nullable`1 sendID) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 198
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.InsertOrUpdateCustomer(T_Way_Bill way) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 157
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_RowUpdating(Object sender, ASPxDataUpdatingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 209
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowUpdating(ASPxDataUpdatingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowUpdating(ASPxDataUpdatingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowUpdating(ASPxDataUpdatingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.UpdateRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-07 21:09:55,399 [16] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Stowage_Main(
+    id
+    ,stowage_number
+    ,stowage_statue
+    ,departure_time
+    ,car_id
+    ,plan_arrivle
+    ,emp_id
+    ,start_city
+    ,start_branch
+    ,end_branch
+    ,end_branch_linkname
+    ,end_branch_linktelephone
+    ,main_memo
+    ,freight
+    ,prepay
+    ,other_payment
+    ,back_payment
+    ,arrive_payment
+    )values (
+    'd6d341a1-09df-4227-912e-69fa9e0fc83d'
+    ,'FC2014030702'
+    ,'UnSend'
+    ,'2014/3/7 21:09:31'
+    ,'c292a104-d2fd-491b-86d6-31894192a195'
+    ,
+    ,'00000000-0000-0000-0000-000000000000'
+    ,0
+    ,'b9f49305-4cb2-4d08-b8c0-b2c0184bfbc9'
+    ,'1326724d-df6b-4a9d-93e2-998f772ea320'
+    ,'1326724d-df6b-4a9d-93e2-998f772ea320'_linkname
+    ,'1326724d-df6b-4a9d-93e2-998f772ea320'_linktelephone
+    ,''
+    ,0
+    ,'5000.00'
+    ,0
+    ,'0.00'
+    ,'4000.00'
+    )
+   <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-03-07 21:09:55,584 [16] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.StowageMainDal.Insert(T_Stowage_Main item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\StowageMainDal.cs:行号 33
+   在 SpecialLogisticsSystem.AppPortal.Business.Stowage.gridStowage_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Stowage.aspx.cs:行号 107
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-07 21:53:29,689 [29] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 SpecialLogisticsSystem.AppPortal.BaseLookUp.GetValue() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\BaseLookUp.cs:行号 66
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.TryUpdateModel`1.ToUpdateModel(T model, ASPxGridView grid) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\UpdateModel.cs:行号 166
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 133
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-07 22:04:41,310 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): The state information is invalid for this page and might be corrupted. ---> System.Web.UI.ViewStateException: Invalid viewstate. 
+	Client IP: ::1
+	Port: 
+	Referer: http://localhost:4765/Business/Way.aspx
+	Path: /Business/Way.aspx
+	User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.146 Safari/537.36
+	ViewState: /wEWJQKPoJvsBwLLkOCIDwKq99GWCgLwzb2BAgLW7eHhDQKVsbSQAQKdqaqmCwLpsMXKAwKGneLkAgLcnfDSBgKkxI2uBQKRvbjCBwLS1qClDAKlouKiDQKakorpAgLx1vLUAgLd++mpCwLKvci0AwLw/srfAwLfl+wgAqbzoegLApWxtJABAp2pqqYLAumwxcoDAoad4uQCAtyd8NIGAqTEja4FApG9uMIHAtLWoKUMAqWi4qINApqSiukCAvHW8tQCAt376akLAsq9yLQDAvD+yt8DAt+X7CACpvOh6AuwRdDrX4OjOdKKjKn12GxFIoYT9k3KahgVU05U6S5j1g==
+   在 System.Web.UI.ViewStateException.ThrowError(Exception inner, String persistedState, String errorPageMessage, Boolean macValidationError)
+   在 System.Web.UI.ClientScriptManager.EnsureEventValidationFieldLoaded()
+   在 System.Web.UI.ClientScriptManager.RegisterForEventValidation(String uniqueId, String argument)
+   在 System.Web.UI.ClientScriptManager.RegisterForEventValidation(PostBackOptions options)
+   在 System.Web.UI.ClientScriptManager.GetPostBackEventReference(PostBackOptions options, Boolean registerForEventValidation)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.BeforeRender()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.BeforeRender()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.WebControls.WebControl.RenderContents(HtmlTextWriter writer)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.RenderInternal(HtmlTextWriter writer)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.GetRenderResult(Control control, String suffix)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-03-07 22:08:35,358 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.StringToValue(String columnName, String strValue)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SelectionStrategyOwner.GetKeyValueFromScript(String value)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SingleSelectionStrategy.SetSelectionFromClientKeyValue(String clientKeyValue)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SingleSelectionStrategy.ApplyGridViewChanges(String appliedRowValue)
+   在 DevExpress.Web.ASPxGridLookup.ASPxGridLookup.OnGridViewApplyChanges(String appliedRowValue)
+   在 DevExpress.Web.ASPxGridLookup.ASPxGridLookup.GridViewCustomCallback(Object sender, ASPxGridViewCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridViewCustomCallbackEventHandler.Invoke(Object sender, ASPxGridViewCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCustomCallback(ASPxGridViewCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBCustomCallBack(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-07 22:33:56,585 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.MissingPrimaryKeyException: A primary key field specified via the KeyFieldName property is not found in the underlying data source. Make sure the field name is spelled correctly. Pay attention to the character case.
+   在 DevExpress.Web.Data.WebDataProxy.CheckKeyFieldName()
+   在 DevExpress.Web.Data.WebDataProxy.StringToValue(String columnName, String strValue)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SelectionStrategyOwner.GetKeyValueFromScript(String value)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SingleSelectionStrategy.SetSelectionFromClientKeyValue(String clientKeyValue)
+   在 DevExpress.Web.ASPxGridLookup.Internal.SingleSelectionStrategy.ApplyGridViewChanges(String appliedRowValue)
+   在 DevExpress.Web.ASPxGridLookup.ASPxGridLookup.OnGridViewApplyChanges(String appliedRowValue)
+   在 DevExpress.Web.ASPxGridLookup.ASPxGridLookup.GridViewCustomCallback(Object sender, ASPxGridViewCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCustomCallback(ASPxGridViewCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBCustomCallBack(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-07 22:35:40,941 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Way_Bill(
+    id
+    ,way_type
+    ,way_number
+    ,start_city
+    ,end_city
+    ,pass_city
+    ,deliver_id
+    ,deliver_name
+    ,deliver_mobile
+    ,deliver_area
+    ,deliver_address
+    ,consignee_id
+    ,consignee_name
+    ,consignee_mobile
+    ,consignee_area
+    ,consignee_address
+    ,clearing_type
+    ,spot_payment
+    ,pick_payment
+    ,back_payment
+    ,production_payment
+    ,shipping_type
+    ,delivery_type
+    ,receipt_portion
+    ,receipt_number
+    ,collection_type
+    ,receive_date
+    ,bill_rebate
+    ,bill_memo
+    ,fee_pay
+    ,fee_nopay
+    ,fee_reback
+    ,bring_site
+    ,bring_man
+    ,back_site
+    ,back_man
+    ,bill_statue
+    ,is_hide
+    ,ticket_taxes
+    ,freight_chinese
+    ,emp_id
+    )values (
+    '345a67b2-8bf5-41f2-8b24-8840df20dac2'
+    ,0
+    ,'JJ20140307009'
+    ,'晋江市'
+    ,'上海市'
+    ,''
+    ,'52522e16-1160-4072-ab89-10da8da1d7c3'
+    ,
+    ,
+    ,
+    ,
+    ,'2e11151f-039c-4393-9751-c64b00d33b02'
+    ,
+    ,
+    ,
+    ,
+    ,0
+    ,'2418.60'
+    ,'0.00'
+    ,'0.00'
+    ,'0.00'
+    ,0
+    ,0
+    ,0
+    ,''
+    ,0
+    ,'2014/3/7 22:34:05'
+    ,'0.00'
+    ,''
+    ,'False'
+    ,'False'
+    ,'False'
+    ,'00000000-0000-0000-0000-000000000000'
+    ,''
+    ,'00000000-0000-0000-0000-000000000000'
+    ,''
+    ,'New'
+    ,'False'
+    ,''
+    ,'贰仟肆佰壹拾捌元陆角整'
+    ,'fa696067-e3b8-4de5-8a8a-aa241d67aaac'
+    )
+   <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-03-07 22:35:40,948 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): Incorrect syntax near ','.
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Insert(T_Way_Bill item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 43
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 149
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-07 22:39:26,135 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Way_Bill(
+    id
+    ,way_type
+    ,way_number
+    ,start_city
+    ,end_city
+    ,pass_city
+    ,deliver_id
+    ,consignee_id
+    ,aggregate_amount
+    ,clearing_type
+    ,spot_payment
+    ,pick_payment
+    ,back_payment
+    ,production_payment
+    ,shipping_type
+    ,delivery_type
+    ,receipt_portion
+    ,receipt_number
+    ,collection_type
+    ,receive_date
+    ,bill_rebate
+    ,bill_memo
+    ,fee_pay
+    ,fee_nopay
+    ,fee_reback
+    ,bring_site
+    ,bring_man
+    ,back_site
+    ,back_man
+    ,bill_statue
+    ,is_hide
+    ,ticket_taxes
+    ,freight_chinese
+    ,emp_id
+    )values (
+    'b9b7a2d6-c4cb-470d-aca4-05cfd226953e'
+    ,0
+    ,'JJ20140307010'
+    ,'晋江市'
+    ,'上海市'
+    ,''
+    ,'a130f9c3-1ce9-44a0-ad1d-80bdb8fe3e8e'
+    ,'6767546b-4b93-4d82-89bf-fa11c5ffcb68'
+    ,'1926.6'
+    ,1
+    ,'0.00'
+    ,'0.00'
+    ,'1926.60'
+    ,'0.00'
+    ,0
+    ,0
+    ,0
+    ,''
+    ,0
+    ,'2014/3/7 22:37:52'
+    ,'0.00'
+    ,''
+    ,'False'
+    ,'False'
+    ,'False'
+    ,'00000000-0000-0000-0000-000000000000'
+    ,''
+    ,'00000000-0000-0000-0000-000000000000'
+    ,''
+    ,'New'
+    ,'False'
+    ,''
+    ,'壹仟玖佰贰拾陆元陆角整'
+    ,'fa696067-e3b8-4de5-8a8a-aa241d67aaac'
+    )
+   <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): The column "aggregate_amount" cannot be modified because it is either a computed column or is the result of a UNION operator.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-03-07 22:39:26,162 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): The column "aggregate_amount" cannot be modified because it is either a computed column or is the result of a UNION operator.
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Insert(T_Way_Bill item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 43
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 149
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)

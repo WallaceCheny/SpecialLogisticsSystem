@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TTransferDetail" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TTransferDetail" type="MyNamespace.Data.TTransferDetail, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TTransferDetail">
+			<result property="Id" column="id" />
+			<result property="Mainid" column="main_id" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,main_id from T_Transfer_Detail
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TTransferDetail" resultClass="int">
+		 		insert into T_Transfer_Detail( id,main_id ) values ( #Id#,#Mainid# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TTransferDetail" resultClass="int">
+			update T_Transfer_Detail set main_id=#Mainid# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Transfer_Detail where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

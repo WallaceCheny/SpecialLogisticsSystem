@@ -1,0 +1,828 @@
+<HR COLOR=red>
+异常时间：2014-03-08 08:51:16,421 [8] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: Cannot convert null to 'long' because it is a non-nullable value type
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentProvinceID() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:line 106
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.Import.ImportCustomer.Import(Cells cells) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Import\ImportCustomer.cs:line 22
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.Import.ImportBase.Import(ImportType importType, String newFileName) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Import\ImportBase.cs:line 24
+   at SpecialLogisticsSystem.AppPortal.Cm.Import.cbk_Import_Callback(Object sender, CallbackEventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Import.aspx.cs:line 31
+   at DevExpress.Web.ASPxCallback.ASPxCallback.OnCallback(CallbackEventArgs e)
+   at DevExpress.Web.ASPxCallback.ASPxCallback.RaiseCallbackEvent(String eventArgument)
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-08 09:05:10,470 [20] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.ArgumentNullException: 值不能为 null。
+参数名: value
+   在 System.String.IndexOf(String value, Int32 startIndex, Int32 count, StringComparison comparisonType)
+   在 System.String.Contains(String value)
+   在 SpecialLogisticsSystem.AppPortal.UserControls.CityLookUp.<>c__DisplayClass1.<SetCityValue>b__0(IDNameDescription p) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\CityLookUp.ascx.cs:行号 82
+   在 System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   在 SpecialLogisticsSystem.AppPortal.UserControls.CityLookUp.SetCityValue(String editValue) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\CityLookUp.ascx.cs:行号 82
+   在 SpecialLogisticsSystem.AppPortal.UserControls.LinkMan.SetData(T_Cm_Link model) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\LinkMan.ascx.cs:行号 91
+   在 SpecialLogisticsSystem.AppPortal.UserControls.LinkMan.SetData(Nullable`1 linkID) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\LinkMan.ascx.cs:行号 79
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.UpdateControll`1.SetValueToControl(ASPxGridView grid) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\UpdateModel.cs:行号 353
+   在 SpecialLogisticsSystem.AppPortal.Cm.Customer.gridCustomer_HtmlEditFormCreated(Object sender, ASPxGridViewEditFormEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Customer.aspx.cs:行号 163
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseHtmlEditFormCreated(WebControl container)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-03-08 10:13:50,672 [24] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 SpecialLogisticsSystem.AppPortal.Business.Stowage.SaveCar(T_Stowage_Main main) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Stowage.aspx.cs:行号 179
+   在 SpecialLogisticsSystem.AppPortal.Business.Stowage.gridStowage_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Stowage.aspx.cs:行号 113
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-08 10:14:39,309 [16] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'deliver_name'.
+Invalid column name 'consignee_name'.
+Invalid column name 'consignee_mobile'.
+Could not use view or function 'vStowageDetail' because of binding errors.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.StowageDetailDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\StowageDetailDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.Business.Stowage.gridStowageDetail_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Stowage.aspx.cs:行号 285
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   在 System.Web.UI.ControlCollection.Add(Control child)
+   在 DevExpress.Web.ASPxClasses.Internal.ClientIDHelper.AddTemplateContainerToHierarchy(Control parent, TemplateContainerBase container, String containerID)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddTemplateToControl(Control destination, ITemplate template, GridViewBaseTemplateContainer templateContainer, TemplateContainerCollection collection)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddDetailRowTemplateControl(Int32 visibleIndex, GridViewTableDetailRow row, Int32 spanCount)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewTableDetailRow.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableRow.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableRow.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-03-08 10:36:05,474 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): A field or property with name 'deliver_name' was not found in the selected data source. Possible causes of this error may be the following: an incorrect or case-insensitive spelling of the grid column name; assigning a wrong or not properly initialized data source to the grid.
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValueByControllerRow(Int32 controllerRow, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValue(Int32 visibleIndex, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewTextBuilder.GetDisplayControlArgs(GridViewDataColumn column, Int32 visibleIndex, IValueProvider provider, ASPxGridView grid)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.CreateDataCellDisplayControl(GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddDisplayControlToDataCell(Control cell, GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewTableDataCell.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableCell.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableCell.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.DataBindInternal()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.DataBind()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBind()
+   在 SpecialLogisticsSystem.AppPortal.Business.Stowage.gridStowageDetail_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Stowage.aspx.cs:行号 287
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   在 System.Web.UI.ControlCollection.Add(Control child)
+   在 DevExpress.Web.ASPxClasses.Internal.ClientIDHelper.AddTemplateContainerToHierarchy(Control parent, TemplateContainerBase container, String containerID)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddTemplateToControl(Control destination, ITemplate template, GridViewBaseTemplateContainer templateContainer, TemplateContainerCollection collection)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddDetailRowTemplateControl(Int32 visibleIndex, GridViewTableDetailRow row, Int32 spanCount)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewTableDetailRow.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableRow.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableRow.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-03-08 10:56:40,367 [27] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Exception: Error when trying to populate the datasource. The following exception was thrown: 
+Invalid column name 'rowNum'. ---> System.Data.SqlClient.SqlException: Invalid column name 'rowNum'.
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, IDataAdapter dataAdapter)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, Object dataAdapter)
+   在 DevExpress.XtraReports.Native.DataSourceFiller.Fill(Object dataSource, String dataMember, Object dataAdapter, IServiceProvider servProvider)
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   在 DevExpress.XtraReports.UI.XtraReport.FillDataSources()
+   在 DevExpress.XtraReports.UI.XtraReport.OnBeforePrint(PrintEventArgs e)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocumentCore(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.ForcePSDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-03-08 10:56:40,486 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): The length of the query string for this request exceeds the configured maxQueryStringLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-03-08 10:56:56,582 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Exception: Error when trying to populate the datasource. The following exception was thrown: 
+Invalid column name 'rowNum'. ---> System.Data.SqlClient.SqlException: Invalid column name 'rowNum'.
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, IDataAdapter dataAdapter)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, Object dataAdapter)
+   在 DevExpress.XtraReports.Native.DataSourceFiller.Fill(Object dataSource, String dataMember, Object dataAdapter, IServiceProvider servProvider)
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   在 DevExpress.XtraReports.UI.XtraReport.FillDataSources()
+   在 DevExpress.XtraReports.UI.XtraReport.OnBeforePrint(PrintEventArgs e)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocumentCore(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.ForcePSDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-03-08 10:56:56,602 [27] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): The length of the query string for this request exceeds the configured maxQueryStringLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-03-08 11:32:29,535 [16] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Exception: Error when trying to populate the datasource. The following exception was thrown: 
+Invalid column name 'rowNum'. ---> System.Data.SqlClient.SqlException: Invalid column name 'rowNum'.
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning()
+   在 System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   在 System.Data.SqlClient.SqlDataReader.ConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, IDataAdapter dataAdapter)
+   在 DevExpress.XtraReports.Native.FullTrustDataSourceFiller.FillDataSource(Object dataSource, String dataMember, Object dataAdapter)
+   在 DevExpress.XtraReports.Native.DataSourceFiller.Fill(Object dataSource, String dataMember, Object dataAdapter, IServiceProvider servProvider)
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 DevExpress.XtraReports.UI.XtraReportBase.FillDataSource()
+   在 DevExpress.XtraReports.UI.XtraReport.FillDataSources()
+   在 DevExpress.XtraReports.UI.XtraReport.OnBeforePrint(PrintEventArgs e)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocumentCore(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Single progressRange, Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument(Boolean buildPagesInBackground)
+   在 DevExpress.XtraReports.UI.XtraReport.CreateDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.ForcePSDocument()
+   在 DevExpress.XtraReports.Web.ReportViewer.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-03-08 11:32:29,612 [20] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): The length of the query string for this request exceeds the configured maxQueryStringLength value.
+   at System.Web.HttpRequest.ValidateInputIfRequiredByConfig()
+   at System.Web.HttpApplication.ValidateRequestExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-03-08 11:44:14,116 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Stowage_Detail(
+    id
+    ,main_id
+    ,bill_id
+    ,production_number
+    ,production_id
+    )values (
+    '517c25e3-659e-4850-805a-ff10c55d0121'
+    ,'a79d2d68-6a6b-4599-a58f-752589103200'
+    ,'da99ce46-5a3d-4392-ae7e-c93f99e37541'
+    ,1604
+    ,'bc5e2555-39ed-465e-bb50-ece1bcb7558a'
+    )
+   <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_T_Stowage_Detail'. Cannot insert duplicate key in object 'dbo.T_Stowage_Detail'.
+The statement has been terminated.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-03-08 11:44:14,212 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): Violation of PRIMARY KEY constraint 'PK_T_Stowage_Detail'. Cannot insert duplicate key in object 'dbo.T_Stowage_Detail'.
+The statement has been terminated.
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.StowageDetailDal.Insert(T_Stowage_Detail item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\StowageDetailDal.cs:行号 33
+   在 SpecialLogisticsSystem.AppPortal.Business.Stowage.<>c__DisplayClass2.<gridStowage_RowInserting>b__0(T_Stowage_Detail p) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Stowage.aspx.cs:行号 122
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 SpecialLogisticsSystem.AppPortal.Business.Stowage.gridStowage_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Stowage.aspx.cs:行号 119
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-08 11:52:39,527 [16] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpParseException (0x80004005): The ID 'get_address' is already used by another control. ---> System.Web.HttpParseException (0x80004005): The ID 'get_address' is already used by another control. ---> System.Web.HttpException (0x80004005): The ID 'get_address' is already used by another control.
+   at System.Web.UI.TemplateParser.ProcessError(String message)
+   at System.Web.UI.TemplateParser.ProcessBeginTag(Match match, String inputText)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.ParseInternal()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-03-08 11:52:43,768 [29] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpParseException (0x80004005): The ID 'get_address' is already used by another control. ---> System.Web.HttpParseException (0x80004005): The ID 'get_address' is already used by another control. ---> System.Web.HttpException (0x80004005): The ID 'get_address' is already used by another control.
+   at System.Web.UI.TemplateParser.ProcessError(String message)
+   at System.Web.UI.TemplateParser.ProcessBeginTag(Match match, String inputText)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.ParseInternal()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-03-08 15:54:26,469 [41] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.SqlClient.SqlException: Invalid column name 'get_address'.
+Could not use view or function 'vTransfer' because of binding errors.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.TransferMainDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\TransferMainDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.TransferProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\TransferProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle._InvokeMethodFast(IRuntimeMethodInfo method, Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeType typeOwner)
+   在 System.RuntimeMethodHandle.InvokeMethodFast(IRuntimeMethodInfo method, Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeType typeOwner)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-08 15:56:19,967 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Cm_Servicer(
+    id
+    ,name
+    ,code
+    ,customer_level
+    ,link_id
+    ,credit_level
+    ,is_stop
+    )values (
+    'f8a8f130-245b-4b09-9cf9-4e93ab4c8962'
+    ,'中批物流'
+    ,''
+    ,''
+    ,'4933df31-265a-463f-b683-5b81a837e9d9'
+    ,''
+    ,'False'
+    )
+   <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'code', table 'LogisticsManagement.dbo.T_Cm_Servicer'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-03-08 15:56:19,969 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'code', table 'LogisticsManagement.dbo.T_Cm_Servicer'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.CmServicerDal.Insert(T_Cm_Servicer item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmServicerDal.cs:行号 32
+   在 SpecialLogisticsSystem.AppPortal.Business.Transfer.SaveServicer(T_Transfer_Main main) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Transfer.aspx.cs:行号 149
+   在 SpecialLogisticsSystem.AppPortal.Business.Transfer.gridTransfer_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Transfer.aspx.cs:行号 75
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-08 15:58:07,509 [41] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Cm_Servicer(
+    id
+    ,name
+    ,code
+    ,customer_level
+    ,link_id
+    ,credit_level
+    ,is_stop
+    )values (
+    'a9874153-79ab-4ec0-8a50-8b53f79cc8aa'
+    ,'谭云物流'
+    ,''
+    ,''
+    ,'16b4fade-caba-42ee-a9f4-f76ed6be9994'
+    ,''
+    ,'False'
+    )
+   <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'code', table 'LogisticsManagement.dbo.T_Cm_Servicer'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-03-08 15:58:07,510 [41] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'code', table 'LogisticsManagement.dbo.T_Cm_Servicer'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.CmServicerDal.Insert(T_Cm_Servicer item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmServicerDal.cs:行号 32
+   在 SpecialLogisticsSystem.AppPortal.Business.Transfer.SaveServicer(T_Transfer_Main main) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Transfer.aspx.cs:行号 149
+   在 SpecialLogisticsSystem.AppPortal.Business.Transfer.gridTransfer_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Transfer.aspx.cs:行号 75
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-08 16:04:51,397 [41] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Cm_SequenceNumber(
+    code
+    ,prefix
+    ,date_type
+    ,infix
+    ,index_length
+    ,suffix
+    ,max_date
+    ,max_index
+    )values (
+    'Servicer'
+    ,'FWS'
+    ,'yyyy-MM-dd'
+    ,''
+    ,1
+    ,''
+    ,''
+    ,0
+    )
+   <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated.
+The statement has been terminated.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-03-08 16:04:51,429 [41] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): String or binary data would be truncated.
+The statement has been terminated.
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.CmSequenceNumberDal.Insert(T_Cm_SequenceNumber item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmSequenceNumberDal.cs:行号 38
+   在 SpecialLogisticsSystem.AppPortal.Cm.SequenceNumber.gridNumber_RowUpdating(Object sender, ASPxDataUpdatingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\SequenceNumber.aspx.cs:行号 78
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowUpdating(ASPxDataUpdatingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowUpdating(ASPxDataUpdatingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowUpdating(ASPxDataUpdatingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.UpdateRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-03-08 16:16:28,070 [34] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Data.SqlClient.SqlException: Conversion failed when converting from a character string to uniqueidentifier.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity,TList](Action`2 customMapper)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity](Action`2 customMapper)
+   at SpecialLogisticsSystem.Dal.Dao.GetList[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 58
+   at SpecialLogisticsSystem.Dal.WayProductionDal.GetSingleByWay(Object id) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\WayProductionDal.cs:line 66
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.StowageDetailTemporary.GetMode(String id) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Temporary\StowageDetailTemporary.cs:line 25
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.BaseTemporary`1.Insert(String id) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Temporary\BaseTemporary.cs:line 67
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.Ajax.InsertToDetail(String ids, String typeName) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Ajax.cs:line 45
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle._InvokeMethodFast(IRuntimeMethodInfo method, Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeType typeOwner)
+   at System.RuntimeMethodHandle.InvokeMethodFast(IRuntimeMethodInfo method, Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeType typeOwner)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.AjaxHelper.ProcessRequest(HttpContext context) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\AjaxHelper.ashx.cs:line 45
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-03-08 16:16:29,531 [43] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Data.SqlClient.SqlException: Conversion failed when converting from a character string to uniqueidentifier.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity,TList](Action`2 customMapper)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity](Action`2 customMapper)
+   at SpecialLogisticsSystem.Dal.Dao.GetList[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 58
+   at SpecialLogisticsSystem.Dal.WayProductionDal.GetSingleByWay(Object id) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\WayProductionDal.cs:line 66
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.StowageDetailTemporary.GetMode(String id) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Temporary\StowageDetailTemporary.cs:line 25
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.BaseTemporary`1.Insert(String id) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Temporary\BaseTemporary.cs:line 67
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.Ajax.InsertToDetail(String ids, String typeName) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Ajax.cs:line 45
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle._InvokeMethodFast(IRuntimeMethodInfo method, Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeType typeOwner)
+   at System.RuntimeMethodHandle.InvokeMethodFast(IRuntimeMethodInfo method, Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeType typeOwner)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.AjaxHelper.ProcessRequest(HttpContext context) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\AjaxHelper.ashx.cs:line 45
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-03-08 20:31:21,074 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpCompileException (0x80004005): e:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Print\PrintWay.aspx(34): error CS0103: The name 'shop' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-03-08 22:38:25,224 [19] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpCompileException (0x80004005): e:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Print\PrintWay.aspx(33): error CS0103: The name 'branch' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-03-08 22:39:45,921 [17] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Print/PrintWay.aspx <BR>
+ <HR Size=1>Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   在 ASP.print_printway_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 e:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Print\PrintWay.aspx:行号 43
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-03-08 22:39:45,929 [18] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Print/PrintWay.aspx <BR>
+ <HR Size=1>Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   在 CallSite.Target(Closure , CallSite , Object )
+   在 ASP.print_printway_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) 位置 e:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Print\PrintWay.aspx:行号 43
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-03-08 22:39:46,438 [17] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   at CallSite.Target(Closure , CallSite , Object )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at ASP.print_printway_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in e:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Print\PrintWay.aspx:line 43
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.print_printway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_printway.aspx.af37c923.wdioxfqg.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-03-08 22:39:46,441 [18] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 无法对 null 引用执行运行时绑定
+   at CallSite.Target(Closure , CallSite , Object )
+   at ASP.print_printway_aspx.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in e:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Print\PrintWay.aspx:line 43
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   at System.Web.UI.Page.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.print_printway_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_printway.aspx.af37c923.wdioxfqg.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

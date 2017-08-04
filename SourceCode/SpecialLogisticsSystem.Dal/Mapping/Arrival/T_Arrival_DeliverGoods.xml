@@ -1,0 +1,74 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_DeliverGoods.Count">
+    Select count(1) FROM T_Arrival_DeliverGoods where
+    $and{id = #id#}  $and{deliver_id = #deliver_id#}  $and{production_id = #production_id#}  $and{send_bill = #send_bill#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_DeliverGoods.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Arrival_DeliverGoods) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{deliver_id = #deliver_id#}  $and{production_id = #production_id#}  $and{send_bill = #send_bill#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_DeliverGoods.Load">
+    SELECT *
+    FROM   T_Arrival_DeliverGoods  where
+    $and{id = #id#}  $and{deliver_id = #deliver_id#}  $and{production_id = #production_id#}  $and{send_bill = #send_bill#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_DeliverGoods.Select">
+    SELECT  a.* ,
+    b.production_name ,
+    b.production_number ,
+    b.production_weight ,
+    b.production_size ,
+    b.freight ,
+    c.way_number ,
+    c.start_city ,
+    c.end_city ,
+    c.pick_payment,
+    c.spot_payment,
+    c.back_payment,
+    d.customer_name AS deliver_name ,
+    e.customer_name AS consignee_name
+    FROM    T_Arrival_DeliverGoods a
+    LEFT JOIN dbo.T_Way_Production b ON b.id = a.production_id
+    LEFT JOIN dbo.T_Way_Bill c ON c.id = b.bill_id
+    LEFT JOIN dbo.T_Cm_Customer d ON d.id = c.deliver_id
+    LEFT JOIN dbo.T_Cm_Customer e ON e.id = c.consignee_id  where
+    $and{id = #id#}  $and{deliver_id = #deliver_id#}  $and{production_id = #production_id#}  $and{send_bill = #send_bill#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Arrival_DeliverGoods.Insert">
+    insert into T_Arrival_DeliverGoods(
+    id
+    ,deliver_id
+    ,production_id
+    ,send_bill
+    )values (
+    #id#
+    ,#deliver_id#
+    ,#production_id#
+    ,#send_bill#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Arrival_DeliverGoods.Update">
+    update T_Arrival_DeliverGoods set
+    id=#id#
+    ,deliver_id=#deliver_id#
+    ,production_id=#production_id#
+    ,send_bill=#send_bill#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Arrival_DeliverGoods.Delete">
+    delete
+    FROM T_Arrival_DeliverGoods
+    WHERE id IN(#ids#)
+  </delete>
+  <delete id="SpecialLogisticsSystem.Model.T_Arrival_DeliverGoods.DeleteByDeliver">
+    delete
+    FROM T_Arrival_DeliverGoods
+    WHERE deliver_id IN(#ids#)
+  </delete>
+</sqlMap>

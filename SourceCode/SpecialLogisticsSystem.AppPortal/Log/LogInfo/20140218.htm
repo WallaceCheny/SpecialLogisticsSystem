@@ -1,0 +1,4867 @@
+<HR COLOR=blue>
+日志时间：2014-02-18 19:12:31,967 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:13:49,183 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:22:29,794 [31] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:23:17,968 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/18/2014 19:23:13.135'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:23:57,476 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill  where  (id = 'ed10831c-19d0-4009-9c7c-876eacba16a4')                            
+          
+          
+          
+            
+            
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:24:37,791 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceDaily 
+       
+         
+       ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:24:39,244 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:24:39,376 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:24:39,608 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:24:39,688 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage      
+     
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:24:56,503 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:24:56,564 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:24:56,603 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage      
+     
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:24:56,652 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:25:08,826 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/18/2014 19:25:08.97'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:28:37,598 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/18/2014 19:25:08.97'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:28:50,989 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/18/2014 19:25:08.97'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:29:53,023 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/18/2014 19:29:52.250'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:46:21,464 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceCustomer where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/18/2014 19:46:20.578')) 
+      and (settle_name = '未结算')
+          
+           ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:46:26,484 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceCustomer where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/18/2014 19:46:20.578')) 
+      and (settle_name = '已结算')
+          
+           ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:46:28,892 [37] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceCustomer where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/18/2014 19:46:20.578')) 
+      and (settle_name = '未结算')
+          
+           ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:46:33,187 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:46:34,083 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vFinanceDriver 
+      
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:46:34,616 [39] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:46:39,019 [38] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by transfer_date desc) as rowNum
+    FROM vFinanceService where  (transfer_date >= '01/01/2014 00:00:00') and (transfer_date <= dateadd(day,1,'02/18/2014 19:46:38.399'))  
+      
+      
+        and (settle_name = '未结算')
+         ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:46:43,027 [37] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by transfer_date desc) as rowNum
+    FROM vFinanceService where  (transfer_date >= '01/01/2014 00:00:00') and (transfer_date <= dateadd(day,1,'02/18/2014 19:46:38.399'))  
+      
+      
+        and (settle_name = '已结算')
+         ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 19:46:45,685 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vFinanceDiscount where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/18/2014 19:46:45.104'))
+        
+        
+    ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:21:54,738 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:21:54,738 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:22:43,922 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceDaily 
+       
+         
+       ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:22:45,510 [41] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:22:45,711 [41] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:22:45,918 [41] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowage <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:23:26,370 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceDaily 
+       
+         
+       ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:23:27,365 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:23:27,401 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:23:27,587 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowage <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:24:26,614 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:24:26,711 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:24:26,770 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowage <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:24:32,314 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'finance_category')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:24:33,974 [42] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'finance_category')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:24:54,570 [41] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'finance_category')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:24:54,950 [41] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'finance_category')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:24:59,747 [31] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'finance_category')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:02,936 [43] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:02,992 [43] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:03,051 [43] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowage <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:09,983 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:10,072 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:10,130 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowage <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:26,078 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:26,175 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:26,216 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowage <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:26,241 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:26,281 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:26,325 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowage <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:26,404 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    EXEC dbo.spGetSequenceNumber 'Finance', 1
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:26,855 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceDaily 
+       
+         
+       ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:26,881 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:26,902 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:27,010 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowage <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:27,065 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceDaily 
+       
+         
+       ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:31,818 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:31,843 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:31,889 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowage <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:32,126 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceDaily 
+       
+         
+       ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:32,141 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:32,165 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:32,219 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowage <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:41,041 [31] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:41,154 [31] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:41,206 [31] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowage <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:41,251 [31] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceDaily 
+       
+         
+       ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:53,744 [41] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:25:56,405 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/18/2014 20:25:53.651'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:26:19,740 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowageGross where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/18/2014 20:26:19.279'))
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:26:39,098 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '01/01/2013 00:00:00') and (departure_time <= dateadd(day,1,'02/18/2014 20:25:53.651'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:26:49,809 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vStowageGross  where  (departure_time >= '08/01/2013 00:00:00') and (departure_time <= dateadd(day,1,'09/18/2013 00:00:00'))
+              
+                
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:27:10,594 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT SUM(input_money) AS input_money,
+    SUM(output_money) AS output_money,CONVERT(varchar(100),
+    input_date, 23) AS input_date
+    FROM   vFinanceAll
+        
+        
+          
+    GROUP BY CONVERT(varchar(100), input_date, 23)
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:27:11,322 [41] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT SUM(input_money) AS input_money,
+    SUM(output_money) AS output_money,CONVERT(varchar(100),
+    input_date, 23) AS input_date
+    FROM   vFinanceAll
+        
+        
+          
+    GROUP BY CONVERT(varchar(100), input_date, 23)
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:27:22,785 [41] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT CAST(m AS NVARCHAR(10)) + '月' AS input_date,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN input_money ELSE 0 END) AS input_money,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN output_money ELSE 0 END) AS output_money
+    FROM   vFinanceAll,
+    (select 1 m
+    union all select 2
+    union all select 3
+    union all select 4
+    union all select 5
+    union all select 6
+    union all select 7
+    union all select 8
+    union all select 9
+    union all select 10
+    union all select 11
+    union all select 12)ByMonth
+        
+        
+          
+    GROUP BY m
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:27:31,130 [31] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT CAST(m AS NVARCHAR(10)) + '月' AS input_date,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN input_money ELSE 0 END) AS input_money,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN output_money ELSE 0 END) AS output_money
+    FROM   vFinanceAll,
+    (select 1 m
+    union all select 2
+    union all select 3
+    union all select 4
+    union all select 5
+    union all select 6
+    union all select 7
+    union all select 8
+    union all select 9
+    union all select 10
+    union all select 11
+    union all select 12)ByMonth
+        
+        
+          
+    GROUP BY m
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:27:33,252 [31] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT CAST(m AS NVARCHAR(10)) + '月' AS input_date,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN input_money ELSE 0 END) AS input_money,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN output_money ELSE 0 END) AS output_money
+    FROM   vFinanceAll,
+    (select 1 m
+    union all select 2
+    union all select 3
+    union all select 4
+    union all select 5
+    union all select 6
+    union all select 7
+    union all select 8
+    union all select 9
+    union all select 10
+    union all select 11
+    union all select 12)ByMonth
+        
+        
+          
+    GROUP BY m
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:27:34,678 [41] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT CAST(m AS NVARCHAR(10)) + '月' AS input_date,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN input_money ELSE 0 END) AS input_money,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN output_money ELSE 0 END) AS output_money
+    FROM   vFinanceAll,
+    (select 1 m
+    union all select 2
+    union all select 3
+    union all select 4
+    union all select 5
+    union all select 6
+    union all select 7
+    union all select 8
+    union all select 9
+    union all select 10
+    union all select 11
+    union all select 12)ByMonth
+        
+        
+          
+    GROUP BY m
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:27:37,283 [42] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT CAST(m AS NVARCHAR(10)) + '月' AS input_date,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN input_money ELSE 0 END) AS input_money,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN output_money ELSE 0 END) AS output_money
+    FROM   vFinanceAll,
+    (select 1 m
+    union all select 2
+    union all select 3
+    union all select 4
+    union all select 5
+    union all select 6
+    union all select 7
+    union all select 8
+    union all select 9
+    union all select 10
+    union all select 11
+    union all select 12)ByMonth
+        
+        
+          
+    GROUP BY m
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:27:37,974 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT CAST(m AS NVARCHAR(10)) + '月' AS input_date,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN input_money ELSE 0 END) AS input_money,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN output_money ELSE 0 END) AS output_money
+    FROM   vFinanceAll,
+    (select 1 m
+    union all select 2
+    union all select 3
+    union all select 4
+    union all select 5
+    union all select 6
+    union all select 7
+    union all select 8
+    union all select 9
+    union all select 10
+    union all select 11
+    union all select 12)ByMonth
+        
+        
+          
+    GROUP BY m
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:27:38,787 [41] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT CAST(m AS NVARCHAR(10)) + '月' AS input_date,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN input_money ELSE 0 END) AS input_money,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN output_money ELSE 0 END) AS output_money
+    FROM   vFinanceAll,
+    (select 1 m
+    union all select 2
+    union all select 3
+    union all select 4
+    union all select 5
+    union all select 6
+    union all select 7
+    union all select 8
+    union all select 9
+    union all select 10
+    union all select 11
+    union all select 12)ByMonth
+        
+        
+          
+    GROUP BY m
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:27:39,845 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT CAST(m AS NVARCHAR(10)) + '月' AS input_date,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN input_money ELSE 0 END) AS input_money,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN output_money ELSE 0 END) AS output_money
+    FROM   vFinanceAll,
+    (select 1 m
+    union all select 2
+    union all select 3
+    union all select 4
+    union all select 5
+    union all select 6
+    union all select 7
+    union all select 8
+    union all select 9
+    union all select 10
+    union all select 11
+    union all select 12)ByMonth
+        
+        
+          
+    GROUP BY m
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:27:42,598 [31] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT CAST(m AS NVARCHAR(10)) + '月' AS input_date,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN input_money ELSE 0 END) AS input_money,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN output_money ELSE 0 END) AS output_money
+    FROM   vFinanceAll,
+    (select 1 m
+    union all select 2
+    union all select 3
+    union all select 4
+    union all select 5
+    union all select 6
+    union all select 7
+    union all select 8
+    union all select 9
+    union all select 10
+    union all select 11
+    union all select 12)ByMonth
+        
+        
+          
+    GROUP BY m
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:27:45,323 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceAll 
+        
+         
+       ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:27:45,756 [42] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceAll 
+        
+         
+       ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:34,282 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:35,082 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/18/2014 20:40:34.114'))
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:35,613 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:38,373 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,057 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,085 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,141 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,160 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,182 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,278 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,300 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,304 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,307 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,311 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,314 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,317 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,321 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,327 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,345 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,352 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,355 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,358 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,361 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,364 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,368 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,371 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,374 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,377 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,380 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,383 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,386 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,389 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,392 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,432 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,436 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,439 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,442 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,445 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,448 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,452 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,456 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,461 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,464 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,467 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,470 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,473 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,476 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,483 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,486 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,489 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,492 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,495 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,498 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,501 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,504 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,507 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,510 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,604 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,608 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,611 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,614 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,617 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,622 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,625 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,628 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,631 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,636 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,640 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,643 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,646 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,648 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,651 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,654 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,670 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/18/2014 20:40:34.114'))
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,690 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,706 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,714 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,722 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,737 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,740 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,743 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,745 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,748 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,751 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,753 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,756 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,761 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,764 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,768 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,771 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,774 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,776 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,806 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,811 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,815 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,822 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,827 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,831 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,836 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,839 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,842 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,844 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,886 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,890 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,893 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,896 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,899 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,902 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,905 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,908 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,913 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,916 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,921 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,925 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,928 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,932 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,936 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,939 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,942 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,945 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,951 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,954 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,957 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,960 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,964 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:41,966 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,057 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,064 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,067 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,070 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,072 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,075 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,078 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,080 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,083 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,086 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,089 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,092 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,096 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,099 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,103 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:42,106 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,678 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,682 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,685 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,692 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,699 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,704 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,709 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,714 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,723 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,726 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,731 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,735 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,738 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,741 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,744 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,746 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,749 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,752 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,755 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,758 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,761 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,763 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,766 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,769 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,793 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,797 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,800 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,803 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,805 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,809 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,813 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,818 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,827 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,836 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,840 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,843 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,847 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,850 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,853 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,856 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,859 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,863 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,866 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,869 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,872 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,877 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,880 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,882 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,905 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,914 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,924 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,932 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,940 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,943 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,954 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,957 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,960 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,963 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,967 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:45,970 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,008 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,012 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,015 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,018 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,024 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,027 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,032 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,036 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,042 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,046 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,049 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,052 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,055 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,058 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,062 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,065 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,071 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,074 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,077 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,082 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,085 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,088 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,091 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:46,094 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,865 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,868 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,871 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,874 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,877 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,880 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,883 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,886 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,892 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,895 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,898 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,901 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,904 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,911 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,914 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,917 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,936 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,939 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,942 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,945 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,949 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,952 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,976 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,979 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,984 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,988 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,991 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,994 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:47,997 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,000 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,003 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,006 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,036 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,045 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,054 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,060 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,072 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,076 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,079 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,081 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,084 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,087 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,090 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:48,092 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   vWayProduction  where  (id = 'fbf7272f-dd57-420e-9790-a45943547468')     
+        
+         
+           
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:52,299 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:52,309 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:52,318 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:52,325 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:53,626 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:53,634 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:53,644 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:53,650 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:53,666 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:53,682 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM T_Cm_Car a
+    LEFT JOIN dbo.T_Cm_Link b ON a.car_link = b.id
+    LEFT JOIN dbo.T_Cm_Branch c ON a.branch_id = c.id
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value=a.car_type AND d.para_type='car_type'
+    LEFT JOIN dbo.T_Cm_Code e ON e.para_value=a.car_type AND e.para_type='car_nature' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:53,690 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:53,698 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:54,046 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/18/2014 20:40:34.114'))
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:54,084 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:54,100 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/18/2014 20:40:34.114'))
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:40:54,125 [40] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  ROW_NUMBER() OVER (ORDER BY id DESC) AS rowNum,*
+    FROM    vStowageDetail
+    where  (main_id = '7be1e200-d68f-4eef-807f-df9a002426af')    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:41:00,793 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowageGross where  (departure_time >= '01/01/2014 00:00:00') and (departure_time <= dateadd(day,1,'02/18/2014 20:41:00.311'))
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 20:41:19,068 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/18/2014 20:41:17.554'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 21:03:13,371 [48] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 21:05:34,727 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '01/01/2014 00:00:00') and (receive_date <= dateadd(day,1,'02/18/2014 21:05:33.568'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-02-18 21:05:59,525 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   T_Cm_Branch a
+    LEFT JOIN dbo.T_Cm_Link b ON a.link_id = b.id
+    LEFT JOIN dbo.T_Cm_Code f ON f.para_value = a.site_type
+    AND para_type = 'site_type' <BR>
+ <HR Size=1>

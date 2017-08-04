@@ -1,0 +1,145 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Daily.Count">
+    Select count(1) FROM vFinanceDaily where
+    $and{id = #id#} $and{settle_number like '%$settle_number$%'} $and{input_date >= #input_date_start#} $and{input_date &lt;= dateadd(day,1,#input_date_end#)}
+    $and{category_type = #category_type#}  $and{input_money = #input_money#} $and{output_money = #output_money#}  $and{settle_type = #settle_type#}
+    $and{operator_man = #operator_man#} $and{remark like '%$remark$%'}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Daily.SelectPaging">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceDaily where
+    $and{id = #id#} $and{settle_number like '%$settle_number$%'} $and{input_date >= #input_date_start#} $and{input_date &lt;= dateadd(day,1,#input_date_end#)}
+    $and{category_type = #category_type#}  $and{input_money = #input_money#} $and{output_money = #output_money#}  $and{settle_type = #settle_type#}
+    $and{operator_man = #operator_man#} $and{remark like '%$remark$%'}  $and{branch_id = #branch_id#}) as temptable
+    where rowNum BETWEEN $eg{#startRow#} and $eq{#maxRows#}
+    $eq{order by $OrderBy$}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Daily.CountAll">
+    Select count(1) FROM vFinanceAll where
+    $and{id = #id#} $and{settle_number like '%$settle_number$%'} $and{input_date >= #input_date_start#} $and{input_date &lt;= dateadd(day,1,#input_date_end#)}
+    $and{category_type = #category_type#}  $and{input_money = #input_money#} $and{output_money = #output_money#}  $and{settle_type = #settle_type#}
+    $and{operator_man = #operator_man#} $and{remark like '%$remark$%'}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Daily.SelectAll">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by input_date desc) as rowNum
+    FROM vFinanceAll where
+    $and{id = #id#}  $and{settle_number like '%$settle_number$%'} $and{input_date >= #input_date_start#} $and{input_date &lt;= dateadd(day,1,#input_date_end#)}
+    $and{category_type = #category_type#}  $and{input_money = #input_money#} $and{output_money = #output_money#}  $and{settle_type = #settle_type#}
+    $and{operator_man = #operator_man#} $and{remark like '%$remark$%'}  $and{branch_id = #branch_id#}) as temptable
+    where rowNum BETWEEN $eg{#startRow#} and $eq{#maxRows#}
+    $eq{order by $OrderBy$}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Daily.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Finance_Daily) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{category_type = #category_type#}  $and{input_money = #input_money#}  $and{output_money = #output_money#}  $and{settle_type = #settle_type#}  $and{operator_man = #operator_man#}  $and{input_date = #input_date#}  $and{remark = #remark#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Daily.ChartByDate">
+    SELECT SUM(input_money) AS input_money,
+    SUM(output_money) AS output_money,CONVERT(varchar(100),
+    input_date, 23) AS input_date
+    FROM   vFinanceAll
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{category_type = #category_type#}
+    $and{input_money = #input_money#}  $and{output_money = #output_money#}  $and{settle_type = #settle_type#}
+    $and{operator_man = #operator_man#}  $and{input_date = #input_date#}  $and{remark = #remark#}  $and{branch_id = #branch_id#}
+    GROUP BY CONVERT(varchar(100), input_date, 23)
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Daily.ChartByMonth">
+    SELECT CAST(m AS NVARCHAR(10)) + '月' AS input_date,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN input_money ELSE 0 END) AS input_money,
+    SUM(CASE WHEN DATEPART(MONTH,input_date)=m THEN output_money ELSE 0 END) AS output_money
+    FROM   vFinanceAll,
+    (select 1 m
+    union all select 2
+    union all select 3
+    union all select 4
+    union all select 5
+    union all select 6
+    union all select 7
+    union all select 8
+    union all select 9
+    union all select 10
+    union all select 11
+    union all select 12)ByMonth
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{category_type = #category_type#}
+    $and{input_money = #input_money#}  $and{output_money = #output_money#}  $and{settle_type = #settle_type#}
+    $and{operator_man = #operator_man#}  $and{input_date = #input_date#}  $and{remark = #remark#}  $and{branch_id = #branch_id#}
+    GROUP BY m
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Daily.ChartByYear">
+    SELECT  SUM(input_money) AS input_money ,
+    SUM(output_money) AS output_money ,
+    CAST(YEAR(input_date) AS NVARCHAR(20)) + '年'   AS input_date
+    FROM    vFinanceAll
+    GROUP BY YEAR(input_date)
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Daily.Load">
+    SELECT *
+    FROM   T_Finance_Daily  where
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{stowage_id = #stowage_id#}  $and{category_type = #category_type#}  $and{input_money = #input_money#}  $and{output_money = #output_money#}  $and{settle_type = #settle_type#}  $and{operator_man = #operator_man#}  $and{input_date = #input_date#}  $and{remark = #remark#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Daily.Select">
+    SELECT *
+    FROM   T_Finance_Daily  where
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{stowage_id = #stowage_id#}  $and{category_type = #category_type#}  $and{input_money = #input_money#}  $and{output_money = #output_money#}  $and{settle_type = #settle_type#}  $and{operator_man = #operator_man#}  $and{input_date = #input_date#}  $and{remark = #remark#}  $and{branch_id = #branch_id#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Finance_Daily.Insert">
+    insert into T_Finance_Daily(
+    id
+    ,settle_number
+    ,way_id
+    ,stowage_id
+    ,category_type
+    ,input_money
+    ,output_money
+    ,settle_type
+    ,operator_man
+    ,input_date
+    ,remark
+    ,branch_id
+    )values (
+    #id#
+    ,#settle_number#
+    ,#way_id#
+    ,#stowage_id#
+    ,#category_type#
+    ,#input_money#
+    ,#output_money#
+    ,#settle_type#
+    ,#operator_man#
+    ,#input_date#
+    ,#remark#
+    ,#branch_id#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Finance_Daily.Update">
+    update T_Finance_Daily set
+    id=#id#
+    ,settle_number=#settle_number#
+    ,way_id=#way_id#
+    ,stowage_id=#stowage_id#
+    ,category_type=#category_type#
+    ,input_money=#input_money#
+    ,output_money=#output_money#
+    ,settle_type=#settle_type#
+    ,operator_man=#operator_man#
+    ,input_date=#input_date#
+    ,remark=#remark#
+    ,branch_id=#branch_id#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Finance_Daily.Delete">
+    delete
+    FROM T_Finance_Daily
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

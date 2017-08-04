@@ -1,0 +1,1186 @@
+<HR COLOR=red>
+异常时间：2014-02-15 09:22:52,851 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 System.Guid.GuidResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName, Exception innerException)
+   在 System.Guid.TryParseGuidWithDashes(String guidString, GuidResult& result)
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid.Parse(String input)
+   在 SpecialLogisticsSystem.Tool.ConvertHelper.ObjectToGuid(Object guid) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Tool\ConvertHelper.cs:行号 272
+   在 SpecialLogisticsSystem.AppPortal.UserControls.CustomerLookUp.grdView_GridViewCustomCallback(Object sender, ASPxGridViewCustomCallbackEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\CustomerLookUp.ascx.cs:行号 81
+<HR COLOR=red>
+异常时间：2014-02-15 09:23:32,478 [9] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Way_Bill(
+    id
+    ,way_type
+    ,way_number
+    ,start_city
+    ,end_city
+    ,pass_city
+    ,deliver_id
+    ,deliver_mobile
+    ,deliver_area
+    ,deliver_address
+    ,consignee_id
+    ,consignee_mobile
+    ,consignee_area
+    ,consignee_address
+    ,aggregate_amount
+    ,clearing_type
+    ,spot_payment
+    ,pick_payment
+    ,back_payment
+    ,production_payment
+    ,shipping_type
+    ,delivery_type
+    ,receipt_portion
+    ,receipt_number
+    ,collection_type
+    ,receive_date
+    ,bill_rebate
+    ,bill_memo
+    ,fee_pay
+    ,fee_nopay
+    ,fee_reback
+    ,bring_site
+    ,bring_man
+    ,back_site
+    ,back_man
+    ,bill_statue
+    ,is_hide
+    ,ticket_taxes
+    ,freight_chinese
+    ,emp_id
+    )values (
+    'ead2ca9e-305c-4cf1-800f-95948d83498e'
+    ,0
+    ,'jj100000011'
+    ,'晋江市'
+    ,'上海市'
+    ,''
+    ,'8435d150-60ba-4bac-9d7f-0cf05b1f6a86'
+    ,'18259125893'
+    ,'福建省-泉州市-晋江市'
+    ,''
+    ,'ce169146-9c52-489f-84ac-51942dbc4231'
+    ,'13501681968'
+    ,'上海 - 青浦'
+    ,'青浦'
+    ,'5000.00'
+    ,2
+    ,'0.00'
+    ,'0.00'
+    ,'5000.00'
+    ,'0.00'
+    ,0
+    ,0
+    ,0
+    ,''
+    ,0
+    ,'2014/2/15 9:22:40'
+    ,'0.00'
+    ,''
+    ,'False'
+    ,'False'
+    ,'False'
+    ,'00000000-0000-0000-0000-000000000000'
+    ,''
+    ,'00000000-0000-0000-0000-000000000000'
+    ,''
+    ,'New'
+    ,'False'
+    ,''
+    ,'伍仟元整'
+    ,'fa696067-e3b8-4de5-8a8a-aa241d67aaac'
+    )
+   <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): The column "aggregate_amount" cannot be modified because it is either a computed column or is the result of a UNION operator.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-02-15 09:23:32,506 [9] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): The column "aggregate_amount" cannot be modified because it is either a computed column or is the result of a UNION operator.
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Insert(T_Way_Bill item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 43
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 130
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-02-15 09:41:08,312 [24] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 System.Guid.GuidResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName, Exception innerException)
+   在 System.Guid.TryParseGuidWithDashes(String guidString, GuidResult& result)
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid.Parse(String input)
+   在 SpecialLogisticsSystem.Tool.ConvertHelper.ObjectToGuid(Object guid) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Tool\ConvertHelper.cs:行号 272
+   在 SpecialLogisticsSystem.AppPortal.UserControls.CustomerLookUp.grdView_GridViewCustomCallback(Object sender, ASPxGridViewCustomCallbackEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\CustomerLookUp.ascx.cs:行号 81
+<HR COLOR=red>
+异常时间：2014-02-15 10:58:34,525 [37] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Cm_Emp(
+    id
+    ,branch_id
+    ,emp_name
+    ,emp_no
+    ,sex_ind
+    ,job
+    ,basic_wages
+    ,supp_wages
+    ,status
+    ,birthday
+    ,native
+    ,nationality
+    ,cert_no
+    ,degree
+    ,graduated
+    ,open_bank
+    ,acct_no
+    ,telphone
+    ,home_addr
+    ,QQ
+    ,Email
+    ,dept
+    ,emp_type_cd
+    ,work_history
+    ,remark
+    ,add_date
+    ,update_opr
+    ,update_date
+    ,acct_name
+    ,mobilephone
+    ,is_active
+    )values (
+    '669983d9-0205-408d-b825-5733bcbeb564'
+    ,'00000000-0000-0000-0000-000000000000'
+    ,23
+    ,'yg100000001'
+    ,0
+    ,''
+    ,0
+    ,0
+    ,'0,0'
+    ,'0001/1/1 0:00:00'
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,'2014/2/15 10:58:34'
+    ,''
+    ,'2014/2/15 10:58:34'
+    ,''
+    ,3434
+    ,'False'
+    )
+   <BR>
+ <HR Size=1>System.Data.SqlTypes.SqlTypeException: SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-02-15 10:58:34,626 [37] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlTypes.SqlTypeException: SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.CmEmpDal.Insert(T_Cm_Emp item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmEmpDal.cs:行号 33
+   在 SpecialLogisticsSystem.AppPortal.Cm.Employee.gridEmployee_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Employee.aspx.cs:行号 76
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-02-15 11:05:11,234 [39] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Cm_Emp(
+    id
+    ,branch_id
+    ,emp_name
+    ,emp_no
+    ,sex_ind
+    ,job
+    ,basic_wages
+    ,supp_wages
+    ,status
+    ,birthday
+    ,native
+    ,nationality
+    ,cert_no
+    ,degree
+    ,graduated
+    ,open_bank
+    ,acct_no
+    ,telphone
+    ,home_addr
+    ,QQ
+    ,Email
+    ,dept
+    ,emp_type_cd
+    ,work_history
+    ,remark
+    ,add_date
+    ,update_opr
+    ,update_date
+    ,acct_name
+    ,mobilephone
+    ,is_active
+    )values (
+    'a5f4e1d2-8e44-47a1-be90-0c4f6a736213'
+    ,'00000000-0000-0000-0000-000000000000'
+    ,23
+    ,'yg100000002'
+    ,0
+    ,''
+    ,0
+    ,0
+    ,0
+    ,'0001/1/1 0:00:00'
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,'2014/2/15 11:05:11'
+    ,''
+    ,'2014/2/15 11:05:11'
+    ,''
+    ,3434
+    ,'False'
+    )
+   <BR>
+ <HR Size=1>System.Data.SqlTypes.SqlTypeException: SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-02-15 11:05:11,294 [39] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlTypes.SqlTypeException: SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.CmEmpDal.Insert(T_Cm_Emp item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmEmpDal.cs:行号 33
+   在 SpecialLogisticsSystem.AppPortal.Cm.Employee.gridEmployee_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Employee.aspx.cs:行号 76
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-02-15 11:11:55,634 [38] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Cm_Emp(
+    id
+    ,branch_id
+    ,emp_name
+    ,emp_no
+    ,sex_ind
+    ,job
+    ,basic_wages
+    ,supp_wages
+    ,status
+    ,birthday
+    ,native
+    ,nationality
+    ,cert_no
+    ,degree
+    ,graduated
+    ,open_bank
+    ,acct_no
+    ,telphone
+    ,home_addr
+    ,QQ
+    ,Email
+    ,dept
+    ,emp_type_cd
+    ,work_history
+    ,remark
+    ,add_date
+    ,update_opr
+    ,update_date
+    ,acct_name
+    ,mobilephone
+    ,is_active
+    )values (
+    'c33f1a79-5816-4c4e-8a6f-7acc42ccbe79'
+    ,'00000000-0000-0000-0000-000000000000'
+    ,23
+    ,'yg100000003'
+    ,0
+    ,''
+    ,0
+    ,0
+    ,0
+    ,'0001/1/1 0:00:00'
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,'2014/2/15 11:11:55'
+    ,''
+    ,'2014/2/15 11:11:55'
+    ,''
+    ,2323
+    ,'False'
+    )
+   <BR>
+ <HR Size=1>System.Data.SqlTypes.SqlTypeException: SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-02-15 11:11:55,646 [38] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlTypes.SqlTypeException: SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.CmEmpDal.Insert(T_Cm_Emp item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmEmpDal.cs:行号 33
+   在 SpecialLogisticsSystem.AppPortal.Cm.Employee.gridEmployee_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Employee.aspx.cs:行号 76
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-02-15 11:16:19,878 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Cm_Emp(
+    id
+    ,branch_id
+    ,emp_name
+    ,emp_no
+    ,sex_ind
+    ,job
+    ,basic_wages
+    ,supp_wages
+    ,status
+    ,birthday
+    ,native
+    ,nationality
+    ,cert_no
+    ,degree
+    ,graduated
+    ,open_bank
+    ,acct_no
+    ,telphone
+    ,home_addr
+    ,QQ
+    ,Email
+    ,dept
+    ,emp_type_cd
+    ,work_history
+    ,remark
+    ,add_date
+    ,update_opr
+    ,update_date
+    ,acct_name
+    ,mobilephone
+    ,is_active
+    )values (
+    '7eb90fbd-ee0a-4d71-b462-9f129616092d'
+    ,'00000000-0000-0000-0000-000000000000'
+    ,232
+    ,'yg100000004'
+    ,0
+    ,''
+    ,0
+    ,0
+    ,0
+    ,'0001/1/1 0:00:00'
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,''
+    ,'2014/2/15 11:15:31'
+    ,''
+    ,'2014/2/15 11:15:31'
+    ,''
+    ,2323
+    ,'False'
+    )
+   <BR>
+ <HR Size=1>System.Data.SqlTypes.SqlTypeException: SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 125
+<HR COLOR=red>
+异常时间：2014-02-15 11:16:19,879 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlTypes.SqlTypeException: SqlDateTime 溢出。必须介于 1/1/1753 12:00:00 AM 和 12/31/9999 11:59:59 PM 之间。
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 132
+   在 SpecialLogisticsSystem.Dal.CmEmpDal.Insert(T_Cm_Emp item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmEmpDal.cs:行号 33
+   在 SpecialLogisticsSystem.AppPortal.Cm.Employee.gridEmployee_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Employee.aspx.cs:行号 76
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-02-15 12:10:57,415 [20] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.NotSupportedException: 不支持所指定的方法。
+   在 System.Web.UI.DataSourceView.ExecuteDelete(IDictionary keys, IDictionary oldValues)
+   在 System.Web.UI.DataSourceView.Delete(IDictionary keys, IDictionary oldValues, DataSourceViewOperationCallback callback)
+   在 DevExpress.Web.Data.WebDataProxy.DeleteRowCore(Int32 visibleIndex)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DeleteRow(Int32 visibleIndex)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBDeleteRow(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-02-15 13:41:37,846 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>Ms.Data.DataException: Could not map: create_date
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity,TList](Action`2 customMapper)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetList[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 58
+   在 SpecialLogisticsSystem.Dal.CmCustomerDal.GetList(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmCustomerDal.cs:行号 20
+   在 SpecialLogisticsSystem.AppPortal.Cm.Customer.gridCustomer_HtmlEditFormCreated(Object sender, ASPxGridViewEditFormEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Customer.aspx.cs:行号 175
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseHtmlEditFormCreated(WebControl container)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-02-15 13:46:46,634 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:7065/Cm/Servicer.aspx <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): A field or property with name 'create_date' was not found in the selected data source. Possible causes of this error may be the following: an incorrect or case-insensitive spelling of the grid column name; assigning a wrong or not properly initialized data source to the grid.
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValueByControllerRow(Int32 controllerRow, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValue(Int32 visibleIndex, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewTextBuilder.GetDisplayControlArgs(GridViewDataColumn column, Int32 visibleIndex, IValueProvider provider, ASPxGridView grid)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.CreateDataCellDisplayControl(GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddDisplayControlToDataCell(Control cell, GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewTableDataCell.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableCell.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableCell.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.DataBindInternal()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.DataBind()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBind()
+   在 SpecialLogisticsSystem.AppPortal.Cm.Servicer.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Servicer.aspx.cs:行号 42
+   在 SpecialLogisticsSystem.AppPortal.Cm.Servicer.Page_Init(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Servicer.aspx.cs:行号 30
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnInit(EventArgs e)
+   在 System.Web.UI.Page.OnInit(EventArgs e)
+   在 System.Web.UI.Control.InitRecursive(Control namingContainer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-02-15 13:46:46,755 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Web.HttpException (0x80004005): A field or property with name 'create_date' was not found in the selected data source. Possible causes of this error may be the following: an incorrect or case-insensitive spelling of the grid column name; assigning a wrong or not properly initialized data source to the grid.
+   at DevExpress.Web.Data.WebDataControllerProvider.GetRowValueByControllerRow(Int32 controllerRow, String fieldName, Boolean isDesignTime)
+   at DevExpress.Web.Data.WebDataControllerProvider.GetRowValue(Int32 visibleIndex, String fieldName, Boolean isDesignTime)
+   at DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewTextBuilder.GetDisplayControlArgs(GridViewDataColumn column, Int32 visibleIndex, IValueProvider provider, ASPxGridView grid)
+   at DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.CreateDataCellDisplayControl(GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   at DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddDisplayControlToDataCell(Control cell, GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewTableDataCell.CreateControlHierarchy()
+   at DevExpress.Web.ASPxClasses.Internal.InternalTableCell.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.InternalTableCell.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.DataBindInternal()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.DataBind()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.DataBind()
+   at SpecialLogisticsSystem.AppPortal.Cm.Servicer.BindData() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Servicer.aspx.cs:line 42
+   at SpecialLogisticsSystem.AppPortal.Cm.Servicer.Page_Init(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Servicer.aspx.cs:line 30
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnInit(EventArgs e)
+   at System.Web.UI.Page.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_servicer_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_servicer.aspx.2e93d82d.nkbdxubw.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-15 14:54:10,493 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:7065/Cm/Help.aspx?menuId=menu_id=c08fa4d8-eb7e-4594-8cbf-8de192ad2a8b <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting from a character string to uniqueidentifier.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.QuerySingle[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.Single[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 48
+   在 SpecialLogisticsSystem.Dal.CmMenuDal.GetSingle(Object id) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:行号 28
+   在 SpecialLogisticsSystem.AppPortal.Cm.Help.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Help.aspx.cs:行号 53
+   在 SpecialLogisticsSystem.AppPortal.Cm.Help.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Help.aspx.cs:行号 32
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-02-15 14:54:10,712 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.SqlClient.SqlException (0x80131904): Conversion failed when converting from a character string to uniqueidentifier.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.QuerySingle[TEntity](Action`2 customMapper)
+   at SpecialLogisticsSystem.Dal.Dao.Single[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 48
+   at SpecialLogisticsSystem.Dal.CmMenuDal.GetSingle(Object id) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\CmMenuDal.cs:line 28
+   at SpecialLogisticsSystem.AppPortal.Cm.Help.BindData() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Help.aspx.cs:line 53
+   at SpecialLogisticsSystem.AppPortal.Cm.Help.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Help.aspx.cs:line 32
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_help_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_help.aspx.2e93d82d.0xmlmmnd.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-15 20:43:35,402 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:7065/Cm/Config.aspx <BR>
+ <HR Size=1>Newtonsoft.Json.JsonSerializationException: Error converting value "008" to type 'System.Nullable`1[System.Guid]'. ---> System.Exception: Could not cast or convert from System.String to System.Nullable`1[System.Guid].
+   在 Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   在 Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueProperty(JsonReader reader, JsonProperty property, Object target, Boolean gottenCurrentValue, Object currentValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonReader reader, Object target)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, String id)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateAndPopulateObject(JsonReader reader, JsonObjectContract contract, String id)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueNonProperty(JsonReader reader, Type objectType, JsonContract contract)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.JsonHelper.FromJson[T](String sJasonData) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\JsonHelper.cs:行号 75
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentUser() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:行号 52
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentBranchID() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:行号 83
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentBranch() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:行号 92
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentDistrictaID() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:行号 125
+   在 SpecialLogisticsSystem.AppPortal.UserControls.CityLookUp.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\CityLookUp.ascx.cs:行号 120
+   在 SpecialLogisticsSystem.AppPortal.UserControls.CityLookUp.SetCityValue(String editValue) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\CityLookUp.ascx.cs:行号 63
+   在 SpecialLogisticsSystem.AppPortal.Cm.Config.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Config.aspx.cs:行号 32
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-02-15 20:43:35,926 [13] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> Newtonsoft.Json.JsonSerializationException: Error converting value "008" to type 'System.Nullable`1[System.Guid]'. ---> System.Exception: Could not cast or convert from System.String to System.Nullable`1[System.Guid].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueProperty(JsonReader reader, JsonProperty property, Object target, Boolean gottenCurrentValue, Object currentValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateAndPopulateObject(JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueNonProperty(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.JsonHelper.FromJson[T](String sJasonData) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\JsonHelper.cs:line 75
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentUser() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:line 52
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentBranchID() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:line 83
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentBranch() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:line 92
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentDistrictaID() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:line 125
+   at SpecialLogisticsSystem.AppPortal.UserControls.CityLookUp.BindData() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\CityLookUp.ascx.cs:line 120
+   at SpecialLogisticsSystem.AppPortal.UserControls.CityLookUp.SetCityValue(String editValue) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\CityLookUp.ascx.cs:line 63
+   at SpecialLogisticsSystem.AppPortal.Cm.Config.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Config.aspx.cs:line 32
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_config_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_config.aspx.2e93d82d.-8c9p5zc.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-15 20:45:00,126 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:7065/default.aspx <BR>
+ <HR Size=1>Newtonsoft.Json.JsonSerializationException: Error converting value "008" to type 'System.Nullable`1[System.Guid]'. ---> System.Exception: Could not cast or convert from System.String to System.Nullable`1[System.Guid].
+   在 Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   在 Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueProperty(JsonReader reader, JsonProperty property, Object target, Boolean gottenCurrentValue, Object currentValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonReader reader, Object target)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, String id)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateAndPopulateObject(JsonReader reader, JsonObjectContract contract, String id)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueNonProperty(JsonReader reader, Type objectType, JsonContract contract)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.JsonHelper.FromJson[T](String sJasonData) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\JsonHelper.cs:行号 75
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentUser() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:行号 52
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-02-15 20:45:00,131 [5] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> Newtonsoft.Json.JsonSerializationException: Error converting value "008" to type 'System.Nullable`1[System.Guid]'. ---> System.Exception: Could not cast or convert from System.String to System.Nullable`1[System.Guid].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueProperty(JsonReader reader, JsonProperty property, Object target, Boolean gottenCurrentValue, Object currentValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateAndPopulateObject(JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueNonProperty(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.JsonHelper.FromJson[T](String sJasonData) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\JsonHelper.cs:line 75
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentUser() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:line 52
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 26
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.tr9emlsa.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-15 20:45:12,510 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:7065/default.aspx <BR>
+ <HR Size=1>Newtonsoft.Json.JsonSerializationException: Error converting value "008" to type 'System.Nullable`1[System.Guid]'. ---> System.Exception: Could not cast or convert from System.String to System.Nullable`1[System.Guid].
+   在 Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   在 Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueProperty(JsonReader reader, JsonProperty property, Object target, Boolean gottenCurrentValue, Object currentValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonReader reader, Object target)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, String id)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateAndPopulateObject(JsonReader reader, JsonObjectContract contract, String id)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueNonProperty(JsonReader reader, Type objectType, JsonContract contract)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.JsonHelper.FromJson[T](String sJasonData) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\JsonHelper.cs:行号 75
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentUser() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:行号 52
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-02-15 20:45:12,535 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> Newtonsoft.Json.JsonSerializationException: Error converting value "008" to type 'System.Nullable`1[System.Guid]'. ---> System.Exception: Could not cast or convert from System.String to System.Nullable`1[System.Guid].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueProperty(JsonReader reader, JsonProperty property, Object target, Boolean gottenCurrentValue, Object currentValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateAndPopulateObject(JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueNonProperty(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.JsonHelper.FromJson[T](String sJasonData) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\JsonHelper.cs:line 75
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentUser() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:line 52
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 26
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.tr9emlsa.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-15 20:45:28,783 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:7065/default.aspx <BR>
+ <HR Size=1>Newtonsoft.Json.JsonSerializationException: Error converting value "008" to type 'System.Nullable`1[System.Guid]'. ---> System.Exception: Could not cast or convert from System.String to System.Nullable`1[System.Guid].
+   在 Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   在 Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueProperty(JsonReader reader, JsonProperty property, Object target, Boolean gottenCurrentValue, Object currentValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonReader reader, Object target)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, String id)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateAndPopulateObject(JsonReader reader, JsonObjectContract contract, String id)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueNonProperty(JsonReader reader, Type objectType, JsonContract contract)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.JsonHelper.FromJson[T](String sJasonData) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\JsonHelper.cs:行号 75
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentUser() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:行号 52
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-02-15 20:45:29,082 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> Newtonsoft.Json.JsonSerializationException: Error converting value "008" to type 'System.Nullable`1[System.Guid]'. ---> System.Exception: Could not cast or convert from System.String to System.Nullable`1[System.Guid].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueProperty(JsonReader reader, JsonProperty property, Object target, Boolean gottenCurrentValue, Object currentValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateAndPopulateObject(JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueNonProperty(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.JsonHelper.FromJson[T](String sJasonData) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\JsonHelper.cs:line 75
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentUser() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:line 52
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 26
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.tr9emlsa.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-15 20:46:21,300 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:7065/Default.aspx <BR>
+ <HR Size=1>Newtonsoft.Json.JsonSerializationException: Error converting value "008" to type 'System.Nullable`1[System.Guid]'. ---> System.Exception: Could not cast or convert from System.String to System.Nullable`1[System.Guid].
+   在 Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   在 Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueProperty(JsonReader reader, JsonProperty property, Object target, Boolean gottenCurrentValue, Object currentValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonReader reader, Object target)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, String id)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateAndPopulateObject(JsonReader reader, JsonObjectContract contract, String id)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueNonProperty(JsonReader reader, Type objectType, JsonContract contract)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   在 Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.JsonHelper.FromJson[T](String sJasonData) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\JsonHelper.cs:行号 75
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentUser() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:行号 52
+   在 SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:行号 26
+   在 System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-02-15 20:46:21,336 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> Newtonsoft.Json.JsonSerializationException: Error converting value "008" to type 'System.Nullable`1[System.Guid]'. ---> System.Exception: Could not cast or convert from System.String to System.Nullable`1[System.Guid].
+   at Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   at Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(Object value, Type targetType)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueProperty(JsonReader reader, JsonProperty property, Object target, Boolean gottenCurrentValue, Object currentValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateAndPopulateObject(JsonReader reader, JsonObjectContract contract, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueNonProperty(JsonReader reader, Type objectType, JsonContract contract)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.JsonHelper.FromJson[T](String sJasonData) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\JsonHelper.cs:line 75
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.UserProvide.GetCurrentUser() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\UserProvide.cs:line 52
+   at SpecialLogisticsSystem.AppPortal.Default.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Default.aspx.cs:line 26
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.default_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_default.aspx.cdcab7d2.tr9emlsa.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-15 21:56:14,334 [21] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpParseException (0x80004005): Type 'DevExpress.Web.ASPxEditors.TextBoxClientSideEvents' does not have a public property named 'Click'. ---> System.Web.HttpParseException (0x80004005): Type 'DevExpress.Web.ASPxEditors.TextBoxClientSideEvents' does not have a public property named 'Click'. ---> System.Web.HttpException (0x80004005): Type 'DevExpress.Web.ASPxEditors.TextBoxClientSideEvents' does not have a public property named 'Click'.
+   at System.Web.UI.ControlBuilder.AddProperty(String filter, String name, String value, Boolean mainDirectiveMode)
+   at System.Web.UI.ControlBuilder.PreprocessAttribute(String filter, String attribname, String attribvalue, Boolean mainDirectiveMode)
+   at System.Web.UI.ControlBuilder.PreprocessAttributes(ParsedAttributeCollection attribs)
+   at System.Web.UI.ControlBuilder.Init(TemplateParser parser, ControlBuilder parentBuilder, Type type, String tagName, String id, IDictionary attribs)
+   at System.Web.UI.ControlBuilder.CreateBuilderFromType(TemplateParser parser, ControlBuilder parentBuilder, Type type, String tagName, String id, IDictionary attribs, Int32 line, String sourceFileName)
+   at System.Web.UI.ControlBuilder.GetChildPropertyBuilder(String tagName, IDictionary attribs, Type& childType, TemplateParser templateParser, Boolean defaultProperty)
+   at System.Web.UI.ControlBuilder.CreateChildBuilder(String filter, String tagName, IDictionary attribs, TemplateParser parser, ControlBuilder parentBuilder, String id, Int32 line, VirtualPath virtualPath, Type& childType, Boolean defaultProperty)
+   at System.Web.UI.TemplateParser.ProcessBeginTag(Match match, String inputText)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.ParseInternal()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-02-15 21:57:11,095 [26] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpParseException (0x80004005): Type 'DevExpress.Web.ASPxEditors.TextBoxClientSideEvents' does not have a public property named 'OnInit'. ---> System.Web.HttpParseException (0x80004005): Type 'DevExpress.Web.ASPxEditors.TextBoxClientSideEvents' does not have a public property named 'OnInit'. ---> System.Web.HttpException (0x80004005): Type 'DevExpress.Web.ASPxEditors.TextBoxClientSideEvents' does not have a public property named 'OnInit'.
+   at System.Web.UI.ControlBuilder.AddProperty(String filter, String name, String value, Boolean mainDirectiveMode)
+   at System.Web.UI.ControlBuilder.PreprocessAttribute(String filter, String attribname, String attribvalue, Boolean mainDirectiveMode)
+   at System.Web.UI.ControlBuilder.PreprocessAttributes(ParsedAttributeCollection attribs)
+   at System.Web.UI.ControlBuilder.Init(TemplateParser parser, ControlBuilder parentBuilder, Type type, String tagName, String id, IDictionary attribs)
+   at System.Web.UI.ControlBuilder.CreateBuilderFromType(TemplateParser parser, ControlBuilder parentBuilder, Type type, String tagName, String id, IDictionary attribs, Int32 line, String sourceFileName)
+   at System.Web.UI.ControlBuilder.GetChildPropertyBuilder(String tagName, IDictionary attribs, Type& childType, TemplateParser templateParser, Boolean defaultProperty)
+   at System.Web.UI.ControlBuilder.CreateChildBuilder(String filter, String tagName, IDictionary attribs, TemplateParser parser, ControlBuilder parentBuilder, String id, Int32 line, VirtualPath virtualPath, Type& childType, Boolean defaultProperty)
+   at System.Web.UI.TemplateParser.ProcessBeginTag(Match match, String inputText)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.ParseInternal()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

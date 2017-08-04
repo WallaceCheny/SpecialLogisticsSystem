@@ -1,0 +1,548 @@
+<HR COLOR=red>
+异常时间：2014-01-03 17:18:26,216 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.Data.SqlClient.SqlException: A connection was successfully established with the server, but then an error occurred during the login process. (provider: Shared Memory Provider, error: 0 - The pipe has been ended.)
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query()
+   at SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:line 61
+   at SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\WayBillDal.cs:line 23
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetDataByPaging(String filter, String sorter, Int32 PageSize, Int32 StartRow) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\WayProvider.cs:line 21
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle._InvokeMethodFast(IRuntimeMethodInfo method, Object target, Object[] arguments, SignatureStruct& sig, MethodAttributes methodAttributes, RuntimeType typeOwner)
+   at System.RuntimeMethodHandle.InvokeMethodFast(IRuntimeMethodInfo method, Object target, Object[] arguments, Signature sig, MethodAttributes methodAttributes, RuntimeType typeOwner)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture, Boolean skipVisibilityChecks)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   at System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   at System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   at DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   at DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   at DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   at DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.OnPagingChanged()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.OnPageIndexChanged()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.set_PageIndex(Int32 value)
+   at DevExpress.Web.ASPxGridView.ASPxGridView.CBPagerOnClick(String[] args)
+   at DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   at DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-01-03 19:32:51,186 [19] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.NullReferenceException: Object reference not set to an instance of an object.
+   at SpecialLogisticsSystem.AppPortal.Cm.User.GetUserModel(Object sender) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 238
+   at SpecialLogisticsSystem.AppPortal.Cm.User.gridUser_RowInserting(Object sender, ASPxDataInsertingEventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 149
+   at DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   at DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   at DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   at DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   at DevExpress.Web.Data.WebDataProxy.EndEdit()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   at DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   at DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-01-03 19:32:58,372 [19] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.FormatException: Unrecognized Guid format.
+   at System.Guid.GuidResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName, Exception innerException)
+   at System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   at System.Guid.Parse(String input)
+   at SpecialLogisticsSystem.Tool.ConvertHelper.ObjectToGuid(Object guid) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Tool\ConvertHelper.cs:line 265
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.UpdateControll`1.SetValueToControl(ASPxGridView grid) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\UpdateModel.cs:line 309
+   at SpecialLogisticsSystem.AppPortal.Cm.User.gridUser_HtmlEditFormCreated(Object sender, ASPxGridViewEditFormEventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 129
+   at DevExpress.Web.ASPxGridView.ASPxGridView.RaiseHtmlEditFormCreated(WebControl container)
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.CreateControlHierarchy()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-01-03 19:34:38,695 [19] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.FormatException: Unrecognized Guid format.
+   at System.Guid.GuidResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName, Exception innerException)
+   at System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   at System.Guid.Parse(String input)
+   at SpecialLogisticsSystem.Tool.ConvertHelper.ObjectToGuid(Object guid) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Tool\ConvertHelper.cs:line 265
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.UpdateControll`1.SetValueToControl(ASPxGridView grid) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\UpdateModel.cs:line 309
+   at SpecialLogisticsSystem.AppPortal.Cm.User.gridUser_HtmlEditFormCreated(Object sender, ASPxGridViewEditFormEventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 129
+   at DevExpress.Web.ASPxGridView.ASPxGridView.RaiseHtmlEditFormCreated(WebControl container)
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.CreateControlHierarchy()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-01-03 20:38:48,268 [22] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.FormatException: Unrecognized Guid format.
+   at System.Guid.GuidResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName, Exception innerException)
+   at System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   at System.Guid.Parse(String input)
+   at SpecialLogisticsSystem.Tool.ConvertHelper.ObjectToGuid(Object guid) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Tool\ConvertHelper.cs:line 265
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.UpdateControll`1.SetValueToControl(ASPxGridView grid) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\UpdateModel.cs:line 309
+   at SpecialLogisticsSystem.AppPortal.Cm.User.gridUser_HtmlEditFormCreated(Object sender, ASPxGridViewEditFormEventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 128
+   at DevExpress.Web.ASPxGridView.ASPxGridView.RaiseHtmlEditFormCreated(WebControl container)
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.CreateControlHierarchy()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-01-03 20:39:50,152 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.FormatException: Unrecognized Guid format.
+   at System.Guid.GuidResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName, Exception innerException)
+   at System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   at System.Guid.Parse(String input)
+   at SpecialLogisticsSystem.Tool.ConvertHelper.ObjectToGuid(Object guid) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Tool\ConvertHelper.cs:line 265
+   at SpecialLogisticsSystem.AppPortal.UIHelpers.UpdateControll`1.SetValueToControl(ASPxGridView grid) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\UpdateModel.cs:line 309
+   at SpecialLogisticsSystem.AppPortal.Cm.User.gridUser_HtmlEditFormCreated(Object sender, ASPxGridViewEditFormEventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 128
+   at DevExpress.Web.ASPxGridView.ASPxGridView.RaiseHtmlEditFormCreated(WebControl container)
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.CreateControlHierarchy()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-01-03 20:40:40,613 [25] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.InvalidCastException: Unable to cast object of type 'System.Boolean' to type 'System.Object[]'.
+   at SpecialLogisticsSystem.AppPortal.Cm.User.gridUser_HtmlEditFormCreated(Object sender, ASPxGridViewEditFormEventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 135
+   at DevExpress.Web.ASPxGridView.ASPxGridView.RaiseHtmlEditFormCreated(WebControl container)
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.CreateControlHierarchy()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-01-03 21:12:37,835 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:10703/Cm/User.aspx <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): A field or property with name 'employee_name' was not found in the selected data source. Possible causes of this error may be the following: an incorrect or case-insensitive spelling of the grid column name; assigning a wrong or not properly initialized data source to the grid.
+   at DevExpress.Web.Data.WebDataControllerProvider.GetRowValueByControllerRow(Int32 controllerRow, String fieldName, Boolean isDesignTime)
+   at DevExpress.Web.Data.WebDataControllerProvider.GetRowValue(Int32 visibleIndex, String fieldName, Boolean isDesignTime)
+   at DevExpress.Web.Data.WebDataProxy.GetRowValue(Int32 visibleIndex, String fieldName)
+   at DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewTextBuilder.GetDisplayControlArgs(GridViewDataColumn column, Int32 visibleIndex, IValueProvider provider, ASPxGridView grid)
+   at DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.CreateDataCellDisplayControl(GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   at DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddDisplayControlToDataCell(Control cell, GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewTableDataCell.CreateControlHierarchy()
+   at DevExpress.Web.ASPxClasses.Internal.InternalTableCell.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.InternalTableCell.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.DataBindInternal()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.DataBind()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.DataBind()
+   at SpecialLogisticsSystem.AppPortal.Cm.User.UserDataBind() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 106
+   at SpecialLogisticsSystem.AppPortal.Cm.User.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 84
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-01-03 21:12:38,142 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Web.HttpException (0x80004005): A field or property with name 'employee_name' was not found in the selected data source. Possible causes of this error may be the following: an incorrect or case-insensitive spelling of the grid column name; assigning a wrong or not properly initialized data source to the grid.
+   at DevExpress.Web.Data.WebDataControllerProvider.GetRowValueByControllerRow(Int32 controllerRow, String fieldName, Boolean isDesignTime)
+   at DevExpress.Web.Data.WebDataControllerProvider.GetRowValue(Int32 visibleIndex, String fieldName, Boolean isDesignTime)
+   at DevExpress.Web.Data.WebDataProxy.GetRowValue(Int32 visibleIndex, String fieldName)
+   at DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewTextBuilder.GetDisplayControlArgs(GridViewDataColumn column, Int32 visibleIndex, IValueProvider provider, ASPxGridView grid)
+   at DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.CreateDataCellDisplayControl(GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   at DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddDisplayControlToDataCell(Control cell, GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewTableDataCell.CreateControlHierarchy()
+   at DevExpress.Web.ASPxClasses.Internal.InternalTableCell.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.InternalTableCell.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.DataBindInternal()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.DataBind()
+   at DevExpress.Web.ASPxGridView.ASPxGridView.DataBind()
+   at SpecialLogisticsSystem.AppPortal.Cm.User.UserDataBind() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 106
+   at SpecialLogisticsSystem.AppPortal.Cm.User.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 84
+   at System.Web.Util.CalliHelper.EventArgFunctionCaller(IntPtr fp, Object o, Object t, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_user_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_user.aspx.2e93d82d.cuggxwnk.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-01-03 21:14:46,301 [17] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): File does not exist.
+   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-01-03 21:18:59,300 [21] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:10703/Cm/User.aspx <BR>
+ <HR Size=1>System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   at DevExpress.Web.Data.WebDataCachedProvider.GetRowValue(Int32 visibleIndex, String fieldName, Boolean isDesignTime)
+   at DevExpress.Web.Data.WebDataProxy.GetRowValue(Int32 visibleIndex, String fieldName)
+   at DevExpress.Web.Data.WebDataProxy.GetRowValuesCore(Int32 index, String[] fieldNames, GetRowValueMethod getValue)
+   at DevExpress.Web.Data.WebDataProxy.GetRowValues(Int32 visibleIndex, String[] fieldNames)
+   at DevExpress.Web.Data.WebDataProxy.GetValues(Int32 visibleIndex, String[] fieldNames)
+   at DevExpress.Web.ASPxGridView.ASPxGridView.GetRowValues(Int32 visibleIndex, String[] fieldNames)
+   at SpecialLogisticsSystem.AppPortal.Cm.User.gridUser_HtmlEditFormCreated(Object sender, ASPxGridViewEditFormEventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 132
+   at DevExpress.Web.ASPxGridView.ASPxGridView.RaiseHtmlEditFormCreated(WebControl container)
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.CreateControlHierarchy()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Page.FindControl(String id)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-01-03 21:19:00,257 [21] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.ArgumentNullException: Value cannot be null.
+Parameter name: key
+   at System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   at DevExpress.Web.Data.WebDataCachedProvider.GetRowValue(Int32 visibleIndex, String fieldName, Boolean isDesignTime)
+   at DevExpress.Web.Data.WebDataProxy.GetRowValue(Int32 visibleIndex, String fieldName)
+   at DevExpress.Web.Data.WebDataProxy.GetRowValuesCore(Int32 index, String[] fieldNames, GetRowValueMethod getValue)
+   at DevExpress.Web.Data.WebDataProxy.GetRowValues(Int32 visibleIndex, String[] fieldNames)
+   at DevExpress.Web.Data.WebDataProxy.GetValues(Int32 visibleIndex, String[] fieldNames)
+   at DevExpress.Web.ASPxGridView.ASPxGridView.GetRowValues(Int32 visibleIndex, String[] fieldNames)
+   at SpecialLogisticsSystem.AppPortal.Cm.User.gridUser_HtmlEditFormCreated(Object sender, ASPxGridViewEditFormEventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\User.aspx.cs:line 132
+   at DevExpress.Web.ASPxGridView.ASPxGridView.RaiseHtmlEditFormCreated(WebControl container)
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.CreateControlHierarchy()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   at System.Web.UI.Control.EnsureChildControls()
+   at DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Control.FindControl(String id, Int32 pathOffset)
+   at System.Web.UI.Page.FindControl(String id)
+   at System.Web.UI.Page.ProcessPostData(NameValueCollection postData, Boolean fBeforeLoad)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.cm_user_aspx.ProcessRequest(HttpContext context) in c:\Users\Wallace\AppData\Local\Temp\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_user.aspx.2e93d82d.ftazvs7x.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-01-03 22:03:56,449 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpParseException (0x80004005): Unknown server tag 'cx:ASPxDropDownEdit'. ---> System.Web.HttpParseException (0x80004005): Unknown server tag 'cx:ASPxDropDownEdit'. ---> System.Web.HttpException (0x80004005): Unknown server tag 'cx:ASPxDropDownEdit'.
+   at System.Web.UI.TagPrefixTagNameToTypeMapper.System.Web.UI.ITagNameToTypeMapper.GetControlType(String tagName, IDictionary attribs)
+   at System.Web.UI.MainTagNameToTypeMapper.GetControlType2(String tagName, IDictionary attribs, Boolean fAllowHtmlTags)
+   at System.Web.UI.MainTagNameToTypeMapper.GetControlType(String tagName, IDictionary attribs, Boolean fAllowHtmlTags)
+   at System.Web.UI.RootBuilder.GetChildControlType(String tagName, IDictionary attribs)
+   at System.Web.UI.ControlBuilder.CreateChildBuilder(String filter, String tagName, IDictionary attribs, TemplateParser parser, ControlBuilder parentBuilder, String id, Int32 line, VirtualPath virtualPath, Type& childType, Boolean defaultProperty)
+   at System.Web.UI.TemplateParser.ProcessBeginTag(Match match, String inputText)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.ParseInternal()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-01-03 22:04:23,321 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpCompileException (0x80004005): e:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Cm\Config.aspx(38): error CS0103: The name 'ThemesModel' does not exist in the current context
+   at System.Web.Compilation.AssemblyBuilder.Compile()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

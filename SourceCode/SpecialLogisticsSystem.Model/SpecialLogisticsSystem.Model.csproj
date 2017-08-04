@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11A5E6F7-42AE-41AD-B410-DAF56E1B3EED}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpecialLogisticsSystem.Model</RootNamespace>
+    <AssemblyName>SpecialLogisticsSystem.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Entity.cs" />
+    <Compile Include="Model\ICodeName.cs" />
+    <Compile Include="Model\NoColumn.cs" />
+    <Compile Include="Model\PagedList.cs" />
+    <Compile Include="Model\PagedTable.cs" />
+    <Compile Include="Model\PrimaryKey.cs" />
+    <Compile Include="Model\QueryInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="T_Arrival_Deliver.cs" />
+    <Compile Include="T_Arrival_DeliverGoods.cs" />
+    <Compile Include="T_Arrival_Main.cs" />
+    <Compile Include="T_Arrival_Sign.cs" />
+    <Compile Include="T_Cm_Branch.cs" />
+    <Compile Include="T_Cm_Car.cs" />
+    <Compile Include="T_Cm_CarArea.cs" />
+    <Compile Include="T_Cm_City.cs" />
+    <Compile Include="T_Cm_Code.cs" />
+    <Compile Include="T_Cm_Config.cs" />
+    <Compile Include="T_Cm_Customer.cs" />
+    <Compile Include="T_Cm_District.cs" />
+    <Compile Include="T_Cm_Emp.cs" />
+    <Compile Include="T_Cm_FeeType.cs" />
+    <Compile Include="T_Cm_Link.cs" />
+    <Compile Include="T_Cm_Menu.cs" />
+    <Compile Include="T_Cm_Province.cs" />
+    <Compile Include="T_Cm_Role.cs" />
+    <Compile Include="T_Cm_RoleMenu_Relation.cs" />
+    <Compile Include="T_Cm_SequenceNumber.cs" />
+    <Compile Include="T_Cm_Servicer.cs" />
+    <Compile Include="T_Cm_Template.cs" />
+    <Compile Include="T_Cm_User.cs" />
+    <Compile Include="T_Cm_UserBranch_Relation.cs" />
+    <Compile Include="T_Cm_UserRole_Relation.cs" />
+    <Compile Include="T_Enum.cs" />
+    <Compile Include="T_Finance_Customer.cs" />
+    <Compile Include="T_Finance_Daily.cs" />
+    <Compile Include="T_Finance_Discount.cs" />
+    <Compile Include="T_Finance_Driver.cs" />
+    <Compile Include="T_Finance_Goods.cs" />
+    <Compile Include="T_Finance_Service.cs" />
+    <Compile Include="T_Stowage_Detail.cs" />
+    <Compile Include="T_Stowage_Main.cs" />
+    <Compile Include="T_Stowage_Site.cs" />
+    <Compile Include="T_Transfer_Detail.cs" />
+    <Compile Include="T_Transfer_Main.cs" />
+    <Compile Include="T_Way_Bill.cs" />
+    <Compile Include="T_Way_Production.cs" />
+    <Compile Include="T_Way_Sms.cs" />
+    <Compile Include="T_Way_Track.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpecialLogisticsSystem.Tool\SpecialLogisticsSystem.Tool.csproj">
+      <Project>{D8509D73-D096-47DE-BB11-583751AACB6A}</Project>
+      <Name>SpecialLogisticsSystem.Tool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

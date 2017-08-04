@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmCity" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmCity" type="MyNamespace.Data.TCmCity, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmCity">
+			<result property="Id" column="CityID" />
+			<result property="CityName" column="CityName" />
+			<result property="ZipCode" column="ZipCode" />
+			<result property="DateCreated" column="DateCreated" />
+			<result property="DateUpdated" column="DateUpdated" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select CityID,CityName,ZipCode,ProvinceID,DateCreated,DateUpdated from T_Cm_City
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 CityID =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmCity" resultClass="int">
+		 		insert into T_Cm_City( CityID,CityName,ZipCode,ProvinceID,DateCreated,DateUpdated ) values ( #CityID#,#CityName#,#ZipCode#,#ProvinceID#,#DateCreated#,#DateUpdated# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmCity" resultClass="int">
+			update T_Cm_City set CityName=#CityName#,ZipCode=#ZipCode#,DateCreated=#DateCreated#,DateUpdated=#DateUpdated# where CityID=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_City where CityID=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

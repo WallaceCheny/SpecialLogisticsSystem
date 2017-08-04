@@ -1,0 +1,684 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Options>
+    <PrintingSettings Margins="100, 100, 100, 100" PageHeaderFooter="&lt;XtraSerializer version=&quot;1.0&quot; application=&quot;XtraPrintingPageHeaderFooter&quot;&gt;&#xD;&#xA;  &lt;property name=&quot;Footer&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Font&quot;&gt;SimSun, 9pt&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;LineAlignment&quot;&gt;Near&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Content&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;Header&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Font&quot;&gt;SimSun, 9pt&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;LineAlignment&quot;&gt;Near&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Content&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;&lt;/XtraSerializer&gt;" />
+    <RibbonOptions MinimizeRibbon="False" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="12.1.6.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="12.1.6.0" IsNewNode="True" />
+  </SchemaModules>
+  <Templates>
+    <Template Id="DevExpress.ExpressApp.Win.Templates.DetailViewForm" IsNewNode="True">
+      <FormStates IsNewNode="True">
+        <FormState Id="Car_DetailView" State="Normal" X="25" Y="25" Width="940" Height="618" IsNewNode="True" />
+        <FormState Id="Customer_DetailView" State="Normal" X="25" Y="25" Width="940" Height="618" IsNewNode="True" />
+        <FormState Id="DistributionBill_DetailView" State="Maximized" X="322" Y="215" Width="940" Height="618" MaximizedOnScreen="\\.\DISPLAY1" IsNewNode="True" />
+        <FormState Id="Employee_DetailView" State="Normal" X="25" Y="25" Width="940" Height="618" IsNewNode="True" />
+        <FormState Id="GatheringBill_DetailView" State="Maximized" MaximizedOnScreen="\\.\DISPLAY1" X="299" Y="173" Width="940" Height="618" IsNewNode="True" />
+        <FormState Id="GatheringBillItem_DetailView" State="Normal" X="175" Y="150" Width="940" Height="618" IsNewNode="True" />
+        <FormState Id="OtherIncomeExpenseBill_DetailView" State="Normal" X="117" Y="68" Width="940" Height="618" IsNewNode="True" />
+        <FormState Id="PaymentBill_DetailView" State="Normal" X="78" Y="115" Width="940" Height="618" IsNewNode="True" />
+        <FormState Id="ReceivingBill_DetailView" State="Maximized" X="25" Y="25" Width="1025" Height="526" MaximizedOnScreen="\\.\DISPLAY1" IsNewNode="True" />
+        <FormState Id="ReceivingBillItem_DetailView" State="Normal" X="125" Y="125" Width="940" Height="618" IsNewNode="True" />
+        <FormState Id="ReportDataEx_DetailView" State="Normal" X="100" Y="100" Width="940" Height="618" IsNewNode="True" />
+        <FormState Id="ReturnBill_DetailView" State="Normal" X="25" Y="25" Width="940" Height="618" IsNewNode="True" />
+        <FormState Id="ShippingBill_DetailView" State="Maximized" MaximizedOnScreen="\\.\DISPLAY1" X="409" Y="136" Width="940" Height="618" IsNewNode="True" />
+        <FormState Id="ShippingBillItem_DetailView" State="Normal" X="50" Y="50" Width="940" Height="618" IsNewNode="True" />
+      </FormStates>
+    </Template>
+    <Template Id="DevExpress.ExpressApp.Win.Templates.LookupControlTemplate" IsNewNode="True">
+      <FormStates IsNewNode="True">
+        <FormState Id="Branch_LookupListView" IsNewNode="True" />
+        <FormState Id="Car_LookupListView" IsNewNode="True" />
+        <FormState Id="CarType_LookupListView" IsNewNode="True" />
+        <FormState Id="Consignee_LookupListView" IsNewNode="True" />
+        <FormState Id="Customer_LookupListView" IsNewNode="True" />
+        <FormState Id="Driver_LookupListView" IsNewNode="True" />
+        <FormState Id="Employee_LookupListView" IsNewNode="True" />
+        <FormState Id="ExtraChargeType_LookupListView" IsNewNode="True" />
+        <FormState Id="PayType_LookupListView" IsNewNode="True" />
+        <FormState Id="ReceivingBill_LookupListView" IsNewNode="True" />
+        <FormState Id="ReceivingBillItem_LookupListView" IsNewNode="True" />
+        <FormState Id="ReceivingBillPayType_LookupListView" IsNewNode="True" />
+        <FormState Id="Region_LookupListView" IsNewNode="True" />
+        <FormState Id="ShippingBill_LookupListView" IsNewNode="True" />
+        <FormState Id="ShippingBillItem_LookupListView" IsNewNode="True" />
+        <FormState Id="ShippingType_LookupListView" IsNewNode="True" />
+      </FormStates>
+    </Template>
+    <Template Id="DevExpress.ExpressApp.Win.Templates.MainForm" NavigationWidth="200" IsNewNode="True">
+      <FormStates IsNewNode="True">
+        <FormState Id="Default" State="Maximized" X="100" Y="100" Width="1025" Height="526" MaximizedOnScreen="\\.\DISPLAY1" IsNewNode="True" />
+      </FormStates>
+      <NavBarCustomization Width="192" IsNewNode="True" />
+    </Template>
+    <Template Id="DevExpress.ExpressApp.Win.Templates.NestedFrameTemplate" IsNewNode="True" />
+    <Template Id="DevExpress.ExpressApp.Win.Templates.PopupForm" IsNewNode="True">
+      <FormStates IsNewNode="True">
+        <FormState Id="ReceivingBill_Logistics_ReportParametersObject_DetailView" State="Normal" X="399" Y="154" Width="568" Height="420" IsNewNode="True" />
+        <FormState Id="ReceivingBillItem_ReportParametersObject_DetailView" State="Normal" X="399" Y="154" Width="568" Height="420" IsNewNode="True" />
+        <FormState Id="RuleSetValidationResult_ByTarget_Error_DetailView" State="Normal" X="399" Y="154" Width="568" Height="420" IsNewNode="True" />
+        <FormState Id="ShippingBillItem_ReportParametersObject_DetailView" State="Normal" X="399" Y="154" Width="568" Height="420" IsNewNode="True" />
+      </FormStates>
+    </Template>
+  </Templates>
+  <Views>
+    <ListView Id="Branch_Employees_ListView">
+      <Columns>
+        <ColumnInfo Id="Branch" Width="139" />
+        <ColumnInfo Id="ChangePasswordOnFirstLogon" Width="105" />
+        <ColumnInfo Id="CreatedBy" Width="67" />
+        <ColumnInfo Id="CreatedOn" Width="66" />
+        <ColumnInfo Id="IsActive" Width="33" />
+        <ColumnInfo Id="IsAdmin" Width="117" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ModifiedBy" Width="67" />
+        <ColumnInfo Id="ModifiedOn" Width="66" />
+        <ColumnInfo Id="Postalcode" Width="57" />
+        <ColumnInfo Id="UserName" Width="80" />
+        <ColumnInfo Id="NO" Width="107" />
+        <ColumnInfo Id="Name" Width="43" />
+        <ColumnInfo Id="Gender" Width="43" />
+        <ColumnInfo Id="NativePlace" Width="43" />
+        <ColumnInfo Id="Phone" Width="67" />
+        <ColumnInfo Id="Address" Width="67" />
+        <ColumnInfo Id="IDCard" Width="67" />
+        <ColumnInfo Id="EmployDate" Width="67" />
+        <ColumnInfo Id="ResignDate" Width="67" />
+        <ColumnInfo Id="Position" Width="43" />
+        <ColumnInfo Id="Picture" Width="43" />
+      </Columns>
+    </ListView>
+    <ListView Id="Branch_ListView">
+      <Columns>
+        <ColumnInfo Id="Address" Width="409" />
+        <ColumnInfo Id="CreatedBy" Width="57" />
+        <ColumnInfo Id="CreatedOn" Width="57" />
+        <ColumnInfo Id="Master" Width="45" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ModifiedBy" Width="57" />
+        <ColumnInfo Id="ModifiedOn" Width="57" />
+        <ColumnInfo Id="Phone" Width="224" />
+        <ColumnInfo Id="ZipCode" Width="57" />
+        <ColumnInfo Id="NO" Width="80" />
+        <ColumnInfo Id="Name" Width="151" />
+        <ColumnInfo Id="Region" Width="127" />
+        <ColumnInfo Id="IsHeadquarters" Width="55" />
+        <ColumnInfo Id="NotUsed" Width="43" />
+      </Columns>
+    </ListView>
+    <ListView Id="Branch_LookupListView">
+      <Columns>
+        <ColumnInfo Id="NO" Width="80" />
+        <ColumnInfo Id="Name" Width="151" />
+        <ColumnInfo Id="Region" Width="127" />
+      </Columns>
+    </ListView>
+    <ListView Id="Car_ListView">
+      <Columns>
+        <ColumnInfo Id="CreatedBy" Width="57" />
+        <ColumnInfo Id="CreatedOn" Width="57" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ModifiedBy" Width="67" />
+        <ColumnInfo Id="ModifiedOn" Width="66" />
+        <ColumnInfo Id="NO" Width="80" />
+        <ColumnInfo Id="CarNumber" Width="62" />
+        <ColumnInfo Id="Branch" Width="151" />
+        <ColumnInfo Id="Driver" Width="67" />
+        <ColumnInfo Id="IsFree" Width="43" />
+        <ColumnInfo Id="CarType" Width="67" />
+        <ColumnInfo Id="LimitLoad" Width="82" />
+        <ColumnInfo Id="Lenght" Width="63" />
+        <ColumnInfo Id="Width" Width="63" />
+        <ColumnInfo Id="Height" Width="63" />
+        <ColumnInfo Id="VehicleModel" Width="67" />
+        <ColumnInfo Id="VehicleIdentificationNumber" Width="67" />
+        <ColumnInfo Id="VehicleLicenseNumber" Width="67" />
+        <ColumnInfo Id="EngineNO" Width="67" />
+        <ColumnInfo Id="InsuranceNumber" Width="67" />
+        <ColumnInfo Id="CarMaster" Width="43" />
+        <ColumnInfo Id="NotUsed" Width="43" />
+      </Columns>
+    </ListView>
+    <ListView Id="Car_LookupListView">
+      <Columns>
+        <ColumnInfo Id="NO" Width="80" />
+        <ColumnInfo Id="CarNumber" Width="62" />
+        <ColumnInfo Id="Driver" Width="67" />
+        <ColumnInfo Id="IsFree" Width="43" />
+        <ColumnInfo Id="CarType" Width="67" />
+        <ColumnInfo Id="LimitLoad" Width="82" />
+      </Columns>
+    </ListView>
+    <ListView Id="CarType_ListView">
+      <Columns>
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="Name" Width="56" SortIndex="1" />
+        <ColumnInfo Id="SortIndex" Width="56" />
+        <ColumnInfo Id="NotUsed" Width="43" />
+      </Columns>
+    </ListView>
+    <ListView Id="CarType_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Width="56" SortIndex="1" />
+        <ColumnInfo Id="SortIndex" Width="56" />
+      </Columns>
+    </ListView>
+    <ListView Id="Consignee_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Width="56" />
+        <ColumnInfo Id="Gender" Width="43" />
+        <ColumnInfo Id="Phone" Width="84" />
+        <ColumnInfo Id="Region" Width="123" />
+        <ColumnInfo Id="Address" Width="74" />
+      </Columns>
+    </ListView>
+    <ListView Id="Customer_Consignees_ListView">
+      <Columns>
+        <ColumnInfo Id="Customer" Width="43" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="Name" Width="56" />
+        <ColumnInfo Id="Gender" Width="43" />
+        <ColumnInfo Id="Phone" Width="84" />
+        <ColumnInfo Id="Region" Width="123" />
+        <ColumnInfo Id="Address" Width="74" />
+        <ColumnInfo Id="ZipCode" Width="67" />
+        <ColumnInfo Id="NotUsed" Width="43" />
+      </Columns>
+    </ListView>
+    <ListView Id="Customer_ListView">
+      <Columns>
+        <ColumnInfo Id="CreatedBy" Width="57" />
+        <ColumnInfo Id="CreatedOn" Width="57" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ModifiedBy" Width="67" />
+        <ColumnInfo Id="ModifiedOn" Width="73" />
+        <ColumnInfo Id="NO" Width="106" />
+        <ColumnInfo Id="Name" Width="67" />
+        <ColumnInfo Id="Gender" Width="43" />
+        <ColumnInfo Id="Phone" Width="84" />
+        <ColumnInfo Id="Region" Width="127" />
+        <ColumnInfo Id="Address" Width="110" />
+        <ColumnInfo Id="ZipCode" Width="67" />
+        <ColumnInfo Id="NotUsed" Width="43" />
+      </Columns>
+    </ListView>
+    <ListView Id="Customer_LookupListView">
+      <Columns>
+        <ColumnInfo Id="NO" Width="106" />
+        <ColumnInfo Id="Name" Width="67" />
+        <ColumnInfo Id="Gender" Width="43" />
+        <ColumnInfo Id="Phone" Width="84" />
+        <ColumnInfo Id="Region" Width="127" />
+        <ColumnInfo Id="Address" Width="110" />
+      </Columns>
+    </ListView>
+    <ListView Id="DistributionBill_ExtraChargeItems_ListView">
+      <Columns>
+        <ColumnInfo Id="ExtraChargeType" Width="80" />
+      </Columns>
+    </ListView>
+    <ListView Id="DistributionBill_Items_ListView">
+      <Columns>
+        <ColumnInfo Id="DistributionBill" Width="106" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ShippingBillItem" Width="56" />
+        <ColumnInfo Id="ReceivingBill" Width="107" />
+        <ColumnInfo Id="Qty" Width="43" />
+        <ColumnInfo Id="Weight" Width="67" />
+        <ColumnInfo Id="ToRegion" Width="127" />
+        <ColumnInfo Id="ToBranch" Width="151" />
+      </Columns>
+    </ListView>
+    <ListView Id="DistributionBill_ListView">
+      <Columns>
+        <ColumnInfo Id="CreatedBy" Width="67" />
+        <ColumnInfo Id="CreatedOn" Width="66" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ModifiedBy" Width="67" />
+        <ColumnInfo Id="ModifiedOn" Width="66" />
+        <ColumnInfo Id="NO" Width="106" />
+        <ColumnInfo Id="Date" Width="80" />
+        <ColumnInfo Id="ShippingBill" Width="103" />
+        <ColumnInfo Id="ShippingBillDate" Width="67" />
+        <ColumnInfo Id="ShippingBillFromRegion" Width="127" />
+        <ColumnInfo Id="ShippingBillFromBranch" Width="151" />
+        <ColumnInfo Id="ShippingBillCar" Width="62" />
+        <ColumnInfo Id="ShippingBillCarType" Width="67" />
+        <ColumnInfo Id="ShippingBillDriver" Width="43" />
+        <ColumnInfo Id="ShippingBillDriverPhone" Width="84" />
+        <ColumnInfo Id="ToRegion" Width="127" />
+        <ColumnInfo Id="ToBranch" Width="151" />
+        <ColumnInfo Id="Seller" Width="67" Index="12" />
+        <ColumnInfo Id="Branch" Width="151" Index="13" />
+        <ColumnInfo Id="ExtraChargeAmount" Width="67" Index="14" />
+      </Columns>
+    </ListView>
+    <ListView Id="Driver_ListView">
+      <Columns>
+        <ColumnInfo Id="CreatedBy" Width="57" />
+        <ColumnInfo Id="CreatedOn" Width="57" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ModifiedBy" Width="57" />
+        <ColumnInfo Id="ModifiedOn" Width="57" />
+        <ColumnInfo Id="NO" Width="80" />
+        <ColumnInfo Id="Name" Width="67" />
+        <ColumnInfo Id="Branch" Width="151" />
+        <ColumnInfo Id="Gender" Width="43" />
+        <ColumnInfo Id="NativePlace" Width="43" />
+        <ColumnInfo Id="IDCard" Width="67" />
+        <ColumnInfo Id="DrivingLicence" Width="67" />
+        <ColumnInfo Id="Phone" Width="84" />
+        <ColumnInfo Id="Address" Width="67" />
+        <ColumnInfo Id="Postalcode" Width="67" />
+        <ColumnInfo Id="Picture" Width="43" />
+        <ColumnInfo Id="NotUsed" Width="43" />
+      </Columns>
+    </ListView>
+    <ListView Id="Driver_LookupListView">
+      <Columns>
+        <ColumnInfo Id="NO" Width="80" />
+        <ColumnInfo Id="Name" Width="67" />
+        <ColumnInfo Id="Gender" Width="43" />
+        <ColumnInfo Id="DrivingLicence" Width="67" />
+      </Columns>
+    </ListView>
+    <ListView Id="Employee_LookupListView">
+      <Columns>
+        <ColumnInfo Id="NO" Width="107" />
+        <ColumnInfo Id="Name" Width="67" />
+        <ColumnInfo Id="Gender" Width="43" />
+        <ColumnInfo Id="Position" Width="43" />
+      </Columns>
+    </ListView>
+    <ListView Id="ExtraChargeType_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Width="56" SortIndex="1" />
+        <ColumnInfo Id="Category" Width="72" />
+        <ColumnInfo Id="Price" Width="67" />
+        <ColumnInfo Id="SortIndex" Width="56" />
+      </Columns>
+    </ListView>
+    <ListView Id="GatheringBill_Items_ListView">
+      <Columns>
+        <ColumnInfo Id="GatheringBill" Width="103" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ReceivingBill" Width="107" />
+        <ColumnInfo Id="TotalAmount" Width="69" />
+        <ColumnInfo Id="ReceivedAmount" Width="69" />
+        <ColumnInfo Id="UnReceivedAmount" Width="67" />
+        <ColumnInfo Id="ThisGatheringAmount" Width="69" />
+        <ColumnInfo Id="DiscountAmount" Width="67" />
+        <ColumnInfo Id="GatheringAmount" Width="69" />
+      </Columns>
+    </ListView>
+    <ListView Id="GatheringBill_ListView">
+      <Columns>
+        <ColumnInfo Id="CreatedBy" Width="67" />
+        <ColumnInfo Id="CreatedOn" Width="66" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ModifiedBy" Width="67" />
+        <ColumnInfo Id="ModifiedOn" Width="66" />
+        <ColumnInfo Id="NO" Width="103" />
+        <ColumnInfo Id="Date" Width="80" />
+        <ColumnInfo Id="Customer" Width="43" />
+        <ColumnInfo Id="CustomerNO" Width="106" />
+        <ColumnInfo Id="PayType" Width="67" />
+        <ColumnInfo Id="ThisGatheringAmount" Width="76" />
+        <ColumnInfo Id="DiscountAmount" Width="57" />
+        <ColumnInfo Id="GatheringAmount" Width="76" />
+        <ColumnInfo Id="Seller" Width="67" />
+        <ColumnInfo Id="Branch" Width="151" />
+      </Columns>
+    </ListView>
+    <ListView Id="LogisticsItem_ListView">
+      <Columns>
+        <ColumnInfo Id="IsChecked" Width="43" />
+        <ColumnInfo Id="ReceivingBillNO" Width="107" />
+        <ColumnInfo Id="ReceivingBillDate" Width="80" />
+        <ColumnInfo Id="ReceivingBillFromBranch" Width="151" />
+        <ColumnInfo Id="ReceivingBillToBranch" Width="151" />
+        <ColumnInfo Id="ReceivingBillConsignor" Width="55" />
+        <ColumnInfo Id="ReceivingBillConsignee" Width="55" />
+        <ColumnInfo Id="LogisticsItemStatus" Width="67" />
+        <ColumnInfo Id="Product" Width="67" />
+        <ColumnInfo Id="Qty" Width="43" />
+        <ColumnInfo Id="Weight" Width="67" />
+        <ColumnInfo Id="AssociateBillNO" Width="104" />
+        <ColumnInfo Id="AssociateBillDate" Width="67" />
+      </Columns>
+    </ListView>
+    <ListView Id="OtherIncomeExpenseBill_Items_ListView">
+      <Columns>
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="OtherIncomeExpenseBill" Width="105" />
+        <ColumnInfo Id="ExtraChargeType" Width="67" />
+        <ColumnInfo Id="ExtraChargeTypeCategory" Width="72" />
+        <ColumnInfo Id="Price" Width="58" />
+        <ColumnInfo Id="Qty" Width="43" />
+        <ColumnInfo Id="ExtraChargeUnit" Width="43" />
+        <ColumnInfo Id="Amount" Width="62" />
+      </Columns>
+    </ListView>
+    <ListView Id="OtherIncomeExpenseBill_ListView">
+      <Columns>
+        <ColumnInfo Id="CreatedBy" Width="57" />
+        <ColumnInfo Id="CreatedOn" Width="66" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ModifiedBy" Width="67" />
+        <ColumnInfo Id="ModifiedOn" Width="66" />
+        <ColumnInfo Id="NO" Width="105" />
+        <ColumnInfo Id="Date" Width="80" />
+        <ColumnInfo Id="IncomeAmount" Width="57" />
+        <ColumnInfo Id="ExpenseAmount" Width="58" />
+        <ColumnInfo Id="Amount" Width="62" />
+        <ColumnInfo Id="Seller" Width="55" />
+        <ColumnInfo Id="Branch" Width="139" />
+      </Columns>
+    </ListView>
+    <ListView Id="PaymentBill_Items_ListView">
+      <Columns>
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="PaymentBill" Width="103" />
+        <ColumnInfo Id="ShippingBill" Width="104" />
+        <ColumnInfo Id="TotalAmount" Width="67" />
+        <ColumnInfo Id="PaidAmount" Width="67" />
+        <ColumnInfo Id="UnPaidAmount" Width="67" />
+        <ColumnInfo Id="ThisPaymentAmount" Width="67" />
+        <ColumnInfo Id="DiscountAmount" Width="67" />
+        <ColumnInfo Id="PaymentAmount" Width="67" />
+      </Columns>
+    </ListView>
+    <ListView Id="PaymentBill_ListView">
+      <Columns>
+        <ColumnInfo Id="CreatedBy" Width="67" />
+        <ColumnInfo Id="CreatedOn" Width="66" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ModifiedBy" Width="67" />
+        <ColumnInfo Id="ModifiedOn" Width="66" />
+        <ColumnInfo Id="NO" Width="103" />
+        <ColumnInfo Id="Date" Width="80" />
+        <ColumnInfo Id="Driver" Width="43" />
+        <ColumnInfo Id="DriverNO" Width="67" />
+        <ColumnInfo Id="PayType" Width="67" />
+        <ColumnInfo Id="ThisPaymentAmount" Width="58" />
+        <ColumnInfo Id="DiscountAmount" Width="57" />
+        <ColumnInfo Id="PaymentAmount" Width="58" />
+        <ColumnInfo Id="Seller" Width="67" />
+        <ColumnInfo Id="Branch" Width="139" />
+      </Columns>
+    </ListView>
+    <ListView Id="PayType_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Width="56" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReceivingBill_ExtraChargeItems_ListView">
+      <Columns>
+        <ColumnInfo Id="ExtraChargeType" Width="80" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReceivingBill_GatheringBillItems_ListView">
+      <Columns>
+        <ColumnInfo Id="GatheringBill" Width="79" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReceivingBill_Items_ListView">
+      <Columns>
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ReceivingBill" Width="107" />
+        <ColumnInfo Id="UnLoadedQty" Width="57" />
+        <ColumnInfo Id="UnLoadedVolume" Width="57" />
+        <ColumnInfo Id="UnLoadedWeight" Width="57" />
+        <ColumnInfo Id="Package" Width="56" />
+        <ColumnInfo Id="Qty" Width="43" />
+        <ColumnInfo Id="Weight" Width="67" />
+        <ColumnInfo Id="ChargingType" Width="67" />
+        <ColumnInfo Id="PackageChargingPrice" Width="67" />
+        <ColumnInfo Id="TransportAmount" Width="69" />
+        <ColumnInfo Id="ReceivingAmount" Width="55" />
+        <ColumnInfo Id="DeliverAmount" Width="55" />
+        <ColumnInfo Id="Amount" Width="69" />
+        <ColumnInfo Id="IsLoaded" Width="55" />
+        <ColumnInfo Id="IsArrived" Width="55" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReceivingBill_ListView">
+      <Columns>
+        <ColumnInfo Id="Amount" Width="76" />
+        <ColumnInfo Id="ConsigneeZipCode" Width="57" />
+        <ColumnInfo Id="ConsignorAddress" Width="110" />
+        <ColumnInfo Id="ConsignorZipCode" Width="57" />
+        <ColumnInfo Id="CreatedBy" Width="67" />
+        <ColumnInfo Id="CreatedOn" Width="66" />
+        <ColumnInfo Id="ExtraChargeAmount" Width="57" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ModifiedBy" Width="67" />
+        <ColumnInfo Id="ModifiedOn" Width="73" />
+        <ColumnInfo Id="NO" Width="107" />
+        <ColumnInfo Id="Date" Width="80" />
+        <ColumnInfo Id="Consignor" Width="55" />
+        <ColumnInfo Id="ConsignorPhone" Index="3" Width="84" />
+        <ColumnInfo Id="ConsignorRegion" Index="4" Width="127" />
+        <ColumnInfo Id="Consignee" Index="5" Width="55" />
+        <ColumnInfo Id="ConsigneePhone" Index="6" Width="84" />
+        <ColumnInfo Id="ConsigneeRegion" Index="7" Width="127" />
+        <ColumnInfo Id="ConsigneeAddress" Index="8" Width="122" />
+        <ColumnInfo Id="FromRegion" Index="9" Width="127" />
+        <ColumnInfo Id="FromBranch" Index="10" Width="151" />
+        <ColumnInfo Id="ToRegion" Index="11" Width="127" />
+        <ColumnInfo Id="ToBranch" Index="12" Width="151" />
+        <ColumnInfo Id="ServiceType" Index="13" Width="67" />
+        <ColumnInfo Id="ShippingType" Index="14" Width="95" />
+        <ColumnInfo Id="TotalAmount" Width="76" Index="15" />
+        <ColumnInfo Id="ReceivedAmount" Width="76" Index="16" />
+        <ColumnInfo Id="Seller" Index="17" Width="67" />
+        <ColumnInfo Id="Branch" Index="18" Width="151" />
+        <ColumnInfo Id="IsArrived" Index="19" Width="55" />
+        <ColumnInfo Id="IsLoaded" Index="20" Width="55" />
+        <ColumnInfo Id="UnReceivedAmount" Index="21" Width="76" />
+        <ColumnInfo Id="ReceivingBillPayType" Index="22" Width="103" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReceivingBill_LookupListView">
+      <Columns>
+        <ColumnInfo Id="NO" Width="107" />
+        <ColumnInfo Id="Date" Width="80" />
+        <ColumnInfo Id="Consignor" Width="55" />
+        <ColumnInfo Id="ReceivingBillPayType" Index="3" Width="103" />
+        <ColumnInfo Id="ConsignorRegion" Index="4" Width="123" />
+        <ColumnInfo Id="UnReceivedAmount" Index="4" Width="67" />
+        <ColumnInfo Id="Consignee" Index="5" Width="55" />
+        <ColumnInfo Id="ConsigneeRegion" Index="6" Width="127" />
+        <ColumnInfo Id="FromRegion" Index="7" Width="123" />
+        <ColumnInfo Id="ToRegion" Index="8" Width="127" />
+        <ColumnInfo Id="TotalAmount" Index="9" Width="76" />
+        <ColumnInfo Id="ReceivedAmount" Index="10" Width="76" />
+        <ColumnInfo Id="Memo" Index="11" Width="43" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReceivingBillItem_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Package" Width="67" />
+        <ColumnInfo Id="ReceivingBill" Width="107" />
+        <ColumnInfo Id="Qty" Width="43" />
+        <ColumnInfo Id="Weight" Width="67" />
+        <ColumnInfo Id="Volume" Width="70" />
+        <ColumnInfo Id="IsLoaded" Width="55" />
+        <ColumnInfo Id="Memo" Width="43" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReceivingBillPayType_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Width="103" />
+      </Columns>
+    </ListView>
+    <ListView Id="Region_LookupListView">
+      <Columns>
+        <ColumnInfo Id="NO" Width="67" />
+        <ColumnInfo Id="ParentRegion" Width="87" />
+        <ColumnInfo Id="Name" Width="67" />
+        <ColumnInfo Id="SortIndex" Width="56" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReportDataEx_ListView">
+      <Columns>
+        <ColumnInfo Id="DataTypeCaption" Width="146" />
+        <ColumnInfo Id="Category" Width="80" Index="0" />
+        <ColumnInfo Id="IsInplaceReport" Width="68" />
+        <ColumnInfo Id="ReportName" Width="115" Index="1" />
+        <ColumnInfo Id="Description" Width="475" Index="2" />
+        <ColumnInfo Id="SortIndex" Width="56" Index="3" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReportDataEx_ListView_ForView">
+      <Columns>
+        <ColumnInfo Id="DataTypeCaption" Width="146" />
+        <ColumnInfo Id="IsInplaceReport" Width="45" />
+        <ColumnInfo Id="Category" Width="80" />
+        <ColumnInfo Id="ReportName" Width="115" />
+        <ColumnInfo Id="Description" Width="475" />
+        <ColumnInfo Id="SortIndex" Width="56" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReturnBill_ExtraChargeItems_ListView">
+      <Columns>
+        <ColumnInfo Id="ExtraChargeType" Width="80" />
+      </Columns>
+    </ListView>
+    <ListView Id="ReturnBill_ListView">
+      <Columns>
+        <ColumnInfo Id="CreatedBy" Width="57" />
+        <ColumnInfo Id="CreatedOn" Width="66" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ModifiedBy" Width="67" />
+        <ColumnInfo Id="ModifiedOn" Width="66" />
+        <ColumnInfo Id="ShippingBillFromBranch" Width="151" />
+        <ColumnInfo Id="ShippingBillFromRegion" Width="127" />
+        <ColumnInfo Id="NO" Width="106" />
+        <ColumnInfo Id="Date" Width="80" />
+        <ColumnInfo Id="ShippingBill" Width="103" />
+        <ColumnInfo Id="ShippingBillDate" Width="66" />
+        <ColumnInfo Id="Car" Width="62" />
+        <ColumnInfo Id="CarType" Width="67" />
+        <ColumnInfo Id="Driver" Width="43" />
+        <ColumnInfo Id="DriverPhone" Width="84" />
+        <ColumnInfo Id="FromRegion" Width="127" />
+        <ColumnInfo Id="FromBranch" Width="151" />
+        <ColumnInfo Id="ToRegion" Width="127" />
+        <ColumnInfo Id="ToBranch" Width="151" />
+        <ColumnInfo Id="Seller" Width="55" Index="12" />
+        <ColumnInfo Id="Branch" Width="151" Index="13" />
+        <ColumnInfo Id="ExpenseAmount" Width="58" Index="14" />
+        <ColumnInfo Id="IncomeAmount" Width="67" Index="15" />
+      </Columns>
+    </ListView>
+    <ListView Id="RuleSetValidationResultItem_ByTarget_ListView">
+      <Columns>
+        <ColumnInfo Id="ContextCaption" Width="69" />
+        <ColumnInfo Id="ContextId" Width="56" />
+        <ColumnInfo Id="RuleName" Width="226" />
+        <ColumnInfo Id="TargetCaption" Width="410" />
+        <ColumnInfo Id="ErrorMessage" Width="103" />
+      </Columns>
+    </ListView>
+    <ListView Id="SecuritySystemUser_Roles_ListView">
+      <Columns>
+        <ColumnInfo Id="Name" Width="91" />
+        <ColumnInfo Id="IsAdministrative" Width="67" />
+      </Columns>
+    </ListView>
+    <ListView Id="ShippingBill_ExtraChargeItems_ListView">
+      <Columns>
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ExtraChargeType" Width="80" />
+        <ColumnInfo Id="Price" Width="44" />
+        <ColumnInfo Id="Qty" Width="43" />
+        <ColumnInfo Id="ExtraChargeUnit" Width="43" />
+        <ColumnInfo Id="Amount" Width="44" />
+      </Columns>
+    </ListView>
+    <ListView Id="ShippingBill_Items_ListView">
+      <Columns>
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ShippingBill" Width="104" />
+        <ColumnInfo Id="UnLoadedQty" Width="57" />
+        <ColumnInfo Id="UnLoadedVolume" Width="57" />
+        <ColumnInfo Id="UnLoadedWeight" Width="57" />
+        <ColumnInfo Id="ReceivingBillItem" Width="56" />
+        <ColumnInfo Id="ReceivingBill" Width="107" />
+        <ColumnInfo Id="Qty" Width="43" />
+        <ColumnInfo Id="Weight" Width="67" />
+        <ColumnInfo Id="ToRegion" Width="83" />
+        <ColumnInfo Id="ToBranch" Width="151" />
+        <ColumnInfo Id="IsArrived" Width="55" />
+      </Columns>
+    </ListView>
+    <ListView Id="ShippingBill_ListView">
+      <Columns>
+        <ColumnInfo Id="CreatedBy" Width="67" />
+        <ColumnInfo Id="CreatedOn" Width="66" />
+        <ColumnInfo Id="DriverPayableAmountArrived" Width="58" />
+        <ColumnInfo Id="DriverPayableAmountNow" Width="58" />
+        <ColumnInfo Id="DriverPayableAmountReceiptedBill" Width="44" />
+        <ColumnInfo Id="ExtraChargeAmount" Width="51" />
+        <ColumnInfo Id="Memo" Width="33" />
+        <ColumnInfo Id="ModifiedBy" Width="67" />
+        <ColumnInfo Id="ModifiedOn" Width="66" />
+        <ColumnInfo Id="TransportAmount" Width="58" />
+        <ColumnInfo Id="NO" Width="104" />
+        <ColumnInfo Id="Date" Width="80" />
+        <ColumnInfo Id="FromRegion" Width="127" />
+        <ColumnInfo Id="FromBranch" Width="151" />
+        <ColumnInfo Id="Car" Width="62" />
+        <ColumnInfo Id="CarType" Width="67" />
+        <ColumnInfo Id="Driver" Width="43" />
+        <ColumnInfo Id="DriverPhone" Width="84" />
+        <ColumnInfo Id="TotalAmount" Width="67" />
+        <ColumnInfo Id="PaidAmount" Width="67" />
+        <ColumnInfo Id="Seller" Width="67" Index="10" />
+        <ColumnInfo Id="Branch" Width="151" Index="11" />
+        <ColumnInfo Id="IsReturned" Width="55" />
+        <ColumnInfo Id="IsArrived" Width="55" Index="13" />
+        <ColumnInfo Id="UnPaidAmount" Width="67" Index="14" />
+      </Columns>
+    </ListView>
+    <ListView Id="ShippingBill_LookupListView">
+      <Columns>
+        <ColumnInfo Id="NO" Width="104" />
+        <ColumnInfo Id="Date" Width="80" />
+        <ColumnInfo Id="FromRegion" Width="83" />
+        <ColumnInfo Id="FromBranch" Width="151" />
+        <ColumnInfo Id="Car" Width="62" />
+        <ColumnInfo Id="Driver" Width="43" />
+        <ColumnInfo Id="Memo" Width="43" />
+      </Columns>
+    </ListView>
+    <ListView Id="ShippingBill_PaymentBillItems_ListView">
+      <Columns>
+        <ColumnInfo Id="PaymentBill" Width="79" />
+      </Columns>
+    </ListView>
+    <ListView Id="ShippingBillItem_LookupListView">
+      <Columns>
+        <ColumnInfo Id="ReceivingBillItem.Package" Width="171" SortOrder="Descending" />
+        <ColumnInfo Id="ShippingBill" Width="104" />
+        <ColumnInfo Id="ReceivingBillItem" Width="55" />
+        <ColumnInfo Id="ReceivingBill" Width="107" />
+        <ColumnInfo Id="Qty" Width="43" />
+        <ColumnInfo Id="Weight" Width="67" />
+        <ColumnInfo Id="ToRegion" Width="123" />
+        <ColumnInfo Id="ToBranch" Width="151" />
+        <ColumnInfo Id="IsArrived" Width="55" />
+        <ColumnInfo Id="Memo" Width="43" />
+      </Columns>
+    </ListView>
+    <ListView Id="ShippingType_LookupListView">
+      <Columns>
+        <ColumnInfo Id="Name" Width="95" SortIndex="1" />
+        <ColumnInfo Id="SortIndex" Width="56" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

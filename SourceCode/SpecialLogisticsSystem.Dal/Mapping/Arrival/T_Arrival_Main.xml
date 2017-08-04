@@ -1,0 +1,73 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_Main.Count">
+    Select count(1) FROM T_Arrival_Main where
+    $and{id = #id#}  $and{stowage_id = #stowage_id#}  $and{unload_size = #unload_size#}  $and{unload_weight = #unload_weight#}  $and{unload_fee = #unload_fee#}  $and{tranfer_fee = #tranfer_fee#}  $and{send_fee = #send_fee#}  $and{outside_fee = #outside_fee#}  $and{other_fee = #other_fee#}  $and{arrival_date = #arrival_date#}  $and{emp_id = #emp_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_Main.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Arrival_Main) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{stowage_id = #stowage_id#}  $and{unload_size = #unload_size#}  $and{unload_weight = #unload_weight#}  $and{unload_fee = #unload_fee#}  $and{tranfer_fee = #tranfer_fee#}  $and{send_fee = #send_fee#}  $and{outside_fee = #outside_fee#}  $and{other_fee = #other_fee#}  $and{arrival_date = #arrival_date#}  $and{emp_id = #emp_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_Main.Load">
+    SELECT *
+    FROM   T_Arrival_Main  where
+    $and{id = #id#}  $and{stowage_id = #stowage_id#}  $and{unload_size = #unload_size#}  $and{unload_weight = #unload_weight#}  $and{unload_fee = #unload_fee#}  $and{tranfer_fee = #tranfer_fee#}  $and{send_fee = #send_fee#}  $and{outside_fee = #outside_fee#}  $and{other_fee = #other_fee#}  $and{arrival_date = #arrival_date#}  $and{emp_id = #emp_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_Main.Select">
+    SELECT *
+    FROM   T_Arrival_Main  where
+    $and{id = #id#}  $and{stowage_id = #stowage_id#}  $and{unload_size = #unload_size#}  $and{unload_weight = #unload_weight#}  $and{unload_fee = #unload_fee#}  $and{tranfer_fee = #tranfer_fee#}  $and{send_fee = #send_fee#}  $and{outside_fee = #outside_fee#}  $and{other_fee = #other_fee#}  $and{arrival_date = #arrival_date#}  $and{emp_id = #emp_id#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Arrival_Main.Insert">
+    insert into T_Arrival_Main(
+    id
+    ,stowage_id
+    ,unload_size
+    ,unload_weight
+    ,unload_fee
+    ,tranfer_fee
+    ,send_fee
+    ,outside_fee
+    ,other_fee
+    ,arrival_date
+    ,emp_id
+    )values (
+    #id#
+    ,#stowage_id#
+    ,#unload_size#
+    ,#unload_weight#
+    ,#unload_fee#
+    ,#tranfer_fee#
+    ,#send_fee#
+    ,#outside_fee#
+    ,#other_fee#
+    ,#arrival_date#
+    ,#emp_id#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Arrival_Main.Update">
+    update T_Arrival_Main set
+    id=#id#
+    ,stowage_id=#stowage_id#
+    ,unload_size=#unload_size#
+    ,unload_weight=#unload_weight#
+    ,unload_fee=#unload_fee#
+    ,tranfer_fee=#tranfer_fee#
+    ,send_fee=#send_fee#
+    ,outside_fee=#outside_fee#
+    ,other_fee=#other_fee#
+    ,arrival_date=#arrival_date#
+    ,emp_id=#emp_id#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Arrival_Main.Delete">
+    delete
+    FROM T_Arrival_Main
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

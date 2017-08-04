@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TArrivalSign" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TArrivalSign" type="MyNamespace.Data.TArrivalSign, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TArrivalSign">
+			<result property="Id" column="id" />
+			<result property="Signer" column="signer" />
+			<result property="Signeridentity" column="signer_identity" />
+			<result property="Signermemo" column="signer_memo" />
+			<result property="Signerdate" column="signer_date" />
+			<result property="Empid" column="emp_id" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,signer,signer_identity,signer_memo,signer_date,emp_id from T_Arrival_Sign
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TArrivalSign" resultClass="int">
+		 		insert into T_Arrival_Sign( id,signer,signer_identity,signer_memo,signer_date,emp_id ) values ( #Id#,#Signer#,#Signeridentity#,#Signermemo#,#Signerdate#,#Empid# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TArrivalSign" resultClass="int">
+			update T_Arrival_Sign set signer=#Signer#,signer_identity=#Signeridentity#,signer_memo=#Signermemo#,signer_date=#Signerdate#,emp_id=#Empid# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Arrival_Sign where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

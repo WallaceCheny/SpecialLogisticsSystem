@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c9fd9691-a49a-446b-ad7f-97db4bb711c2</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>Ms.Data</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="Ms.Data.Common" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Global.cs" />
+    <Compile Include="Ms\Data\IDbCommand.cs" />
+    <Compile Include="Ms\Data\IDbContext.cs" />
+    <Compile Include="Ms\Data\IDbProvider.cs" />
+    <Compile Include="Ms\Data\IEntityFactory.cs" />
+    <Compile Include="Ms\Data\ISelectBuilder!1.cs" />
+    <Compile Include="Ms\Data\IDataReader.cs" />
+    <Compile Include="Ms\Data\IInsertBuilder.cs" />
+    <Compile Include="Ms\Data\IInsertBuilder!1.cs" />
+    <Compile Include="Ms\Data\IInsertBuilderDynamic.cs" />
+    <Compile Include="Ms\Data\IUpdateBuilder.cs" />
+    <Compile Include="Ms\Data\IUpdateBuilder!1.cs" />
+    <Compile Include="Ms\Data\IUpdateBuilderDynamic.cs" />
+    <Compile Include="Ms\Data\IDeleteBuilder.cs" />
+    <Compile Include="Ms\Data\IDeleteBuilder!1.cs" />
+    <Compile Include="Ms\Data\IStoredProcedureBuilder.cs" />
+    <Compile Include="Ms\Data\IBaseStoredProcedureBuilder.cs" />
+    <Compile Include="Ms\Data\IStoredProcedureBuilder!1.cs" />
+    <Compile Include="Ms\Data\IStoredProcedureBuilderDynamic.cs" />
+    <Compile Include="Ms\Data\IInsertUpdateBuilder.cs" />
+    <Compile Include="Ms\Data\IInsertUpdateBuilder!1.cs" />
+    <Compile Include="Ms\Data\IInsertUpdateBuilderDynamic.cs" />
+    <Compile Include="Ms\Data\DbCommandData.cs" />
+    <Compile Include="Ms\Data\x876bc5bb5331d9cc.cs" />
+    <Compile Include="Ms\Data\xdcbbfbb72b3e3cda.cs" />
+    <Compile Include="Ms\Data\DbContext.cs" />
+    <Compile Include="Ms\Data\BuilderData.cs" />
+    <Compile Include="Ms\Data\DbContextData.cs" />
+    <Compile Include="Ms\Data\IsolationLevel.cs" />
+    <Compile Include="Ms\Data\TableColumn.cs" />
+    <Compile Include="Ms\Data\x6447be342da7459f.cs" />
+    <Compile Include="Ms\Data\DbProviderTypes.cs" />
+    <Compile Include="Ms\Data\OnConnectionOpeningEventArgs.cs" />
+    <Compile Include="Ms\Data\OnConnectionOpenedEventArgs.cs" />
+    <Compile Include="Ms\Data\OnConnectionClosedEventArgs.cs" />
+    <Compile Include="Ms\Data\OnExecutingEventArgs.cs" />
+    <Compile Include="Ms\Data\DataException.cs" />
+    <Compile Include="Ms\Data\x67fcadd56269c193!1.cs" />
+    <Compile Include="Ms\Data\x7927126fe5cc7aa8.cs" />
+    <Compile Include="Ms\Data\ParameterDirection.cs" />
+    <Compile Include="Ms\Data\x68e123d035d99be8.cs" />
+    <Compile Include="Ms\Data\xf3a9e3bf108b45a7.cs" />
+    <Compile Include="Ms\Data\OnExecutedEventArgs.cs" />
+    <Compile Include="Ms\Data\x7516dee69c394cd3!1.cs" />
+    <Compile Include="Ms\Data\OnErrorEventArgs.cs" />
+    <Compile Include="Ms\Data\PropertyExpressionParser!1.cs" />
+    <Compile Include="Ms\Data\x2e8857009b3c3834.cs" />
+    <Compile Include="Ms\Data\EntityFactory.cs" />
+    <Compile Include="Ms\Data\xdf8bb929b6dc0786.cs" />
+    <Compile Include="Ms\Data\x820de93bc2090b75.cs" />
+    <Compile Include="Ms\Data\x9e4b3a611cb04b16!1.cs" />
+    <Compile Include="Ms\Data\x23c92ba31a996ed6.cs" />
+    <Compile Include="Ms\Data\x7e9f16120f42ee43.cs" />
+    <Compile Include="Ms\Data\xb3889caf08450830.cs" />
+    <Compile Include="Ms\Data\x325e977a1713db84!1.cs" />
+    <Compile Include="Ms\Data\xad085146f9c57cc2.cs" />
+    <Compile Include="Ms\Data\xf09c721001ccb9d0.cs" />
+    <Compile Include="Ms\Data\DbCommandTypes.cs" />
+    <Compile Include="Ms\Data\xac680fb937640290!1.cs" />
+    <Compile Include="Ms\Data\x1b7999cdaf7f05c9.cs" />
+    <Compile Include="Ms\Data\DbProviderFactory.cs" />
+    <Compile Include="Ms\Data\Providers\SqlServer\xb41ee2fa4b36daf9.cs" />
+    <Compile Include="Ms\Data\Providers\Common\xff59563c1b935d7a.cs" />
+    <Compile Include="Ms\Data\Providers\Common\Builders\x9e2a6e01e374cc32.cs" />
+    <Compile Include="Ms\Data\Providers\Common\Builders\x980f8b5514dc9cc2.cs" />
+    <Compile Include="Ms\Data\Providers\Common\Builders\x1516a98cea095f5e.cs" />
+    <Compile Include="Ms\Data\Providers\Common\x0500305f8473badb.cs" />
+    <Compile Include="Ms\Data\x6215066365db5120.cs" />
+    <Compile Include="Ms\Data\x42ec19f833cd5adc.cs" />
+    <Compile Include="Ms\Data\Providers\SqlServerCompact\x5a504537ae2f4c91.cs" />
+    <Compile Include="Ms\Data\Providers\Oracle\x82a2d569ac32b6b8.cs" />
+    <Compile Include="Ms\Data\Providers\MySql\xf31b6dba58427e49.cs" />
+    <Compile Include="Ms\Data\Providers\Access\x0048b3d0cfd2b5d3.cs" />
+    <Compile Include="Ms\Data\Providers\Sqlite\x5fc4aec3fec9428d.cs" />
+    <Compile Include="Ms\Data\Providers\PostgreSql\xd77ea1a8e5e056c6.cs" />
+    <Compile Include="Ms\Data\Providers\DB2Provider\x0c17e5843232952f.cs" />
+    <Compile Include="Ms\Data\xf3c4d42106b1fb48!1.cs" />
+    <Compile Include="Ms\Data\x7672eed2bf2227ed.cs" />
+    <Compile Include="Ms\Data\x1fae094ccbce7a92!1.cs" />
+    <Compile Include="Ms\Data\x252697994e97c9c4!1.cs" />
+    <Compile Include="Ms\Data\x4a37bdfb56acb0d7.cs" />
+    <Compile Include="Ms\Data\x641e0a54984050b1.cs" />
+    <Compile Include="Ms\Data\x1d5abada91d291d6.cs" />
+    <Compile Include="Ms\Data\xe9a2666102b20a2e.cs" />
+    <Compile Include="Xenocode\Client\Attributes\AssemblyAttributes\ProcessedByXenocode.cs" />
+    <Compile Include="Xenocode\Client\Attributes\AssemblyAttributes\SuppressDisassembly.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="../Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".flip").click(function () {
+                $(".panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <style type="text/css">
+        div.panel, p.flip
+        {
+            margin: 0px;
+            padding: 5px;
+            text-align: center;
+            background: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+        div.panel
+        {
+            height: 120px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+              <div class="right-box">
+  
+  			
+  			<div id="b" class="mar">
+		    	<a name="b1"></a>
+		        <h3 id="orderList_desc_id" style="background:url(/t/app365v3/res/images/tit.png) -5px -326px no-repeat;">功能介绍</h3><button id="show" class="show" style="color:#004b97;background:url('/t/app365v3/res/images/icons/show_h.gif') 0 -45px no-repeat"></button>
+		        <div class="show_content" style="display:block;" id="a1">	        
+	            <p><strong>新增：</strong>输入货物托运的详细信息，包括发货人、收货人信息，货物信息、运费及结算信息等，并将信息保存到系统中；</p>
+	            <p><strong>下达入库：</strong>所有运单在录入保存后，必须要进行“下达”操作后，才能进行后续的配载装车、外包等操作；运单下达后，货物被确认入库，状态被更新为“已下达”；</p>
+	            <p><strong>反下达：</strong>在运单下达后，发现相关信息有误，如果还没有进行下一步的操作，可以进行“反下达”操作，将运单恢复到“新增”状态，即可对运单再次进行修改；</p>            
+	            <p><strong>跟踪：</strong>手工录入运单动态跟踪信息；流程相关的跟踪信息由系统自动产生；客户通过网站即可查询运单的动态情况；</p>
+	            <p><strong>回单：</strong>回单返回给客户时，在系统中进行标识；只能针对"已签收的"运单进行处理；</p>
+	            <p><strong>发货方结算：</strong>针对现付(现付未付)、回单付、月结这几种结算方式，完成与发货方的运费结算，并在出纳明细账中生成对应的结算记录；</p>
+	            <p><strong>收货方结算：</strong>针对提付结算和代收款的情况，由到站向收货方收取运费、送货费和代收货款，并在出纳明细账中生成对应的结算记录；</p>
+	            <p><strong>引出：</strong>将当前的查询列表导出为Excel格式文件；</p>
+	            <p><strong>删除：</strong>在运单下达之前，可以删除运单数据，下达之后不能再删除。</p>
+	            </div>
+            </div> 
+            
+            
+            <div id="b" class="mar">	
+            	<a name="b2"></a>        
+		        <h3>操作步骤</h3><button id="show" class="show"></button>
+		        <div class="show_content" style="display:none;" id="a2">
+		        <p>点击导航图标“运单管理”，进入如下图所示的“运单管理”界面，输入条件查询出对应的运单列表，并进行相应的处理：</p>
+		        <div><img src="/sites/www.app365.com/pages/mini/images/lmsorder_mgr.jpg" width="700" alt="运单管理"></div>
+		        <div>鼠标移到命令栏的"更多>>"，会显示扩展的菜单项：
+		        <img src="/sites/www.app365.com/pages/mini/images/lmsorder_mgr_menus.jpg" alt="运单管理菜单">
+		        </div>
+		        </div>
+	        </div>
+	       
+            
+            <div id="b" class="mar">
+		        <a name="b3"></a>
+		        <h3 id="orderList_confirm_id">下达</h3><button id="show" class="show"></button>
+		        <div class="show_content" style="display:none;" id="a3">
+		        <p>所有运单在录入保存后，必须要进行“下达”操作后，才能进行后续的配载装车、外包等操作；运单下达后，货物被确认入库，状态被更新为“已下达”；</p>
+		        <p>在列表中选中需要下达的运单(勾选左侧的复选框)，点击按钮“下达”，会弹出如下图所示的对话提示框，点击“确定”按钮，执行“下达”操作；只能针对状态为“新建”的运单执行“下达”操作。</p>
+		        <div><img src="/sites/www.app365.com/pages/mini/images/order_confirm.jpg" width="700" alt="运单下达"></div>
+		        </div>
+	        </div>
+	        
+			<div id="b" class="mar">             
+		        <a name="b4"></a>
+		        <h3 id="orderList_unconfirm_id">反下达</h3><button id="show" class="show"></button>
+		        <div class="show_content" style="display:none;" id="a4">
+		        <p>在运单下达后，发现相关信息有误，如果还没有进行下一步的操作，可以进行“反下达”操作，将运单恢复到“新增”状态，即可对运单再次进行修改；</p>
+		        <p>在列表中选中需要进行反下达的运单(勾选左侧的复选框)，点击按钮“反下达”，会弹出如下图所示的对话提示框，点击“确定”按钮，执行“反下达”操作；只能针对状态为“已下达”的运单执行“反下达”操作。</p>
+		        <div><img src="/sites/www.app365.com/pages/mini/images/order_unconfirm.jpg" width="700" alt="运单反下达"></div>
+		        </div>
+	        </div>
+	        
+            <div id="b" class="mar"> 
+		        <a name="b5"></a>
+		        <h3 id="orderList_track_id">跟踪</h3><button id="show" class="show"></button>
+		        <div class="show_content" style="display:none;" id="a5">
+		        <p>手工录入运单动态跟踪信息；流程相关的跟踪信息由系统自动产生；客户通过网站即可查询运单的动态情况；</p>
+		        <p>在列表中选中一条运单记录，点击“跟踪”按钮，显示“跟踪表格”，然后在跟踪表格中增加或删除跟踪信息，点击“保存”按钮，保存跟踪信息。
+		        在跟踪表格中，如果将字段“内部信息”设为“是”，则客户在网站查单将不能看到该条信息。</p>
+		        <div><img src="/sites/www.app365.com/pages/mini/images/order_tracking.jpg" width="700" alt="运单跟踪"></div>
+		        </div>
+	        </div>
+	        
+           <div id="b" class="mar">
+		        <a name="b6"></a>
+		        <h3 id="orderList_returndoc_id">回单</h3><button id="show" class="show"></button>
+		        <div class="show_content" style="display:none;" id="a6">
+		        <p>回单返回给客户时，在系统中进行标识；只能针对"已签收的"运单进行处理；</p>
+		        <p>在列表中选中要回单的一条或多条记录，然后点击“回单”按钮，会弹出如下图所示的对话提示框，点击“确定”按钮，执行“回单”操作，此时，运单的状态被更新为“已回单”。</p>
+		        <div><img src="/sites/www.app365.com/pages/mini/images/order_returndoc.jpg" width="700" alt="回单处理"></div>
+		        </div>
+	        </div>
+	        
+	        
+            <div id="b" class="mar">
+		        <a name="b7"></a>
+		        <h3 id="orderList_originSettle_id">发货方结算</h3><button id="show" class="show"></button>
+		        <div class="show_content" style="display:none;" id="a7">
+		        <p>针对现付(现付未付)、回单付、月结这几种结算方式，完成与发货方的运费结算，并在出纳明细账中生成对应的结算记录；
+		        在录单时，如果是现付结算，且未选中“现付未付”，则在下达时系统会自动结算生出纳明细账。</p>
+		        <p>1) 在列表中选中需要结算的记录，如果选中的记录是现付未付、回单付或月结，且未完成结算操作，则会弹出“发货方结算”对话框，否则会提示“不需要进行发货方结算”；</p>
+		        <p>2) 在对话框中输入结算方式、收款日期；</p>
+		        <p>3) 点击“确认”按钮, 将针对现付、回单付、月结款生成对应的结算记录；</p>
+		        <p>4) 在"出纳明细账"中可以查询到相关结算记录。</p>
+		        <div><img src="/sites/www.app365.com/pages/mini/images/origin_settle.jpg" width="700" alt="发货方结算"></div>
+		        </div>
+	        </div>
+	        
+            <div id="b" class="mar">
+		        <a name="b8"></a>
+		        <h3 id="orderList_destSettle_id">收货方结算</h3><button id="show" class="show"></button>
+		        <div class="show_content" style="display:none;" id="a8">
+		        <p>针对提付结算和代收款的情况，由到站向收货方收取运费、送货费和代收货款，并在出纳明细账中生成对应的结算记录；</p>
+		        <p>1) 在列表中选中要结算的记录，该记录是提付、有代收款，且未完成收款结算操作，则会弹出“收货方结算”对话框，否则会提示“不需要进行收货方结算”；</p>
+		          <p>2) 在对话框中输入相关信息；</p>
+		          <p>3) 如果到目的站客户要求送货，要加收送货费，则在字段“加收送货费”中输入送货费；</p>
+		          <p>4) 某些情况下，客户要求少收运费，给客户打折，此时在字段“折扣”中输入折扣金额；</p>
+		          <p>5) 默认情况下，结算金额包括货款，如果货款还未收，则选择“货款未收”；</p>
+		          <p>6) 结算金额 = 提付金额 + 加收送货费 + 货款 - 折扣；</p>
+		          <p>7) 输入结算方式、收款日期；</p>
+		          <p>8) 点击"确认"按钮，则会针对提付、送货费、货款生成对应的结算记录；</p>
+		          <p>9) 可以到"出纳明细账"查询到相关结算记录；</p>
+		        <div><img src="/sites/www.app365.com/pages/mini/images/dest_settle.jpg" width="700" alt="发货方结算"></div>
+		        </div>
+	        </div>
+	        
+            <div id="b" class="mar">
+		        <a name="b9"></a>
+		        <h3 id="orderList_export_id">引出</h3><button id="show" class="show"></button>
+		        <div class="show_content" style="display:none;" id="a9">
+		        <p>将当前的查询列表导出为Excel格式文件；</p>
+		        </div>
+	        </div>
+	        
+	        
+	        <div id="b" class="mar">
+		        <a name="b10"></a>
+		        <h3 id="orderList_delete_id">删除</h3><button id="show" class="show"></button>
+		        <div class="show_content" style="display:none;" id="a10">
+		        <p>在运单下达之前，可以删除运单数据，下达之后不能再删除。</p>
+		        </div>
+	        </div>
+	        
+	         <div id="b" class="mar">
+	         	<a name="b11"></a>
+		        <h3>相关问题</h3><button id="show" class="show"></button>
+		        <div class="show_content" style="display:none;" id="a11">
+		        <ol class="li-s">
+		            <li>运单下达之后要进行修改，怎么办？</li>
+		            <li>客户怎样查询运单跟踪记录？如果某些只能让公司内部看，而对客户掩藏，该怎么处理？</li>
+		            <li>我的运单的结算方式是"现付"，为什么点“发货方结算”时，提示“不需要进行结算”？</li>
+		            <li>在与收货方结算时，如果要加收送货费或客户要求折扣怎么处理？</li>
+		            <li>在收货方结算时，可以同时结算货款吗？如果货款与运费不是同时结算，该怎么处理？</li>
+		            <li>什么情况下才可以删除运单？</li>
+		        </ol>
+		        </div>
+        	</div>
+        
+    		</div>
+        </div>
+    </div>
+</div>   
+</body>
+</html>

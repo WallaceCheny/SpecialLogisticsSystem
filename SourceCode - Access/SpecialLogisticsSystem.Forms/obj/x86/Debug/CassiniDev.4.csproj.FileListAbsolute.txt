@@ -1,0 +1,11 @@
+E:\LogisticsManagement\cassinidev-94877\trunk\src\CassiniDev\bin\debug\CassiniDev4.exe.config
+E:\LogisticsManagement\cassinidev-94877\trunk\src\CassiniDev\bin\debug\CassiniDev4.exe
+E:\LogisticsManagement\cassinidev-94877\trunk\src\CassiniDev\bin\debug\CassiniDev4.pdb
+E:\LogisticsManagement\cassinidev-94877\trunk\src\CassiniDev\bin\debug\Common.Logging.dll
+E:\LogisticsManagement\cassinidev-94877\trunk\src\CassiniDev\obj\x86\Debug\CassiniDev.Resources.CassiniDev.resources
+E:\LogisticsManagement\cassinidev-94877\trunk\src\CassiniDev\obj\x86\Debug\CassiniDev.ServerLog.BodyView.resources
+E:\LogisticsManagement\cassinidev-94877\trunk\src\CassiniDev\obj\x86\Debug\CassiniDev.FormView.resources
+E:\LogisticsManagement\cassinidev-94877\trunk\src\CassiniDev\obj\x86\Debug\CassiniDev.ServerLog.LogView.resources
+E:\LogisticsManagement\cassinidev-94877\trunk\src\CassiniDev\obj\x86\Debug\CassiniDev.4.csproj.GenerateResource.Cache
+E:\LogisticsManagement\cassinidev-94877\trunk\src\CassiniDev\obj\x86\Debug\CassiniDev4.exe
+E:\LogisticsManagement\cassinidev-94877\trunk\src\CassiniDev\obj\x86\Debug\CassiniDev4.pdb

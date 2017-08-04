@@ -1,0 +1,92 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Code.Count">
+    Select count(1) FROM T_Cm_Code where
+    $and{id = #id#}  $and{para_type = #para_type#}  $and{para_value = #para_value#}  $and{para_type_name = #para_type_name#}  $and{para_name = #para_name#}  $and{para_demo = #para_demo#}  $and{update_opr = #update_opr#}  $and{update_date = #update_date#}  $and{sort = #sort#}  $and{eff_ind = #eff_ind#}  $and{parent_value = #parent_value#}  $and{is_active = #is_active#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Code.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_Code) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{para_type = #para_type#}  $and{para_value = #para_value#}  $and{para_type_name = #para_type_name#}  $and{para_name = #para_name#}  $and{para_demo = #para_demo#}  $and{update_opr = #update_opr#}  $and{update_date = #update_date#}  $and{sort = #sort#}  $and{eff_ind = #eff_ind#}  $and{parent_value = #parent_value#}  $and{is_active = #is_active#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Code.Load">
+    SELECT *
+    FROM   T_Cm_Code  where
+    $and{id = #id#}  $and{para_type = #para_type#}  $and{para_value = #para_value#}  $and{para_type_name = #para_type_name#}  $and{para_name = #para_name#}  $and{para_demo = #para_demo#}  $and{update_opr = #update_opr#}  $and{update_date = #update_date#}  $and{sort = #sort#}  $and{eff_ind = #eff_ind#}  $and{parent_value = #parent_value#}  $and{is_active = #is_active#}
+    ORDER BY para_type,sort
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Code.Select">
+    SELECT *
+    FROM   T_Cm_Code  where
+    $and{id = #id#}  $and{para_type = #para_type#}  $and{para_value = #para_value#}  $and{para_type_name = #para_type_name#}  $and{para_name = #para_name#}  $and{para_demo = #para_demo#}  $and{update_opr = #update_opr#}  $and{update_date = #update_date#}  $and{sort = #sort#}  $and{eff_ind = #eff_ind#}  $and{parent_value = #parent_value#}  $and{is_active = #is_active#}
+    ORDER BY para_type,sort
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Code.SelectParaType">
+    SELECT  a.para_type ,
+    para_type_name
+    FROM    T_Cm_Code a
+    WHERE   a.is_system = 0
+    GROUP BY a.para_type ,
+    a.para_type_name
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Cm_Code.Insert">
+    insert into T_Cm_Code(
+    id
+    ,para_type
+    ,para_value
+    ,para_type_name
+    ,para_name
+    ,para_demo
+    ,update_opr
+    ,update_date
+    ,sort
+    ,eff_ind
+    ,parent_value
+    ,is_active
+    ,is_system
+    ,is_default
+    )values (
+    #id#
+    ,#para_type#
+    ,#para_value#
+    ,#para_type_name#
+    ,#para_name#
+    ,#para_demo#
+    ,#update_opr#
+    ,#update_date#
+    ,#sort#
+    ,#eff_ind#
+    ,#parent_value#
+    ,#is_active#
+    ,#is_system#
+    ,#is_default#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_Code.Update">
+    update T_Cm_Code set
+    id=#id#
+    ,para_type=#para_type#
+    ,para_value=#para_value#
+    ,para_type_name=#para_type_name#
+    ,para_name=#para_name#
+    ,para_demo=#para_demo#
+    ,update_opr=#update_opr#
+    ,update_date=#update_date#
+    ,sort=#sort#
+    ,eff_ind=#eff_ind#
+    ,parent_value=#parent_value#
+    ,is_active=#is_active#
+    ,is_system=#is_system#
+    ,is_default=#is_default#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Cm_Code.Delete">
+    delete
+    FROM T_Cm_Code
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

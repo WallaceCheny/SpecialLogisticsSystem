@@ -1,0 +1,73 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Servicer.Count">
+    Select count(1) FROM T_Cm_Servicer where
+    $and{id = #id#}  $and{name = #name#}  $and{code = #code#}  $and{customer_level = #customer_level#}  $and{link_id = #link_id#}  $and{credit_level = #credit_level#}  $and{is_stop = #is_stop#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Servicer.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_Servicer) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{name = #name#}  $and{code = #code#}  $and{customer_level = #customer_level#}  $and{link_id = #link_id#}  $and{credit_level = #credit_level#}  $and{is_stop = #is_stop#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Servicer.Load">
+    SELECT *
+    FROM   T_Cm_Servicer  where
+    $and{id = #id#} $and{name like '%$name$%'}  $and{code = #code#}  $and{customer_level = #customer_level#}  $and{link_id = #link_id#}  $and{credit_level = #credit_level#}  $and{is_stop = #is_stop#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Servicer.Select">
+    SELECT  a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_memo,
+    f.para_name AS creditlevel_name
+    FROM    ((T_Cm_Servicer a
+    LEFT JOIN T_Cm_Link b ON a.link_id = b.id)
+    LEFT JOIN T_Cm_Code f ON (f.para_value = a.credit_level
+    AND para_type = 'customer_credit')) where
+    $and{id = #id#} $and{name like '%$name$%'}  $and{code = #code#}  $and{customer_level = #customer_level#}
+    $and{link_id = #link_id#}  $and{credit_level = #credit_level#}  $and{is_stop = #is_stop#}
+    $and{b.link_name like '%$link_name$%'}  $and{b.link_address like '%$link_address$%'}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Cm_Servicer.Insert">
+    insert into T_Cm_Servicer(
+    id
+    ,name
+    ,code
+    ,customer_level
+    ,link_id
+    ,credit_level
+    ,is_stop
+    )values (
+    #id#
+    ,#name#
+    ,#code#
+    ,#customer_level#
+    ,#link_id#
+    ,#credit_level#
+    ,#is_stop#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_Servicer.Update">
+    update T_Cm_Servicer set
+    id=#id#
+    ,name=#name#
+    ,code=#code#
+    ,customer_level=#customer_level#
+    ,link_id=#link_id#
+    ,credit_level=#credit_level#
+    ,is_stop=#is_stop#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Cm_Servicer.Delete">
+    delete
+    FROM T_Cm_Servicer
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

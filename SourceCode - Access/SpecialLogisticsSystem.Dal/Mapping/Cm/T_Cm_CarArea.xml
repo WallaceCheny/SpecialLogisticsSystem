@@ -1,0 +1,51 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_CarArea.Count">
+    Select count(1) FROM T_Cm_CarArea where
+      $and{cararea_id = #cararea_id#}  $and{name = #name#}  $and{province = #province#}  $and{is_top = #is_top#}  $and{is_default = #is_default#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_CarArea.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_CarArea) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+     $and{cararea_id = #cararea_id#}  $and{name = #name#}  $and{province = #province#}  $and{is_top = #is_top#}  $and{is_default = #is_default#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_CarArea.Load">
+    SELECT *
+    FROM   T_Cm_CarArea  where
+    $and{cararea_id = #cararea_id#}  $and{name = #name#}  $and{province = #province#}  $and{is_top = #is_top#}  $and{is_default = #is_default#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_CarArea.Select">
+    SELECT *
+    FROM   T_Cm_CarArea  where
+    $and{cararea_id = #cararea_id#}  $and{name = #name#}  $and{province = #province#}  $and{is_top = #is_top#}  $and{is_default = #is_default#}    </select>
+   <insert id="SpecialLogisticsSystem.Model.T_Cm_CarArea.Insert">
+    insert into T_Cm_CarArea(
+    ,cararea_id
+,name
+,province
+,is_top
+,is_default
+    )values (
+     ,#cararea_id#
+,#name#
+,#province#
+,#is_top#
+,#is_default#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_CarArea.Update">
+    update T_Cm_CarArea set
+      ,cararea_id=#cararea_id#
+,name=#name#
+,province=#province#
+,is_top=#is_top#
+,is_default=#is_default#
+    WHERE
+    id = #id#
+  </update>
+   <delete id="SpecialLogisticsSystem.Model.T_Cm_CarArea.Delete">
+    delete
+    FROM T_Cm_CarArea
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

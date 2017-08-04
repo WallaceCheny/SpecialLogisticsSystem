@@ -1,0 +1,149 @@
+<HR COLOR=red>
+异常时间：2014-01-21 19:12:14,225 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpParseException (0x80004005): Could not load type 'SpecialLogisticsSystem.AppPortal.UserControls.lblWayStatue'. ---> System.Web.HttpParseException (0x80004005): Could not load type 'SpecialLogisticsSystem.AppPortal.UserControls.lblWayStatue'. ---> System.Web.HttpException (0x80004005): Could not load type 'SpecialLogisticsSystem.AppPortal.UserControls.lblWayStatue'.
+   at System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   at System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   at System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+   at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.ParseInternal()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.UI.PageHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MapHttpHandler(HttpContext context, String requestType, VirtualPath path, String pathTranslated, Boolean useAppConfig)
+   at System.Web.HttpApplication.MapHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-01-21 19:52:28,258 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.NotSupportedException: 不支持所指定的方法。
+   在 System.Web.UI.DataSourceView.ExecuteDelete(IDictionary keys, IDictionary oldValues)
+   在 System.Web.UI.DataSourceView.Delete(IDictionary keys, IDictionary oldValues, DataSourceViewOperationCallback callback)
+   在 DevExpress.Web.Data.WebDataProxy.DeleteRowCore(Int32 visibleIndex)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DeleteRow(Int32 visibleIndex)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBDeleteRow(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-01-21 20:08:53,217 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): A field or property with name 'production_number' was not found in the selected data source. Possible causes of this error may be the following: an incorrect or case-insensitive spelling of the grid column name; assigning a wrong or not properly initialized data source to the grid.
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValueByControllerRow(Int32 controllerRow, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValue(Int32 visibleIndex, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowValue(Int32 visibleIndex, String fieldName)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowValuesCore(Int32 index, String[] fieldNames, GetRowValueMethod getValue)
+   在 DevExpress.Web.Data.WebDataProxy.GetRowValues(Int32 visibleIndex, String[] fieldNames)
+   在 DevExpress.Web.Data.WebDataProxy.GetValues(Int32 visibleIndex, String[] fieldNames)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.FBGetRowValues(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxGridLookup.Internal.GridViewWrapper.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-01-21 21:38:12,465 [16] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): File does not exist.
+   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-01-21 21:38:43,618 [16] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): File does not exist.
+   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-01-21 22:16:45,063 [28] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): The multi-part identifier "c.production_name" could not be bound.
+The multi-part identifier "c.production_weight" could not be bound.
+The multi-part identifier "c.production_size" could not be bound.
+The multi-part identifier "c.freight" could not be bound.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 62
+   在 SpecialLogisticsSystem.Dal.StowageDetailDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\StowageDetailDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.Business.Stowage.gridStowageDetail_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Stowage.aspx.cs:行号 203
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   在 System.Web.UI.ControlCollection.Add(Control child)
+   在 DevExpress.Web.ASPxClasses.Internal.ClientIDHelper.AddTemplateContainerToHierarchy(Control parent, TemplateContainerBase container, String containerID)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddTemplateToControl(Control destination, ITemplate template, GridViewBaseTemplateContainer templateContainer, TemplateContainerCollection collection)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddDetailRowTemplateControl(Int32 visibleIndex, GridViewTableDetailRow row, Int32 spanCount)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewTableDetailRow.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableRow.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableRow.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TStowageSite" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TStowageSite" type="MyNamespace.Data.TStowageSite, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TStowageSite">
+			<result property="Id" column="id" />
+			<result property="Mainid" column="main_id" />
+			<result property="Siteorder" column="site_order" />
+			<result property="Compayide" column="compay_ide" />
+			<result property="Unloadnumber" column="unload_number" />
+			<result property="Reachpayment" column="reach_payment" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,main_id,site_order,compay_ide,unload_number,reach_payment from T_Stowage_Site
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TStowageSite" resultClass="int">
+		 		insert into T_Stowage_Site( id,main_id,site_order,compay_ide,unload_number,reach_payment ) values ( #Id#,#Mainid#,#Siteorder#,#Compayide#,#Unloadnumber#,#Reachpayment# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TStowageSite" resultClass="int">
+			update T_Stowage_Site set main_id=#Mainid#,site_order=#Siteorder#,compay_ide=#Compayide#,unload_number=#Unloadnumber#,reach_payment=#Reachpayment# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Stowage_Site where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

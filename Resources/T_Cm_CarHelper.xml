@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmCar" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmCar" type="MyNamespace.Data.TCmCar, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmCar">
+			<result property="Id" column="id" />
+			<result property="Carareaid" column="car_area_id" />
+			<result property="Carno" column="car_no" />
+			<result property="Insurancenumber" column="insurance_number" />
+			<result property="Carproduceno" column="car_produce_no" />
+			<result property="Cartype" column="car_type" />
+			<result property="Carnature" column="car_nature" />
+			<result property="Carenginenumber" column="car_engine_number" />
+			<result property="Cardriveno" column="car_drive_no" />
+			<result property="Carowner" column="car_owner" />
+			<result property="Carlink" column="car_link" />
+			<result property="Carmemo" column="car_memo" />
+			<result property="Branchid" column="branch_id" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,car_area_id,car_no,insurance_number,car_produce_no,car_type,car_nature,car_engine_number,car_drive_no,car_owner,car_link,car_memo,branch_id from T_Cm_Car
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmCar" resultClass="int">
+		 		insert into T_Cm_Car( id,car_area_id,car_no,insurance_number,car_produce_no,car_type,car_nature,car_engine_number,car_drive_no,car_owner,car_link,car_memo,branch_id ) values ( #Id#,#Carareaid#,#Carno#,#Insurancenumber#,#Carproduceno#,#Cartype#,#Carnature#,#Carenginenumber#,#Cardriveno#,#Carowner#,#Carlink#,#Carmemo#,#Branchid# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmCar" resultClass="int">
+			update T_Cm_Car set car_area_id=#Carareaid#,car_no=#Carno#,insurance_number=#Insurancenumber#,car_produce_no=#Carproduceno#,car_type=#Cartype#,car_nature=#Carnature#,car_engine_number=#Carenginenumber#,car_drive_no=#Cardriveno#,car_owner=#Carowner#,car_link=#Carlink#,car_memo=#Carmemo#,branch_id=#Branchid# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_Car where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

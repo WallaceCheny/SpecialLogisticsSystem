@@ -1,0 +1,57 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_UserRole_Relation.Count">
+    Select count(1) FROM T_Cm_UserRole_Relation where
+    $and{id = #id#}  $and{branch_id = #branch_id#}  $and{role_id = #role_id#}  $and{user_id = #user_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_UserRole_Relation.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_UserRole_Relation) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{branch_id = #branch_id#}  $and{role_id = #role_id#}  $and{user_id = #user_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_UserRole_Relation.Load">
+    SELECT *
+    FROM   T_Cm_UserRole_Relation  where
+    $and{id = #id#}  $and{branch_id = #branch_id#}  $and{role_id = #role_id#}  $and{user_id = #user_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_UserRole_Relation.Select">
+    SELECT *
+    FROM   T_Cm_UserRole_Relation  where
+    $and{id = #id#}  $and{branch_id = #branch_id#}  $and{role_id = #role_id#}  $and{user_id = #user_id#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Cm_UserRole_Relation.Insert">
+    insert into T_Cm_UserRole_Relation(
+    id
+    ,branch_id
+    ,role_id
+    ,user_id
+    )values (
+    #id#
+    ,#branch_id#
+    ,#role_id#
+    ,#user_id#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_UserRole_Relation.Update">
+    update T_Cm_UserRole_Relation set
+    id=#id#
+    ,branch_id=#branch_id#
+    ,role_id=#role_id#
+    ,user_id=#user_id#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Cm_UserRole_Relation.Delete">
+    delete
+    FROM T_Cm_UserRole_Relation
+    WHERE id IN(#ids#)
+  </delete>
+  <delete id="SpecialLogisticsSystem.Model.T_Cm_UserRole_Relation.DeleteByUsers">
+    delete
+    FROM T_Cm_UserRole_Relation
+    WHERE user_id IN(#ids#)
+  </delete>
+</sqlMap>

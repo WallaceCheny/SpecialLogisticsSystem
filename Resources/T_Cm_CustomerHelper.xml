@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmCustomer" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmCustomer" type="MyNamespace.Data.TCmCustomer, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmCustomer">
+			<result property="Id" column="id" />
+			<result property="Customername" column="customer_name" />
+			<result property="Creditlevel" column="credit_level" />
+			<result property="Customertype" column="customer_type" />
+			<result property="Empid" column="emp_id" />
+			<result property="Linkid" column="link_id" />
+			<result property="Senderid" column="sender_id" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,customer_name,credit_level,customer_type,emp_id,link_id,sender_id from T_Cm_Customer
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmCustomer" resultClass="int">
+		 		insert into T_Cm_Customer( id,customer_name,credit_level,customer_type,emp_id,link_id,sender_id ) values ( #Id#,#Customername#,#Creditlevel#,#Customertype#,#Empid#,#Linkid#,#Senderid# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmCustomer" resultClass="int">
+			update T_Cm_Customer set customer_name=#Customername#,credit_level=#Creditlevel#,customer_type=#Customertype#,emp_id=#Empid#,link_id=#Linkid#,sender_id=#Senderid# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_Customer where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

@@ -1,0 +1,2503 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GkXsn.Com.DataHandler</name>
+    </assembly>
+    <members>
+        <member name="T:GkXsn.Com.DataHandler.AssemblyHandler">
+            <summary>
+            程序集处理
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.AssemblyHandler.RunMethod``1(System.String,System.String,System.String,System.Object[])">
+            <summary>
+            默认文件夹config/dll/
+            </summary>
+            <param name="dllNamespace">GkXsn.Com.Secure</param>
+            <param name="className">类名</param>
+            <param name="method"></param>
+            <param name="parameters"></param>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.Browser">
+            <summary>
+            浏览器
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Browser.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Browser.BrowerAndVersion">
+            <summary>
+            获取浏览器和版本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Browser.GetOSNameByUserAgent(System.Xml.XmlNodeList,System.String)">
+            <summary>
+            根据 User Agent 获取操作系统名称
+            </summary>
+            <param name="xmlNode"></param>
+            <param name="userAgent"></param>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Browser.Name">
+            <summary>
+            浏览器名称
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Browser.UserAgent">
+            <summary>
+            浏览器代理信息
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Browser.Version">
+            <summary>
+            浏览器版本
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Browser.OSVersion">
+            <summary>
+            系统版本
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Browser.WorkAreaWidth">
+            <summary>
+            工作区域宽
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Browser.WorkAreaHeight">
+            <summary>
+            工作区域高
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.Cache.Caching`1">
+            <summary>
+            asp.net自带的Cache(进程内Cache)
+            System.Web.HttpRuntime.Cache
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Cache.Caching`1.Remove(System.String)">
+            <summary>
+            清除缓存中指定键对象
+            </summary>
+            <param name="key">键值</param>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Cache.Caching`1.Item(System.String)">
+            <summary>
+            获取/设置缓存对象(默认1天)
+            </summary>
+            <param name="key">键值</param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Cache.Caching`1.Item(System.String,System.Int32)">
+            <summary>
+            获取/设置缓存对象
+            </summary>
+            <param name="key">键值</param>
+            <param name="minutes">缓存时间(分钟)</param>
+            <returns></returns>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.Cache.Cookies">
+            <summary>
+            Cookies操作
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Cache.Cookies.Encrypt(System.String,System.String,System.Int32)">
+            <summary>
+            设置cookies并加密
+            </summary>
+            <param name="key">键值</param>
+            <param name="minutes">Cookies存在时间(分钟)</param>
+            <param name="value">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Cache.Cookies.Decrypt(System.String)">
+            <summary>
+            解密cookies
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Cache.Cookies.Delete(System.String)">
+            <summary>
+            删除cookies
+            </summary>
+            <param name="key">取得Cookies值的唯一标识键</param>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Cache.Cookies.Item(System.String)">
+            <summary>
+            获取
+            </summary>
+            <param name="key">键值</param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Cache.Cookies.Item(System.String,System.Int32)">
+            <summary>
+            获取
+            </summary>
+            <param name="key">键值</param>
+            <param name="minutes">Cookies存在时间(分钟)</param>
+            <returns></returns>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.Cache.Hashtable`1">
+            <summary>
+            Hashtable缓存
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Cache.Hashtable`1.hashtable">
+            <summary>
+            缓存
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Cache.Hashtable`1.Remove(System.String)">
+            <summary>
+            清除缓存中指定键对象
+            </summary>
+            <param name="key">键值</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Cache.Hashtable`1.RemoveAll">
+            <summary>
+            清除缓存中所有对象
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Cache.Hashtable`1.Item(System.String)">
+            <summary>
+            获取/设置缓存对象
+            </summary>
+            <param name="key">键值</param>
+            <returns></returns>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.Cache.Session`1">
+            <summary>
+            Session
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Cache.Session`1.Remove(System.String)">
+            <summary>
+            清除缓存中指定键对象
+            </summary>
+            <param name="key">键值</param>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Cache.Session`1.Item(System.String)">
+            <summary>
+            获取/设置缓存对象(默认1天)
+            </summary>
+            <param name="key">键值</param>
+            <returns></returns>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.CustomDataRow">
+            <summary>
+            System.Data.DataTable 中的一行数据。
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.CustomDataRow.#ctor(System.Data.DataRowBuilder)">
+            <summary>
+            System.Data.DataTable 中的一行数据。
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.CustomDataRow.Value``1(System.String)">
+            <summary>
+            根据名称获取行数据
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="columnName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.CustomDataRow.Value``1(System.Int32)">
+            <summary>
+            根据索引获取行数据
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="columnIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.CustomDataTable">
+            <summary>
+            集封装分页记录的DataTable
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.CustomDataTable.#ctor">
+            <summary>
+            集封装分页记录的DataTable
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.CustomDataTable.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            集封装分页记录的
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.CustomDataTable.#ctor(System.Data.DataTable)">
+            <summary>
+            集封装分页记录的DataTable
+            </summary>
+            <param name="dt"></param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.CustomDataTable.GetObjectData">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.CustomDataTable.TotalAmout">
+            <summary>
+            记录集的总页数
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.CustomDataTable.RecordAmout">
+            <summary>
+            总记录统计
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DataType.String">
+            <summary>
+            字符
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.String.Item(System.Int32)">
+            <summary>
+            int类型转为System.String等于最大最小值 返回0
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.String.Item(System.Decimal)">
+            <summary>
+            decimal类型转为System.String等于最大最小值 返回0
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.String.Item(System.Double)">
+            <summary>
+            double类型转为System.String等于最大最小值 返回0
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.String.Item(System.Single)">
+            <summary>
+            double类型转为System.String等于最大最小值 返回0
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.String.Item(System.Object)">
+            <summary>
+            double类型转为System.String等于最大最小值 返回0
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.String.Item(System.DateTime)">
+            <summary>
+            时间类型转为System.String格式(默认yyyy-MM-dd HH:mm:ss)
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.String.Item(System.DateTime,System.String)">
+            <summary>
+            时间类型转为System.String格式
+            </summary>
+            <param name="dateTime"></param>
+            <param name="format">时间格式化正则如:yyyy-MM-dd HH:mm:ss</param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.String.Item(System.Int64,System.String)">
+            <summary>
+            DateTime Ticks 转化为时间类型字符串
+            </summary>
+            <param name="ticks"></param>
+            <param name="formatString">时间正则</param>
+            <returns></returns>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DataType.Int">
+            <summary>
+            int
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DataType.Int.Zero(System.Object)">
+            <summary>
+            转换为Int
+            为空或者非Int均返回0
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.Int.Item(System.Object)">
+            <summary>
+            转换为Int
+            为空或者非Int均返回Int.MaxValue
+            </summary>
+            <param name="obj">数值</param>
+            <returns></returns>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DataType.Decimal">
+            <summary>
+            返回Decimal类型
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DataType.Decimal.Zero(System.Object)">
+            <summary>
+            转换为decimal
+            为空或者非decimal均返回0
+            </summary>
+            <param name="decimalstr">日期</param>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.Decimal.Item(System.Object)">
+            <summary>
+            转换为decimal
+            为空或者非decimal均返回decimal.MaxValue
+            </summary>
+            <param name="decimalstr">日期</param>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DataType.DateTime">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.DateTime.Item(System.DateTime,System.DateTime)">
+            <summary>
+            验证开始时间是否大于结束时间(返回错误信息)
+            True大于结束时间
+            False小于等于结束时间
+            </summary>
+            <param name="datetime1">开始时间</param>
+            <param name="datetime2">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.DateTime.Item(System.String)">
+            <summary>
+            返回时间
+            </summary>
+            <param name="datetime">时间</param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.DateTime.Item(System.Object)">
+            <summary>
+            返回时间
+            </summary>
+            <param name="datetime">时间</param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.DateTime.Item(System.String,System.String)">
+             <summary>
+             非时间类别返回最大值
+            <example>
+            string s = "Tue Nov 03 00:00:00 CST 2009";
+            DateTime d = DateTime.ParseExact(s, "ddd MMM dd HH:mm:ss CST yyyy", System.Globalization.CultureInfo.CreateSpecificCulture("en-US"));
+             </example>
+             </summary>
+             <param name="datetime"></param>
+             <param name="format">datetime对应格式</param>
+             <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.DateTime.Item(System.Int64)">
+            <summary>
+            DateTime Ticks 转化为时间类型字符串
+            </summary>
+            <param name="ticks"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DataType.Boolean">
+            <summary>
+            布尔值
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DataType.Boolean.Item(System.Object)">
+            <summary>
+            DataRow数据读取转换为bool
+            </summary>
+            <param name="boolean">布尔值</param>
+            <returns></returns>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.CustomList`1">
+            <summary>
+            分页封装
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.CustomList`1.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.CustomList`1.#ctor(GkXsn.Com.DataHandler.CustomDataTable,System.Collections.Generic.IList{`0})">
+            <summary>
+            CustomList
+            </summary>
+            <param name="cdt">CustomDataTable</param>
+            <param name="list">IList</param>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.CustomList`1.TotalAmout">
+            <summary>
+            记录集的总页数
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.CustomList`1.RecordAmout">
+            <summary>
+            总记录统计
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DbParameterList">
+            <summary>
+            分页封装
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DbParameterList.OLEDB">
+            <summary>
+            Access
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DbParameterList.SQLITE">
+            <summary>
+            SQLite
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DbParameterList.MYSQL">
+            <summary>
+            MySql
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DbParameterList.ORACLE">
+            <summary>
+            Oracle
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DbParameterList.SQL">
+            <summary>
+            MsSql
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterList.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="providerName">System.Configuration.ConnectionStringSettings.ProviderName 属性</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterList.Add(System.Data.Common.DbParameter)">
+            <summary>
+            往集合中添加DbParameter
+            </summary>
+            <param name="param"></param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterList.Add(System.String,System.Object)">
+            <summary>
+            创建DbParameter
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="value">参数值</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterList.Add(System.String,System.Object,System.Int32)">
+            <summary>
+            创建DbParameter
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="value">参数值</param>
+            <param name="size">大小</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterList.Add(System.String,System.Object,System.Type)">
+            <summary>
+            返回参数化实例
+            </summary>
+            <param name="t">数值类型</param>
+            <param name="param">不带@等的参数前缀</param>
+            <param name="value">值</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterList.GetDbType(System.Object@,System.Type,System.Nullable{System.Data.DbType}@)">
+            <summary>
+            获取DbType
+            </summary>
+            <param name="value"></param>
+            <param name="t"></param>
+            <param name="dbType"></param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterList.Add(System.String,System.Data.DbType,System.Data.ParameterDirection)">
+            <summary>
+            创建DbParameter
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="dbType">数据类别</param>
+            <param name="direction">指定查询内的有关 System.Data.DataSet 的参数的类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterList.Add(System.String,System.Object,System.Data.DbType)">
+            <summary>
+            用参数名称、参数的类型、参数的大小、System.Data.ParameterDirection、参数的精度、参数的小数位数、源列、要使用的 System.Data.DataRowVersion
+            和参数的值初始化 System.Data.SqlClient.SqlParameter 类的新实例。
+            </summary>
+            <param name="parameterName">要映射的参数的名称</param>
+            <param name="dbType">System.Data.DbType 值之一</param>
+            <param name="value">一个 System.Object，它是 System.Data.SqlClient.SqlParameter 的值</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterList.Add(System.String,System.Object,System.Data.DbType,System.Int32)">
+            <summary>
+            用参数名称、参数的类型、参数的大小、System.Data.ParameterDirection、参数的精度、参数的小数位数、源列、要使用的 System.Data.DataRowVersion
+            和参数的值初始化 System.Data.SqlClient.SqlParameter 类的新实例。
+            </summary>
+            <param name="parameterName">要映射的参数的名称</param>
+            <param name="dbType">System.Data.DbType 值之一</param>
+            <param name="size">参数的长度</param>
+            <param name="value">一个 System.Object，它是 System.Data.SqlClient.SqlParameter 的值</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterList.Add(System.String,System.Object,System.Data.DbType,System.Int32,System.Data.ParameterDirection,System.Boolean,System.String,System.Data.DataRowVersion)">
+            <summary>
+            用参数名称、参数的类型、参数的大小、System.Data.ParameterDirection、参数的精度、参数的小数位数、源列、要使用的 System.Data.DataRowVersion
+            和参数的值初始化 System.Data.SqlClient.SqlParameter 类的新实例。
+            </summary>
+            <param name="parameterName">要映射的参数的名称</param>
+            <param name="value">一个 System.Object，它是 System.Data.SqlClient.SqlParameter 的值</param>
+            <param name="dbType">System.Data.DbType 值之一</param>
+            <param name="size">参数的长度</param>
+            <param name="direction">System.Data.ParameterDirection 值之一</param>
+            <param name="isNullable">如果字段的值可为 null，则为 true；否则为 false。</param>
+            <param name="sourceColumn">源列的名称</param>
+            <param name="sourceVersion">System.Data.DataRowVersion 值之一</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterList.GetDbParameter(System.String@,System.Object,System.Nullable{System.Data.DbType})">
+            <summary>
+            获取DbParameter
+            </summary>
+            <param name="parameterName">参数名称</param>
+            <param name="value">参数值</param>
+            <param name="dbType">System.Data.DbType 值之一</param>
+            <returns>DbParameter</returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterList.ToArray">
+            <summary>
+            转化为数组
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterList.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            支持泛型简单迭代
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DbParameterList._providerName">
+            <summary>
+            System.Configuration.ConnectionStringSettings.ProviderName 属性
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DbParameterList.ParameterChar">
+            <summary>
+            参数化前标 默认@
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DbParameterList.Item(System.Int32)">
+            <summary>
+            索引
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DbParameterList.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DbParameterFactory">
+            <summary>
+            数据参数工厂
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterFactory.#ctor">
+            <summary>
+            数据参数工厂
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbParameterFactory.#ctor(System.String)">
+            <summary>
+            数据参数工厂
+            </summary>
+            <param name="connKey">Web.Config Connection Key</param>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DbParameterFactory.ConnectionStringsName">
+            <summary>
+             获取或设置 System.Configuration.ConnectionStringSettings 名称。
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DbParameterFactory.ConnectionStringSettings">
+            <summary>
+            连接字符串配置文件节中的单个命名连接字符串
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DbParameterFactory.DbProviderFactory">
+            <summary>
+            获取创建提供程序对数据源类的实现的实例
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DbParameterFactory.DbParameters">
+            <summary>
+            DbParameter集合
+            类初始化时默认初始化
+            如果要自己初始化格式为:
+            DbParameterFactory dbParam = new DbParameterFactory(conn);
+            dbParam.DbParameters = new DbParameterList(dbParam.ConnectionStringSettings.ProviderName);
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.IdentityEntity">
+            <summary>
+            实体基类 主键自增
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.Entity">
+            <summary>
+            基础实体,其他实体继承
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Entity.IsDel">
+            <summary>
+            删除状态
+            0 未删除
+            1 已删除
+            2 回收站
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Entity.AddTime">
+            <summary>
+            添加时间
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Entity.CreateUser">
+            <summary>
+            创建用户
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Entity.CreateUserName">
+            <summary>
+            创建用户名称
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Entity.ModifyTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Entity.ModifyUser">
+            <summary>
+            修改用户
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Entity.ModifyUserName">
+            <summary>
+            修改用户名
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.Entity.DataHandType">
+            <summary>
+            数据处理类型
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.IdentityEntity.#ctor">
+            <summary>
+            基础实体,构造函数
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.IdentityEntity.#ctor(System.String)">
+            <summary>
+            基础实体,构造函数
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.IdentityEntity.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.GuidEntity">
+            <summary>
+            实体基类 主键Guid
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.GuidEntity.#ctor">
+            <summary>
+            基础实体,构造函数
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.GuidEntity.#ctor(System.Guid)">
+            <summary>
+            基础实体,构造函数
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.GuidEntity.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.AssignedEntity`1">
+            <summary>
+            基础实体 主键由外部程序负责生成
+            </summary>
+            <typeparam name="PKT">主键类别</typeparam>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.AssignedEntity`1.#ctor">
+            <summary>
+            基础实体,构造函数
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.AssignedEntity`1.#ctor(`0)">
+            <summary>
+            基础实体,构造函数
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.AssignedEntity`1.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DictionaryList">
+            <summary>
+            数据批处理自定义类型
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryList.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryList.Add(GkXsn.Com.DataHandler.DictionaryCommonInfo)">
+            <summary>
+            添加数据实体
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryList.Add(System.String,System.Object)">
+            <summary>
+            添加数据实体
+            </summary>
+            <param name="field">字段名</param>
+            <param name="value">值</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryList.Add(System.String,System.Object,GkXsn.Com.DataHandler.ColumnKey)">
+             <summary>
+             添加数据实体
+             </summary>
+             <param name="field">字段名</param>
+             <param name="value">值</param>
+            <param name="columnKey">数据列类别</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryList.Add(System.String,System.Object,GkXsn.Com.DataHandler.Operators)">
+             <summary>
+             添加数据实体
+             </summary>
+             <param name="field">字段名</param>
+             <param name="value">值</param>
+            <param name="operators">查询条件</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryList.Add(System.String,System.Object,GkXsn.Com.DataHandler.Operators,GkXsn.Com.DataHandler.ColumnKey)">
+             <summary>
+             添加数据实体
+             </summary>
+             <param name="field">字段名</param>
+             <param name="value">值</param>
+            <param name="operators">查询条件</param>
+            <param name="columnKey">数据列类别</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryList.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            实现泛型简单迭代
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryList.TableName">
+            <summary>
+            表名称
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryList.ConnectionString">
+            <summary>
+            数据库连接字符串config配置Key
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryList.FkTable">
+            <summary>
+            是否外键表
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryList.FkGuid">
+            <summary>
+            多表关联键
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryList.OrderBy">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryList.FKTableRelation">
+            <summary>
+            表关系SQL
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryList.PrimaryKeyIDENTITY">
+            <summary>
+            主键是否自增
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryList.HandType">
+            <summary>
+            数据处理类型
+            1插入,2更新,3删除
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryList.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryList.Item(System.Int32)">
+            <summary>
+            索引
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DBHelper">
+            <summary>
+            数据操作类
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DBHelper.SQL_SELECT_PAGE">
+            <summary>
+            SQL分页
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DBHelper.SQL_SELECT_PAGE_NOTCOUNT">
+            <summary>
+            SQL分页
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DBHelper.ACCESS_SELECT_PAGE">
+            <summary>
+            Access分页
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.CreateCommand(System.Data.Common.DbConnection,System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            创建Command 对象
+            </summary>
+            <param name="connection">数据库连接</param>
+            <param name="cmdType">CommandType</param>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteDataSet(System.String)">
+            <summary>
+            返回一个数据集
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteDataSet(System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            返回一个数据集
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteDataSet(System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            返回一个数据集
+            </summary>
+            <param name="cmdType">CommandType</param>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteDataTable(System.String)">
+            <summary>
+            返回一个数据集
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteDataTable(System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            返回一个数据集
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteDataTable(System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            返回一个数据集
+            </summary>
+            <param name="cmdType">CommandType</param>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteDataTable(System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取当前页应该显示的记录
+            </summary>
+            <param name="cmdType">CommandType</param>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <param name="orderStr">排序字段不用写order by</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteCustomDataTable(System.String,System.Int32,System.Int32)">
+            <summary>
+            获取当前页应该显示的记录
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteCustomDataTable(System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取当前页应该显示的记录
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <param name="orderStr">排序字段不用加Order By</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteCustomDataTable(System.String,GkXsn.Com.DataHandler.DbParameterFactory,System.Int32,System.Int32)">
+            <summary>
+            获取当前页应该显示的记录
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteCustomDataTable(System.String,GkXsn.Com.DataHandler.DbParameterFactory,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取当前页应该显示的记录
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <param name="orderStr">排序字段不用写order by</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteCustomDataTable(System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取当前页应该显示的记录
+            </summary>
+            <param name="cmdType">CommandType</param>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <param name="orderStr">排序字段不用写order by</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteCustomList``1(System.String,System.Int32,System.Int32)">
+            <summary>
+            获取当前页应该显示的记录
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteCustomList``1(System.String,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取当前页应该显示的记录
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <param name="orderStr">排序 不用加 Order By</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteCustomList``1(System.String,GkXsn.Com.DataHandler.DbParameterFactory,System.Int32,System.Int32)">
+            <summary>
+            获取当前页应该显示的记录
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteCustomList``1(System.String,GkXsn.Com.DataHandler.DbParameterFactory,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取当前页应该显示的记录
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <param name="orderStr">排序字段不用写order by</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteCustomList``1(System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory,System.Int32,System.Int32,System.String)">
+            <summary>
+            获取当前页应该显示的记录
+            </summary>
+            <param name="cmdType">CommandType</param>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <param name="orderStr">排序字段不用写order by</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteNonQuery(System.String)">
+            <summary>
+            返回受影响的行数
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteNonQuery(System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            返回受影响的行数
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteNonQuery(System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            返回受影响的行数
+            </summary>
+            <param name="cmdType">CommandType</param>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteCount(System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            获取数量
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.SqlBulkCopyInsert(System.String,System.Data.DataTable,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            使用(SQLServer批量插入)SqlBulkCopy方式插入数据
+            </summary>
+            <param name="tableName">更新的表名称</param>
+            <param name="dataTable">更新的数据</param>
+            <param name="dbParam">数据参数工厂</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteScalar(System.String)">
+            <summary>
+            返回结果集中第一行第一列
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteScalar(System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            返回结果集中第一行第一列
+            </summary>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteScalar(System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            返回结果集中第一行第一列
+            </summary>
+            <param name="cmdType">CommandType</param>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteReaderList``1(System.String)">
+            <summary>
+            返回泛型集合
+            </summary>
+            <typeparam name="T">实体类</typeparam>
+            <param name="cmdText">sql语句</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteReaderList``1(System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            返回泛型集合
+            </summary>
+            <typeparam name="T">实体类</typeparam>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteReaderList``1(System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            返回泛型集合
+            </summary>
+            <typeparam name="T">实体类</typeparam>
+            <param name="cmdType">CommandType</param>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ExecuteReaderObject``1(System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            返回一个对象 如数据库无结果返回将抛出异常
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="cmdType">CommandType</param>
+            <param name="cmdText">sql语句</param>
+            <param name="dbParam">参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ToList``1(System.Data.Common.DbDataReader)">
+            <summary>
+            反射创建泛型集合
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="reader"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DBHelper.ToList``1(System.Data.DataTable)">
+            <summary>
+            反射创建泛型集合
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="dt"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DictionaryCommon`1">
+            <summary>
+            字典表基础方法
+            </summary>
+            <typeparam name="T">实体</typeparam>
+            <typeparam name="P">主键类型</typeparam>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetInfo(System.Object)">
+            <summary>
+            获取实体
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetInfo(GkXsn.Com.DataHandler.DictionaryList)">
+            <summary>
+            获取实体值
+            </summary>
+            <param name="dList">对应数据库字段</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetList">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetDList">
+            <summary>
+            获取列表参数数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetList(GkXsn.Com.DataHandler.DictionaryList)">
+            <summary>
+            获取列表
+            </summary>
+            <param name="dList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetList(System.Int32,System.Int32)">
+            <summary>
+            获取分页列表
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetListAddBlank(System.Int32,System.Int32)">
+            <summary>
+            获取列表
+            </summary>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetList(GkXsn.Com.DataHandler.DictionaryList,System.Int32,System.Int32)">
+            <summary>
+            获取列表
+            </summary>
+            <param name="dList"></param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetCustomDataTable(GkXsn.Com.DataHandler.DictionaryList,System.Int32,System.Int32)">
+            <summary>
+            根据 查询条件返回CustomDataTable数据
+            </summary>
+            <param name="dList"></param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetPropertyList(System.Type)">
+            <summary>
+            获取属性数据
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetPropertyAttribute(System.Reflection.PropertyInfo)">
+            <summary>
+            获取返回的实体属性
+            </summary>
+            <param name="pInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.SubmitData(GkXsn.Com.DataHandler.DictionaryList)">
+            <summary>
+            添加数据
+            </summary>
+            <param name="dList"></param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.SubmitData(System.Collections.Generic.IList{GkXsn.Com.DataHandler.DictionaryList})">
+            <summary>
+            添加数据
+            </summary>
+            <param name="dList"></param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.SubmitData(System.Collections.Generic.IList{`0})">
+            <summary>
+            提交数据
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.SubmitData(System.Collections.Generic.IList{`0},GkXsn.Com.DataHandler.DbTrans)">
+            <summary>
+            提交数据
+            </summary>
+            <param name="list"></param>
+            <param name="dbTrans">事务</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.Add(`0)">
+            <summary>
+            新增
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.Add(GkXsn.Com.DataHandler.DbTrans,`0)">
+            <summary>
+            新增
+            </summary>
+            <param name="dbTrans">事务控制</param>
+            <param name="t"></param>
+        </member>
+        <!-- 对于成员“M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetDictionaryListByAdd(`0)”忽略有格式错误的 XML 注释 -->
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.Update(`0)">
+            <summary>
+            修改
+            将实体的所有主键，更新到数据库中的所有字段
+            </summary>
+            <param name="t"></param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.Update(GkXsn.Com.DataHandler.DbTrans,`0)">
+            <summary>
+            修改
+            将实体的所有主键，更新到数据库中的所有字段
+            </summary>
+            <param name="dbTrans">事务控制</param>
+            <param name="t"></param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetDictionaryListByUpdate(`0)">
+            <summary>
+            获取更新的自定义类型
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.UpdateState(System.Object,GkXsn.Com.DataHandler.DataState)">
+            <summary>
+            更新数据状态
+            </summary>
+            <param name="id">数据主键</param>
+            <param name="dataState">数据状态</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.UpdateState(GkXsn.Com.DataHandler.DbTrans,System.Object,GkXsn.Com.DataHandler.DataState)">
+            <summary>
+            更新数据状态
+            </summary>
+            <param name="dbTrans">事务控制</param>
+            <param name="id">数据主键</param>
+            <param name="dataState">数据状态</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.UpdateState(System.Object[],GkXsn.Com.DataHandler.DataState)">
+            <summary>
+            更新数据状态
+            </summary>
+            <param name="ids">数据主键集合</param>
+            <param name="dataState">数据状态</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.UpdateState(GkXsn.Com.DataHandler.DbTrans,System.Object[],GkXsn.Com.DataHandler.DataState)">
+            <summary>
+            更新数据状态
+            </summary>
+            <param name="dbTrans">事务控制</param>
+            <param name="ids">数据主键集合</param>
+            <param name="dataState">数据状态</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetDictionaryListByUpdateState(System.Object[],GkXsn.Com.DataHandler.DataState)">
+            <summary>
+            获取数据集合
+            </summary>
+            <param name="ids">数据主键集合</param>
+            <param name="dataState">数据状态</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.Update(GkXsn.Com.DataHandler.DictionaryList)">
+            <summary>
+            更新单条数据
+            </summary>
+            <param name="dList"></param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.Delete(System.Object)">
+            <summary>
+            删除数据
+            实体属性中如果有值的数据皆作为条件 该方法只能做=关系
+            </summary>
+            <param name="id">主键</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.Delete(GkXsn.Com.DataHandler.DbTrans,System.Object)">
+            <summary>
+            删除数据
+            实体属性中如果有值的数据皆作为条件 该方法只能做=关系
+            </summary>
+            <param name="dbTrans">事务</param>
+            <param name="id">主键</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.Delete(System.Object[])">
+            <summary>
+            删除数据
+            实体属性中如果有值的数据皆作为条件 该方法只能做=关系
+            </summary>
+            <param name="ids">主键</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.Delete(GkXsn.Com.DataHandler.DbTrans,System.Object[])">
+            <summary>
+            删除数据
+            实体属性中如果有值的数据皆作为条件 该方法只能做=关系
+            </summary>
+            <param name="dbTrans">事务</param>
+            <param name="ids">主键</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommon`1.GetDictionaryListByDelete(System.Object[])">
+            <summary>
+            获取数据集合
+            </summary>
+            <param name="ids">主键</param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryCommon`1.ClassAttribute">
+            <summary>
+            实体所在的数据库表信息
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DictionaryCommonInfo">
+            <summary>
+            批数据处理实体
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommonInfo.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommonInfo.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="field">字段名</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommonInfo.#ctor(System.String,System.Object)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="field">字段名</param>
+            <param name="value">值</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommonInfo.#ctor(System.String,System.Object,GkXsn.Com.DataHandler.ColumnKey)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="field">字段名</param>
+            <param name="value">值</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommonInfo.#ctor(System.String,System.Object,System.Data.DbType)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="field">字段名</param>
+            <param name="value">值</param>
+            <param name="dbType">数据类型</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DictionaryCommonInfo.#ctor(System.String,System.Object,GkXsn.Com.DataHandler.Operators)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="field">字段名</param>
+            <param name="value">值</param>
+            <param name="operators">查询条件</param>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryCommonInfo.ColumnKey">
+            <summary>
+            数据列类别
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryCommonInfo.Field">
+            <summary>
+            字段名
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryCommonInfo.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryCommonInfo.DbType">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DictionaryCommonInfo.Operators">
+            <summary>
+            查询条件类型
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.ServerDAL.DictionaryCommon`1">
+            <summary>
+            字典表基础方法
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.ServerDAL.DictionaryCommon`1.SQLINSERT">
+            <summary>
+            插入语句拼接
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.ServerDAL.DictionaryCommon`1.SQLUPDATE">
+            <summary>
+            更新语句拼接
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.ServerDAL.DictionaryCommon`1.SQLDELETE">
+            <summary>
+            删除语句拼接
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ServerDAL.DictionaryCommon`1.GetSelectSQLParam(GkXsn.Com.DataHandler.DictionaryList,System.Text.StringBuilder@,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            获取全部的SQL语句
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ServerDAL.DictionaryCommon`1.GetList(GkXsn.Com.DataHandler.DictionaryList,System.Int32,System.Int32)">
+            <summary>
+            获取列表
+            </summary>
+            <param name="dList">数据处理类型</param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ServerDAL.DictionaryCommon`1.GetCustomDataTable(GkXsn.Com.DataHandler.DictionaryList,System.Int32,System.Int32)">
+            <summary>
+            根据 查询条件返回CustomDataTable数据
+            </summary>
+            <param name="list"></param>
+            <param name="pageIndex">分页索引</param>
+            <param name="pageSize">分页大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ServerDAL.DictionaryCommon`1.SubmitData(GkXsn.Com.DataHandler.DbTrans,System.Collections.Generic.IList{GkXsn.Com.DataHandler.DictionaryList})">
+            <summary>
+            数据提交
+            </summary>
+            <param name="dbTrans">事务控制</param>
+            <param name="dList">数据处理类型集合</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ServerDAL.DictionaryCommon`1.SubmitUpdateState(GkXsn.Com.DataHandler.DbTrans,GkXsn.Com.DataHandler.DictionaryList,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            更新数据状态
+            </summary>
+            <param name="dbTrans">事务控制</param>
+            <param name="list">数据集合</param>
+            <param name="dbParam">参数集合工厂</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ServerDAL.DictionaryCommon`1.SubmitDelete(GkXsn.Com.DataHandler.DbTrans,GkXsn.Com.DataHandler.DictionaryList,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            删除数据
+            </summary>
+            <param name="dbTrans">事务控制</param>
+            <param name="list">数据集合</param>
+            <param name="dbParam">参数集合工厂</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ServerDAL.DictionaryCommon`1.SubmitUpdate(GkXsn.Com.DataHandler.DbTrans,GkXsn.Com.DataHandler.DictionaryList,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            更新数据
+            </summary>
+            <param name="dbTrans">事务控制</param>
+            <param name="list">数据集合</param>
+            <param name="dbParam">参数集合工厂</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ServerDAL.DictionaryCommon`1.SubmitAdd(GkXsn.Com.DataHandler.DbTrans,System.Collections.Generic.Dictionary{System.Guid,System.String},GkXsn.Com.DataHandler.DictionaryList,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            插入数据
+            </summary>
+            <param name="dbTrans">事务控制</param>
+            <param name="dicPrimaryKeyIDENTITY">自增主键</param>
+            <param name="list">数据集合</param>
+            <param name="dbParam">参数集合工厂</param>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.PropertyAttribute">
+            <summary>
+            标明实体属性所在的数据库字段
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.PropertyAttribute.Name">
+            <summary>
+            数据库字段名
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.PropertyAttribute.ColumnKey">
+            <summary>
+            数据库外键表关联主表字段
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.PropertyAttribute.FK_Table">
+            <summary>
+            多表操作[表名]
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.PropertyAttribute.Update">
+            <summary>
+            字段是否参与更新[默认更新]
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.PropertyAttribute.Insert">
+            <summary>
+            字段是否参与新增[默认更新]
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.PropertyAttribute.DataState">
+            <summary>
+            是否为数据状态
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.PropertyAttribute.DefaultValue">
+            <summary>
+            默认值
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.PropertyAttribute.Operators">
+            <summary>
+            字段是否作为查询条件,不参与更新,新增时不做为空个数判断
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.ClassAttribute">
+            <summary>
+            标明实体所在的数据库表信息
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.ClassAttribute.Table">
+            <summary>
+            数据库表名
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.ClassAttribute.View">
+            <summary>
+            类加载时对应的视图名称
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.ClassAttribute.FK_Table">
+            <summary>
+            多表操作[表名]
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.ClassAttribute.FK_TableRelation">
+            <summary>
+            表关系
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.ClassAttribute.ConnectionString">
+            <summary>
+            数据库连接字符web.config配置的key 默认ConnectionString
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DynamicBuilder`1">
+            <summary>
+            创建动态委托
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DynamicBuilder`1.Build(System.Data.IDataRecord)">
+            <summary>
+            执行创建
+            </summary>
+            <param name="dataRecord">IDataRecord</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DynamicBuilder`1.Build(System.Data.DataRow)">
+            <summary>
+            执行创建
+            </summary>
+            <param name="dr">DataRow</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DynamicBuilder`1.CreateBuilder(System.Data.IDataRecord)">
+            <summary>
+            创建动态委托
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DynamicBuilder`1.CreateBuilder(System.Data.DataRow)">
+            <summary>
+            创建动态委托
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DynamicBuilder`1.GetPersistenceAttribute(System.Reflection.MemberInfo)">
+            <summary>
+            获取属性
+            </summary>
+            <param name="mInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.CacheHandler`1">
+            <summary>
+            缓存管理
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.CacheHandler`1.Session">
+            <summary>
+            Hashtable缓存
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.CacheHandler`1.Cache">
+            <summary>
+            asp.net自带的Cache(进程内Cache)
+            System.Web.HttpRuntime.Cache
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.CacheHandler`1.Hashtable">
+            <summary>
+            Hashtable缓存
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.CacheHandler`1.Cookie">
+            <summary>
+            Cookies操作
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.ColumnKey">
+            <summary>
+            数据库表字段键类别
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.ColumnKey.Normal">
+            <summary>
+            正常的
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.ColumnKey.PrimaryKey">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.ColumnKey.PrimaryKeyIdentity">
+            <summary>
+            自增主键
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.ColumnKey.ForeignKey">
+            <summary>
+            外键
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DataHandType">
+            <summary>
+            数据处理类型
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DataHandType.None">
+            <summary>
+            无操作
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DataHandType.Insert">
+            <summary>
+            插入
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DataHandType.Update">
+            <summary>
+            更新
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DataHandType.Delete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DataHandType.UpdateState">
+            <summary>
+            更新数据状态
+            0未删除 1回收站 2已删除
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DataState">
+            <summary>
+            数据状态
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DataState.Normal">
+            <summary>
+            正常数据
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DataState.Recycle">
+            <summary>
+            回收站
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DataState.Deleted">
+            <summary>
+            已删除
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.Operators">
+            <summary>
+            比较运算符
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Operators.None">
+            <summary>
+            不做查询条件
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Operators.Equal">
+            <summary>
+            等于
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Operators.Greater">
+            <summary>
+            大于
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Operators.GreaterOrEqual">
+            <summary>
+            大于等于
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Operators.Less">
+            <summary>
+            小于
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Operators.LessOrEqual">
+            <summary>
+            小于等于
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Operators.BeginsWith">
+            <summary>
+            从开始匹配
+            a%
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Operators.EndsWith">
+            <summary>
+            从结束匹配
+            %a
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Operators.Like">
+            <summary>
+            模糊匹配
+            %a%
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Operators.BetweenAnd">
+            <summary>
+            区间
+            其值为 object[]
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Operators.In">
+            <summary>
+            其值为 object[]
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Operators.NotIn">
+            <summary>
+            其值为 object[]
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Operators.IsNull">
+            <summary>
+            值不为dbnull
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Operators.IsNotNull">
+            <summary>
+            值不为dbnull
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.EnumHandler`1">
+            <summary>
+            枚举
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.EnumHandler`1.GetEnumFromIntString(System.String)">
+            <summary>
+            从数字转化为枚举
+            </summary>
+            <param name="intString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.EnumHandler`1.GetStringFromEnum(`0)">
+            <summary>
+            根据枚举获取数字
+            </summary>
+            <param name="t"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.EnumHandler`1.GetListFromEnumType">
+            <summary>
+            获取枚举集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.EnumHandler`1.GetEnumDictionary">
+            <summary>
+            获取枚举名称值对集合
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.KeyConstant">
+            <summary>
+            常量键值
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.KeyConstant.Json">
+            <summary>
+            json常量值
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.Json.EMPTY">
+            <summary>
+            Json空数据
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.Json.EMPTY_EASYUI_DATAGRID">
+            <summary>
+            Json空数据-easyui datagrid
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.KeyConstant.ConnectionStrings">
+            <summary>
+            web.config connectionStrings配置值
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.ConnectionStrings.DEFAULT">
+            <summary>
+            链接字符串
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.ConnectionStrings.APPSATE">
+            <summary>
+            Session存储 数据连接字符串 
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.ConnectionStrings.SIGNON">
+            <summary>
+            用户权限 数据连接字符串 
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.ConnectionStrings.IPADDRESS">
+            <summary>
+            IP地址 数据连接字符串 
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.ConnectionStrings.LOG">
+            <summary>
+            日志 数据连接字符串 
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.ConnectionStrings.DELIVER">
+            <summary>
+            文章投递 数据连接字符串 
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.ConnectionStrings.LIVEPAY">
+            <summary>
+            支付记录 数据连接字符串 
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.KeyConstant.AppSettings">
+            <summary>
+            web.config appSettings配置值
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.AppSettings.WEBSITELINK">
+            <summary>
+            网站链接配置key
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.AppSettings.USERAGENTCONFIG">
+            <summary>
+            UserAgent.config
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.KeyConstant.Table">
+            <summary>
+            数据库表键值
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.Table.PRIMARY_KEY_SYSTEM_SIGNON">
+            <summary>
+            单点系统主键
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.Table.IDENTITY">
+            <summary>
+            返回的主键标识串
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.KeyConstant.Session">
+            <summary>
+            Session常量值
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.Session.SESSION_LOG_USERINFO">
+            <summary>
+            日志用户信息session key
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.Session.BROWER_WORKAREA_WIDTH">
+            <summary>
+            浏览器工作区域宽度session key
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.KeyConstant.Session.BROWER_WORKAREA_HEIGTH">
+            <summary>
+            浏览器工作区域高度session key
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.Serializer`1">
+            <summary>
+            序列化
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Serializer`1.SerializeObject(`0)">
+            <summary>
+            序列化
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Serializer`1.SerializeBase64ToFile(`0,System.String)">
+            <summary>
+            序列化到文件
+            </summary>
+            <param name="t"></param>
+            <param name="filePath">文件路径如:files\\viewstate\\z.zip</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Serializer`1.DeserializeObject(System.String)">
+            <summary>
+            反序列化
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Serializer`1.DeserializeBase64FromFile(System.String)">
+            <summary>
+            从文件反序列化
+            </summary>
+            <param name="filePath">文件路径如:files\\viewstate\\z.zip</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Serializer`1.LoadFromBinaryFile(System.String)">
+             <summary>
+            从文件还原对象的内容
+             </summary>
+             <param name="path">文件名</param>
+             <returns>被还原的对象</returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Serializer`1.SaveToBinaryFile(`0,System.String)">
+             <summary>
+            对象的内容保存为文件
+             </summary>
+             <param name="obj">保存的对象</param>
+             <param name="path">保存的文件名</param>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.Serializer`1._dispose">
+            <summary>
+            避免用户多次调用Dispose()或Close()接口导致多次释放的问题
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Serializer`1.Finalize">
+            <summary>
+            析构函数
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Serializer`1.System#IDisposable#Dispose">
+            <summary>
+            支持调用方显示调用，释放所有资源
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.Serializer`1.Dispose(System.Boolean)">
+            <summary>
+            选择释放托管资源或非托管资源
+            </summary>
+            <param name="disposing">true：释放所有资源；false：只释放非托管资源</param>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.SingleGeneric`1">
+            <summary>
+            单件泛型
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.SingleGeneric`1.CreateInstance">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DbTrans">
+            <summary>
+            为数据访问层的跨数据库操作添加事务控制
+            任何需要使用分布式事务的数据访问层代码都需要实例化该类
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DbTrans.tran">
+            <summary>
+            轻量级的事务
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DbTrans.dispose">
+            <summary>
+            避免用户多次调用Dispose()或Close()接口导致多次释放的问题
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DbTrans.connectionDic">
+            <summary>
+            连接串对应的名称值对的集合 
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.#ctor">
+            <summary>
+            默认的构造函数
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.Finalize">
+            <summary>
+            终结器，被GC调用，主要用来释放非托管资源，而托管资源应交由GC管理
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.CreateTransaction">
+            <summary>
+            创建新的上下文事务
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.Close">
+            <summary>
+            调用方显示调用的方法，
+            任何需要事务控制和级联操作的方法调用结束后，需要调用该函数释放非托管资源
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.System#IDisposable#Dispose">
+            <summary>
+            支持调用方显示调用，释放所有资源
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.Dispose(System.Boolean)">
+            <summary>
+            选择释放托管资源或非托管资源
+            </summary>
+            <param name="disposing">true：释放所有资源；false：只释放非托管资源</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.CreateDbConnection(GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            创建数据库连接
+            </summary>
+            <param name="dbParam">数据参数工厂</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.GetDbProviderFactory(System.Configuration.ConnectionStringSettings,System.String)">
+            <summary>
+            获取创建提供程序对数据源类的实现的实例
+            </summary>
+            <param name="css">连接串</param>
+            <param name="conKey">数据连接串web.config配置key</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.RollBack">
+            <summary>
+            数据库事务回滚，撤销之前的SQL语句的执行
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.Commit">
+            <summary>
+            数据库事务提交
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.ReleaseUnmanagedResource">
+            <summary>
+            释放派生类中的非托管资源
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.ExecuteScalar(System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            基础数据增删改的操作,调用方必须显示调用事务控制的方法，
+            以保证数据库数据的一致性
+            调用方需要显示调用Close方法来释放非托管资源
+            <code>
+                   string conKey = "constring";
+                   string sqlText = @"INSERT INTO [ApplicationRecord] ([CompanyID] ,[CheckStatus])
+                                                   VALUES(@CompanyID,@CheckStatus)
+                   SqlParameter[] param = new SqlParameter[2];                                
+                   param[0] = new SqlParameter("@CompanyID", "1");
+                   param[1] = new SqlParameter("@CheckStatus", "0");
+                   // 或DALBase的派生类
+                   DbTrans base = new DbTrans();
+                   try
+                   {
+                       base.ExecuteScalar(conKey,CommandType.Text,sqlText,param);
+                       // your code here
+                       base.Commit();
+                   }
+                   catch (Exception ex)
+                   {
+                       base.RollBack();
+                   }
+                   finally
+                   {
+                       base.Close();
+                   }
+            </code>    
+            </summary>
+            <param name="commandType">指名sqlText参数是sql文本还是存储过程名称</param>
+            <param name="sqlText">sql语句</param>
+            <param name="dbParam">数据参数工厂</param>
+            <returns>数据库语句的返回值，默认为string.Empty,只有在加入<code>SELECT IDENT_CURRENT('UR TABLE')</code>类似的语句才能返回主键</returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.ExecuteScalar(System.Data.Common.DbConnection,System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            Execute a SqlCommand (that returns a 1x1 resultset) against the specified SqlConnection and SqlTransaction
+            using the provided parameters.
+            </summary>
+            <remarks>
+            e.g.:  
+             int orderCount = (int)ExecuteScalar(conn, trans, CommandType.StoredProcedure, "GetOrderCount", new SqlParameter("@prodid", 24));
+            </remarks>
+            <param name="connection">a valid SqlConnection</param>
+            <param name="commandType">the CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">the stored procedure name or T-SQL command</param>
+            <param name="dbParam">数据参数工厂</param>
+            <returns>an object containing the value in the 1x1 resultset generated by the command</returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.ExecuteScalar(System.Transactions.CommittableTransaction,System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            使用上下文事务进行数据库操作
+            </summary>
+            <param name="transaction">事务</param>
+            <param name="type">指名sqlText参数是sql文本还是存储过程名称</param>
+            <param name="sqlText">sql语句</param>
+            <param name="dbParam">数据参数工厂</param>
+            <returns>数据库语句的返回值，默认为string.Empty,只有在加入<code>SELECT IDENT_CURRENT('UR TABLE')</code>类似的语句才能返回主键</returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.ExecuteNonQuery(System.Transactions.CommittableTransaction,System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            使用上下文事务进行数据库操作
+            </summary>
+            <param name="transaction">事务</param>
+            <param name="commandType">指名sqlText参数是sql文本还是存储过程名称</param>
+            <param name="commandText">sql语句</param>
+            <param name="dbParam">数据参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.ExecuteNonQuery(System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            使用上下文事务进行数据库操作
+            </summary>
+            <param name="commandType">指名sqlText参数是sql文本还是存储过程名称</param>
+            <param name="commandText">sql语句</param>
+            <param name="dbParam">参数化工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.ExecuteDataSet(System.Transactions.CommittableTransaction,System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            使用上下文事务进行数据库操作
+            </summary>
+            <param name="transaction">CommittableTransaction事务</param>
+            <param name="commandType">指名sqlText参数是sql文本还是存储过程名称</param>
+            <param name="commandText">sql语句</param>
+            <param name="dbParam">参数列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.ExecuteDataSet(System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            使用上下文事务进行数据库操作
+            </summary>
+            <param name="commandType">指名sqlText参数是sql文本还是存储过程名称</param>
+            <param name="commandText">sql语句</param>
+            <param name="dbParam">数据参数工厂</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.ExecuteDataSet(System.Data.Common.DbConnection,System.Data.CommandType,System.String,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            Execute a DbCommand (that returns a resultset) against the specified DbConnection and DbTransaction
+            using the provided parameters.
+            </summary>
+            <param name="connection">数据库连接</param>
+            <param name="commandType">the CommandType (stored procedure, text, etc.)</param>
+            <param name="commandText">the stored procedure name or T-SQL command</param>
+            <param name="dbParam">数据参数工厂</param>
+            <returns>a dataset containing the resultset generated by the command</returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.DbTrans.PrepareToExcution(GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            执行SQL前的准备工作，如果连接串和构造函数中指定的不同，
+            则关闭上个连接，根据新的数据库连接信息重新实例化
+            </summary>
+            <param name="dbParam">参数化工厂</param>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.DbTrans.Transaction">
+            <summary>
+            获取或设置当前SQL语句运行的上下文事务
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.ValidType">
+            <summary>
+            验证值类型
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.ValidType.DateTime">
+            <summary>
+            时间格式
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.ValidType.Numerical">
+            <summary>
+            数值
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.ValidType.Int">
+            <summary>
+            正整数
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.ValidType.Float">
+            <summary>
+            是否为数字或是小数(正浮点数 + 0)
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.ValidType.SQLInjection">
+            <summary>
+            判断字符串中是否有SQL攻击代码
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.DateTimeType">
+            <summary>
+            时间类型
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DateTimeType.年月日反斜杠">
+            <summary>
+            格式为:2009/11/25
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DateTimeType.年月日横杠">
+            <summary>
+            格式为:2009-11-25
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DateTimeType.年月日时分反斜杠">
+            <summary>
+            格式为:2009/11/25 11:00
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DateTimeType.年月日时分横杠">
+            <summary>
+            格式为:2009-11-25 11:00
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DateTimeType.年月日时分中文">
+            <summary>
+            格式为:2009年11月25日 21时42分
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.DateTimeType.年月日时分秒">
+            <summary>
+            格式如:2009-11-25 21:43:30
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.ValueHandler">
+            <summary>
+            值类型转换
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.ValueHandler._newline">
+            <summary>
+            换行符
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ValueHandler.Valid(GkXsn.Com.DataHandler.ValidItem[])">
+            <summary>
+            值验证方法调用(抛出ArgumentException异常)
+            </summary>
+            <param name="list">ValidValue</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ValueHandler.Valid(System.Boolean,GkXsn.Com.DataHandler.ValidItem[])">
+            <summary>
+            值验证方法调用(抛出ArgumentException异常)
+            </summary>
+            <param name="returnMsg">true返回错误信息 false抛出异常</param>
+            <param name="list">ValidValue</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ValueHandler.IsGuid(System.String)">
+            <summary>
+            验证给定字符串是否是合法的Guid
+            </summary>
+            <param name="guid">要验证的字符串</param>
+            <returns>true/false</returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ValueHandler.ToArray(System.Collections.ArrayList)">
+            <summary>
+            ArrayList转为数组
+            </summary>
+            <param name="al">ArrayList</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ValueHandler.DataRowValue``1(System.Data.DataRow,System.String)">
+            <summary>
+            DataRow值判断
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="dr">DataRow</param>
+            <param name="columnName">类名</param>
+            <returns></returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ValueHandler.IsPingIP(System.String)">
+            <summary>
+            尝试Ping指定IP是否能够Ping通
+            </summary>
+            <param name="strIP">指定IP</param>
+            <returns>true 是 false 否</returns>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ValueHandler.GetWhereConditions(GkXsn.Com.DataHandler.DictionaryCommonInfo,GkXsn.Com.DataHandler.DbParameterFactory)">
+            <summary>
+            条件拼接
+            </summary>
+            <param name="dcInfo">批处理实体</param>
+            <param name="dbParam">参数集合工厂</param>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.ValueHandler.IP">
+            <summary>
+            获取客户端IP
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.ValueHandler.String">
+            <summary>
+            返回string类型值
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.ValueHandler.Int">
+            <summary>
+            返回Int类型值
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.ValueHandler.Decimal">
+            <summary>
+            返回Decimal类型
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.ValueHandler.DateTime">
+            <summary>
+            返回DateTime
+            </summary>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.ValueHandler.Boolean">
+            <summary>
+            返回Boolean
+            </summary>
+        </member>
+        <member name="T:GkXsn.Com.DataHandler.ValidItem">
+            <summary>
+            值验证方法
+            </summary>
+        </member>
+        <member name="F:GkXsn.Com.DataHandler.ValidItem.SQLINJECTION">
+            <summary>
+            SQL注入关键字
+            </summary>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ValidItem.#ctor(System.String,System.String)">
+            <summary>
+            值验证返回信息(默认验证String不允许为空)
+            </summary>
+            <param name="param">参数</param>
+            <param name="annotation">参数注释</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ValidItem.#ctor(System.Byte[],System.String)">
+            <summary>
+            验证byte[]类型数据
+            </summary>
+            <param name="param">参数</param>
+            <param name="annotation">参数注释</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ValidItem.#ctor(System.String[],System.String,System.Boolean,System.Boolean)">
+            <summary>
+            值验证返回信息(默认验证String[])
+            </summary>
+            <param name="param">参数</param>
+            <param name="annotation">参数注释</param>
+            <param name="isNull">是否允许为空 True 允许,False 不允许</param>
+            <param name="isInt">是否验证为Int型 True验证,False不验证</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ValidItem.#ctor(System.Object,System.String,GkXsn.Com.DataHandler.ValidType)">
+            <summary>
+            值验证返回信息(不允许为空)
+            </summary>
+            <param name="param">参数</param>
+            <param name="annotation">参数注释</param>
+            <param name="dataType">参数验证类型</param>
+        </member>
+        <member name="M:GkXsn.Com.DataHandler.ValidItem.#ctor(System.Object,System.String,GkXsn.Com.DataHandler.ValidType,System.Boolean)">
+            <summary>
+            值验证返回信息
+            </summary>
+            <param name="param">参数</param>
+            <param name="annotation">参数注释</param>
+            <param name="dataType">参数验证类型</param>
+            <param name="isNull">True允许为空,False不允许为空</param>
+        </member>
+        <member name="P:GkXsn.Com.DataHandler.ValidItem.ErrorMsg">
+            <summary>
+            返回的提示信息
+            </summary>
+        </member>
+    </members>
+</doc>

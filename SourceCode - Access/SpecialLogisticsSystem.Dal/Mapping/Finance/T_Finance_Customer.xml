@@ -1,0 +1,116 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Customer.Count">
+    Select count(1) FROM vFinanceCustomer where
+    $and{id = #id#}  $and{way_number like '%$way_number$%'}  $and{DateDiff("d",receive_date,  #receive_date_start#) &lt; 0}
+    $and{receive_date &lt;= dateadd("d",1,#receive_date_end#)} $and{bill_rebate = #bill_rebate#}
+    $and{bill_memo = #bill_memo#}  $and{settle_name = #settle_name#}
+    $and{fee_pay = #fee_pay#}  $and{fee_nopay = #fee_nopay#}  $and{fee_reback = #fee_reback#}  $and{bring_site = #bring_site#}
+    $and{bring_man = #bring_man#}  $and{back_site = #back_site#}  $and{back_man = #back_man#}  $and{bill_statue in(#bill_statue#)} $and{is_hide = #is_hide#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Customer.SelectPaging">
+    SELECT $eq{top $maxRows$}
+    *
+    FROM    vFinanceCustomer
+    WHERE   1=1 $eq{and [id] not in ( SELECT   id
+    FROM     ( SELECT top $startRow$
+    [id]
+    FROM      vFinanceCustomer
+    WHERE    1=1  $  $and{id = #id#}  $and{way_number like '%$way_number$%'} $and{DateDiff("d",receive_date,  #receive_date_start#) &lt; 0}
+    $and{receive_date &lt;= dateadd("d",1,#receive_date_end#)} $and{bill_rebate = #bill_rebate#}
+    $and{bill_memo = #bill_memo#}  $and{settle_name = #settle_name#}
+    $and{fee_pay = #fee_pay#}  $and{fee_nopay = #fee_nopay#}  $and{fee_reback = #fee_reback#}  $and{bring_site = #bring_site#}
+    $and{bring_man = #bring_man#}  $and{back_site = #back_site#}  $and{back_man = #back_man#}  $and{bill_statue in(#bill_statue#)} $and{is_hide = #is_hide#}  $eq{order by $OrderBy$}
+    ) AS tblTmp
+    )}
+    $and{id = #id#}  $and{way_number like '%$way_number$%'} $and{DateDiff("d",receive_date,  #receive_date_start#) &lt; 0}
+    $and{receive_date &lt;= dateadd("d",1,#receive_date_end#)} $and{bill_rebate = #bill_rebate#}
+    $and{bill_memo = #bill_memo#}  $and{settle_name = #settle_name#}
+    $and{fee_pay = #fee_pay#}  $and{fee_nopay = #fee_nopay#}  $and{fee_reback = #fee_reback#}  $and{bring_site = #bring_site#}
+    $and{bring_man = #bring_man#}  $and{back_site = #back_site#}  $and{back_man = #back_man#}  $and{bill_statue in(#bill_statue#)} $and{is_hide = #is_hide#}  $eq{order by $OrderBy$}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Customer.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Finance_Customer) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{receipts_totle = #receipts_totle#}  $and{already_payment = #already_payment#}  $and{real_payment = #real_payment#}  $and{bring_payment = #bring_payment#}  $and{add_payment = #add_payment#}  $and{is_collected = #is_collected#}  $and{discount = #discount#}  $and{settle_accounts = #settle_accounts#}  $and{collection_day = #collection_day#}  $and{settle_mode = #settle_mode#}  $and{settle_memo = #settle_memo#}  $and{settl_type = #settl_type#}  $and{operator_man = #operator_man#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Customer.Load">
+    SELECT *
+    FROM   T_Finance_Customer  where
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{receipts_totle = #receipts_totle#}  $and{already_payment = #already_payment#}  $and{real_payment = #real_payment#}  $and{bring_payment = #bring_payment#}  $and{add_payment = #add_payment#}  $and{is_collected = #is_collected#}  $and{discount = #discount#}  $and{settle_accounts = #settle_accounts#}  $and{collection_day = #collection_day#}  $and{settle_mode = #settle_mode#}  $and{settle_memo = #settle_memo#}  $and{settl_type = #settl_type#}  $and{operator_man = #operator_man#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Customer.Select">
+    SELECT *
+    FROM   T_Finance_Customer  where
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{receipts_totle = #receipts_totle#}  $and{already_payment = #already_payment#}  $and{real_payment = #real_payment#}  $and{bring_payment = #bring_payment#}  $and{add_payment = #add_payment#}  $and{is_collected = #is_collected#}  $and{discount = #discount#}  $and{settle_accounts = #settle_accounts#}  $and{collection_day = #collection_day#}  $and{settle_mode = #settle_mode#}  $and{settle_memo = #settle_memo#}  $and{settl_type = #settl_type#}  $and{operator_man = #operator_man#}  $and{branch_id = #branch_id#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Finance_Customer.Insert">
+    insert into T_Finance_Customer(
+    id
+    ,settle_number
+    ,way_id
+    ,receipts_totle
+    ,already_payment
+    ,real_payment
+    ,bring_payment
+    ,add_payment
+    ,is_collected
+    ,discount
+    ,settle_accounts
+    ,collection_day
+    ,settle_mode
+    ,settle_memo
+    ,settl_type
+    ,operator_man
+    ,branch_id
+    )values (
+    #id#
+    ,#settle_number#
+    ,#way_id#
+    ,#receipts_totle#
+    ,#already_payment#
+    ,#real_payment#
+    ,#bring_payment#
+    ,#add_payment#
+    ,#is_collected#
+    ,#discount#
+    ,#settle_accounts#
+    ,#collection_day#
+    ,#settle_mode#
+    ,#settle_memo#
+    ,#settl_type#
+    ,#operator_man#
+    ,#branch_id#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Finance_Customer.Update">
+    update T_Finance_Customer set
+    id=#id#
+    ,settle_number=#settle_number#
+    ,way_id=#way_id#
+    ,receipts_totle=#receipts_totle#
+    ,already_payment=#already_payment#
+    ,real_payment=#real_payment#
+    ,bring_payment=#bring_payment#
+    ,add_payment=#add_payment#
+    ,is_collected=#is_collected#
+    ,discount=#discount#
+    ,settle_accounts=#settle_accounts#
+    ,collection_day=#collection_day#
+    ,settle_mode=#settle_mode#
+    ,settle_memo=#settle_memo#
+    ,settl_type=#settl_type#
+    ,operator_man=#operator_man#
+    ,branch_id=#branch_id#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Finance_Customer.Delete">
+    delete
+    FROM T_Finance_Customer
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

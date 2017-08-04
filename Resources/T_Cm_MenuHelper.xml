@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmMenu" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmMenu" type="MyNamespace.Data.TCmMenu, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmMenu">
+			<result property="Id" column="id" />
+			<result property="Shopid" column="shop_id" />
+			<result property="Name" column="name" />
+			<result property="Menuorder" column="menu_order" />
+			<result property="Icon" column="icon" />
+			<result property="Action" column="action" />
+			<result property="Lefaind" column="lefa_ind" />
+			<result property="Tip" column="tip" />
+			<result property="Parentid" column="parent_id" />
+			<result property="Helphtml" column="help_html" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,shop_id,name,menu_order,icon,action,lefa_ind,tip,parent_id,help_html from T_Cm_Menu
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmMenu" resultClass="int">
+		 		insert into T_Cm_Menu( id,shop_id,name,menu_order,icon,action,lefa_ind,tip,parent_id,help_html ) values ( #Id#,#Shopid#,#Name#,#Menuorder#,#Icon#,#Action#,#Lefaind#,#Tip#,#Parentid#,#Helphtml# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmMenu" resultClass="int">
+			update T_Cm_Menu set shop_id=#Shopid#,name=#Name#,menu_order=#Menuorder#,icon=#Icon#,action=#Action#,lefa_ind=#Lefaind#,tip=#Tip#,parent_id=#Parentid#,help_html=#Helphtml# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_Menu where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

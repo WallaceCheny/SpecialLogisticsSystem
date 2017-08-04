@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmLink" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmLink" type="MyNamespace.Data.TCmLink, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmLink">
+			<result property="Id" column="id" />
+			<result property="Linkname" column="link_name" />
+			<result property="Linktelephone" column="link_telephone" />
+			<result property="Linkmobilephone" column="link_mobilephone" />
+			<result property="Linkprovince" column="link_province" />
+			<result property="Linkcity" column="link_city" />
+			<result property="Linkdistrict" column="link_district" />
+			<result property="Linkaddress" column="link_address" />
+			<result property="Linkemail" column="link_email" />
+			<result property="Linkfax" column="link_fax" />
+			<result property="Linklongitude" column="link_longitude" />
+			<result property="Linklatitude" column="link_latitude" />
+			<result property="LinkQQ" column="link_QQ" />
+			<result property="Linkmemo" column="link_memo" />
+			<result property="Linkidentitynumber" column="link_identity_number" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,link_name,link_telephone,link_mobilephone,link_province,link_city,link_district,link_address,link_email,link_fax,link_longitude,link_latitude,link_QQ,link_memo,link_identity_number from T_Cm_Link
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmLink" resultClass="int">
+		 		insert into T_Cm_Link( id,link_name,link_telephone,link_mobilephone,link_province,link_city,link_district,link_address,link_email,link_fax,link_longitude,link_latitude,link_QQ,link_memo,link_identity_number ) values ( #Id#,#Linkname#,#Linktelephone#,#Linkmobilephone#,#Linkprovince#,#Linkcity#,#Linkdistrict#,#Linkaddress#,#Linkemail#,#Linkfax#,#Linklongitude#,#Linklatitude#,#LinkQQ#,#Linkmemo#,#Linkidentitynumber# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmLink" resultClass="int">
+			update T_Cm_Link set link_name=#Linkname#,link_telephone=#Linktelephone#,link_mobilephone=#Linkmobilephone#,link_province=#Linkprovince#,link_city=#Linkcity#,link_district=#Linkdistrict#,link_address=#Linkaddress#,link_email=#Linkemail#,link_fax=#Linkfax#,link_longitude=#Linklongitude#,link_latitude=#Linklatitude#,link_QQ=#LinkQQ#,link_memo=#Linkmemo#,link_identity_number=#Linkidentitynumber# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_Link where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

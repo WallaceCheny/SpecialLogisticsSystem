@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TFinanceGood" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TFinanceGood" type="MyNamespace.Data.TFinanceGood, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TFinanceGood">
+			<result property="Id" column="id" />
+			<result property="Wayid" column="way_id" />
+			<result property="Settlemode" column="settle_mode" />
+			<result property="Collectionamount" column="collection_amount" />
+			<result property="Goodsdeduct" column="goods_deduct" />
+			<result property="Settleamount" column="settle_amount" />
+			<result property="Settletype" column="settle_type" />
+			<result property="Settledate" column="settle_date" />
+			<result property="Amountget" column="amount_get" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,way_id,settle_mode,collection_amount,goods_deduct,settle_amount,settle_type,settle_date,amount_get from T_Finance_Goods
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TFinanceGood" resultClass="int">
+		 		insert into T_Finance_Goods( id,way_id,settle_mode,collection_amount,goods_deduct,settle_amount,settle_type,settle_date,amount_get ) values ( #Id#,#Wayid#,#Settlemode#,#Collectionamount#,#Goodsdeduct#,#Settleamount#,#Settletype#,#Settledate#,#Amountget# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TFinanceGood" resultClass="int">
+			update T_Finance_Goods set way_id=#Wayid#,settle_mode=#Settlemode#,collection_amount=#Collectionamount#,goods_deduct=#Goodsdeduct#,settle_amount=#Settleamount#,settle_type=#Settletype#,settle_date=#Settledate#,amount_get=#Amountget# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Finance_Goods where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

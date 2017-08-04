@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TFinanceDriver" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TFinanceDriver" type="MyNamespace.Data.TFinanceDriver, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TFinanceDriver">
+			<result property="Id" column="id" />
+			<result property="Driverid" column="driver_id" />
+			<result property="Deductmoney" column="deduct_money" />
+			<result property="Settlemode" column="settle_mode" />
+			<result property="Paydate" column="pay_date" />
+			<result property="Drivermemo" column="driver_memo" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,driver_id,deduct_money,settle_mode,pay_date,driver_memo from T_Finance_Driver
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TFinanceDriver" resultClass="int">
+		 		insert into T_Finance_Driver( id,driver_id,deduct_money,settle_mode,pay_date,driver_memo ) values ( #Id#,#Driverid#,#Deductmoney#,#Settlemode#,#Paydate#,#Drivermemo# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TFinanceDriver" resultClass="int">
+			update T_Finance_Driver set driver_id=#Driverid#,deduct_money=#Deductmoney#,settle_mode=#Settlemode#,pay_date=#Paydate#,driver_memo=#Drivermemo# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Finance_Driver where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

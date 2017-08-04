@@ -1,0 +1,502 @@
+<HR COLOR=red>
+异常时间：2014-01-25 15:24:18,000 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): File does not exist.
+   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-01-25 15:37:01,735 [18] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): A field or property with name 'way_number' was not found in the selected data source. Possible causes of this error may be the following: an incorrect or case-insensitive spelling of the grid column name; assigning a wrong or not properly initialized data source to the grid.
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValueByControllerRow(Int32 controllerRow, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValue(Int32 visibleIndex, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewTextBuilder.GetDisplayControlArgs(GridViewDataColumn column, Int32 visibleIndex, IValueProvider provider, ASPxGridView grid)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.CreateDataCellDisplayControl(GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddDisplayControlToDataCell(Control cell, GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewTableDataCell.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableCell.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableCell.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.DataBindInternal()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.DataBind()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBind()
+   在 SpecialLogisticsSystem.AppPortal.Business.Transfer.gridTransferDetail_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Transfer.aspx.cs:行号 230
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   在 System.Web.UI.ControlCollection.Add(Control child)
+   在 DevExpress.Web.ASPxClasses.Internal.ClientIDHelper.AddTemplateContainerToHierarchy(Control parent, TemplateContainerBase container, String containerID)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddTemplateToControl(Control destination, ITemplate template, GridViewBaseTemplateContainer templateContainer, TemplateContainerCollection collection)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddDetailRowTemplateControl(Int32 visibleIndex, GridViewTableDetailRow row, Int32 spanCount)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewTableDetailRow.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableRow.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableRow.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-01-25 16:09:12,336 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 System.Guid.GuidResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName, Exception innerException)
+   在 System.Guid.TryParseGuidWithDashes(String guidString, GuidResult& result)
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid.Parse(String input)
+   在 SpecialLogisticsSystem.Tool.ConvertHelper.ObjectToGuid(Object guid) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Tool\ConvertHelper.cs:行号 272
+   在 SpecialLogisticsSystem.AppPortal.UserControls.CustomerLookUp.grdView_GridViewCustomCallback(Object sender, ASPxGridViewCustomCallbackEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\CustomerLookUp.ascx.cs:行号 81
+<HR COLOR=red>
+异常时间：2014-01-25 16:09:58,138 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    insert into T_Way_Bill(
+    id
+    ,way_type
+    ,way_number
+    ,start_city
+    ,end_city
+    ,pass_city
+    ,deliver_id
+    ,deliver_mobile
+    ,deliver_area
+    ,deliver_address
+    ,consignee_id
+    ,consignee_mobile
+    ,consignee_area
+    ,consignee_address
+    ,aggregate_amount
+    ,clearing_type
+    ,spot_payment
+    ,pick_payment
+    ,back_payment
+    ,production_payment
+    ,shipping_type
+    ,delivery_type
+    ,receipt_portion
+    ,receipt_number
+    ,collection_type
+    ,receive_date
+    ,bill_rebate
+    ,bill_memo
+    ,fee_pay
+    ,fee_nopay
+    ,fee_reback
+    ,bring_site
+    ,bring_man
+    ,back_site
+    ,back_man
+    ,bill_statue
+    ,is_hide
+    ,ticket_taxes
+    ,freight_chinese
+    )values (
+    'd03a15bb-82ae-460a-975a-d70c30be0a57'
+    ,1
+    ,'jj100000007'
+    ,'晋江市'
+    ,'上海市'
+    ,''
+    ,'af3e5052-2b67-4ae8-bffa-0b893804c5db'
+    ,'18259125893'
+    ,'福建省-泉州市-晋江市'
+    ,''
+    ,'03527315-ca0b-49d8-84be-0f6a0f2762da'
+    ,'13585447208'
+    ,'常州 - '
+    ,''
+    ,'1000.00'
+    ,3
+    ,'0.00'
+    ,'1000.00'
+    ,'0.00'
+    ,'0.00'
+    ,0
+    ,0
+    ,0
+    ,''
+    ,0
+    ,'2014/1/25 16:09:01'
+    ,'0.00'
+    ,''
+    ,'False'
+    ,'False'
+    ,'False'
+    ,'00000000-0000-0000-0000-000000000000'
+    ,''
+    ,'00000000-0000-0000-0000-000000000000'
+    ,''
+    ,'New'
+    ,'False'
+    ,''
+    ,'壹仟元整'
+    )
+   <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): The column "aggregate_amount" cannot be modified because it is either a computed column or is the result of a UNION operator.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 123
+<HR COLOR=red>
+异常时间：2014-01-25 16:09:58,159 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): The column "aggregate_amount" cannot be modified because it is either a computed column or is the result of a UNION operator.
+   在 SpecialLogisticsSystem.Dal.Dao.Insert[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 130
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Insert(T_Way_Bill item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 43
+   在 SpecialLogisticsSystem.AppPortal.Business.Way.gridWay_RowInserting(Object sender, ASPxDataInsertingEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Way.aspx.cs:行号 119
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DevExpress.Web.Data.IWebDataEvents.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.OnRowInserting(ASPxDataInsertingEventArgs e)
+   在 DevExpress.Web.Data.WebDataProxy.InsertRow(Boolean causesValidation)
+   在 DevExpress.Web.Data.WebDataProxy.EndEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.UpdateEdit()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBUpdateEdit(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-01-25 16:13:04,993 [17] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.FormatException: GUID 应包含带 4 个短划线的 32 位数(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx)。
+   在 System.Guid.GuidResult.SetFailure(ParseFailureKind failure, String failureMessageID, Object failureMessageFormatArgument, String failureArgumentName, Exception innerException)
+   在 System.Guid.TryParseGuidWithDashes(String guidString, GuidResult& result)
+   在 System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   在 System.Guid.Parse(String input)
+   在 SpecialLogisticsSystem.Tool.ConvertHelper.ObjectToGuid(Object guid) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Tool\ConvertHelper.cs:行号 272
+   在 SpecialLogisticsSystem.AppPortal.UserControls.CustomerLookUp.grdView_GridViewCustomCallback(Object sender, ASPxGridViewCustomCallbackEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UserControls\CustomerLookUp.ascx.cs:行号 81
+<HR COLOR=red>
+异常时间：2014-01-25 20:13:49,415 [39] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): A field or property with name 'production_number' was not found in the selected data source. Possible causes of this error may be the following: an incorrect or case-insensitive spelling of the grid column name; assigning a wrong or not properly initialized data source to the grid.
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValueByControllerRow(Int32 controllerRow, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValue(Int32 visibleIndex, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewTextBuilder.GetDisplayControlArgs(GridViewDataColumn column, Int32 visibleIndex, IValueProvider provider, ASPxGridView grid)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.CreateDataCellDisplayControl(GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddDisplayControlToDataCell(Control cell, GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewTableDataCell.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableCell.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableCell.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.DataBindInternal()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.DataBind()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBind()
+   在 SpecialLogisticsSystem.AppPortal.Business.Transfer.gridTransferDetail_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Transfer.aspx.cs:行号 228
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   在 System.Web.UI.ControlCollection.Add(Control child)
+   在 DevExpress.Web.ASPxClasses.Internal.ClientIDHelper.AddTemplateContainerToHierarchy(Control parent, TemplateContainerBase container, String containerID)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddTemplateToControl(Control destination, ITemplate template, GridViewBaseTemplateContainer templateContainer, TemplateContainerCollection collection)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddDetailRowTemplateControl(Int32 visibleIndex, GridViewTableDetailRow row, Int32 spanCount)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewTableDetailRow.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableRow.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableRow.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-01-25 21:16:44,526 [16] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): File does not exist.
+   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-01-25 21:47:09,431 [16] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): File does not exist.
+   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-01-25 21:50:30,920 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): A field or property with name 'way_number' was not found in the selected data source. Possible causes of this error may be the following: an incorrect or case-insensitive spelling of the grid column name; assigning a wrong or not properly initialized data source to the grid.
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValueByControllerRow(Int32 controllerRow, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.Data.WebDataControllerProvider.GetRowValue(Int32 visibleIndex, String fieldName, Boolean isDesignTime)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewTextBuilder.GetDisplayControlArgs(GridViewDataColumn column, Int32 visibleIndex, IValueProvider provider, ASPxGridView grid)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.CreateDataCellDisplayControl(GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddDisplayControlToDataCell(Control cell, GridViewDataColumn column, Int32 visibleIndex, IValueProvider row)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewTableDataCell.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableCell.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableCell.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.DataBindInternal()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.DataBind()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBind()
+   在 SpecialLogisticsSystem.AppPortal.Business.SendProduction.gridDeliverDetail_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\SendProduction.aspx.cs:行号 233
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.OnLoad(EventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   在 System.Web.UI.ControlCollection.Add(Control child)
+   在 DevExpress.Web.ASPxClasses.Internal.ClientIDHelper.AddTemplateContainerToHierarchy(Control parent, TemplateContainerBase container, String containerID)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddTemplateToControl(Control destination, ITemplate template, GridViewBaseTemplateContainer templateContainer, TemplateContainerCollection collection)
+   在 DevExpress.Web.ASPxGridView.Rendering.ASPxGridViewRenderHelper.AddDetailRowTemplateControl(Int32 visibleIndex, GridViewTableDetailRow row, Int32 spanCount)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewTableDetailRow.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableRow.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.InternalTableRow.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-01-25 21:53:38,833 [16] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): File does not exist.
+   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-01-25 21:53:58,829 [27] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.InvalidOperationException: Both DataSource and DataSourceID are defined on 'gridDeliverDetail'.  Remove one definition.
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelperCore.GetView()
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.GetData()
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.Internal.DataContainer.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.DataBindCore()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.DataBindInternal()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.DataBind()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBind()
+   在 SpecialLogisticsSystem.AppPortal.Business.SendProduction.gridDeliver_HtmlEditFormCreated(Object sender, ASPxGridViewEditFormEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\SendProduction.aspx.cs:行号 217
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseHtmlEditFormCreated(WebControl container)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-01-25 21:54:09,507 [27] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): File does not exist.
+   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

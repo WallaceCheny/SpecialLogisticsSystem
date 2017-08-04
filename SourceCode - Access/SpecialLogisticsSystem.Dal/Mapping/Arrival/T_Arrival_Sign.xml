@@ -1,0 +1,61 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_Sign.Count">
+    Select count(1) FROM T_Arrival_Sign where
+    $and{id = #id#}  $and{way_id = #way_id#}  $and{signer = #signer#}  $and{signer_identity = #signer_identity#}  $and{signer_memo = #signer_memo#}  $and{signer_date = #signer_date#}  $and{emp_id = #emp_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_Sign.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Arrival_Sign) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{way_id = #way_id#}  $and{signer = #signer#}  $and{signer_identity = #signer_identity#}  $and{signer_memo = #signer_memo#}  $and{signer_date = #signer_date#}  $and{emp_id = #emp_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_Sign.Load">
+    SELECT *
+    FROM   T_Arrival_Sign  where
+    $and{id = #id#}  $and{way_id = #way_id#}  $and{signer = #signer#}  $and{signer_identity = #signer_identity#}  $and{signer_memo = #signer_memo#}  $and{signer_date = #signer_date#}  $and{emp_id = #emp_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_Sign.Select">
+    SELECT *
+    FROM   T_Arrival_Sign  where
+    $and{id = #id#}  $and{way_id = #way_id#}  $and{signer = #signer#}  $and{signer_identity = #signer_identity#}  $and{signer_memo = #signer_memo#}  $and{signer_date = #signer_date#}  $and{emp_id = #emp_id#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Arrival_Sign.Insert">
+    insert into T_Arrival_Sign(
+    id
+    ,way_id
+    ,signer
+    ,signer_identity
+    ,signer_memo
+    ,signer_date
+    ,emp_id
+    )values (
+    #id#
+    ,#way_id#
+    ,#signer#
+    ,#signer_identity#
+    ,#signer_memo#
+    ,#signer_date#
+    ,#emp_id#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Arrival_Sign.Update">
+    update T_Arrival_Sign set
+    id=#id#
+    ,way_id=#way_id#
+    ,signer=#signer#
+    ,signer_identity=#signer_identity#
+    ,signer_memo=#signer_memo#
+    ,signer_date=#signer_date#
+    ,emp_id=#emp_id#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Arrival_Sign.Delete">
+    delete
+    FROM T_Arrival_Sign
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

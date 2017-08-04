@@ -1,0 +1,77 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Transfer_Detail.Count">
+    Select count(1) FROM T_Transfer_Detail where
+    $and{id = #id#}  $and{main_id = #main_id#}  $and{production_id = #production_id#}  $and{service_no = #service_no#}  $and{transfer_bill = #transfer_bill#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Transfer_Detail.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Transfer_Detail) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{main_id = #main_id#}  $and{production_id = #production_id#}  $and{service_no = #service_no#}  $and{transfer_bill = #transfer_bill#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Transfer_Detail.Load">
+    SELECT *
+    FROM   T_Transfer_Detail  where
+    $and{id = #id#}  $and{main_id = #main_id#}  $and{production_id = #production_id#}  $and{service_no = #service_no#}  $and{transfer_bill = #transfer_bill#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Transfer_Detail.Select">
+    SELECT  a.* ,
+    b.production_name ,
+    b.production_number ,
+    b.production_weight ,
+    b.production_size ,
+    b.freight ,
+    c.way_number ,
+    c.start_city ,
+    c.end_city ,
+    c.pick_payment,
+    c.spot_payment,
+    c.back_payment,
+    d.customer_name AS deliver_name ,
+    e.customer_name AS consignee_name
+    FROM    T_Transfer_Detail a
+    LEFT JOIN dbo.T_Way_Production b ON b.id = a.production_id
+    LEFT JOIN dbo.T_Way_Bill c ON c.id = b.bill_id
+    LEFT JOIN dbo.T_Cm_Customer d ON d.id = c.deliver_id
+    LEFT JOIN dbo.T_Cm_Customer e ON e.id = c.consignee_id  where
+    $and{id = #id#}  $and{main_id = #main_id#}  $and{production_id = #production_id#}  $and{service_no = #service_no#}  $and{transfer_bill = #transfer_bill#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Transfer_Detail.Insert">
+    insert into T_Transfer_Detail(
+    id
+    ,main_id
+    ,production_id
+    ,service_no
+    ,transfer_bill
+    )values (
+    #id#
+    ,#main_id#
+    ,#production_id#
+    ,#service_no#
+    ,#transfer_bill#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Transfer_Detail.Update">
+    update T_Transfer_Detail set
+    id=#id#
+    ,main_id=#main_id#
+    ,production_id=#production_id#
+    ,service_no=#service_no#
+    ,transfer_bill=#transfer_bill#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Transfer_Detail.Delete">
+    delete
+    FROM T_Transfer_Detail
+    WHERE id IN(#ids#)
+  </delete>
+  <delete id="SpecialLogisticsSystem.Model.T_Transfer_Detail.DeleteByTransfer">
+    delete
+    FROM T_Transfer_Detail
+    WHERE main_id IN(#ids#)
+  </delete>
+</sqlMap>

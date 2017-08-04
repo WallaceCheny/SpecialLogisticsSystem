@@ -1,0 +1,75 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_Deliver.Count">
+    Select count(1) FROM T_Arrival_Deliver where
+    $and{id = #id#}  $and{branch_id = #branch_id#}  $and{deliver_date = #deliver_date#}  $and{deliver_number = #deliver_number#}  $and{deliver_carno = #deliver_carno#}  $and{deliver_man = #deliver_man#}  $and{warehousem_man = #warehousem_man#}  $and{deliver_statue = #deliver_statue#}  $and{deliver_barcode = #deliver_barcode#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_Deliver.SelectPaging">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM vArrivalDeliver where
+    $and{id = #id#}    $and{branch_id = #branch_id#}  $and{deliver_date = #deliver_date#}  $and{deliver_number = #deliver_number#}  $and{deliver_carno = #deliver_carno#}  $and{deliver_man = #deliver_man#}  $and{warehousem_man = #warehousem_man#}  $and{deliver_statue = #deliver_statue#}  $and{deliver_barcode = #deliver_barcode#}) as temptable
+    where rowNum BETWEEN $eg{#startRow#} and $eq{#maxRows#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_Deliver.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Arrival_Deliver) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{branch_id = #branch_id#}  $and{deliver_date = #deliver_date#}  $and{deliver_number = #deliver_number#}  $and{deliver_carno = #deliver_carno#}  $and{deliver_man = #deliver_man#}  $and{warehousem_man = #warehousem_man#}  $and{deliver_statue = #deliver_statue#}  $and{deliver_barcode = #deliver_barcode#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_Deliver.Load">
+    SELECT *
+    FROM   T_Arrival_Deliver  where
+    $and{id = #id#}  $and{branch_id = #branch_id#}  $and{deliver_date = #deliver_date#}  $and{deliver_number = #deliver_number#}  $and{deliver_carno = #deliver_carno#}  $and{deliver_man = #deliver_man#}  $and{warehousem_man = #warehousem_man#}  $and{deliver_statue = #deliver_statue#}  $and{deliver_barcode = #deliver_barcode#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Arrival_Deliver.Select">
+    SELECT *
+    FROM   T_Arrival_Deliver  where
+    $and{id = #id#}  $and{branch_id = #branch_id#}  $and{deliver_date = #deliver_date#}  $and{deliver_number = #deliver_number#}  $and{deliver_carno = #deliver_carno#}  $and{deliver_man = #deliver_man#}  $and{warehousem_man = #warehousem_man#}  $and{deliver_statue = #deliver_statue#}  $and{deliver_barcode = #deliver_barcode#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Arrival_Deliver.Insert">
+    insert into T_Arrival_Deliver(
+    id
+    ,branch_id
+    ,deliver_date
+    ,deliver_number
+    ,deliver_carno
+    ,deliver_man
+    ,warehousem_man
+    ,deliver_statue
+    ,deliver_barcode
+    )values (
+    #id#
+    ,#branch_id#
+    ,#deliver_date#
+    ,#deliver_number#
+    ,#deliver_carno#
+    ,#deliver_man#
+    ,#warehousem_man#
+    ,#deliver_statue#
+    ,#deliver_barcode#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Arrival_Deliver.Update">
+    update T_Arrival_Deliver set
+    id=#id#
+    ,branch_id=#branch_id#
+    ,deliver_date=#deliver_date#
+    ,deliver_number=#deliver_number#
+    ,deliver_carno=#deliver_carno#
+    ,deliver_man=#deliver_man#
+    ,warehousem_man=#warehousem_man#
+    ,deliver_statue=#deliver_statue#
+    ,deliver_barcode=#deliver_barcode#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Arrival_Deliver.Delete">
+    delete
+    FROM T_Arrival_Deliver
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

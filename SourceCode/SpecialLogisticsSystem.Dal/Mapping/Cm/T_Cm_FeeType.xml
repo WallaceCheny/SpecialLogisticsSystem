@@ -1,0 +1,57 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_FeeType.Count">
+    Select count(1) FROM T_Cm_FeeType where
+      $and{id = #id#}  $and{fee_name = #fee_name#}  $and{fee_unit = #fee_unit#}  $and{fee_type = #fee_type#}  $and{fee_sort = #fee_sort#}  $and{fee_amount = #fee_amount#}  $and{fee_note = #fee_note#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_FeeType.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_FeeType) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+     $and{id = #id#}  $and{fee_name = #fee_name#}  $and{fee_unit = #fee_unit#}  $and{fee_type = #fee_type#}  $and{fee_sort = #fee_sort#}  $and{fee_amount = #fee_amount#}  $and{fee_note = #fee_note#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_FeeType.Load">
+    SELECT *
+    FROM   T_Cm_FeeType  where
+    $and{id = #id#}  $and{fee_name = #fee_name#}  $and{fee_unit = #fee_unit#}  $and{fee_type = #fee_type#}  $and{fee_sort = #fee_sort#}  $and{fee_amount = #fee_amount#}  $and{fee_note = #fee_note#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_FeeType.Select">
+    SELECT *
+    FROM   T_Cm_FeeType  where
+    $and{id = #id#}  $and{fee_name = #fee_name#}  $and{fee_unit = #fee_unit#}  $and{fee_type = #fee_type#}  $and{fee_sort = #fee_sort#}  $and{fee_amount = #fee_amount#}  $and{fee_note = #fee_note#}    </select>
+   <insert id="SpecialLogisticsSystem.Model.T_Cm_FeeType.Insert">
+    insert into T_Cm_FeeType(
+    id
+,fee_name
+,fee_unit
+,fee_type
+,fee_sort
+,fee_amount
+,fee_note
+    )values (
+     #id#
+,#fee_name#
+,#fee_unit#
+,#fee_type#
+,#fee_sort#
+,#fee_amount#
+,#fee_note#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_FeeType.Update">
+    update T_Cm_FeeType set
+      id=#id#
+,fee_name=#fee_name#
+,fee_unit=#fee_unit#
+,fee_type=#fee_type#
+,fee_sort=#fee_sort#
+,fee_amount=#fee_amount#
+,fee_note=#fee_note#
+    WHERE
+    id = #id#
+  </update>
+   <delete id="SpecialLogisticsSystem.Model.T_Cm_FeeType.Delete">
+    delete
+    FROM T_Cm_FeeType
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

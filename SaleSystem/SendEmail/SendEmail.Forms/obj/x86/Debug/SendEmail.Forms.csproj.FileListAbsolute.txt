@@ -1,0 +1,4 @@
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\obj\x86\Debug\SendEmail.Forms.csprojResolveAssemblyReference.cache
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\obj\x86\Debug\SendEmail.Forms.frmMain.resources
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\obj\x86\Debug\SendEmail.Forms.Properties.Resources.resources
+E:\SpecialLogisticsSystem\SaleSystem\SendEmail\SendEmail.Forms\obj\x86\Debug\SendEmail.Forms.csproj.GenerateResource.Cache

@@ -1,0 +1,9 @@
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.IBll\obj\Debug\ResolveAssemblyReference.cache
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.IBll\bin\Debug\SpecialLogisticsSystem.IBll.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.IBll\bin\Debug\SpecialLogisticsSystem.IBll.pdb
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.IBll\bin\Debug\Ms.Data.Common.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.IBll\bin\Debug\Ms.Data.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.IBll\bin\Debug\SpecialLogisticsSystem.Model.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.IBll\bin\Debug\SpecialLogisticsSystem.Model.pdb
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.IBll\obj\Debug\SpecialLogisticsSystem.IBll.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.IBll\obj\Debug\SpecialLogisticsSystem.IBll.pdb

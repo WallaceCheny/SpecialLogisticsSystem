@@ -1,0 +1,51 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Track.Count">
+    Select count(1) FROM T_Way_Track where
+      $and{id = #id#}  $and{bill_id = #bill_id#}  $and{track_date = #track_date#}  $and{track_description = #track_description#}  $and{is_inside = #is_inside#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Track.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Way_Track) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+     $and{id = #id#}  $and{bill_id = #bill_id#}  $and{track_date = #track_date#}  $and{track_description = #track_description#}  $and{is_inside = #is_inside#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Track.Load">
+    SELECT *
+    FROM   T_Way_Track  where
+    $and{id = #id#}  $and{bill_id = #bill_id#}  $and{track_date = #track_date#}  $and{track_description = #track_description#}  $and{is_inside = #is_inside#}    </select>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Track.Select">
+    SELECT *
+    FROM   T_Way_Track  where
+    $and{id = #id#}  $and{bill_id = #bill_id#}  $and{track_date = #track_date#}  $and{track_description = #track_description#}  $and{is_inside = #is_inside#}    </select>
+   <insert id="SpecialLogisticsSystem.Model.T_Way_Track.Insert">
+    insert into T_Way_Track(
+    id
+,bill_id
+,track_date
+,track_description
+,is_inside
+    )values (
+     #id#
+,#bill_id#
+,#track_date#
+,#track_description#
+,#is_inside#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Way_Track.Update">
+    update T_Way_Track set
+      id=#id#
+,bill_id=#bill_id#
+,track_date=#track_date#
+,track_description=#track_description#
+,is_inside=#is_inside#
+    WHERE
+    id = #id#
+  </update>
+   <delete id="SpecialLogisticsSystem.Model.T_Way_Track.Delete">
+    delete
+    FROM T_Way_Track
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

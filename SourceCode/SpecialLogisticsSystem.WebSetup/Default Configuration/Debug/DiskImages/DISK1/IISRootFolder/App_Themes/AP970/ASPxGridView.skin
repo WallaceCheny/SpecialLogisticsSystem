@@ -1,0 +1,27 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dxwgv" Namespace="DevExpress.Web.ASPxGridView" Assembly="DevExpress.Web.ASPxGridView.v12.1, Version=12.1.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<dxwgv:ASPxGridView runat="server" CssFilePath="~/App_Themes/DevEx/{0}/styles.css" CssPostfix="DevEx"  AutoGenerateColumns="False"  Width="100%"> 
+	<Images SpriteCssFilePath="~/App_Themes/DevEx/{0}/sprite.css">
+        <LoadingPanel Url="~/App_Themes/DevEx/GridView/Loading.gif" />
+        <LoadingPanelOnStatusBar Url="~/App_Themes/DevEx/GridView/StatusBarLoading.gif" />
+	</Images>	
+    <ImagesFilterControl>
+        <LoadingPanel Url="~/App_Themes/DevEx/GridView/Loading.gif" />
+    </ImagesFilterControl>
+    <SettingsPager CurrentPageNumberFormat="{0}" />
+    <Styles>
+        <Header SortingImageSpacing="5" />
+	    <LoadingPanel ImageSpacing="5" />
+    </Styles>	
+    <StylesEditors ButtonEditCellSpacing="0">
+        <ProgressBar Height="21" />
+    </StylesEditors>
+    <Settings GridLines="Both" ShowVerticalScrollBar="true" />
+    <SettingsBehavior AllowFocusedRow="True" ConfirmDelete="True" AllowSelectByRowClick="true"
+    AllowSort="true" />
+   <SettingsText CommandUpdate="保存" CommandCancel="取消" EmptyDataRow="无数据" />
+   <SettingsEditing Mode="PopupEditForm" PopupEditFormVerticalAlign="WindowCenter"
+                PopupEditFormHorizontalAlign="WindowCenter" PopupEditFormVerticalOffset="-75"
+                PopupEditFormHorizontalOffset="-85" />
+    <SettingsPager PageSize="20" Summary-Text="第{0}/{1}页(共{2}条)" />
+</dxwgv:ASPxGridView>

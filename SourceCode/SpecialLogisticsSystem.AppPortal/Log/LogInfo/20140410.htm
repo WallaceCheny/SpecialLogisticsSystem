@@ -1,0 +1,92 @@
+<HR COLOR=blue>
+日志时间：2014-04-10 20:30:11,857 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-10 20:31:24,330 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    EXEC dbo.UP_GetRecordByPage @tblName = 'vWayBill', -- varchar(255)
+    @fldName = 'id', -- varchar(255)
+    @PageSize = 10, -- int
+    @PageIndex = 1, -- int
+    @IsReCount = 0, -- bit
+    @OrderType = 1, -- bit
+    @strWhere = '', -- varchar(1000)
+    @otherColumn = '', -- varchar(1000)
+    @orderColumn = 'receive_date' -- varchar(1000)
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-10 21:25:53,316 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-10 21:26:07,353 [8] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-10 21:26:08,423 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-10 21:26:11,133 [8] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-10 21:27:00,309 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-10 21:31:01,054 [3] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-10 21:32:07,502 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select  top (15-(0)) * FROM(
+    Select top (0) *
+    FROM vWayBill where  (receive_date >= '04/01/2014 21:31:59.885') and (receive_date <= dateadd(day,1,'04/10/2014 21:31:59.167'))   
+          
+            and (is_hide = 0)
+    ) as temptable
+    
+ <BR>
+ <HR Size=1>

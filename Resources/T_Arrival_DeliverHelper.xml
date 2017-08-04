@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TArrivalDeliver" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TArrivalDeliver" type="MyNamespace.Data.TArrivalDeliver, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TArrivalDeliver">
+			<result property="Id" column="id" />
+			<result property="Branchid" column="branch_id" />
+			<result property="Deliverdate" column="deliver_date" />
+			<result property="Delivernumber" column="deliver_number" />
+			<result property="Delivercarno" column="deliver_carno" />
+			<result property="Deliverman" column="deliver_man" />
+			<result property="Warehousemman" column="warehousem_man" />
+			<result property="Deliverstatue" column="deliver_statue" />
+			<result property="Deliverbarcode" column="deliver_barcode" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,branch_id,deliver_date,deliver_number,deliver_carno,deliver_man,warehousem_man,deliver_statue,deliver_barcode from T_Arrival_Deliver
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TArrivalDeliver" resultClass="int">
+		 		insert into T_Arrival_Deliver( id,branch_id,deliver_date,deliver_number,deliver_carno,deliver_man,warehousem_man,deliver_statue,deliver_barcode ) values ( #Id#,#Branchid#,#Deliverdate#,#Delivernumber#,#Delivercarno#,#Deliverman#,#Warehousemman#,#Deliverstatue#,#Deliverbarcode# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TArrivalDeliver" resultClass="int">
+			update T_Arrival_Deliver set branch_id=#Branchid#,deliver_date=#Deliverdate#,deliver_number=#Delivernumber#,deliver_carno=#Delivercarno#,deliver_man=#Deliverman#,warehousem_man=#Warehousemman#,deliver_statue=#Deliverstatue#,deliver_barcode=#Deliverbarcode# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Arrival_Deliver where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

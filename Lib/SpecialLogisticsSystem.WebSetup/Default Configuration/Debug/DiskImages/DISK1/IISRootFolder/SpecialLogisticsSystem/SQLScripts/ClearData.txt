@@ -1,0 +1,23 @@
+﻿TRUNCATE TABLE dbo.T_Arrival_Deliver
+TRUNCATE TABLE dbo.T_Arrival_DeliverGoods
+TRUNCATE TABLE dbo.T_Arrival_Main
+TRUNCATE TABLE dbo.T_Arrival_Sign
+
+TRUNCATE TABLE dbo.T_Cm_Car
+TRUNCATE TABLE dbo.T_Cm_Customer
+TRUNCATE TABLE dbo.T_Cm_FeeType
+TRUNCATE TABLE dbo.T_Cm_Link
+TRUNCATE TABLE dbo.T_Cm_SequenceNumber
+TRUNCATE TABLE dbo.T_Cm_Servicer
+TRUNCATE TABLE dbo.T_Finance_Customer
+TRUNCATE TABLE dbo.T_Finance_Daily
+TRUNCATE TABLE dbo.T_Finance_Discount
+TRUNCATE TABLE dbo.T_Finance_Goods
+TRUNCATE TABLE dbo.T_Finance_Service
+TRUNCATE TABLE dbo.T_Stowage_Detail
+TRUNCATE TABLE dbo.T_Stowage_Main
+TRUNCATE TABLE dbo.T_Transfer_Detail
+TRUNCATE TABLE dbo.T_Transfer_Main
+
+TRUNCATE TABLE dbo.T_Way_Bill
+TRUNCATE TABLE dbo.T_Way_Production

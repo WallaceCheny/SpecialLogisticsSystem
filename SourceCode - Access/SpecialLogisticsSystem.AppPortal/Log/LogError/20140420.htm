@@ -1,0 +1,928 @@
+<HR COLOR=red>
+异常时间：2014-04-20 10:12:31,416 [18] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 27
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 10:29:33,334 [31] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Account/ChangePassword.aspx <BR>
+ <HR Size=1>System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 SpecialLogisticsSystem.AppPortal.Account.ChangePassword.Page_Load(Object sender, EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Account\ChangePassword.aspx.cs:行号 26
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-20 10:29:33,670 [31] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: 未将对象引用设置到对象的实例。
+   at SpecialLogisticsSystem.AppPortal.Account.ChangePassword.Page_Load(Object sender, EventArgs e) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Account\ChangePassword.aspx.cs:line 26
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_changepassword_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_changepassword.aspx.dae9cef9.aen8vllt.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-20 10:36:39,117 [46] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/account/login.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): The table 'T_Cm_User' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity,TList](Action`2 customMapper)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetList[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 58
+   在 SpecialLogisticsSystem.Dal.CmUserDal.GetList(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmUserDal.cs:行号 19
+   在 SpecialLogisticsSystem.AppPortal.Account.Login.login_Authenticate(Object sender, AuthenticateEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Account\Login.aspx.cs:行号 31
+   在 System.Web.UI.WebControls.Login.OnAuthenticate(AuthenticateEventArgs e)
+   在 System.Web.UI.WebControls.Login.AttemptLogin()
+   在 System.Web.UI.WebControls.Login.OnBubbleEvent(Object source, EventArgs e)
+   在 System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   在 System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   在 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-20 10:36:39,495 [46] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): The table 'T_Cm_User' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity,TList](Action`2 customMapper)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity](Action`2 customMapper)
+   at SpecialLogisticsSystem.Dal.Dao.GetList[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:line 58
+   at SpecialLogisticsSystem.Dal.CmUserDal.GetList(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmUserDal.cs:line 19
+   at SpecialLogisticsSystem.AppPortal.Account.Login.login_Authenticate(Object sender, AuthenticateEventArgs e) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Account\Login.aspx.cs:line 31
+   at System.Web.UI.WebControls.Login.OnAuthenticate(AuthenticateEventArgs e)
+   at System.Web.UI.WebControls.Login.AttemptLogin()
+   at System.Web.UI.WebControls.Login.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_login_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_login.aspx.dae9cef9.sjp0e-2p.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-20 10:38:12,081 [45] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/account/login.aspx <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): The table 'T_Cm_User' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity,TList](Action`2 customMapper)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetList[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 58
+   在 SpecialLogisticsSystem.Dal.CmUserDal.GetList(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmUserDal.cs:行号 19
+   在 SpecialLogisticsSystem.AppPortal.Account.Login.login_Authenticate(Object sender, AuthenticateEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Account\Login.aspx.cs:行号 31
+   在 System.Web.UI.WebControls.Login.OnAuthenticate(AuthenticateEventArgs e)
+   在 System.Web.UI.WebControls.Login.AttemptLogin()
+   在 System.Web.UI.WebControls.Login.OnBubbleEvent(Object source, EventArgs e)
+   在 System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   在 System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   在 System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   在 System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-20 10:38:12,567 [45] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.Data.OleDb.OleDbException (0x80004005): The table 'T_Cm_User' is already opened exclusively by another user, or it is already open through the user interface and cannot be manipulated programmatically.
+   at Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   at Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity,TList](Action`2 customMapper)
+   at Ms.Data.xdcbbfbb72b3e3cda.Query[TEntity](Action`2 customMapper)
+   at SpecialLogisticsSystem.Dal.Dao.GetList[T](QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:line 58
+   at SpecialLogisticsSystem.Dal.CmUserDal.GetList(QueryInfo`1 queryInfo) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmUserDal.cs:line 19
+   at SpecialLogisticsSystem.AppPortal.Account.Login.login_Authenticate(Object sender, AuthenticateEventArgs e) in E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\Account\Login.aspx.cs:line 31
+   at System.Web.UI.WebControls.Login.OnAuthenticate(AuthenticateEventArgs e)
+   at System.Web.UI.WebControls.Login.AttemptLogin()
+   at System.Web.UI.WebControls.Login.OnBubbleEvent(Object source, EventArgs e)
+   at System.Web.UI.Control.RaiseBubbleEvent(Object source, EventArgs args)
+   at System.Web.UI.WebControls.Button.OnCommand(CommandEventArgs e)
+   at System.Web.UI.WebControls.Button.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.WebControls.Button.System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(IPostBackEventHandler sourceControl, String eventArgument)
+   at System.Web.UI.Page.RaisePostBackEvent(NameValueCollection postData)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_login_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a546af9e\f5313187\App_Web_login.aspx.dae9cef9.sjp0e-2p.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-04-20 11:05:50,329 [40] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Syntax error (missing operator) in query expression 'and (receive_date >= @receive_date_start) and (receive_date <= dateadd(day,1,@receive_date_end))   
+          
+            and (is_hide = @is_hide)'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 11:13:42,818 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Syntax error (missing operator) in query expression 'and (receive_date >= @receive_date_start) and (receive_date <= dateadd(day,1,@receive_date_end))   
+          
+            and (is_hide = @is_hide)'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 12:15:35,930 [55] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: No value given for one or more required parameters.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 12:33:22,711 [54] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: No value given for one or more required parameters.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 12:39:22,810 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: No value given for one or more required parameters.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 12:40:54,563 [50] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: No value given for one or more required parameters.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 12:44:13,563 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.QuerySingle[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetTotal[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 42
+   在 SpecialLogisticsSystem.Dal.WayBillDal.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 20
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetRowsCount(String filter) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 37
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.QueryTotalRowCount(IOrderedDictionary mergedParameters, DataSourceSelectArguments arguments, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 12:45:48,868 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.QuerySingle[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetTotal[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 42
+   在 SpecialLogisticsSystem.Dal.WayBillDal.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 20
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetRowsCount(String filter) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 37
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.QueryTotalRowCount(IOrderedDictionary mergedParameters, DataSourceSelectArguments arguments, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 12:48:38,919 [45] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.QuerySingle[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetTotal[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 42
+   在 SpecialLogisticsSystem.Dal.WayBillDal.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 20
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetRowsCount(String filter) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 37
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.QueryTotalRowCount(IOrderedDictionary mergedParameters, DataSourceSelectArguments arguments, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 12:54:34,053 [54] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.QuerySingle[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetTotal[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 42
+   在 SpecialLogisticsSystem.Dal.WayBillDal.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 20
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetRowsCount(String filter) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 37
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.QueryTotalRowCount(IOrderedDictionary mergedParameters, DataSourceSelectArguments arguments, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 12:56:18,236 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.QuerySingle[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetTotal[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 42
+   在 SpecialLogisticsSystem.Dal.WayBillDal.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 20
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetRowsCount(String filter) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 37
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.QueryTotalRowCount(IOrderedDictionary mergedParameters, DataSourceSelectArguments arguments, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 13:01:02,379 [10] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.QuerySingle[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetTotal[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 42
+   在 SpecialLogisticsSystem.Dal.WayBillDal.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 20
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetRowsCount(String filter) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 37
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.QueryTotalRowCount(IOrderedDictionary mergedParameters, DataSourceSelectArguments arguments, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 13:10:08,103 [12] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: The SELECT statement includes a reserved word or an argument name that is misspelled or missing, or the punctuation is incorrect.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.QuerySingle[TEntity](Action`2 customMapper)
+   在 SpecialLogisticsSystem.Dal.Dao.GetTotal[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 42
+   在 SpecialLogisticsSystem.Dal.WayBillDal.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetTotal(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 20
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetRowsCount(String filter) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 37
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.QueryTotalRowCount(IOrderedDictionary mergedParameters, DataSourceSelectArguments arguments, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.BindAndSynchronizeDataProxy()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnFilterExpressionChanging(String value, Boolean isFilterEnabled)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_FilterExpression(String value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBApplyFilter(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 13:22:35,681 [17] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Reflection.TargetInvocationException: 调用的目标发生了异常。 ---> System.Data.OleDb.OleDbException: Syntax error (missing operator) in query expression 'and (DateDiff("d",receive_date,  @receive_date_start) < 0) and (receive_date <= dateadd("d",1,@receive_date_end))   
+          
+            and (is_hide = @is_hide)'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 27
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.WayProvider.GetSelect(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\WayProvider.cs:行号 15
+   在 SpecialLogisticsSystem.AppPortal.UIHelpers.BaseProvider`1.GetDataByPaging(String filter, String sorter, Int32 startRow, Int32 maxRows) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\Provider\BaseProvider.cs:行号 30
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   在 System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   在 System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.InvokeMethod(ObjectDataSourceMethod method, Boolean disposeInstance, Object& instance)
+   在 System.Web.UI.WebControls.ObjectDataSourceView.ExecuteSelect(DataSourceSelectArguments arguments)
+   在 System.Web.UI.DataSourceView.Select(DataSourceSelectArguments arguments, DataSourceViewSelectCallback callback)
+   在 DevExpress.Web.ASPxClasses.Internal.DataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.GridViewDataHelper.PerformSelect()
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect(String dataHelperName)
+   在 DevExpress.Web.ASPxClasses.ASPxDataWebControlBase.PerformSelect()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DataBindNoControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnPagingChanged()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.OnPageIndexChanged()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.set_PageIndex(Int32 value)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBPagerOnClick(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-04-20 13:28:34,722 [6] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80040E14): Syntax error (missing operator) in query expression 'a.CityID = b.CityID
+    LEFT JOIN dbo.T_Cm_Province c ON b.ProvinceID = c.ProvinceID'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmDistrictDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmDistrictDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.UserControls.CityLookUp.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\CityLookUp.ascx.cs:行号 124
+   在 SpecialLogisticsSystem.AppPortal.BaseLookUp.OnLoad(EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\BaseLookUp.cs:行号 20
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   在 System.Web.UI.ControlCollection.Add(Control child)
+   在 DevExpress.Web.ASPxPopupControl.Internal.PopupWindowContentControlLite.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-04-20 16:51:21,507 [7] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): Could not find file 'C:\Program Files\Common Files\Microsoft Shared\DevServer\10.0\dbo.mdb'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmDistrictDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmDistrictDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.UserControls.CityLookUp.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\CityLookUp.ascx.cs:行号 124
+   在 SpecialLogisticsSystem.AppPortal.BaseLookUp.OnLoad(EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\BaseLookUp.cs:行号 20
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   在 System.Web.UI.ControlCollection.Add(Control child)
+   在 DevExpress.Web.ASPxPopupControl.Internal.PopupWindowContentControlLite.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-04-20 16:52:41,600 [14] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80004005): Unrecognized database format 'C:\Program Files\Common Files\Microsoft Shared\DevServer\10.0\dbo.mdb'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmDistrictDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmDistrictDal.cs:行号 23
+   在 SpecialLogisticsSystem.AppPortal.UserControls.CityLookUp.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\CityLookUp.ascx.cs:行号 124
+   在 SpecialLogisticsSystem.AppPortal.BaseLookUp.OnLoad(EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\BaseLookUp.cs:行号 20
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   在 System.Web.UI.ControlCollection.Add(Control child)
+   在 DevExpress.Web.ASPxPopupControl.Internal.PopupWindowContentControlLite.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()
+<HR COLOR=red>
+异常时间：2014-04-20 17:01:02,208 [26] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.OleDb.OleDbException (0x80040E14): Syntax error (missing operator) in query expression 'a.link_id = l.id
+    LEFT JOIN T_Cm_Code b ON a.credit_level = b.para_value'.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Query()
+   在 SpecialLogisticsSystem.Dal.Dao.Select[T](QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\Dao.cs:行号 64
+   在 SpecialLogisticsSystem.Dal.CmCustomerDal.Select(QueryInfo`1 queryInfo) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Dal\CmCustomerDal.cs:行号 24
+   在 SpecialLogisticsSystem.AppPortal.UserControls.CustomerLookUp.BindData() 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UserControls\CustomerLookUp.ascx.cs:行号 78
+   在 SpecialLogisticsSystem.AppPortal.BaseLookUp.OnLoad(EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\UIHelpers\BaseLookUp.cs:行号 20
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   在 System.Web.UI.ControlCollection.Add(Control child)
+   在 DevExpress.Web.ASPxPopupControl.Internal.PopupWindowContentControlLite.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.CreateControlHierarchy()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.Rendering.GridViewHtmlEditFormPopup.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.DevExpress.Web.ASPxClasses.Internal.IASPxWebControl.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.Internal.RenderUtils.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control, Boolean skipContentContainers)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControlsRecursive(Control control)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.CreateChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.CreateChildControls()
+   在 System.Web.UI.Control.EnsureChildControls()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControlBase.EnsureChildControls()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResultCore()
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.GetCallbackResult()
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.GetCallbackResult()

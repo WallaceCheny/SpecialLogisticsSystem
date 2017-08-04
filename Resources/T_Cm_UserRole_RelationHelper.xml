@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmUserRoleRelation" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmUserRoleRelation" type="MyNamespace.Data.TCmUserRoleRelation, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmUserRoleRelation">
+			<result property="Id" column="id" />
+			<result property="Branchid" column="branch_id" />
+			<result property="Roleid" column="role_id" />
+			<result property="Userid" column="user_id" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,branch_id,role_id,user_id from T_Cm_UserRole_Relation
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmUserRoleRelation" resultClass="int">
+		 		insert into T_Cm_UserRole_Relation( id,branch_id,role_id,user_id ) values ( #Id#,#Branchid#,#Roleid#,#Userid# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmUserRoleRelation" resultClass="int">
+			update T_Cm_UserRole_Relation set branch_id=#Branchid#,role_id=#Roleid#,user_id=#Userid# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_UserRole_Relation where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

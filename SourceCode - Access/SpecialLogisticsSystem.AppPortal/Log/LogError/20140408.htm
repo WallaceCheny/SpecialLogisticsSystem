@@ -1,0 +1,109 @@
+<HR COLOR=red>
+异常时间：2014-04-08 20:32:43,010 [7] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+<br/><strong>客户机IP</strong>：::1<br /><strong>错误地址</strong>：http://localhost:4765/Account/Login.aspx?ReturnUrl=/default.aspx? <BR>
+ <HR Size=1>Microsoft.Practices.Unity.ResolutionFailedException: Resolution of the dependency failed, type = "SpecialLogisticsSystem.AppPortal.Account.Login", name = "(none)".
+Exception occurred while: Calling constructor SpecialLogisticsSystem.Dal.Dao().
+Exception is: ArgumentException - 路径中具有非法字符。
+-----------------------------------------------
+At the time of the exception, the container was:
+
+  Resolving SpecialLogisticsSystem.AppPortal.Account.Login,(none)
+  Resolving value for property Login._user
+    Resolving SpecialLogisticsSystem.Dal.CmUserDal,(none) (mapped from SpecialLogisticsSystem.IDal.ICmUserDal, (none))
+    Resolving parameter "dao" of constructor DynamicModule.ns.Wrapped_CmUserDal_a1bc0c23929444c9b1df557efe7b73ab(SpecialLogisticsSystem.IDal.IDao dao)
+      Resolving SpecialLogisticsSystem.Dal.Dao,(none) (mapped from SpecialLogisticsSystem.IDal.IDao, (none))
+      Calling constructor SpecialLogisticsSystem.Dal.Dao()
+ ---> System.ArgumentException: 路径中具有非法字符。
+   在 System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   在 System.IO.Path.IsPathRooted(String path)
+   在 SpecialLogisticsSystem.Dal.DBHelperBase`1.GetConn(String connectionString) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\DBHelper.cs:行号 87
+   在 SpecialLogisticsSystem.Dal.DBHelperBase`1.CreateSession() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\DBHelper.cs:行号 55
+   在 SpecialLogisticsSystem.Dal.DBHelperBase`1.get_Current() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\DBHelper.cs:行号 32
+   在 SpecialLogisticsSystem.Dal.DaoInfo..ctor() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\DaoInfo.cs:行号 14
+   在 SpecialLogisticsSystem.Dal.Dao..ctor()
+   在 BuildUp_SpecialLogisticsSystem.Dal.Dao(IBuilderContext )
+   在 Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)
+   在 Microsoft.Practices.Unity.ObjectBuilder.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   在 BuildUp_SpecialLogisticsSystem.Dal.CmUserDal(IBuilderContext )
+   在 Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)
+   在 Microsoft.Practices.Unity.ObjectBuilder.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   在 BuildUp_SpecialLogisticsSystem.AppPortal.Account.Login(IBuilderContext )
+   在 Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   在 Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   在 Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)
+   在 Microsoft.Practices.Unity.UnityContainer.BuildUp(Type t, Object existing, String name, ResolverOverride[] resolverOverrides)
+   在 Microsoft.Practices.Unity.UnityContainerExtensions.BuildUp[T](IUnityContainer container, T existing, ResolverOverride[] resolverOverrides)
+   在 SpecialLogisticsSystem.AppPortal.BasePage`1.InjectDependencies() 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\BasePage.cs:行号 50
+   在 SpecialLogisticsSystem.AppPortal.BasePage`1.OnPreInit(EventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\BasePage.cs:行号 22
+   在 System.Web.UI.Page.PerformPreInit()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+<HR COLOR=red>
+异常时间：2014-04-08 20:32:43,645 [7] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> Microsoft.Practices.Unity.ResolutionFailedException: Resolution of the dependency failed, type = "SpecialLogisticsSystem.AppPortal.Account.Login", name = "(none)".
+Exception occurred while: Calling constructor SpecialLogisticsSystem.Dal.Dao().
+Exception is: ArgumentException - 路径中具有非法字符。
+-----------------------------------------------
+At the time of the exception, the container was:
+
+  Resolving SpecialLogisticsSystem.AppPortal.Account.Login,(none)
+  Resolving value for property Login._user
+    Resolving SpecialLogisticsSystem.Dal.CmUserDal,(none) (mapped from SpecialLogisticsSystem.IDal.ICmUserDal, (none))
+    Resolving parameter "dao" of constructor DynamicModule.ns.Wrapped_CmUserDal_a1bc0c23929444c9b1df557efe7b73ab(SpecialLogisticsSystem.IDal.IDao dao)
+      Resolving SpecialLogisticsSystem.Dal.Dao,(none) (mapped from SpecialLogisticsSystem.IDal.IDao, (none))
+      Calling constructor SpecialLogisticsSystem.Dal.Dao()
+ ---> System.ArgumentException: 路径中具有非法字符。
+   at System.IO.Path.CheckInvalidPathChars(String path, Boolean checkAdditional)
+   at System.IO.Path.IsPathRooted(String path)
+   at SpecialLogisticsSystem.Dal.DBHelperBase`1.GetConn(String connectionString) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\DBHelper.cs:line 87
+   at SpecialLogisticsSystem.Dal.DBHelperBase`1.CreateSession() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\DBHelper.cs:line 55
+   at SpecialLogisticsSystem.Dal.DBHelperBase`1.get_Current() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\DBHelper.cs:line 32
+   at SpecialLogisticsSystem.Dal.DaoInfo..ctor() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\DaoInfo.cs:line 14
+   at SpecialLogisticsSystem.Dal.Dao..ctor()
+   at BuildUp_SpecialLogisticsSystem.Dal.Dao(IBuilderContext )
+   at Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)
+   at Microsoft.Practices.Unity.ObjectBuilder.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   at BuildUp_SpecialLogisticsSystem.Dal.CmUserDal(IBuilderContext )
+   at Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.BuilderContext.NewBuildUp(NamedTypeBuildKey newBuildKey)
+   at Microsoft.Practices.Unity.ObjectBuilder.NamedTypeDependencyResolverPolicy.Resolve(IBuilderContext context)
+   at BuildUp_SpecialLogisticsSystem.AppPortal.Account.Login(IBuilderContext )
+   at Microsoft.Practices.ObjectBuilder2.DynamicMethodBuildPlan.BuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.BuildPlanStrategy.PreBuildUp(IBuilderContext context)
+   at Microsoft.Practices.ObjectBuilder2.StrategyChain.ExecuteBuildUp(IBuilderContext context)
+   at Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)
+   --- End of inner exception stack trace ---
+   at Microsoft.Practices.Unity.UnityContainer.DoBuildUp(Type t, Object existing, String name, IEnumerable`1 resolverOverrides)
+   at Microsoft.Practices.Unity.UnityContainer.BuildUp(Type t, Object existing, String name, ResolverOverride[] resolverOverrides)
+   at Microsoft.Practices.Unity.UnityContainerExtensions.BuildUp[T](IUnityContainer container, T existing, ResolverOverride[] resolverOverrides)
+   at SpecialLogisticsSystem.AppPortal.BasePage`1.InjectDependencies() in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\BasePage.cs:line 50
+   at SpecialLogisticsSystem.AppPortal.BasePage`1.OnPreInit(EventArgs e) in E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\UIHelpers\BasePage.cs:line 22
+   at System.Web.UI.Page.PerformPreInit()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequestWithNoAssert(HttpContext context)
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at ASP.account_login_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\43c6371a\228e5b9c\App_Web_login.aspx.dae9cef9.p2vemknl.0.cs:line 0
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Detail.Count">
+    Select count(1) FROM T_Stowage_Detail where
+    $and{id = #id#}  $and{main_id = #main_id#}  $and{bill_id = #bill_id#}  $and{production_number = #production_number#}  $and{production_id = #production_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Detail.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Stowage_Detail) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{main_id = #main_id#}  $and{bill_id = #bill_id#}  $and{production_number = #production_number#}  $and{production_id = #production_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Detail.Load">
+    SELECT   *
+    FROM   T_Stowage_Detail  where
+    $and{id = #id#}  $and{main_id = #main_id#}  $and{bill_id = #bill_id#}  $and{production_number = #production_number#}  $and{production_id = #production_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Detail.Select">
+    SELECT  *
+    FROM    vStowageDetail
+    where $and{a.id = #id#}  $and{main_id = #main_id#}  $and{a.bill_id = #bill_id#}  $and{production_number = #production_number#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Stowage_Detail.SelectWay">
+    SELECT  c.* ,
+    d.customer_name AS consignee_name ,
+    e.customer_name AS deliver_name
+    FROM    (((T_Stowage_Detail a
+    LEFT JOIN T_Way_Production b ON a.production_id = b.id)
+    LEFT JOIN T_Way_Bill c ON c.id = b.bill_id)
+    LEFT JOIN T_Cm_Customer d ON d.id = c.consignee_id)
+    LEFT JOIN T_Cm_Customer e ON e.id = c.deliver_id
+    where $and{a.id = #id#}  $and{main_id = #main_id#}  $and{a.bill_id = #bill_id#}  $and{production_number = #production_number#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Stowage_Detail.Insert">
+    insert into T_Stowage_Detail(
+    id
+    ,main_id
+    ,bill_id
+    ,production_number
+    ,production_id
+    )values (
+    #id#
+    ,#main_id#
+    ,#bill_id#
+    ,#production_number#
+    ,#production_id#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Stowage_Detail.Update">
+    update T_Stowage_Detail set
+    id=#id#
+    ,main_id=#main_id#
+    ,bill_id=#bill_id#
+    ,production_number=#production_number#
+    ,production_id=#production_id#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Stowage_Detail.Delete">
+    delete
+    FROM T_Stowage_Detail
+    WHERE id IN(#ids#)
+  </delete>
+  <delete id="SpecialLogisticsSystem.Model.T_Stowage_Detail.DeleteByStowage">
+    delete
+    FROM T_Stowage_Detail
+    WHERE main_id IN(#ids#)
+  </delete>
+</sqlMap>

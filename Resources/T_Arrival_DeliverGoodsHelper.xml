@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TArrivalDeliverGood" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TArrivalDeliverGood" type="MyNamespace.Data.TArrivalDeliverGood, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TArrivalDeliverGood">
+			<result property="Id" column="id" />
+			<result property="Deliverid" column="deliver_id" />
+			<result property="Wayid" column="way_id" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,deliver_id,way_id from T_Arrival_DeliverGoods
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TArrivalDeliverGood" resultClass="int">
+		 		insert into T_Arrival_DeliverGoods( id,deliver_id,way_id ) values ( #Id#,#Deliverid#,#Wayid# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TArrivalDeliverGood" resultClass="int">
+			update T_Arrival_DeliverGoods set deliver_id=#Deliverid#,way_id=#Wayid# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Arrival_DeliverGoods where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes"?>
+<Connections>
+  <Connection>
+    <Name>WALLACE-PC\WALLACE.LogisticsManagement</Name>
+    <ConnectionString>Provider=SQLOLEDB.1;Password=sa;Persist Security Info=True;User ID=sa;Initial Catalog=LogisticsManagement;Data Source=WALLACE-PC\WALLACE</ConnectionString>
+  </Connection>
+</Connections>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TStowageMain" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TStowageMain" type="MyNamespace.Data.TStowageMain, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TStowageMain">
+			<result property="Id" column="id" />
+			<result property="Stowagenumber" column="stowage_number" />
+			<result property="Stowagestatue" column="stowage_statue" />
+			<result property="Departuretime" column="departure_time" />
+			<result property="Carid" column="car_id" />
+			<result property="Empid" column="emp_id" />
+			<result property="Startcity" column="start_city" />
+			<result property="Mainmemo" column="main_memo" />
+			<result property="Freight" column="freight" />
+			<result property="Prepay" column="prepay" />
+			<result property="Otherpayment" column="other_payment" />
+			<result property="Backpayment" column="back_payment" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,stowage_number,stowage_statue,departure_time,car_id,emp_id,start_city,main_memo,freight,prepay,other_payment,back_payment from T_Stowage_Main
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TStowageMain" resultClass="int">
+		 		insert into T_Stowage_Main( id,stowage_number,stowage_statue,departure_time,car_id,emp_id,start_city,main_memo,freight,prepay,other_payment,back_payment ) values ( #Id#,#Stowagenumber#,#Stowagestatue#,#Departuretime#,#Carid#,#Empid#,#Startcity#,#Mainmemo#,#Freight#,#Prepay#,#Otherpayment#,#Backpayment# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TStowageMain" resultClass="int">
+			update T_Stowage_Main set stowage_number=#Stowagenumber#,stowage_statue=#Stowagestatue#,departure_time=#Departuretime#,car_id=#Carid#,emp_id=#Empid#,start_city=#Startcity#,main_memo=#Mainmemo#,freight=#Freight#,prepay=#Prepay#,other_payment=#Otherpayment#,back_payment=#Backpayment# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Stowage_Main where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

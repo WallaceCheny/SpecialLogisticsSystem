@@ -1,0 +1,6985 @@
+<HR COLOR=blue>
+日志时间：2014-04-26 09:53:35,981 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 09:56:32,148 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    (((T_Cm_Emp a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Code c ON (c.para_value = a.sex_ind
+    AND c.para_type = 'sex'))
+    LEFT JOIN T_Cm_Code d ON (d.para_value = a.status
+    AND d.para_type = 'office_statue')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:07:53,134 [34] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    (((T_Cm_Emp a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Code c ON (c.para_value = a.sex_ind
+    AND c.para_type = 'sex'))
+    LEFT JOIN T_Cm_Code d ON (d.para_value = a.status
+    AND d.para_type = 'office_statue')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:08:05,964 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    (((T_Cm_Emp a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Code c ON (c.para_value = a.sex_ind
+    AND c.para_type = 'sex'))
+    LEFT JOIN T_Cm_Code d ON (d.para_value = a.status
+    AND d.para_type = 'office_statue')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:08:06,674 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (stowage_statue = 'Sended')
+     
+              
+        ) as temptable
+    where rowNum BETWEEN  and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:08:07,633 [28] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    (((T_Cm_Emp a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Code c ON (c.para_value = a.sex_ind
+    AND c.para_type = 'sex'))
+    LEFT JOIN T_Cm_Code d ON (d.para_value = a.status
+    AND d.para_type = 'office_statue')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:08:08,028 [28] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '04/01/2014 10:07:58.655') < 0) and (receive_date <= dateadd("d",1,'04/26/2014 10:07:58.18'))   
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:11:35,238 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:11:42,271 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/1/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:11:46,868 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:11:47,454 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:11:47,891 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:11:48,233 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:12:01,529 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:12:01,913 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:12:02,311 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:12:02,684 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:12:07,465 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:12:09,501 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:12:10,036 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:12:10,497 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:12:11,013 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:12:18,676 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:12:19,128 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:12:19,554 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:12:19,903 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:13:26,095 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:04,060 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:04,639 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:05,118 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:05,592 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:11,972 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:12,389 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:12,841 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:13,173 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:41,385 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   (T_Cm_Branch a
+    LEFT JOIN T_Cm_Link b ON a.link_id = b.id)
+    LEFT JOIN T_Cm_Code f ON (f.para_value = a.site_type
+    AND para_type = 'site_type') <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:42,940 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:44,114 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    (((T_Cm_Emp a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Code c ON (c.para_value = a.sex_ind
+    AND c.para_type = 'sex'))
+    LEFT JOIN T_Cm_Code d ON (d.para_value = a.status
+    AND d.para_type = 'office_statue')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:44,984 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM  ((((T_Cm_Car a
+    LEFT JOIN T_Cm_Link b ON a.car_link = b.id)
+    LEFT JOIN T_Cm_Branch c ON a.branch_id = c.id)
+    LEFT JOIN T_Cm_Code d ON (d.para_value=a.car_type AND d.para_type='car_type'))
+    LEFT JOIN T_Cm_Code e ON (e.para_value=a.car_type AND e.para_type='car_nature')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:45,803 [35] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_memo,
+    f.para_name AS creditlevel_name
+    FROM    ((T_Cm_Servicer a
+    LEFT JOIN T_Cm_Link b ON a.link_id = b.id)
+    LEFT JOIN T_Cm_Code f ON (f.para_value = a.credit_level
+    AND para_type = 'customer_credit')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:51,258 [36] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:14:51,492 [36] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:16:03,114 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:16:08,136 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   (T_Cm_Branch a
+    LEFT JOIN T_Cm_Link b ON a.link_id = b.id)
+    LEFT JOIN T_Cm_Code f ON (f.para_value = a.site_type
+    AND para_type = 'site_type') <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:16:08,933 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    (((T_Cm_Emp a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Code c ON (c.para_value = a.sex_ind
+    AND c.para_type = 'sex'))
+    LEFT JOIN T_Cm_Code d ON (d.para_value = a.status
+    AND d.para_type = 'office_statue')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:16:10,109 [31] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM  ((((T_Cm_Car a
+    LEFT JOIN T_Cm_Link b ON a.car_link = b.id)
+    LEFT JOIN T_Cm_Branch c ON a.branch_id = c.id)
+    LEFT JOIN T_Cm_Code d ON (d.para_value=a.car_type AND d.para_type='car_type'))
+    LEFT JOIN T_Cm_Code e ON (e.para_value=a.car_type AND e.para_type='car_nature')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:16:10,343 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:16:10,888 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_memo,
+    f.para_name AS creditlevel_name
+    FROM    ((T_Cm_Servicer a
+    LEFT JOIN T_Cm_Link b ON a.link_id = b.id)
+    LEFT JOIN T_Cm_Code f ON (f.para_value = a.credit_level
+    AND para_type = 'customer_credit')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:16:12,618 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:16:13,027 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:16:24,220 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:16:24,656 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:17:59,136 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'site_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:00,267 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'site_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:00,506 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'site_type')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:00,566 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'user_status')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:00,767 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'user_status')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:00,984 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'user_status')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:01,037 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'user_status')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:01,342 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'user_status')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:01,902 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT *
+    FROM   T_Cm_Code  where  (para_type = 'user_status')                    and (is_active = 0)
+    ORDER BY para_type,sort
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:11,810 [8] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   (T_Cm_Branch a
+    LEFT JOIN T_Cm_Link b ON a.link_id = b.id)
+    LEFT JOIN T_Cm_Code f ON (f.para_value = a.site_type
+    AND para_type = 'site_type') <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:12,055 [8] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   (T_Cm_Branch a
+    LEFT JOIN T_Cm_Link b ON a.link_id = b.id)
+    LEFT JOIN T_Cm_Code f ON (f.para_value = a.site_type
+    AND para_type = 'site_type') <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:12,188 [8] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:16,907 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   (T_Cm_Branch a
+    LEFT JOIN T_Cm_Link b ON a.link_id = b.id)
+    LEFT JOIN T_Cm_Code f ON (f.para_value = a.site_type
+    AND para_type = 'site_type') <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:17,171 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:17,632 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   (T_Cm_Branch a
+    LEFT JOIN T_Cm_Link b ON a.link_id = b.id)
+    LEFT JOIN T_Cm_Code f ON (f.para_value = a.site_type
+    AND para_type = 'site_type') <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:27,313 [31] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM  ((((T_Cm_Car a
+    LEFT JOIN T_Cm_Link b ON a.car_link = b.id)
+    LEFT JOIN T_Cm_Branch c ON a.branch_id = c.id)
+    LEFT JOIN T_Cm_Code d ON (d.para_value=a.car_type AND d.para_type='car_type'))
+    LEFT JOIN T_Cm_Code e ON (e.para_value=a.car_type AND e.para_type='car_nature')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:28,317 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM  ((((T_Cm_Car a
+    LEFT JOIN T_Cm_Link b ON a.car_link = b.id)
+    LEFT JOIN T_Cm_Branch c ON a.branch_id = c.id)
+    LEFT JOIN T_Cm_Code d ON (d.para_value=a.car_type AND d.para_type='car_type'))
+    LEFT JOIN T_Cm_Code e ON (e.para_value=a.car_type AND e.para_type='car_nature')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:28,432 [33] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM  ((((T_Cm_Car a
+    LEFT JOIN T_Cm_Link b ON a.car_link = b.id)
+    LEFT JOIN T_Cm_Branch c ON a.branch_id = c.id)
+    LEFT JOIN T_Cm_Code d ON (d.para_value=a.car_type AND d.para_type='car_type'))
+    LEFT JOIN T_Cm_Code e ON (e.para_value=a.car_type AND e.para_type='car_nature')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:30,821 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM  ((((T_Cm_Car a
+    LEFT JOIN T_Cm_Link b ON a.car_link = b.id)
+    LEFT JOIN T_Cm_Branch c ON a.branch_id = c.id)
+    LEFT JOIN T_Cm_Code d ON (d.para_value=a.car_type AND d.para_type='car_type'))
+    LEFT JOIN T_Cm_Code e ON (e.para_value=a.car_type AND e.para_type='car_nature')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:31,164 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:35,089 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM  ((((T_Cm_Car a
+    LEFT JOIN T_Cm_Link b ON a.car_link = b.id)
+    LEFT JOIN T_Cm_Branch c ON a.branch_id = c.id)
+    LEFT JOIN T_Cm_Code d ON (d.para_value=a.car_type AND d.para_type='car_type'))
+    LEFT JOIN T_Cm_Code e ON (e.para_value=a.car_type AND e.para_type='car_nature')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:35,405 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:36,128 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:18:37,188 [29] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.id AS link_id ,
+    b.link_name ,
+    b.link_mobilephone,
+    c.name AS branch_name,
+    d.para_name AS car_type_name,
+    e.para_name AS car_nature_name
+    FROM  ((((T_Cm_Car a
+    LEFT JOIN T_Cm_Link b ON a.car_link = b.id)
+    LEFT JOIN T_Cm_Branch c ON a.branch_id = c.id)
+    LEFT JOIN T_Cm_Code d ON (d.para_value=a.car_type AND d.para_type='car_type'))
+    LEFT JOIN T_Cm_Code e ON (e.para_value=a.car_type AND e.para_type='car_nature')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:20:03,861 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:21:08,083 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:21:16,012 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:21:31,547 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:21:36,193 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:22:16,606 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:22:27,097 [32] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT    a.* ,
+    b.name AS branch_name ,
+    d.name AS def_branch_name ,
+    c.para_name AS status_name ,
+    e.emp_name AS employee_name ,
+    g.id as role_id,
+    g.is_admin AS role_is_admin,
+    g.role_name
+    FROM  (((((T_Cm_User a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Branch d ON a.def_show_branch = d.id)
+    LEFT JOIN T_Cm_Code c ON (a.user_status = c.para_value
+    AND para_type = 'user_status'))
+    LEFT JOIN T_Cm_Emp e ON e.id = a.emp_Info_Id)
+    LEFT JOIN T_Cm_UserRole_Relation f ON a.id = f.user_id)
+    LEFT JOIN T_Cm_Role g ON g.id = f.role_id
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:23:12,627 [30] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT    a.* ,
+    b.name AS branch_name ,
+    d.name AS def_branch_name ,
+    c.para_name AS status_name ,
+    e.emp_name AS employee_name ,
+    g.id as role_id,
+    g.is_admin AS role_is_admin,
+    g.role_name
+    FROM  (((((T_Cm_User a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Branch d ON a.def_show_branch = d.id)
+    LEFT JOIN T_Cm_Code c ON (a.user_status = c.para_value
+    AND para_type = 'user_status'))
+    LEFT JOIN T_Cm_Emp e ON e.id = a.emp_Info_Id)
+    LEFT JOIN T_Cm_UserRole_Relation f ON a.id = f.user_id)
+    LEFT JOIN T_Cm_Role g ON g.id = f.role_id
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:23:12,797 [30] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.link_name ,
+    b.link_address ,
+    b.link_telephone ,
+    b.link_mobilephone ,
+    b.link_area ,
+    b.link_district,
+    b.link_province,
+    b.link_city,
+    f.para_name AS site_name
+    FROM   (T_Cm_Branch a
+    LEFT JOIN T_Cm_Link b ON a.link_id = b.id)
+    LEFT JOIN T_Cm_Code f ON (f.para_value = a.site_type
+    AND para_type = 'site_type') <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:23:14,041 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT    a.* ,
+    b.name AS branch_name ,
+    d.name AS def_branch_name ,
+    c.para_name AS status_name ,
+    e.emp_name AS employee_name ,
+    g.id as role_id,
+    g.is_admin AS role_is_admin,
+    g.role_name
+    FROM  (((((T_Cm_User a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Branch d ON a.def_show_branch = d.id)
+    LEFT JOIN T_Cm_Code c ON (a.user_status = c.para_value
+    AND para_type = 'user_status'))
+    LEFT JOIN T_Cm_Emp e ON e.id = a.emp_Info_Id)
+    LEFT JOIN T_Cm_UserRole_Relation f ON a.id = f.user_id)
+    LEFT JOIN T_Cm_Role g ON g.id = f.role_id
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:24:47,048 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:25:04,329 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:25:04,750 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:25:05,174 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:25:05,498 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:26:08,566 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:26:09,117 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:26:09,742 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:26:10,270 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:27:03,558 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:28:45,897 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:29:08,642 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:29:14,827 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:29:15,729 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:29:16,504 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:29:43,219 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:29:43,973 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:29:44,685 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:29:45,203 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:30:19,127 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:30:21,568 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:30:22,875 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:30:24,208 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:30:25,186 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:31:08,868 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:31:09,654 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:31:10,617 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:31:11,298 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:31:16,546 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:31:17,627 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:31:18,557 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:31:19,482 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:31:21,488 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:33:54,024 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:37:31,585 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:38:14,148 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT * ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:09,067 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:13,037 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:13,433 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:29,468 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:35,779 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:36,493 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:37,027 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:37,604 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:44,853 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:45,359 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:45,877 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:46,285 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:47,468 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:47,843 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:48,187 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:48,519 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:49,625 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:50,193 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:50,761 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:51,420 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:51,852 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:55,150 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:55,567 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:56,086 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:56,497 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:56,568 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:57,963 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:58,446 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:58,984 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:59,425 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:41:59,496 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:00,384 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:00,731 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:01,103 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:01,408 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:01,471 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:01,822 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'd59c13be-1625-488f-8631-0648502fdecc')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:19,422 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:19,881 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:20,321 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:20,684 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:20,755 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'd59c13be-1625-488f-8631-0648502fdecc')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:22,097 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:22,440 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:22,840 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:23,174 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:23,236 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'd59c13be-1625-488f-8631-0648502fdecc')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:24,296 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:24,736 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:25,343 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:25,816 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:25,929 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'd59c13be-1625-488f-8631-0648502fdecc')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:27,474 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:27,992 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:28,551 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:29,034 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:29,102 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'd59c13be-1625-488f-8631-0648502fdecc')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:42,798 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:44,954 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:45,423 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:45,956 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:46,468 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:46,556 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'd59c13be-1625-488f-8631-0648502fdecc')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:54,271 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:54,707 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:55,139 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:55,475 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:55,542 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'd59c13be-1625-488f-8631-0648502fdecc')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:57,209 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:57,725 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:58,316 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:58,938 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:42:59,024 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'd59c13be-1625-488f-8631-0648502fdecc')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:00,282 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:00,889 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:01,548 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:02,198 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:02,327 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'd59c13be-1625-488f-8631-0648502fdecc')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:02,674 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '10f6c85e-3087-43fb-b9fd-0c6f4b906f5e')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:09,046 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:09,466 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:09,903 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:10,273 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:10,344 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '10f6c85e-3087-43fb-b9fd-0c6f4b906f5e')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:11,464 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:11,784 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:12,092 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:12,362 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:12,423 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '10f6c85e-3087-43fb-b9fd-0c6f4b906f5e')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:13,374 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:14,087 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:14,696 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:15,142 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:15,223 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '10f6c85e-3087-43fb-b9fd-0c6f4b906f5e')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:22,654 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:48,748 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:49,288 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:49,958 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:50,354 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:50,434 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '10f6c85e-3087-43fb-b9fd-0c6f4b906f5e')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:58,765 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:59,229 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:43:59,781 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:00,270 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:00,353 [9] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '10f6c85e-3087-43fb-b9fd-0c6f4b906f5e')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:01,696 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:02,128 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:02,520 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:02,824 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:02,890 [6] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '10f6c85e-3087-43fb-b9fd-0c6f4b906f5e')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:03,758 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:04,083 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:04,402 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:04,688 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:04,743 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '10f6c85e-3087-43fb-b9fd-0c6f4b906f5e')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:04,993 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '7a385ac3-cd02-4ad4-ace3-0ccca0d5f02d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:23,723 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:24,129 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:24,480 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:24,806 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:24,869 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '7a385ac3-cd02-4ad4-ace3-0ccca0d5f02d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:27,822 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:28,397 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:28,983 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:29,449 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:29,529 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '7a385ac3-cd02-4ad4-ace3-0ccca0d5f02d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:30,057 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:30,574 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:31,177 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:31,629 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:31,724 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '7a385ac3-cd02-4ad4-ace3-0ccca0d5f02d')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:44:32,868 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    EXEC spGetSequenceNumber 'Way', 1
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:54:40,170 [27] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+     
+           
+                  
+        
+        
+      
+          
+         
+          
+            
+    ORDER  BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:54:42,732 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (departure_time >= '04/01/2014 10:54:40.94') and (departure_time <= dateadd(day,1,'04/26/2014 10:54:40.40'))
+              
+        ) as temptable
+    where rowNum BETWEEN  and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:54:43,273 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:55:11,220 [28] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+     
+           
+                  
+        
+        
+      
+          
+         
+          
+            
+    ORDER  BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:55:12,873 [28] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (departure_time >= '04/01/2014 10:55:11.107') and (departure_time <= dateadd(day,1,'04/26/2014 10:55:11.25'))
+              
+        ) as temptable
+    where rowNum BETWEEN  and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:55:13,415 [25] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:55:18,702 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+     
+           
+                  
+        
+        
+      
+          
+         
+          
+            
+    ORDER  BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:55:20,842 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (way_type = 1)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:55:21,838 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by transfer_date desc) as rowNum
+    FROM vTransfer         
+            
+          ) as temptable
+    where rowNum BETWEEN  and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:55:26,804 [28] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    (((T_Cm_Emp a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Code c ON (c.para_value = a.sex_ind
+    AND c.para_type = 'sex'))
+    LEFT JOIN T_Cm_Code d ON (d.para_value = a.status
+    AND d.para_type = 'office_statue')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:55:27,700 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    (((T_Cm_Emp a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Code c ON (c.para_value = a.sex_ind
+    AND c.para_type = 'sex'))
+    LEFT JOIN T_Cm_Code d ON (d.para_value = a.status
+    AND d.para_type = 'office_statue')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 10:55:27,866 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (stowage_statue = 'Sended')
+     
+              
+        ) as temptable
+    where rowNum BETWEEN  and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:45:52,418 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:46:37,361 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:46:57,276 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:01,470 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:02,164 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:02,738 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:35,956 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:36,636 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:37,316 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:37,835 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:39,924 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:40,487 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:41,010 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:41,382 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:42,895 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:43,723 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:44,644 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:45,267 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:47:50,639 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:11,095 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:11,932 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:12,889 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:13,531 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:13,732 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:20,067 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:20,922 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:21,865 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:22,623 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:22,881 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:24,359 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:25,174 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:25,968 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:26,521 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:48:26,699 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:14,594 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:24,183 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:25,012 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:25,755 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:26,358 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:26,530 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:50,486 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:51,337 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:52,017 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:52,497 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:52,630 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:54,499 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:55,024 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:55,872 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:56,456 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:56,621 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:58,507 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:59,081 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:51:59,613 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:00,078 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:00,204 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:03,603 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:07,410 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:14,859 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:16,869 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:17,879 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:19,021 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:19,835 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:20,088 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:25,012 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:25,966 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:26,953 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:27,729 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:27,918 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:31,189 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:31,685 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:32,487 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:33,029 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:33,203 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:35,365 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:35,968 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:36,532 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:36,916 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:37,027 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:38,654 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:39,147 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:39,725 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:40,465 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:40,670 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:45,707 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:47,850 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:48,727 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:49,775 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:50,477 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:50,657 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:52,984 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:53,590 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:54,181 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:54,656 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:54,858 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:57,033 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:57,899 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:58,753 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:59,353 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:52:59,544 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:05,895 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:06,809 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:07,639 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:08,352 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:08,548 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:09,556 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:13,440 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:14,279 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:14,963 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:15,451 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:15,595 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:17,039 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:18,124 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:19,226 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:19,985 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:53:20,249 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:58:49,064 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:59:24,755 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:59:25,596 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:59:26,220 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 19:59:26,885 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:00:29,093 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:00:29,662 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:00:30,266 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:00:30,618 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:00:32,318 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:00:32,746 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:00:33,115 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:00:33,429 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:00:36,288 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:00:36,717 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:00:37,106 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:00:37,438 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:00:37,726 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:35,420 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:35,863 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:36,279 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:36,593 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:36,661 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:38,546 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:38,869 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:39,216 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:39,501 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:39,556 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:40,020 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:40,608 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:41,290 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:41,819 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:01:41,902 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:06:58,887 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:08,857 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:09,638 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:10,131 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:10,598 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:20,626 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:21,063 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:21,496 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:21,866 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:23,237 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:23,839 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:24,444 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:24,927 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:26,289 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:26,833 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:27,453 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:27,991 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:28,390 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:52,224 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:52,661 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:53,160 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:53,506 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:53,606 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:55,952 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:56,514 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:57,136 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:57,631 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:57,720 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:58,217 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:58,648 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:59,085 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:59,453 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:07:59,519 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:09:15,374 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:09:34,519 [19] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:00,730 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:02,725 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:03,276 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:03,747 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:04,165 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:04,246 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:09,905 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:10,344 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:10,788 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:11,135 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:11,199 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:12,255 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:12,661 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:13,246 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:13,761 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:13,881 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:15,043 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:15,735 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:16,310 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:16,790 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:16,995 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = '9b0714b3-c6fd-4ab0-b932-03ac122dade8')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:17,300 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:25,947 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:26,442 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:26,925 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:27,295 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:27,370 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:29,754 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:30,167 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:30,537 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:30,863 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:30,923 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:31,326 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:31,664 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:32,023 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:32,325 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (customer_type = 'Deliver')
+            
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:32,380 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where  (sender_id = 'a007824d-b3c5-4f03-8c6b-0026e3ec1df1')    
+      
+       
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:34,359 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:35,020 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:41,965 [17] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill  where  (id = 'fee68ac4-1312-4a49-b013-d64453f534e3')                            
+          
+          
+          
+            
+            
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:10:45,782 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill  where  (id = 'fee68ac4-1312-4a49-b013-d64453f534e3')                            
+          
+          
+          
+            
+            
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:11:13,478 [14] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    [id] not in ( SELECT   id
+    FROM     ( SELECT top 15
+    [id]
+    FROM      vWayBill
+    WHERE     (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )
+           
+                  
+        
+        
+      
+          
+     and (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:11:17,341 [16] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:22:12,436 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '2014/4/1') < 0) and (receive_date <= dateadd("d",1,'2014/4/26'))   
+          
+            and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:22:24,791 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill  where  (id = 'fee68ac4-1312-4a49-b013-d64453f534e3')                            
+          
+          
+          
+            
+            
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:22:43,342 [28] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill  where  (id = 'fee68ac4-1312-4a49-b013-d64453f534e3')                            
+          
+          
+          
+            
+            
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:24:22,066 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill  where  (id = 'fee68ac4-1312-4a49-b013-d64453f534e3')                            
+          
+          
+          
+            
+            
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:24:29,174 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  *
+    FROM  vWayBill  where  (id = 'fee68ac4-1312-4a49-b013-d64453f534e3')                            
+          
+          
+          
+            
+            
+      
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:26:16,305 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+     
+           
+                  
+        
+        
+      
+          
+         
+          
+            
+    ORDER  BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:26:17,374 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (departure_time >= '04/01/2014 20:26:16.194') and (departure_time <= dateadd(day,1,'04/26/2014 20:26:16.118'))
+              
+        ) as temptable
+    where rowNum BETWEEN  and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:26:18,041 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:26:23,552 [18] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+     
+           
+                  
+        
+        
+      
+          
+         
+          
+            
+    ORDER  BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:26:24,545 [28] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (way_type = 1)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:26:25,052 [18] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by transfer_date desc) as rowNum
+    FROM vTransfer         
+            
+          ) as temptable
+    where rowNum BETWEEN  and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:26:32,297 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    (((T_Cm_Emp a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Code c ON (c.para_value = a.sex_ind
+    AND c.para_type = 'sex'))
+    LEFT JOIN T_Cm_Code d ON (d.para_value = a.status
+    AND d.para_type = 'office_statue')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:26:32,981 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    (((T_Cm_Emp a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Code c ON (c.para_value = a.sex_ind
+    AND c.para_type = 'sex'))
+    LEFT JOIN T_Cm_Code d ON (d.para_value = a.status
+    AND d.para_type = 'office_statue')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:26:33,134 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (stowage_statue = 'Sended')
+     
+              
+        ) as temptable
+    where rowNum BETWEEN  and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:26:33,573 [18] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  a.* ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    (((T_Cm_Emp a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Code c ON (c.para_value = a.sex_ind
+    AND c.para_type = 'sex'))
+    LEFT JOIN T_Cm_Code d ON (d.para_value = a.status
+    AND d.para_type = 'office_statue')) <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:26:33,893 [18] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (DateDiff("d",receive_date,  '04/01/2014 20:26:32.434') < 0) and (receive_date <= dateadd("d",1,'04/26/2014 20:26:32.377'))   
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:46:25,306 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+     
+           
+                  
+        
+        
+      
+          
+         
+          
+            
+    ORDER  BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:46:27,450 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vStowage
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 20:46:28,077 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 21:02:17,020 [18] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 21:05:56,060 [26] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+     
+           
+                  
+        
+        
+      
+          
+         
+          
+            
+    ORDER  BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 21:06:00,618 [24] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 21:06:02,302 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vStowage
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 21:10:04,420 [20] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+     
+           
+                  
+        
+        
+      
+          
+         
+          
+            
+    ORDER  BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 21:10:07,188 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vStowage
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 21:10:07,911 [15] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 21:13:38,805 [22] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+     
+           
+                  
+        
+        
+      
+          
+         
+          
+            
+    ORDER  BY [receive_date] ASC
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 21:13:43,398 [23] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vStowage
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2014-04-26 21:13:44,139 [11] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT top 15
+    *
+    FROM    vWayBill
+    WHERE    (way_type = 0)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)
+    ORDER BY [receive_date] ASC
+ <BR>
+ <HR Size=1>

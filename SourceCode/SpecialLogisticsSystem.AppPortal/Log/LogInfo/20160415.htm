@@ -1,0 +1,195 @@
+<HR COLOR=blue>
+日志时间：2016-04-15 09:12:06,349 [8] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT menu.*
+    FROM  T_Cm_Menu menu
+        order  by menu.menu_order asc
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2016-04-15 09:12:16,411 [10] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '03/15/2016 09:12:15.47') and (receive_date <= dateadd(day,1,'04/15/2016 09:12:14.960'))   
+          
+            and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2016-04-15 09:12:16,693 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2016-04-15 09:12:17,340 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2016-04-15 09:12:17,413 [12] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by departure_time desc) as rowNum
+    FROM vStowage where  (stowage_statue = 'Sended')
+     
+              
+        ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2016-04-15 09:12:17,873 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    SELECT  * ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    T_Cm_Emp a
+    LEFT JOIN dbo.T_Cm_Branch b ON a.branch_id = b.id
+    LEFT JOIN dbo.T_Cm_Code c ON c.para_value = a.sex_ind
+    AND c.para_type = 'sex'
+    LEFT JOIN dbo.T_Cm_Code d ON d.para_value = a.status
+    AND d.para_type = 'office_statue' <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2016-04-15 09:12:17,913 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (receive_date >= '03/15/2016 09:12:16.821') and (receive_date <= dateadd(day,1,'04/15/2016 09:12:16.808'))   
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2016-04-15 09:12:18,921 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2016-04-15 09:12:20,494 [7] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2016-04-15 09:15:11,354 [13] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill 
+           
+                  
+        
+        
+      
+          
+         
+          
+            ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2016-04-15 09:15:11,878 [21] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by transfer_date desc) as rowNum
+    FROM vTransfer         
+            
+          ) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1><HR COLOR=blue>
+日志时间：2016-04-15 09:15:12,347 [5] <BR>
+日志级别：INFO  <BR>
+日 志 类：loginfo [(null)] <BR>
+
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by receive_date desc) as rowNum
+    FROM vWayBill where  (way_type = 1)     
+                  
+        
+        
+      
+          
+         
+          
+          and (bill_statue in('System.String[]'))  and (is_hide = 0)) as temptable
+    where rowNum BETWEEN (0) and 15
+    
+ <BR>
+ <HR Size=1>

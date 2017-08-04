@@ -1,0 +1,193 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Bill.Count">
+    Select count(1) FROM vWayBill where
+    $and{id = #id#}  $and{way_type = #way_type#} $and{way_number like '%$way_number$%'}  $and{start_city like '%$start_city$%'}  $and{end_city like '%$end_city$%'}
+    $and{pass_city = #pass_city#} $and{deliver_id = #deliver_id#}  $and{deliver_mobile = #deliver_mobile#}  $and{deliver_area = #deliver_area#}  $and{deliver_address = #deliver_address#}  $and{consignee_id = #consignee_id#}  $and{consignee_mobile = #consignee_mobile#}
+    $and{consignee_area = #consignee_area#}  $and{consignee_address = #consignee_address#}  $and{aggregate_amount = #aggregate_amount#}
+    $and{clearing_type = #clearing_type#}  $and{spot_payment = #spot_payment#}  $and{pick_payment = #pick_payment#}
+    $and{back_payment = #back_payment#}  $and{production_payment = #production_payment#}
+    $and{shipping_type = #shipping_type#}  $and{delivery_type = #delivery_type#}  $and{receipt_portion = #receipt_portion#}  $and{receipt_number = #receipt_number#}
+    $and{collection_type = #collection_type#} $and{DateDiff("d",receive_date,  #receive_date_start#) &lt; 0} $and{receive_date &lt;= dateadd("d",1,#receive_date_end#)} $and{bill_rebate = #bill_rebate#}  $and{bill_memo = #bill_memo#}
+    $and{fee_pay = #fee_pay#}  $and{fee_nopay = #fee_nopay#}  $and{fee_reback = #fee_reback#}  $and{bring_site = #bring_site#}
+    $and{bring_man = #bring_man#}  $and{back_site = #back_site#}  $and{back_man = #back_man#}  $and{bill_statue in(#bill_statue#)}  $and{is_hide = #is_hide#}
+    $eq{order by $OrderBy$}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Bill.SelectPaging">
+    SELECT $eq{top $maxRows$}
+    *
+    FROM    vWayBill
+    WHERE   1=1 $eq{and [id] not in ( SELECT   id
+    FROM     ( SELECT top $startRow$
+    [id]
+    FROM      vWayBill
+    WHERE    1=1  $and{id = #id#}  $and{way_type = '#way_type#'} $and{way_number like '%$way_number$%'}  $and{start_city like '%$start_city$%'}  $and{end_city like '%$end_city$%'}
+    $and{pass_city = #pass_city#}    $and{deliver_id = #deliver_id#}  $and{deliver_mobile = #deliver_mobile#}  $and{deliver_area = #deliver_area#}  $and{deliver_address = #deliver_address#}  $and{consignee_id = #consignee_id#}  $and{consignee_mobile = #consignee_mobile#}
+    $and{consignee_area = #consignee_area#}  $and{consignee_address = #consignee_address#}  $and{aggregate_amount = #aggregate_amount#}
+    $and{clearing_type = #clearing_type#}  $and{spot_payment = #spot_payment#}  $and{pick_payment = #pick_payment#}
+    $and{back_payment = #back_payment#}  $and{production_payment = #production_payment#}
+    $and{shipping_type = #shipping_type#}  $and{delivery_type = #delivery_type#}  $and{receipt_portion = #receipt_portion#}  $and{receipt_number = #receipt_number#}
+    $and{collection_type = #collection_type#} $and{DateDiff("d",receive_date,  #receive_date_start#) &lt; 0} $and{receive_date &lt;= dateadd("d",1,#receive_date_end#)} $and{bill_rebate = #bill_rebate#}  $and{bill_memo = #bill_memo#}
+    $and{fee_pay = #fee_pay#}  $and{fee_nopay = #fee_nopay#}  $and{fee_reback = #fee_reback#}  $and{bring_site = #bring_site#}
+    $and{bring_man = #bring_man#}  $and{back_site = #back_site#}  $and{back_man = #back_man#}  $and{bill_statue in(#bill_statue#)}  $and{is_hide = #is_hide#}
+    ORDER BY  [receive_date] ASC
+    ) AS tblTmp
+    )}
+    $and{id = #id#}  $and{way_type = '#way_type#'} $and{way_number like '%$way_number$%'}  $and{start_city like '%$start_city$%'}  $and{end_city like '%$end_city$%'}
+    $and{pass_city = #pass_city#}    $and{deliver_id = #deliver_id#}  $and{deliver_mobile = #deliver_mobile#}  $and{deliver_area = #deliver_area#}  $and{deliver_address = #deliver_address#}  $and{consignee_id = #consignee_id#}  $and{consignee_mobile = #consignee_mobile#}
+    $and{consignee_area = #consignee_area#}  $and{consignee_address = #consignee_address#}  $and{aggregate_amount = #aggregate_amount#}
+    $and{clearing_type = #clearing_type#}  $and{spot_payment = #spot_payment#}  $and{pick_payment = #pick_payment#}
+    $and{back_payment = #back_payment#}  $and{production_payment = #production_payment#}
+    $and{shipping_type = #shipping_type#}  $and{delivery_type = #delivery_type#}  $and{receipt_portion = #receipt_portion#}  $and{receipt_number = #receipt_number#}
+    $and{collection_type = #collection_type#} $and{DateDiff("d",receive_date,  #receive_date_start#) &lt; 0} $and{receive_date &lt;= dateadd("d",1,#receive_date_end#)} $and{bill_rebate = #bill_rebate#}  $and{bill_memo = #bill_memo#}
+    $and{fee_pay = #fee_pay#}  $and{fee_nopay = #fee_nopay#}  $and{fee_reback = #fee_reback#}  $and{bring_site = #bring_site#}
+    $and{bring_man = #bring_man#}  $and{back_site = #back_site#}  $and{back_man = #back_man#}  $and{bill_statue in(#bill_statue#)}  $and{is_hide = #is_hide#}
+    ORDER BY [receive_date] ASC
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Bill.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Way_Bill) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{way_type = #way_type#}  $and{way_number like '%$way_number$%'}  $and{start_city like '%$start_city$%'}  $and{end_city like '%$end_city$%'}  $and{pass_city = #pass_city#}  $and{deliver_id = #deliver_id#}  $and{consignee_id = #consignee_id#}  $and{aggregate_amount = #aggregate_amount#}  $and{clearing_type = #clearing_type#}  $and{spot_payment = #spot_payment#}  $and{pick_payment = #pick_payment#}  $and{back_payment = #back_payment#}  $and{production_payment = #production_payment#}  $and{shipping_type = #shipping_type#}  $and{delivery_type = #delivery_type#}  $and{receipt_portion = #receipt_portion#}  $and{receipt_number = #receipt_number#}  $and{collection_type = #collection_type#}  $and{receive_date = #receive_date#}  $and{bill_rebate = #bill_rebate#}  $and{bill_memo = #bill_memo#}  $and{fee_pay = #fee_pay#}  $and{fee_nopay = #fee_nopay#}  $and{fee_reback = #fee_reback#}  $and{bring_site = #bring_site#}  $and{bring_man = #bring_man#}  $and{back_site = #back_site#}  $and{back_man = #back_man#}  $and{bill_statue = #bill_statue#}  $and{is_hide = #is_hide#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Bill.Load">
+    SELECT *
+    FROM   T_Way_Bill  where
+    $and{id = #id#}  $and{way_type = #way_type#}  $and{way_number = #way_number#}  $and{start_city = #start_city#}  $and{end_city = #end_city#}  $and{pass_city = #pass_city#}
+    $and{deliver_id = #deliver_id#}  $and{deliver_mobile = #deliver_mobile#}  $and{deliver_area = #deliver_area#}  $and{deliver_address = #deliver_address#}
+    $and{consignee_id = #consignee_id#}  $and{consignee_mobile = #consignee_mobile#}  $and{consignee_area = #consignee_area#}  $and{consignee_address = #consignee_address#}
+    $and{aggregate_amount = #aggregate_amount#}  $and{clearing_type = #clearing_type#}  $and{spot_payment = #spot_payment#}  $and{pick_payment = #pick_payment#}
+    $and{back_payment = #back_payment#}  $and{production_payment = #production_payment#}  $and{shipping_type = #shipping_type#}  $and{delivery_type = #delivery_type#}
+    $and{receipt_portion = #receipt_portion#}  $and{receipt_number = #receipt_number#}  $and{collection_type = #collection_type#}  $and{receive_date = #receive_date#}
+    $and{bill_rebate = #bill_rebate#}  $and{bill_memo = #bill_memo#}  $and{fee_pay = #fee_pay#}  $and{fee_nopay = #fee_nopay#}  $and{fee_reback = #fee_reback#}
+    $and{bring_site = #bring_site#}  $and{bring_man = #bring_man#}  $and{back_site = #back_site#}  $and{back_man = #back_man#}  $and{bill_statue = #bill_statue#}
+    $and{is_hide = #is_hide#}  $and{emp_id = #emp_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Bill.Select">
+    SELECT  *
+    FROM  vWayBill  where
+    $and{id = #id#}  $and{way_type = #way_type#}  $and{way_number = #way_number#}  $and{start_city = #start_city#}  $and{end_city = #end_city#}  $and{pass_city = #pass_city#}    $and{deliver_id = #deliver_id#}  $and{deliver_mobile = #deliver_mobile#}  $and{deliver_area = #deliver_area#}  $and{deliver_address = #deliver_address#}  $and{consignee_id = #consignee_id#}  $and{consignee_mobile = #consignee_mobile#}  $and{consignee_area = #consignee_area#}  $and{consignee_address = #consignee_address#}
+    $and{aggregate_amount = #aggregate_amount#}  $and{clearing_type = #clearing_type#}  $and{spot_payment = #spot_payment#}  $and{pick_payment = #pick_payment#}
+    $and{back_payment = #back_payment#}  $and{production_payment = #production_payment#}  $and{shipping_type = #shipping_type#}  $and{delivery_type = #delivery_type#}
+    $and{receipt_portion = #receipt_portion#}  $and{receipt_number = #receipt_number#}  $and{collection_type = #collection_type#}  $and{receive_date = #receive_date#}
+    $and{bill_rebate = #bill_rebate#}  $and{bill_memo = #bill_memo#}  $and{fee_pay = #fee_pay#}  $and{fee_nopay = #fee_nopay#}  $and{fee_reback = #fee_reback#}
+    $and{bring_site = #bring_site#}  $and{bring_man = #bring_man#}  $and{back_site = #back_site#}  $and{back_man = #back_man#}  $and{bill_statue = #bill_statue#}
+    $and{is_hide = #is_hide#}  $and{emp_id = #emp_id#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Way_Bill.Insert">
+    insert into T_Way_Bill(
+    id
+    ,way_type
+    ,way_number
+    ,start_city
+    ,end_city
+    ,pass_city
+    ,deliver_id
+    ,consignee_id
+    ,clearing_type
+    ,spot_payment
+    ,pick_payment
+    ,back_payment
+    ,production_payment
+    ,shipping_type
+    ,delivery_type
+    ,receipt_portion
+    ,receipt_number
+    ,collection_type
+    ,receive_date
+    ,bill_rebate
+    ,bill_memo
+    ,fee_pay
+    ,fee_nopay
+    ,fee_reback
+    ,bring_site
+    ,bring_man
+    ,back_site
+    ,back_man
+    ,bill_statue
+    ,is_hide
+    ,ticket_taxes
+    ,freight_chinese
+    ,emp_id
+    )values (
+    #id#
+    ,#way_type#
+    ,#way_number#
+    ,#start_city#
+    ,#end_city#
+    ,#pass_city#
+    ,#deliver_id#
+    ,#consignee_id#
+    ,#clearing_type#
+    ,#spot_payment#
+    ,#pick_payment#
+    ,#back_payment#
+    ,#production_payment#
+    ,#shipping_type#
+    ,#delivery_type#
+    ,#receipt_portion#
+    ,#receipt_number#
+    ,#collection_type#
+    ,#receive_date#
+    ,#bill_rebate#
+    ,#bill_memo#
+    ,#fee_pay#
+    ,#fee_nopay#
+    ,#fee_reback#
+    ,#bring_site#
+    ,#bring_man#
+    ,#back_site#
+    ,#back_man#
+    ,#bill_statue#
+    ,#is_hide#
+    ,#ticket_taxes#
+    ,#freight_chinese#
+    ,#emp_id#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Way_Bill.Update">
+    update T_Way_Bill set
+    id=#id#
+    ,way_type=#way_type#
+    ,way_number=#way_number#
+    ,start_city=#start_city#
+    ,end_city=#end_city#
+    ,pass_city=#pass_city#
+    ,deliver_id=#deliver_id#
+    ,consignee_id=#consignee_id#
+    ,clearing_type=#clearing_type#
+    ,spot_payment=#spot_payment#
+    ,pick_payment=#pick_payment#
+    ,back_payment=#back_payment#
+    ,production_payment=#production_payment#
+    ,shipping_type=#shipping_type#
+    ,delivery_type=#delivery_type#
+    ,receipt_portion=#receipt_portion#
+    ,receipt_number=#receipt_number#
+    ,collection_type=#collection_type#
+    ,receive_date=#receive_date#
+    ,bill_rebate=#bill_rebate#
+    ,bill_memo=#bill_memo#
+    ,fee_pay=#fee_pay#
+    ,fee_nopay=#fee_nopay#
+    ,fee_reback=#fee_reback#
+    ,bring_site=#bring_site#
+    ,bring_man=#bring_man#
+    ,back_site=#back_site#
+    ,back_man=#back_man#
+    ,bill_statue=#bill_statue#
+    ,is_hide=#is_hide#
+    ,ticket_taxes=#ticket_taxes#
+    ,freight_chinese=#freight_chinese#
+    ,emp_id=#emp_id#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Way_Bill.Delete">
+    delete
+    FROM T_Way_Bill
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

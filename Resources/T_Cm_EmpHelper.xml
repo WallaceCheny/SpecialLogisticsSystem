@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmEmp" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmEmp" type="MyNamespace.Data.TCmEmp, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmEmp">
+			<result property="Id" column="id" />
+			<result property="Branchid" column="branch_id" />
+			<result property="Empname" column="emp_name" />
+			<result property="Empno" column="emp_no" />
+			<result property="Sexind" column="sex_ind" />
+			<result property="Job" column="job" />
+			<result property="Basicwages" column="basic_wages" />
+			<result property="Suppwages" column="supp_wages" />
+			<result property="Status" column="status" />
+			<result property="Birthday" column="birthday" />
+			<result property="Native" column="native" />
+			<result property="Nationality" column="nationality" />
+			<result property="Certno" column="cert_no" />
+			<result property="Degree" column="degree" />
+			<result property="Graduated" column="graduated" />
+			<result property="Openbank" column="open_bank" />
+			<result property="Acctno" column="acct_no" />
+			<result property="Telphone" column="telphone" />
+			<result property="Homeaddr" column="home_addr" />
+			<result property="QQ" column="QQ" />
+			<result property="Email" column="Email" />
+			<result property="Dept" column="dept" />
+			<result property="Emptypecd" column="emp_type_cd" />
+			<result property="Workhistory" column="work_history" />
+			<result property="Remark" column="remark" />
+			<result property="Adddate" column="add_date" />
+			<result property="Updateopr" column="update_opr" />
+			<result property="Updatedate" column="update_date" />
+			<result property="Acctname" column="acct_name" />
+			<result property="Mobilephone" column="mobilephone" />
+			<result property="Isactive" column="is_active" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,branch_id,emp_name,emp_no,sex_ind,job,basic_wages,supp_wages,status,birthday,native,nationality,cert_no,degree,graduated,open_bank,acct_no,telphone,home_addr,QQ,Email,dept,emp_type_cd,work_history,remark,add_date,update_opr,update_date,acct_name,mobilephone,is_active from T_Cm_Emp
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmEmp" resultClass="int">
+		 		insert into T_Cm_Emp( id,branch_id,emp_name,emp_no,sex_ind,job,basic_wages,supp_wages,status,birthday,native,nationality,cert_no,degree,graduated,open_bank,acct_no,telphone,home_addr,QQ,Email,dept,emp_type_cd,work_history,remark,add_date,update_opr,update_date,acct_name,mobilephone,is_active ) values ( #Id#,#Branchid#,#Empname#,#Empno#,#Sexind#,#Job#,#Basicwages#,#Suppwages#,#Status#,#Birthday#,#Native#,#Nationality#,#Certno#,#Degree#,#Graduated#,#Openbank#,#Acctno#,#Telphone#,#Homeaddr#,#QQ#,#Email#,#Dept#,#Emptypecd#,#Workhistory#,#Remark#,#Adddate#,#Updateopr#,#Updatedate#,#Acctname#,#Mobilephone#,#Isactive# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmEmp" resultClass="int">
+			update T_Cm_Emp set branch_id=#Branchid#,emp_name=#Empname#,emp_no=#Empno#,sex_ind=#Sexind#,job=#Job#,basic_wages=#Basicwages#,supp_wages=#Suppwages#,status=#Status#,birthday=#Birthday#,native=#Native#,nationality=#Nationality#,cert_no=#Certno#,degree=#Degree#,graduated=#Graduated#,open_bank=#Openbank#,acct_no=#Acctno#,telphone=#Telphone#,home_addr=#Homeaddr#,QQ=#QQ#,Email=#Email#,dept=#Dept#,emp_type_cd=#Emptypecd#,work_history=#Workhistory#,remark=#Remark#,add_date=#Adddate#,update_opr=#Updateopr#,update_date=#Updatedate#,acct_name=#Acctname#,mobilephone=#Mobilephone#,is_active=#Isactive# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_Emp where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

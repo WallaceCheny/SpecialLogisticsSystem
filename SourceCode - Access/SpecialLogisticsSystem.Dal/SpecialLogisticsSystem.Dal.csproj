@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D4FD1309-0AF2-4951-906A-E736A3A3AA02}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SpecialLogisticsSystem.Dal</RootNamespace>
+    <AssemblyName>SpecialLogisticsSystem.Dal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\Lib\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration">
+      <HintPath>..\..\Lib\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception">
+      <HintPath>..\..\Lib\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception.Configuration">
+      <HintPath>..\..\Lib\Microsoft.Practices.Unity.Interception.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Ms.Data">
+      <HintPath>..\..\Lib\Ms.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Ms.Data.Common">
+      <HintPath>..\..\Lib\Ms.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArrivalMainDal.cs" />
+    <Compile Include="CmMenuDal.cs" />
+    <Compile Include="CmSequenceNumberDal.cs" />
+    <Compile Include="CmServicerDal.cs" />
+    <Compile Include="CmUserDal.cs" />
+    <Compile Include="Dao.cs" />
+    <Compile Include="DaoInfo.cs" />
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="FinanceDiscountDal.cs" />
+    <Compile Include="Mapping\LoadMapping.cs" />
+    <Compile Include="Mapping\MappingModel.cs" />
+    <Compile Include="Mapping\TransactionInterceptor.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ArrivalDeliverDal.cs" />
+    <Compile Include="ArrivalDeliverGoodsDal.cs" />
+    <Compile Include="ArrivalSignDal.cs" />
+    <Compile Include="CmBranchDal.cs" />
+    <Compile Include="CmCarDal.cs" />
+    <Compile Include="CmCarAreaDal.cs" />
+    <Compile Include="CmCityDal.cs" />
+    <Compile Include="CmCodeDal.cs" />
+    <Compile Include="CmConfigDal.cs" />
+    <Compile Include="CmCustomerDal.cs" />
+    <Compile Include="CmDistrictDal.cs" />
+    <Compile Include="CmEmpDal.cs" />
+    <Compile Include="CmFeeTypeDal.cs" />
+    <Compile Include="CmLinkDal.cs" />
+    <Compile Include="CmProvinceDal.cs" />
+    <Compile Include="CmRoleDal.cs" />
+    <Compile Include="CmRoleMenuRelationDal.cs" />
+    <Compile Include="CmTemplateDal.cs" />
+    <Compile Include="CmUserBranchRelationDal.cs" />
+    <Compile Include="CmUserRoleRelationDal.cs" />
+    <Compile Include="FinanceCustomerDal.cs" />
+    <Compile Include="FinanceDailyDal.cs" />
+    <Compile Include="FinanceDriverDal.cs" />
+    <Compile Include="FinanceGoodsDal.cs" />
+    <Compile Include="FinanceServiceDal.cs" />
+    <Compile Include="StowageDetailDal.cs" />
+    <Compile Include="StowageMainDal.cs" />
+    <Compile Include="StowageSiteDal.cs" />
+    <Compile Include="TransferDetailDal.cs" />
+    <Compile Include="TransferMainDal.cs" />
+    <Compile Include="WayBillDal.cs" />
+    <Compile Include="WayProductionDal.cs" />
+    <Compile Include="WaySmsDal.cs" />
+    <Compile Include="WayTrackDal.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpecialLogisticsSystem.IDal\SpecialLogisticsSystem.IDal.csproj">
+      <Project>{52FEC955-BDFA-4B9F-9DF6-480E62726704}</Project>
+      <Name>SpecialLogisticsSystem.IDal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpecialLogisticsSystem.Model\SpecialLogisticsSystem.Model.csproj">
+      <Project>{11A5E6F7-42AE-41AD-B410-DAF56E1B3EED}</Project>
+      <Name>SpecialLogisticsSystem.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpecialLogisticsSystem.Tool\SpecialLogisticsSystem.Tool.csproj">
+      <Project>{D8509D73-D096-47DE-BB11-583751AACB6A}</Project>
+      <Name>SpecialLogisticsSystem.Tool</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_Menu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_User.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mapping\Arrival\T_Arrival_Deliver.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapping\Arrival\T_Arrival_DeliverGoods.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapping\Arrival\T_Arrival_Sign.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_Branch.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_Car.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_CarArea.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_City.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_Code.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_Config.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_Customer.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_District.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_Emp.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_FeeType.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_Link.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_Province.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_Role.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_RoleMenu_Relation.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_Template.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_UserBranch_Relation.xml" />
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_UserRole_Relation.xml" />
+    <EmbeddedResource Include="Mapping\Finance\T_Finance_Customer.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapping\Finance\T_Finance_Daily.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapping\Finance\T_Finance_Driver.xml" />
+    <EmbeddedResource Include="Mapping\Finance\T_Finance_Goods.xml" />
+    <EmbeddedResource Include="Mapping\Finance\T_Finance_Service.xml" />
+    <EmbeddedResource Include="Mapping\Stowage\T_Stowage_Detail.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapping\Stowage\T_Stowage_Main.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapping\Stowage\T_Stowage_Site.xml" />
+    <EmbeddedResource Include="Mapping\Transfer\T_Transfer_Detail.xml" />
+    <EmbeddedResource Include="Mapping\Transfer\T_Transfer_Main.xml" />
+    <EmbeddedResource Include="Mapping\Way\T_Way_Bill.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapping\Way\T_Way_Production.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mapping\Way\T_Way_Sms.xml" />
+    <EmbeddedResource Include="Mapping\Way\T_Way_Track.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_SequenceNumber.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mapping\Cm\T_Cm_Servicer.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mapping\Arrival\T_Arrival_Main.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Mapping\Finance\T_Finance_Discount.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

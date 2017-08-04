@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TWayProduction" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TWayProduction" type="MyNamespace.Data.TWayProduction, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TWayProduction">
+			<result property="Id" column="id" />
+			<result property="Billid" column="bill_id" />
+			<result property="Productionname" column="production_name" />
+			<result property="Packagetype" column="package_type" />
+			<result property="Productionnumber" column="production_number" />
+			<result property="Productionweight" column="production_weight" />
+			<result property="Productionsize" column="production_size" />
+			<result property="Chargemode" column="charge_mode" />
+			<result property="Freightrates" column="freight_rates" />
+			<result property="Freight" column="freight" />
+			<result property="Agencyfund" column="agency_fund" />
+			<result property="Coverage" column="coverage" />
+			<result property="Premium" column="premium" />
+			<result property="Deliveryexpense" column="delivery_expense" />
+			<result property="Otherexpenses" column="other_expenses" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,bill_id,production_name,package_type,production_number,production_weight,production_size,charge_mode,freight_rates,freight,agency_fund,coverage,premium,delivery_expense,other_expenses from T_Way_Production
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TWayProduction" resultClass="int">
+		 		insert into T_Way_Production( id,bill_id,production_name,package_type,production_number,production_weight,production_size,charge_mode,freight_rates,freight,agency_fund,coverage,premium,delivery_expense,other_expenses ) values ( #Id#,#Billid#,#Productionname#,#Packagetype#,#Productionnumber#,#Productionweight#,#Productionsize#,#Chargemode#,#Freightrates#,#Freight#,#Agencyfund#,#Coverage#,#Premium#,#Deliveryexpense#,#Otherexpenses# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TWayProduction" resultClass="int">
+			update T_Way_Production set bill_id=#Billid#,production_name=#Productionname#,package_type=#Packagetype#,production_number=#Productionnumber#,production_weight=#Productionweight#,production_size=#Productionsize#,charge_mode=#Chargemode#,freight_rates=#Freightrates#,freight=#Freight#,agency_fund=#Agencyfund#,coverage=#Coverage#,premium=#Premium#,delivery_expense=#Deliveryexpense#,other_expenses=#Otherexpenses# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Way_Production where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

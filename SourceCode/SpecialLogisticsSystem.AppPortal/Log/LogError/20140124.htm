@@ -1,0 +1,89 @@
+<HR COLOR=red>
+异常时间：2014-01-24 21:54:59,050 [7] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): File does not exist.
+   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<HR COLOR=red>
+异常时间：2014-01-24 21:55:09,448 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+
+    update T_Way_Bill set
+    id='3e697525-17f3-431d-bdb9-081150db7550'
+    ,way_type=0
+    ,way_number='jj004170'
+    ,start_city='晋江市'
+    ,end_city='上海'
+    ,pass_city=''
+    ,deliver_id='4d07fb61-f972-4207-99f8-3f497d4ffd95'
+    ,deliver_mobile='18259125893'
+    ,deliver_area='福建省-泉州市-晋江市'
+    ,deliver_address=''
+    ,consignee_id='93f7ed1f-e378-4c09-9ecc-d8585df7fc0c'
+    ,consignee_mobile='18016322336'
+    ,consignee_area='上海 - '
+    ,consignee_address=''
+    ,aggregate_amount='150.00'
+    ,clearing_type=''
+    ,spot_payment=0
+    ,pick_payment='150.00'
+    ,back_payment='0.00'
+    ,production_payment='0.00'
+    ,shipping_type=''
+    ,delivery_type=''
+    ,receipt_portion=0
+    ,receipt_number=''
+    ,collection_type=''
+    ,receive_date='2013/9/30 0:00:00'
+    ,bill_rebate='0.00'
+    ,bill_memo=10
+    ,fee_pay='False'
+    ,fee_nopay='False'
+    ,fee_reback='False'
+    ,bring_site='00000000-0000-0000-0000-000000000000'
+    ,bring_man=''
+    ,back_site='00000000-0000-0000-0000-000000000000'
+    ,back_man=''
+    ,bill_statue='Arrival'
+    ,is_hide='False'
+    ,ticket_taxes='0.00'
+    ,freight_chinese=''
+    WHERE
+    id = '3e697525-17f3-431d-bdb9-081150db7550'
+   <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): The column "aggregate_amount" cannot be modified because it is either a computed column or is the result of a UNION operator.
+   在 Ms.Data.x876bc5bb5331d9cc.x7abc69015e07a7a0(Exception xc3c70767499bc99a)
+   在 Ms.Data.x876bc5bb5331d9cc.xa266202b32508032(Boolean x6cfdbb424843d687, Action xab8fe3cd8c5556fb)
+   在 Ms.Data.xdcbbfbb72b3e3cda.Execute()
+   在 SpecialLogisticsSystem.Dal.Dao.Update[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 170
+<HR COLOR=red>
+异常时间：2014-01-24 21:55:09,552 [11] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Data.SqlClient.SqlException (0x80131904): The column "aggregate_amount" cannot be modified because it is either a computed column or is the result of a UNION operator.
+   在 SpecialLogisticsSystem.Dal.Dao.Update[T](T entity) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\Dao.cs:行号 175
+   在 SpecialLogisticsSystem.Dal.WayBillDal.Update(T_Way_Bill item) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Dal\WayBillDal.cs:行号 47
+   在 SpecialLogisticsSystem.AppPortal.Business.Arrival.gridWay_CustomCallback(Object sender, ASPxGridViewCustomCallbackEventArgs e) 位置 E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\Business\Arrival.aspx.cs:行号 41
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCustomCallback(ASPxGridViewCustomCallbackEventArgs e)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.CBCustomCallBack(String[] args)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.DoCallBackPostBack(String eventArgument)
+   在 DevExpress.Web.ASPxGridView.ASPxGridView.RaiseCallbackEvent(String eventArgument)
+   在 DevExpress.Web.ASPxClasses.ASPxWebControl.System.Web.UI.ICallbackEventHandler.RaiseCallbackEvent(String eventArgument)
+<HR COLOR=red>
+异常时间：2014-01-24 21:55:30,343 [15] <BR>
+异常级别：ERROR <BR>
+异 常 类：logerror [(null)] <BR>
+ <BR>
+ <HR Size=1>System.Web.HttpException (0x80004005): File does not exist.
+   at System.Web.StaticFileHandler.GetFileInfo(String virtualPathWithPathInfo, String physicalPath, HttpResponse response)
+   at System.Web.StaticFileHandler.ProcessRequestInternal(HttpContext context, String overrideVirtualPath)
+   at System.Web.DefaultHttpHandler.BeginProcessRequest(HttpContext context, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

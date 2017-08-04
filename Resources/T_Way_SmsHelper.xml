@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TWaySm" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TWaySm" type="MyNamespace.Data.TWaySm, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TWaySm">
+			<result property="Id" column="id" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id from T_Way_Sms
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TWaySm" resultClass="int">
+		 		insert into T_Way_Sms( id ) values ( #Id# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TWaySm" resultClass="int">
+			update T_Way_Sms set  where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Way_Sms where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

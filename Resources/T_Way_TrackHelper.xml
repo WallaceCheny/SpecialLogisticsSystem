@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TWayTrack" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TWayTrack" type="MyNamespace.Data.TWayTrack, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TWayTrack">
+			<result property="Id" column="id" />
+			<result property="Billid" column="bill_id" />
+			<result property="Trackdate" column="track_date" />
+			<result property="Trackdescription" column="track_description" />
+			<result property="Isinside" column="is_inside" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,bill_id,track_date,track_description,is_inside from T_Way_Track
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TWayTrack" resultClass="int">
+		 		insert into T_Way_Track( id,bill_id,track_date,track_description,is_inside ) values ( #Id#,#Billid#,#Trackdate#,#Trackdescription#,#Isinside# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TWayTrack" resultClass="int">
+			update T_Way_Track set bill_id=#Billid#,track_date=#Trackdate#,track_description=#Trackdescription#,is_inside=#Isinside# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Way_Track where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

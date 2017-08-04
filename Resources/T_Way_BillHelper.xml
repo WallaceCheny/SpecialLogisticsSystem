@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TWayBill" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TWayBill" type="MyNamespace.Data.TWayBill, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TWayBill">
+			<result property="Id" column="id" />
+			<result property="Waynumber" column="way_number" />
+			<result property="Startcity" column="start_city" />
+			<result property="Endcity" column="end_city" />
+			<result property="Passcity" column="pass_city" />
+			<result property="Deliverid" column="deliver_id" />
+			<result property="Consigneeid" column="consignee_id" />
+			<result property="Aggregateamount" column="aggregate_amount" />
+			<result property="Clearingtype" column="clearing_type" />
+			<result property="Spotpayment" column="spot_payment" />
+			<result property="Pickpayment" column="pick_payment" />
+			<result property="Backpayment" column="back_payment" />
+			<result property="Productionpayment" column="production_payment" />
+			<result property="Shippingtype" column="shipping_type" />
+			<result property="Deliverytype" column="delivery_type" />
+			<result property="Receiptportion" column="receipt_portion" />
+			<result property="Receiptnumber" column="receipt_number" />
+			<result property="Collectiontype" column="collection_type" />
+			<result property="Receivedate" column="receive_date" />
+			<result property="Billrebate" column="bill_rebate" />
+			<result property="Billmemo" column="bill_memo" />
+			<result property="Feepay" column="fee_pay" />
+			<result property="Feenopay" column="fee_nopay" />
+			<result property="Feereback" column="fee_reback" />
+			<result property="Bringsite" column="bring_site" />
+			<result property="Bringman" column="bring_man" />
+			<result property="Backsite" column="back_site" />
+			<result property="Backman" column="back_man" />
+			<result property="Billstatue" column="bill_statue" />
+			<result property="Ishide" column="is_hide" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,way_number,start_city,end_city,pass_city,deliver_id,consignee_id,aggregate_amount,clearing_type,spot_payment,pick_payment,back_payment,production_payment,shipping_type,delivery_type,receipt_portion,receipt_number,collection_type,receive_date,bill_rebate,bill_memo,fee_pay,fee_nopay,fee_reback,bring_site,bring_man,back_site,back_man,bill_statue,is_hide from T_Way_Bill
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TWayBill" resultClass="int">
+		 		insert into T_Way_Bill( id,way_number,start_city,end_city,pass_city,deliver_id,consignee_id,aggregate_amount,clearing_type,spot_payment,pick_payment,back_payment,production_payment,shipping_type,delivery_type,receipt_portion,receipt_number,collection_type,receive_date,bill_rebate,bill_memo,fee_pay,fee_nopay,fee_reback,bring_site,bring_man,back_site,back_man,bill_statue,is_hide ) values ( #Id#,#Waynumber#,#Startcity#,#Endcity#,#Passcity#,#Deliverid#,#Consigneeid#,#Aggregateamount#,#Clearingtype#,#Spotpayment#,#Pickpayment#,#Backpayment#,#Productionpayment#,#Shippingtype#,#Deliverytype#,#Receiptportion#,#Receiptnumber#,#Collectiontype#,#Receivedate#,#Billrebate#,#Billmemo#,#Feepay#,#Feenopay#,#Feereback#,#Bringsite#,#Bringman#,#Backsite#,#Backman#,#Billstatue#,#Ishide# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TWayBill" resultClass="int">
+			update T_Way_Bill set way_number=#Waynumber#,start_city=#Startcity#,end_city=#Endcity#,pass_city=#Passcity#,deliver_id=#Deliverid#,consignee_id=#Consigneeid#,aggregate_amount=#Aggregateamount#,clearing_type=#Clearingtype#,spot_payment=#Spotpayment#,pick_payment=#Pickpayment#,back_payment=#Backpayment#,production_payment=#Productionpayment#,shipping_type=#Shippingtype#,delivery_type=#Deliverytype#,receipt_portion=#Receiptportion#,receipt_number=#Receiptnumber#,collection_type=#Collectiontype#,receive_date=#Receivedate#,bill_rebate=#Billrebate#,bill_memo=#Billmemo#,fee_pay=#Feepay#,fee_nopay=#Feenopay#,fee_reback=#Feereback#,bring_site=#Bringsite#,bring_man=#Bringman#,back_site=#Backsite#,back_man=#Backman#,bill_statue=#Billstatue#,is_hide=#Ishide# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Way_Bill where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

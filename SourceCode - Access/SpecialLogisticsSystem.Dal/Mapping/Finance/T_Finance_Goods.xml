@@ -1,0 +1,76 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Goods.Count">
+    Select count(1) FROM T_Finance_Goods where
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{settle_mode = #settle_mode#}  $and{collection_amount = #collection_amount#}  $and{goods_deduct = #goods_deduct#}  $and{settle_amount = #settle_amount#}  $and{settle_type = #settle_type#}  $and{settle_date = #settle_date#}  $and{amount_get = #amount_get#}  $and{operator_man = #operator_man#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Goods.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Finance_Goods) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{settle_mode = #settle_mode#}  $and{collection_amount = #collection_amount#}  $and{goods_deduct = #goods_deduct#}  $and{settle_amount = #settle_amount#}  $and{settle_type = #settle_type#}  $and{settle_date = #settle_date#}  $and{amount_get = #amount_get#}  $and{operator_man = #operator_man#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Goods.Load">
+    SELECT *
+    FROM   T_Finance_Goods  where
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{settle_mode = #settle_mode#}  $and{collection_amount = #collection_amount#}  $and{goods_deduct = #goods_deduct#}  $and{settle_amount = #settle_amount#}  $and{settle_type = #settle_type#}  $and{settle_date = #settle_date#}  $and{amount_get = #amount_get#}  $and{operator_man = #operator_man#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Goods.Select">
+    SELECT *
+    FROM   T_Finance_Goods  where
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{settle_mode = #settle_mode#}  $and{collection_amount = #collection_amount#}  $and{goods_deduct = #goods_deduct#}  $and{settle_amount = #settle_amount#}  $and{settle_type = #settle_type#}  $and{settle_date = #settle_date#}  $and{amount_get = #amount_get#}  $and{operator_man = #operator_man#}  $and{branch_id = #branch_id#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Finance_Goods.Insert">
+    insert into T_Finance_Goods(
+    id
+    ,settle_number
+    ,way_id
+    ,settle_mode
+    ,collection_amount
+    ,goods_deduct
+    ,settle_amount
+    ,settle_type
+    ,settle_date
+    ,amount_get
+    ,operator_man
+    ,branch_id
+    )values (
+    #id#
+    ,#settle_number#
+    ,#way_id#
+    ,#settle_mode#
+    ,#collection_amount#
+    ,#goods_deduct#
+    ,#settle_amount#
+    ,#settle_type#
+    ,#settle_date#
+    ,#amount_get#
+    ,#operator_man#
+    ,#branch_id#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Finance_Goods.Update">
+    update T_Finance_Goods set
+    id=#id#
+    ,settle_number=#settle_number#
+    ,way_id=#way_id#
+    ,settle_mode=#settle_mode#
+    ,collection_amount=#collection_amount#
+    ,goods_deduct=#goods_deduct#
+    ,settle_amount=#settle_amount#
+    ,settle_type=#settle_type#
+    ,settle_date=#settle_date#
+    ,amount_get=#amount_get#
+    ,operator_man=#operator_man#
+    ,branch_id=#branch_id#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Finance_Goods.Delete">
+    delete
+    FROM T_Finance_Goods
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

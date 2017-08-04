@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TFinanceService" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TFinanceService" type="MyNamespace.Data.TFinanceService, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TFinanceService">
+			<result property="Id" column="id" />
+			<result property="Serviceid" column="service_id" />
+			<result property="Isarrivalpayment" column="is_arrivalpayment" />
+			<result property="Transferpayment" column="transfer_payment" />
+			<result property="Arrivalpayment" column="arrival_payment" />
+			<result property="Settlementpayment" column="settlement_payment" />
+			<result property="Alreadypayment" column="already_payment" />
+			<result property="Settlementmode" column="settlement_mode" />
+			<result property="Paymentdate" column="payment_date" />
+			<result property="Servicememo" column="service_memo" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,service_id,is_arrivalpayment,transfer_payment,arrival_payment,settlement_payment,already_payment,settlement_mode,payment_date,service_memo from T_Finance_Service
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TFinanceService" resultClass="int">
+		 		insert into T_Finance_Service( id,service_id,is_arrivalpayment,transfer_payment,arrival_payment,settlement_payment,already_payment,settlement_mode,payment_date,service_memo ) values ( #Id#,#Serviceid#,#Isarrivalpayment#,#Transferpayment#,#Arrivalpayment#,#Settlementpayment#,#Alreadypayment#,#Settlementmode#,#Paymentdate#,#Servicememo# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TFinanceService" resultClass="int">
+			update T_Finance_Service set service_id=#Serviceid#,is_arrivalpayment=#Isarrivalpayment#,transfer_payment=#Transferpayment#,arrival_payment=#Arrivalpayment#,settlement_payment=#Settlementpayment#,already_payment=#Alreadypayment#,settlement_mode=#Settlementmode#,payment_date=#Paymentdate#,service_memo=#Servicememo# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Finance_Service where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

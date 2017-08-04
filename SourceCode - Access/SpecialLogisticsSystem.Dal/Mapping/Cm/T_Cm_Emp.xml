@@ -1,0 +1,147 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Emp.Count">
+    Select count(1) FROM T_Cm_Emp where
+    $and{id = #id#}  $and{branch_id = #branch_id#}  $and{emp_name = #emp_name#}  $and{emp_no = #emp_no#}  $and{sex_ind = #sex_ind#}  $and{job = #job#}  $and{basic_wages = #basic_wages#}  $and{supp_wages = #supp_wages#}  $and{status = #status#}  $and{birthday = #birthday#}  $and{native = #native#}  $and{nationality = #nationality#}  $and{cert_no = #cert_no#}  $and{degree = #degree#}  $and{graduated = #graduated#}  $and{open_bank = #open_bank#}  $and{acct_no = #acct_no#}  $and{telphone = #telphone#}  $and{home_addr = #home_addr#}  $and{QQ = #QQ#}  $and{Email = #Email#}  $and{dept = #dept#}  $and{emp_type_cd = #emp_type_cd#}  $and{work_history = #work_history#}  $and{remark = #remark#}  $and{add_date = #add_date#}  $and{update_opr = #update_opr#}  $and{update_date = #update_date#}  $and{acct_name = #acct_name#}  $and{mobilephone = #mobilephone#}  $and{is_active = #is_active#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Emp.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_Emp) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{branch_id = #branch_id#}  $and{emp_name = #emp_name#}  $and{emp_no = #emp_no#}  $and{sex_ind = #sex_ind#}  $and{job = #job#}  $and{basic_wages = #basic_wages#}  $and{supp_wages = #supp_wages#}  $and{status = #status#}  $and{birthday = #birthday#}  $and{native = #native#}  $and{nationality = #nationality#}  $and{cert_no = #cert_no#}  $and{degree = #degree#}  $and{graduated = #graduated#}  $and{open_bank = #open_bank#}  $and{acct_no = #acct_no#}  $and{telphone = #telphone#}  $and{home_addr = #home_addr#}  $and{QQ = #QQ#}  $and{Email = #Email#}  $and{dept = #dept#}  $and{emp_type_cd = #emp_type_cd#}  $and{work_history = #work_history#}  $and{remark = #remark#}  $and{add_date = #add_date#}  $and{update_opr = #update_opr#}  $and{update_date = #update_date#}  $and{acct_name = #acct_name#}  $and{mobilephone = #mobilephone#}  $and{is_active = #is_active#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Emp.Load">
+    SELECT *
+    FROM   T_Cm_Emp  where
+    $and{id = #id#}  $and{branch_id = #branch_id#}  $and{emp_name = #emp_name#}  $and{emp_no = #emp_no#}  $and{sex_ind = #sex_ind#}  $and{job = #job#}  $and{basic_wages = #basic_wages#}  $and{supp_wages = #supp_wages#}  $and{status = #status#}  $and{birthday = #birthday#}  $and{native = #native#}  $and{nationality = #nationality#}  $and{cert_no = #cert_no#}  $and{degree = #degree#}  $and{graduated = #graduated#}  $and{open_bank = #open_bank#}  $and{acct_no = #acct_no#}  $and{telphone = #telphone#}  $and{home_addr = #home_addr#}  $and{QQ = #QQ#}  $and{Email = #Email#}  $and{dept = #dept#}  $and{emp_type_cd = #emp_type_cd#}  $and{work_history = #work_history#}  $and{remark = #remark#}  $and{add_date = #add_date#}  $and{update_opr = #update_opr#}  $and{update_date = #update_date#}  $and{acct_name = #acct_name#}  $and{mobilephone = #mobilephone#}  $and{is_active = #is_active#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Emp.Select">
+    SELECT  a.* ,
+    b.name AS branch_name ,
+    c.para_name AS sex_name ,
+    d.para_name AS status_name
+    FROM    (((T_Cm_Emp a
+    LEFT JOIN T_Cm_Branch b ON a.branch_id = b.id)
+    LEFT JOIN T_Cm_Code c ON (c.para_value = a.sex_ind
+    AND c.para_type = 'sex'))
+    LEFT JOIN T_Cm_Code d ON (d.para_value = a.status
+    AND d.para_type = 'office_statue'))  where
+    $and{a.id = #id#}  $and{branch_id = #branch_id#}  $and{emp_name like '%$emp_name$%'} $and{emp_no like '%$emp_no$%'} $and{sex_ind = #sex_ind#}
+    $and{job = #job#}  $and{basic_wages = #basic_wages#}  $and{supp_wages = #supp_wages#}  $and{status = #status#}  $and{birthday = #birthday#}
+    $and{native = #native#}  $and{nationality = #nationality#}  $and{cert_no = #cert_no#}  $and{degree = #degree#}  $and{graduated = #graduated#}
+    $and{open_bank = #open_bank#}  $and{acct_no = #acct_no#}  $and{telphone = #telphone#}  $and{home_addr = #home_addr#}  $and{QQ = #QQ#}
+    $and{Email = #Email#}  $and{dept = #dept#}  $and{emp_type_cd = #emp_type_cd#}  $and{work_history = #work_history#}   $and{remark like '%$remark$%'}
+    $and{add_date = #add_date#}  $and{update_opr = #update_opr#}  $and{update_date = #update_date#}  $and{acct_name = #acct_name#}  $and{mobilephone = #mobilephone#}
+    $and{is_active = #is_active#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Cm_Emp.Insert">
+    insert into T_Cm_Emp(
+    id
+    ,branch_id
+    ,emp_name
+    ,emp_no
+    ,sex_ind
+    ,job
+    ,basic_wages
+    ,supp_wages
+    ,status
+    ,birthday
+    ,native
+    ,nationality
+    ,cert_no
+    ,degree
+    ,graduated
+    ,open_bank
+    ,acct_no
+    ,telphone
+    ,home_addr
+    ,QQ
+    ,Email
+    ,dept
+    ,emp_type_cd
+    ,work_history
+    ,remark
+    ,add_date
+    ,update_opr
+    ,update_date
+    ,acct_name
+    ,mobilephone
+    ,is_active
+    )values (
+    #id#
+    ,#branch_id#
+    ,#emp_name#
+    ,#emp_no#
+    ,#sex_ind#
+    ,#job#
+    ,#basic_wages#
+    ,#supp_wages#
+    ,#status#
+    ,#birthday#
+    ,#native#
+    ,#nationality#
+    ,#cert_no#
+    ,#degree#
+    ,#graduated#
+    ,#open_bank#
+    ,#acct_no#
+    ,#telphone#
+    ,#home_addr#
+    ,#QQ#
+    ,#Email#
+    ,#dept#
+    ,#emp_type_cd#
+    ,#work_history#
+    ,#remark#
+    ,#add_date#
+    ,#update_opr#
+    ,#update_date#
+    ,#acct_name#
+    ,#mobilephone#
+    ,#is_active#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_Emp.Update">
+    update T_Cm_Emp set
+    id=#id#
+    ,branch_id=#branch_id#
+    ,emp_name=#emp_name#
+    ,emp_no=#emp_no#
+    ,sex_ind=#sex_ind#
+    ,job=#job#
+    ,basic_wages=#basic_wages#
+    ,supp_wages=#supp_wages#
+    ,status=#status#
+    ,birthday=#birthday#
+    ,native=#native#
+    ,nationality=#nationality#
+    ,cert_no=#cert_no#
+    ,degree=#degree#
+    ,graduated=#graduated#
+    ,open_bank=#open_bank#
+    ,acct_no=#acct_no#
+    ,telphone=#telphone#
+    ,home_addr=#home_addr#
+    ,QQ=#QQ#
+    ,Email=#Email#
+    ,dept=#dept#
+    ,emp_type_cd=#emp_type_cd#
+    ,work_history=#work_history#
+    ,remark=#remark#
+    ,add_date=#add_date#
+    ,update_opr=#update_opr#
+    ,update_date=#update_date#
+    ,acct_name=#acct_name#
+    ,mobilephone=#mobilephone#
+    ,is_active=#is_active#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Cm_Emp.Delete">
+    delete
+    FROM T_Cm_Emp
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

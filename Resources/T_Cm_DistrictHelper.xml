@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmDistrict" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmDistrict" type="MyNamespace.Data.TCmDistrict, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmDistrict">
+			<result property="Id" column="DistrictID" />
+			<result property="DistrictName" column="DistrictName" />
+			<result property="DateCreated" column="DateCreated" />
+			<result property="DateUpdated" column="DateUpdated" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select DistrictID,DistrictName,CityID,DateCreated,DateUpdated from T_Cm_District
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 DistrictID =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmDistrict" resultClass="int">
+		 		insert into T_Cm_District( DistrictID,DistrictName,CityID,DateCreated,DateUpdated ) values ( #DistrictID#,#DistrictName#,#CityID#,#DateCreated#,#DateUpdated# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmDistrict" resultClass="int">
+			update T_Cm_District set DistrictName=#DistrictName#,DateCreated=#DateCreated#,DateUpdated=#DateUpdated# where DistrictID=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_District where DistrictID=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

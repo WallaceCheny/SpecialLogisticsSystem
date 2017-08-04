@@ -1,0 +1,56 @@
+﻿input[text]{height:20px;}
+select{height:23px;min-width:60px;}
+/*.page{background:url("Images/background.gif") repeat-y scroll right top white;width:970px;border:0;border-bottom:solid 0px transparent;margin-bottom:0;}
+*/
+ /*新增GridView 样式*/
+.dxgvHeader_DevEx{text-decoration:none;background-image:url(../../images/user_post_top_bg.png);background-repeat:repeat;text-align:center;font-size:12px;font:Arial,Helvetica,sans-serif;color:#115888;}
+/*新增GridView 列样式 lee*/
+.dxgvHeader_DevEx td{color:#013C64 !important;font-size:13px;font:Arial,Helvetica,sans-serif;font-weight:bolder;}
+/*新增GridView ROW样式 lee*/
+.dxgvDataRow_DevEx{font-size:12px;font:Arial,Helvetica,sans-serif;font-weight:lighter;color:#115888 !important;}
+/*新增TreeList 列标图样式 lee*/
+.dxtlHeader_DevEx{color:#013C64 !important;font-size:13px;font:Arial,Helvetica,sans-serif;font-weight:inherit;text-align:center;text-decoration:none;background-image:url(../../images/user_post_top_bg.png);background-repeat:repeat;}
+/*新增TreeList 节点样式 lee*/
+.dxtlNode_DevEx{color:#115888 !important;font-size:13px;font:Arial,Helvetica,sans-serif;font-weight:lighter;}
+.dxeBase_DevEx{font-size:13px;}
+/*.header{background:transparent url(Images/header.gif) no-repeat scroll top left !important;height:111px;width:950px;}
+.footer{background:transparent url(Images/footer.gif) no-repeat scroll top center !important;height:68px;margin:0 auto;margin-top:-10px;}
+*/
+.loginDisplay{padding:20px 0px;}
+/*.innerControlPanel{padding:8px;overflow-x:hidden;}
+.mainPanel{float:right;background:white;}
+*/
+.overview{width:98%;}
+.overview tr{height:24px;}
+.overview .title{font-weight:bold;}
+.details{background:white;}
+#invoiceBrief{padding:12px 0;}
+/* for safari */
+@media screen and (-webkit-min-device-pixel-ratio:0){}
+/* for chrome */
+body:nth-of-type(1) #gridCell{float:left;}
+body:nth-of-type(1) #gridCell{float:left;}
+body:nth-of-type(1) #gridCell table:first{width:712px !important;}
+#error{background-color:White;margin:12px 0;border:1px solid silver;}
+#error .dxgvGroupPanel_DevEx{color:Red;}
+#error .content{padding:12px;}
+/*.footpage{margin:auto;width:1007px;}
+*/
+.dxeTextBox_DevEx{/*padding-left:6px;*/
+}
+/*h2{clear:both;color:Black;font-size:1.8em;font-weight:600;}
+*/
+table.dxh0{border:1px solid #C8D7E0;}
+.dxbButton_DevEx{background-color:#C8D7E0;/* background-image:url("/images/btnbg2.png");*/
+ background-image:url("");color:white;border:1px solid gray;/*min-height:30px;*/
+}
+.gray,.gray td{background-color:gray;}
+.dxbButton_DevEx:hover{border:1px solid black;}
+.dxbButtonHover_DevEx span{color:white !important;}
+a,a:link,a:hover,a:visited{}
+.dxpcModalBackground_DevEx{background-color:rgba(128,128,128,0.75);}
+.dxtcTab_DevEx td.dxtc{height:20px !important;}
+.dxtcActiveTab_DevEx td.dxtc{color:#C8D7E0 !important;font-weight:bold !important;}
+.dxtcTab_DevEx{background-image:none !important;background-color:rgb(236,222,239);}
+.errorFileCount{color:Red;}
+a.dxeHyperlink_DevEx:visited{color:#C8D7E0;}

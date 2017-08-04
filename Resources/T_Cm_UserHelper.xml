@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmUser" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmUser" type="MyNamespace.Data.TCmUser, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmUser">
+			<result property="Id" column="id" />
+			<result property="Branchid" column="branch_id" />
+			<result property="Password" column="password" />
+			<result property="Username" column="user_name" />
+			<result property="Updatedate" column="update_date" />
+			<result property="EmpInfoId" column="emp_Info_Id" />
+			<result property="Empname" column="emp_name" />
+			<result property="Status" column="status" />
+			<result property="Defshowshop" column="def_show_shop" />
+			<result property="Adddate" column="add_date" />
+			<result property="Updateopr" column="update_opr" />
+			<result property="Canshowshop" column="can_show_shop" />
+			<result property="Accesskey" column="accesskey" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,branch_id,password,user_name,update_date,emp_Info_Id,emp_name,status,def_show_shop,add_date,update_opr,can_show_shop,accesskey from T_Cm_User
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmUser" resultClass="int">
+		 		insert into T_Cm_User( id,branch_id,password,user_name,update_date,emp_Info_Id,emp_name,status,def_show_shop,add_date,update_opr,can_show_shop,accesskey ) values ( #Id#,#Branchid#,#Password#,#Username#,#Updatedate#,#EmpInfoId#,#Empname#,#Status#,#Defshowshop#,#Adddate#,#Updateopr#,#Canshowshop#,#Accesskey# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmUser" resultClass="int">
+			update T_Cm_User set branch_id=#Branchid#,password=#Password#,user_name=#Username#,update_date=#Updatedate#,emp_Info_Id=#EmpInfoId#,emp_name=#Empname#,status=#Status#,def_show_shop=#Defshowshop#,add_date=#Adddate#,update_opr=#Updateopr#,can_show_shop=#Canshowshop#,accesskey=#Accesskey# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_User where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

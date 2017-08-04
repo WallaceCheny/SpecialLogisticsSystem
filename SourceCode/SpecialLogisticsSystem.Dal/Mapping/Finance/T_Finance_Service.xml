@@ -1,0 +1,102 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Service.Count">
+    Select count(1) FROM vFinanceService where
+    $and{id = #id#}  $and{transfer_number like '%$transfer_number$%'} $and{transfer_date >= #receive_date_start#} $and{transfer_date &lt;= dateadd(day,1,#receive_date_end#)}  $and{service_id = #service_id#}
+    $and{is_arrivalpayment = #is_arrivalpayment#}  $and{transfer_payment = #transfer_payment#}
+    $and{arrival_payment = #arrival_payment#}  $and{settlement_payment = #settlement_payment#}
+    $and{already_payment = #already_payment#}  $and{settlement_mode = #settlement_mode#} $and{settle_name = #settle_name#}
+    $and{service_memo like #%$service_memo$%#}  $and{operator_man = #operator_man#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Service.SelectPaging">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by transfer_date desc) as rowNum
+    FROM vFinanceService where
+    $and{id = #id#}  $and{transfer_number like '%$transfer_number$%'}  $and{transfer_date >= #receive_date_start#} $and{transfer_date &lt;= dateadd(day,1,#receive_date_end#)}  $and{service_id = #service_id#}
+    $and{is_arrivalpayment = #is_arrivalpayment#}  $and{transfer_payment = #transfer_payment#}
+    $and{arrival_payment = #arrival_payment#}  $and{settlement_payment = #settlement_payment#}
+    $and{already_payment = #already_payment#}  $and{settlement_mode = #settlement_mode#}  $and{settle_name = #settle_name#}
+    $and{service_memo like #%$service_memo$%#}  $and{operator_man = #operator_man#}  $and{branch_id = #branch_id#} ) as temptable
+    where rowNum BETWEEN $eg{#startRow#} and $eq{#maxRows#}
+    $eq{order by $OrderBy$}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Service.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Finance_Service) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{transfer_id = #transfer_id#}  $and{service_id = #service_id#}  $and{is_arrivalpayment = #is_arrivalpayment#}  $and{transfer_payment = #transfer_payment#}  $and{arrival_payment = #arrival_payment#}  $and{settlement_payment = #settlement_payment#}  $and{real_payment = #real_payment#}  $and{already_payment = #already_payment#}  $and{settlement_mode = #settlement_mode#}  $and{payment_date = #payment_date#}  $and{service_memo = #service_memo#}  $and{operator_man = #operator_man#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Service.Load">
+    SELECT *
+    FROM   T_Finance_Service  where
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{transfer_id = #transfer_id#}  $and{service_id = #service_id#}  $and{is_arrivalpayment = #is_arrivalpayment#}  $and{transfer_payment = #transfer_payment#}  $and{arrival_payment = #arrival_payment#}  $and{settlement_payment = #settlement_payment#}  $and{real_payment = #real_payment#}  $and{already_payment = #already_payment#}  $and{settlement_mode = #settlement_mode#}  $and{payment_date = #payment_date#}  $and{service_memo = #service_memo#}  $and{operator_man = #operator_man#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Service.Select">
+    SELECT *
+    FROM   T_Finance_Service  where
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{transfer_id = #transfer_id#}  $and{service_id = #service_id#}  $and{is_arrivalpayment = #is_arrivalpayment#}  $and{transfer_payment = #transfer_payment#}  $and{arrival_payment = #arrival_payment#}  $and{settlement_payment = #settlement_payment#}  $and{real_payment = #real_payment#}  $and{already_payment = #already_payment#}  $and{settlement_mode = #settlement_mode#}  $and{payment_date = #payment_date#}  $and{service_memo = #service_memo#}  $and{operator_man = #operator_man#}  $and{branch_id = #branch_id#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Finance_Service.Insert">
+    insert into T_Finance_Service(
+    id
+    ,settle_number
+    ,transfer_id
+    ,service_id
+    ,is_arrivalpayment
+    ,transfer_payment
+    ,arrival_payment
+    ,settlement_payment
+    ,real_payment
+    ,already_payment
+    ,settlement_mode
+    ,payment_date
+    ,service_memo
+    ,operator_man
+    ,branch_id
+    )values (
+    #id#
+    ,#settle_number#
+    ,#transfer_id#
+    ,#service_id#
+    ,#is_arrivalpayment#
+    ,#transfer_payment#
+    ,#arrival_payment#
+    ,#settlement_payment#
+    ,#real_payment#
+    ,#already_payment#
+    ,#settlement_mode#
+    ,#payment_date#
+    ,#service_memo#
+    ,#operator_man#
+    ,#branch_id#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Finance_Service.Update">
+    update T_Finance_Service set
+    id=#id#
+    ,settle_number=#settle_number#
+    ,transfer_id=#transfer_id#
+    ,service_id=#service_id#
+    ,is_arrivalpayment=#is_arrivalpayment#
+    ,transfer_payment=#transfer_payment#
+    ,arrival_payment=#arrival_payment#
+    ,settlement_payment=#settlement_payment#
+    ,real_payment=#real_payment#
+    ,already_payment=#already_payment#
+    ,settlement_mode=#settlement_mode#
+    ,payment_date=#payment_date#
+    ,service_memo=#service_memo#
+    ,operator_man=#operator_man#
+    ,branch_id=#branch_id#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Finance_Service.Delete">
+    delete
+    FROM T_Finance_Service
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

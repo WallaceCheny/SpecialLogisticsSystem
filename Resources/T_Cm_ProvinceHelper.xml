@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmProvince" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmProvince" type="MyNamespace.Data.TCmProvince, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmProvince">
+			<result property="Id" column="ProvinceID" />
+			<result property="ProvinceName" column="ProvinceName" />
+			<result property="DateCreated" column="DateCreated" />
+			<result property="DateUpdated" column="DateUpdated" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select ProvinceID,ProvinceName,DateCreated,DateUpdated from T_Cm_Province
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 ProvinceID =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmProvince" resultClass="int">
+		 		insert into T_Cm_Province( ProvinceID,ProvinceName,DateCreated,DateUpdated ) values ( #ProvinceID#,#ProvinceName#,#DateCreated#,#DateUpdated# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmProvince" resultClass="int">
+			update T_Cm_Province set ProvinceName=#ProvinceName#,DateCreated=#DateCreated#,DateUpdated=#DateUpdated# where ProvinceID=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_Province where ProvinceID=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Production.Count">
+    Select count(1) FROM T_Way_Production where
+    $and{id = #id#}  $and{bill_id = #bill_id#}  $and{production_name = #production_name#}  $and{package_type = #package_type#}  $and{production_number = #production_number#}  $and{production_weight = #production_weight#}  $and{production_size = #production_size#}  $and{charge_mode = #charge_mode#}  $and{freight_rates = #freight_rates#}  $and{freight = #freight#}  $and{agency_fund = #agency_fund#}  $and{coverage = #coverage#}  $and{premium = #premium#}  $and{delivery_expense = #delivery_expense#}  $and{other_expenses = #other_expenses#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Production.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Way_Production) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{bill_id = #bill_id#}  $and{production_name = #production_name#}  $and{package_type = #package_type#}  $and{production_number = #production_number#}  $and{production_weight = #production_weight#}  $and{production_size = #production_size#}  $and{charge_mode = #charge_mode#}  $and{freight_rates = #freight_rates#}  $and{freight = #freight#}  $and{agency_fund = #agency_fund#}  $and{coverage = #coverage#}  $and{premium = #premium#}  $and{delivery_expense = #delivery_expense#}  $and{other_expenses = #other_expenses#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Production.Load">
+    SELECT *
+    FROM   T_Way_Production  where
+    $and{id = #id#}  $and{bill_id = #bill_id#}  $and{production_name = #production_name#}  $and{package_type = #package_type#}  $and{production_number = #production_number#}  $and{production_weight = #production_weight#}  $and{production_size = #production_size#}  $and{charge_mode = #charge_mode#}  $and{freight_rates = #freight_rates#}  $and{freight = #freight#}  $and{agency_fund = #agency_fund#}  $and{coverage = #coverage#}  $and{premium = #premium#}  $and{delivery_expense = #delivery_expense#}  $and{other_expenses = #other_expenses#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Production.Select">
+    SELECT *
+    FROM   T_Way_Production  where
+    $and{id = #id#}  $and{bill_id = #bill_id#}  $and{production_name = #production_name#}  $and{package_type = #package_type#}  $and{production_number = #production_number#}  $and{production_weight = #production_weight#}  $and{production_size = #production_size#}  $and{charge_mode = #charge_mode#}  $and{freight_rates = #freight_rates#}  $and{freight = #freight#}  $and{agency_fund = #agency_fund#}  $and{coverage = #coverage#}  $and{premium = #premium#}  $and{delivery_expense = #delivery_expense#}  $and{other_expenses = #other_expenses#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Way_Production.SelectView">
+    SELECT *
+    FROM   vWayProduction  where
+    $and{id = #id#}  $and{bill_id = #bill_id#} $and{way_type = #way_type#} $and{production_name = #production_name#} 
+    $and{package_type = #package_type#}  $and{production_number = #production_number#}  $and{production_weight = #production_weight#}
+    $and{production_size = #production_size#}  $and{charge_mode = #charge_mode#}  $and{freight_rates = #freight_rates#} 
+    $and{freight = #freight#}  $and{agency_fund = #agency_fund#}  $and{coverage = #coverage#}  $and{premium = #premium#} 
+    $and{delivery_expense = #delivery_expense#}  $and{other_expenses = #other_expenses#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Way_Production.Insert">
+    insert into T_Way_Production(
+    id
+    ,bill_id
+    ,production_name
+    ,package_type
+    ,production_number
+    ,production_weight
+    ,production_size
+    ,charge_mode
+    ,freight_rates
+    ,freight
+    ,agency_fund
+    ,coverage
+    ,premium
+    ,delivery_expense
+    ,other_expenses
+    ,receive_expenses
+    )values (
+    #id#
+    ,#bill_id#
+    ,#production_name#
+    ,#package_type#
+    ,#production_number#
+    ,#production_weight#
+    ,#production_size#
+    ,#charge_mode#
+    ,#freight_rates#
+    ,#freight#
+    ,#agency_fund#
+    ,#coverage#
+    ,#premium#
+    ,#delivery_expense#
+    ,#other_expenses#
+    ,#receive_expenses#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Way_Production.Update">
+    update T_Way_Production set
+    id=#id#
+    ,bill_id=#bill_id#
+    ,production_name=#production_name#
+    ,package_type=#package_type#
+    ,production_number=#production_number#
+    ,production_weight=#production_weight#
+    ,production_size=#production_size#
+    ,charge_mode=#charge_mode#
+    ,freight_rates=#freight_rates#
+    ,freight=#freight#
+    ,agency_fund=#agency_fund#
+    ,coverage=#coverage#
+    ,premium=#premium#
+    ,delivery_expense=#delivery_expense#
+    ,other_expenses=#other_expenses#
+    ,receive_expenses=#receive_expenses#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Way_Production.Delete">
+    delete
+    FROM T_Way_Production
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

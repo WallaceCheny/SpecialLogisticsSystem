@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmUserBranchRelation" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmUserBranchRelation" type="MyNamespace.Data.TCmUserBranchRelation, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmUserBranchRelation">
+			<result property="Id" column="id" />
+			<result property="Branchid" column="branch_id" />
+			<result property="Userid" column="user_id" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,branch_id,user_id from T_Cm_UserBranch_Relation
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmUserBranchRelation" resultClass="int">
+		 		insert into T_Cm_UserBranch_Relation( id,branch_id,user_id ) values ( #Id#,#Branchid#,#Userid# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmUserBranchRelation" resultClass="int">
+			update T_Cm_UserBranch_Relation set branch_id=#Branchid#,user_id=#Userid# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_UserBranch_Relation where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

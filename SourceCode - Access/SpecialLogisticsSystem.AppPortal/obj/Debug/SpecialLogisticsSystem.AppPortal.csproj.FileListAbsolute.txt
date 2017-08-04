@@ -1,0 +1,361 @@
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.AppPortal.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.AppPortal.pdb
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Charts.v12.1.Core.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Data.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.PivotGrid.v12.1.Core.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Printing.v12.1.Core.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Reports.v12.1.Designer.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.RichEdit.v12.1.Core.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.SharePoint.2010.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.SharePoint.MOSS.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.SharePoint.WSS.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.SpellChecker.v12.1.Core.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Utils.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Utils.v12.1.UI.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxEditors.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGauges.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.Export.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxHtmlEditor.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.Export.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxScheduler.v12.1.Design.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxScheduler.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxSpellChecker.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxThemes.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.Export.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Design.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Extensions.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.UI.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Web.Design.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Web.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraEditors.v12.1.Design.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraEditors.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPivotGrid.v12.1.Design.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPivotGrid.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPrinting.v12.1.Design.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPrinting.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraScheduler.v12.1.Core.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraScheduler.v12.1.Design.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraTreeList.v12.1.Design.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraTreeList.v12.1.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Model.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Tool.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Model.pdb
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Tool.pdb
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Data.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Printing.v12.1.Core.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Reports.v12.1.Designer.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.RichEdit.v12.1.Core.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.SpellChecker.v12.1.Core.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Utils.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxEditors.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGauges.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.Export.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxHtmlEditor.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.Export.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxScheduler.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxSpellChecker.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.Export.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.UI.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Web.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraEditors.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPivotGrid.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPrinting.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraScheduler.v12.1.Core.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraTreeList.v12.1.xml
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\obj\Debug\ResolveAssemblyReference.cache
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\obj\Debug\SpecialLogisticsSystem.AppPortal.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\obj\Debug\SpecialLogisticsSystem.AppPortal.pdb
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.IBll.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\Ms.Data.Common.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\Ms.Data.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.IBll.pdb
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.Interception.Configuration.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.Interception.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\Newtonsoft.Json.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\log4net.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Dal.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Dal.pdb
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.AppPortal.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.AppPortal.pdb
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Charts.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Data.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.PivotGrid.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Printing.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Reports.v12.1.Designer.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.RichEdit.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.SpellChecker.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Utils.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Utils.v12.1.UI.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxEditors.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.Export.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxHtmlEditor.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.Export.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxScheduler.v12.1.Design.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxScheduler.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxSpellChecker.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxThemes.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.Export.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Design.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Extensions.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.UI.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Web.Design.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Web.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraEditors.v12.1.Design.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraEditors.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPivotGrid.v12.1.Design.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPivotGrid.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPrinting.v12.1.Design.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPrinting.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraScheduler.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraScheduler.v12.1.Design.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraTreeList.v12.1.Design.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraTreeList.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.Interception.Configuration.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.Interception.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\Newtonsoft.Json.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Dal.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Model.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Tool.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\Ms.Data.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\log4net.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\Ms.Data.Common.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Dal.pdb
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Model.pdb
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Tool.pdb
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Data.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Printing.v12.1.Core.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Reports.v12.1.Designer.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.RichEdit.v12.1.Core.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.SpellChecker.v12.1.Core.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Utils.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxEditors.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.Export.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxHtmlEditor.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.Export.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxScheduler.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxSpellChecker.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.Export.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.UI.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Web.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraEditors.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPivotGrid.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPrinting.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraScheduler.v12.1.Core.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraTreeList.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\obj\Debug\SpecialLogisticsSystem.AppPortal.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\obj\Debug\SpecialLogisticsSystem.AppPortal.pdb
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.IDal.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.IDal.pdb
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.UserControl.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.UserControl.pdb
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraReports.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraReports.v12.1.Web.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\bin\Aspose.Cells.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.AppPortal\obj\Debug\SpecialLogisticsSystem.AppPortal.csprojResolveAssemblyReference.cache
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.AppPortal.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.AppPortal.pdb
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Aspose.Cells.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Charts.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Data.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.PivotGrid.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Printing.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Reports.v12.1.Designer.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.RichEdit.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Utils.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Utils.v12.1.UI.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxEditors.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.Export.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxHtmlEditor.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.Export.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxScheduler.v12.1.Design.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxScheduler.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxSpellChecker.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxThemes.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.Export.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Design.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Extensions.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.UI.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Web.Design.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Web.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraEditors.v12.1.Design.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraEditors.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPivotGrid.v12.1.Design.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPivotGrid.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPrinting.v12.1.Design.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPrinting.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraReports.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraReports.v12.1.Web.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraScheduler.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraScheduler.v12.1.Design.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraTreeList.v12.1.Design.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraTreeList.v12.1.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\log4net.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.Configuration.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.Interception.Configuration.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.Interception.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Ms.Data.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Newtonsoft.Json.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Dal.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.IDal.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Model.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Tool.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.UserControl.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Ms.Data.Common.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.SpellChecker.v12.1.Core.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Dal.pdb
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.IDal.pdb
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Model.pdb
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Tool.pdb
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.UserControl.pdb
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Data.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Printing.v12.1.Core.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Reports.v12.1.Designer.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.RichEdit.v12.1.Core.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Utils.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxEditors.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.Export.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxHtmlEditor.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.Export.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxScheduler.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxSpellChecker.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.Export.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.UI.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Web.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraEditors.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPivotGrid.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPrinting.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraScheduler.v12.1.Core.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraTreeList.v12.1.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.SpellChecker.v12.1.Core.xml
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\obj\Debug\SpecialLogisticsSystem.AppPortal.csprojResolveAssemblyReference.cache
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\obj\Debug\SpecialLogisticsSystem.AppPortal.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\obj\Debug\SpecialLogisticsSystem.AppPortal.pdb
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.AppPortal.dll.config
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.AppPortal.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.AppPortal.pdb
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Aspose.Cells.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Charts.v12.1.Core.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Data.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.PivotGrid.v12.1.Core.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Printing.v12.1.Core.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Reports.v12.1.Designer.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.RichEdit.v12.1.Core.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Utils.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Utils.v12.1.UI.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxEditors.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.Export.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxHtmlEditor.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.Export.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxScheduler.v12.1.Design.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxScheduler.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxSpellChecker.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxThemes.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.Export.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Design.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Extensions.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.UI.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Web.Design.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Web.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraEditors.v12.1.Design.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraEditors.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPivotGrid.v12.1.Design.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPivotGrid.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPrinting.v12.1.Design.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPrinting.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraReports.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraReports.v12.1.Web.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraScheduler.v12.1.Core.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraScheduler.v12.1.Design.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraTreeList.v12.1.Design.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraTreeList.v12.1.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\log4net.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.Configuration.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.Interception.Configuration.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Microsoft.Practices.Unity.Interception.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Ms.Data.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Newtonsoft.Json.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Dal.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.IDal.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Model.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Tool.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.UserControl.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\Ms.Data.Common.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.SpellChecker.v12.1.Core.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\EnvDTE.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\EnvDTE80.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\VSLangProj.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\stdole.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Dal.pdb
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.IDal.pdb
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Model.pdb
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.Tool.pdb
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\SpecialLogisticsSystem.UserControl.pdb
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Data.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Printing.v12.1.Core.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Reports.v12.1.Designer.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.RichEdit.v12.1.Core.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Utils.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxEditors.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxGridView.v12.1.Export.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxHtmlEditor.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxPivotGrid.v12.1.Export.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxScheduler.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxSpellChecker.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.ASPxTreeList.v12.1.Export.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.Web.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.UI.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraCharts.v12.1.Web.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraEditors.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPivotGrid.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraPrinting.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraScheduler.v12.1.Core.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.XtraTreeList.v12.1.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\bin\DevExpress.SpellChecker.v12.1.Core.xml
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\obj\Debug\SpecialLogisticsSystem.AppPortal.csprojResolveAssemblyReference.cache
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\obj\Debug\SpecialLogisticsSystem.AppPortal.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.AppPortal\obj\Debug\SpecialLogisticsSystem.AppPortal.pdb

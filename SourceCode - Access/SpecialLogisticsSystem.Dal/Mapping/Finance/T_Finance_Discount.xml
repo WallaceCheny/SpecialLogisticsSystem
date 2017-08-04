@@ -1,0 +1,92 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Discount.Count">
+    Select count(1) FROM vFinanceDiscount where
+    $and{id = #id#}  $and{way_number like '%$way_number$%'} $and{DateDiff("d",receive_date,  #receive_date_start#) &lt; 0} $and{receive_date &lt;= dateadd("d",1,#receive_date_end#)}
+    $and{settle_name = #settle_name#} $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{settle_money = #settle_money#}  $and{settle_type = #settle_type#}
+    $and{remark = #remark#}  $and{operator_man = #operator_man#}  $and{payment_date = #payment_date#}
+    $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Discount.SelectPaging">
+    SELECT $eq{top $maxRows$}
+    *
+    FROM    vFinanceDiscount
+    WHERE   1=1 $eq{and [id] not in ( SELECT   id
+    FROM     ( SELECT top $startRow$
+    [id]
+    FROM      vFinanceDiscount
+    WHERE    1=1     $and{id = #id#}  $and{way_number like '%$way_number$%'} $and{DateDiff("d",receive_date,  #receive_date_start#) &lt; 0} $and{receive_date &lt;= dateadd("d",1,#receive_date_end#)}
+    $and{settle_name = #settle_name#} $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{settle_money = #settle_money#}  $and{settle_type = #settle_type#}
+    $and{remark = #remark#}  $and{operator_man = #operator_man#}  $and{payment_date = #payment_date#}
+    $and{branch_id = #branch_id#} $eq{order by $OrderBy$}
+    ) AS tblTmp
+    )}
+    $and{id = #id#}  $and{way_number like '%$way_number$%'} $and{DateDiff("d",receive_date,  #receive_date_start#) &lt; 0} $and{receive_date &lt;= dateadd("d",1,#receive_date_end#)}
+    $and{settle_name = #settle_name#} $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{settle_money = #settle_money#}  $and{settle_type = #settle_type#}
+    $and{remark = #remark#}  $and{operator_man = #operator_man#}  $and{payment_date = #payment_date#}
+    $and{branch_id = #branch_id#}  $eq{order by $OrderBy$}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Discount.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Finance_Discount) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{settle_money = #settle_money#}  $and{settle_type = #settle_type#}  $and{remark = #remark#}  $and{operator_man = #operator_man#}  $and{payment_date = #payment_date#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Discount.Load">
+    SELECT *
+    FROM   T_Finance_Discount  where
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{settle_money = #settle_money#}  $and{real_payment = #real_payment#}  $and{settle_type = #settle_type#}  $and{remark = #remark#}  $and{operator_man = #operator_man#}  $and{payment_date = #payment_date#}  $and{branch_id = #branch_id#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Finance_Discount.Select">
+    SELECT *
+    FROM   T_Finance_Discount  where
+    $and{id = #id#}  $and{settle_number = #settle_number#}  $and{way_id = #way_id#}  $and{settle_money = #settle_money#}  $and{real_payment = #real_payment#}  $and{settle_type = #settle_type#}  $and{remark = #remark#}  $and{operator_man = #operator_man#}  $and{payment_date = #payment_date#}  $and{branch_id = #branch_id#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Finance_Discount.Insert">
+    insert into T_Finance_Discount(
+    id
+    ,settle_number
+    ,way_id
+    ,settle_money
+    ,real_payment
+    ,settle_type
+    ,remark
+    ,operator_man
+    ,payment_date
+    ,branch_id
+    )values (
+    #id#
+    ,#settle_number#
+    ,#way_id#
+    ,#settle_money#
+    ,#real_payment#
+    ,#settle_type#
+    ,#remark#
+    ,#operator_man#
+    ,#payment_date#
+    ,#branch_id#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Finance_Discount.Update">
+    update T_Finance_Discount set
+    id=#id#
+    ,settle_number=#settle_number#
+    ,way_id=#way_id#
+    ,settle_money=#settle_money#
+    ,real_payment=#real_payment#
+    ,settle_type=#settle_type#
+    ,remark=#remark#
+    ,operator_man=#operator_man#
+    ,payment_date=#payment_date#
+    ,branch_id=#branch_id#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Finance_Discount.Delete">
+    delete
+    FROM T_Finance_Discount
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

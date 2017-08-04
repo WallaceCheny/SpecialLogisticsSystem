@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TFinanceCustomer" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TFinanceCustomer" type="MyNamespace.Data.TFinanceCustomer, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TFinanceCustomer">
+			<result property="Id" column="id" />
+			<result property="Wayid" column="way_id" />
+			<result property="Receiptstotle" column="receipts_totle" />
+			<result property="Backpayment" column="back_payment" />
+			<result property="Spotpayment" column="spot_payment" />
+			<result property="Alreadypayment" column="already_payment" />
+			<result property="Bringpayment" column="bring_payment" />
+			<result property="Addpayment" column="add_payment" />
+			<result property="Productionpayment" column="production_payment" />
+			<result property="Iscollected" column="is_collected" />
+			<result property="Discount" column="discount" />
+			<result property="Settleaccounts" column="settle_accounts" />
+			<result property="Collectionday" column="collection_day" />
+			<result property="Settlemode" column="settle_mode" />
+			<result property="Settlememo" column="settle_memo" />
+			<result property="Settltype" column="settl_type" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,way_id,receipts_totle,back_payment,spot_payment,already_payment,bring_payment,add_payment,production_payment,is_collected,discount,settle_accounts,collection_day,settle_mode,settle_memo,settl_type from T_Finance_Customer
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TFinanceCustomer" resultClass="int">
+		 		insert into T_Finance_Customer( id,way_id,receipts_totle,back_payment,spot_payment,already_payment,bring_payment,add_payment,production_payment,is_collected,discount,settle_accounts,collection_day,settle_mode,settle_memo,settl_type ) values ( #Id#,#Wayid#,#Receiptstotle#,#Backpayment#,#Spotpayment#,#Alreadypayment#,#Bringpayment#,#Addpayment#,#Productionpayment#,#Iscollected#,#Discount#,#Settleaccounts#,#Collectionday#,#Settlemode#,#Settlememo#,#Settltype# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TFinanceCustomer" resultClass="int">
+			update T_Finance_Customer set way_id=#Wayid#,receipts_totle=#Receiptstotle#,back_payment=#Backpayment#,spot_payment=#Spotpayment#,already_payment=#Alreadypayment#,bring_payment=#Bringpayment#,add_payment=#Addpayment#,production_payment=#Productionpayment#,is_collected=#Iscollected#,discount=#Discount#,settle_accounts=#Settleaccounts#,collection_day=#Collectionday#,settle_mode=#Settlemode#,settle_memo=#Settlememo#,settl_type=#Settltype# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Finance_Customer where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

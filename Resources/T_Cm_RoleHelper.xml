@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TCmRole" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TCmRole" type="MyNamespace.Data.TCmRole, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TCmRole">
+			<result property="Id" column="id" />
+			<result property="Branchid" column="branch_id" />
+			<result property="Roletype" column="role_type" />
+			<result property="Rolename" column="role_name" />
+			<result property="Description" column="description" />
+			<result property="Updatedate" column="update_date" />
+			<result property="Isadmin" column="is_admin" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,branch_id,role_type,role_name,description,update_date,is_admin from T_Cm_Role
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TCmRole" resultClass="int">
+		 		insert into T_Cm_Role( id,branch_id,role_type,role_name,description,update_date,is_admin ) values ( #Id#,#Branchid#,#Roletype#,#Rolename#,#Description#,#Updatedate#,#Isadmin# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TCmRole" resultClass="int">
+			update T_Cm_Role set branch_id=#Branchid#,role_type=#Roletype#,role_name=#Rolename#,description=#Description#,update_date=#Updatedate#,is_admin=#Isadmin# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Cm_Role where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

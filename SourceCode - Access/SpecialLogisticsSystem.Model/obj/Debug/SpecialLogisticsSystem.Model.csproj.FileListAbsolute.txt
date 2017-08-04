@@ -1,0 +1,29 @@
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.Model\bin\Debug\SpecialLogisticsSystem.Model.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.Model\bin\Debug\SpecialLogisticsSystem.Model.pdb
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.Model\obj\Debug\ResolveAssemblyReference.cache
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.Model\obj\Debug\SpecialLogisticsSystem.Model.dll
+E:\LogisticsManagement\SourceCode\SpecialLogisticsSystem\SpecialLogisticsSystem.Model\obj\Debug\SpecialLogisticsSystem.Model.pdb
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Model\bin\Debug\SpecialLogisticsSystem.Model.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Model\bin\Debug\SpecialLogisticsSystem.Model.pdb
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Model\obj\Debug\SpecialLogisticsSystem.Model.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Model\obj\Debug\SpecialLogisticsSystem.Model.pdb
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Model\bin\Debug\SpecialLogisticsSystem.Tool.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Model\bin\Debug\log4net.dll
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Model\bin\Debug\SpecialLogisticsSystem.Tool.pdb
+E:\SpecialLogisticsSystem\SourceCode\SpecialLogisticsSystem.Model\obj\Debug\SpecialLogisticsSystem.Model.csprojResolveAssemblyReference.cache
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\bin\Debug\SpecialLogisticsSystem.Model.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\bin\Debug\SpecialLogisticsSystem.Model.pdb
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\bin\Debug\SpecialLogisticsSystem.Tool.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\bin\Debug\log4net.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\bin\Debug\SpecialLogisticsSystem.Tool.pdb
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\obj\Debug\SpecialLogisticsSystem.Model.csprojResolveAssemblyReference.cache
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\obj\Debug\SpecialLogisticsSystem.Model.dll
+E:\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\obj\Debug\SpecialLogisticsSystem.Model.pdb
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\bin\Debug\SpecialLogisticsSystem.Model.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\bin\Debug\SpecialLogisticsSystem.Model.pdb
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\bin\Debug\SpecialLogisticsSystem.Tool.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\bin\Debug\log4net.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\bin\Debug\SpecialLogisticsSystem.Tool.pdb
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\obj\Debug\SpecialLogisticsSystem.Model.csprojResolveAssemblyReference.cache
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\obj\Debug\SpecialLogisticsSystem.Model.dll
+D:\Projects\SpecialLogisticsSystem\SourceCode - Access\SpecialLogisticsSystem.Model\obj\Debug\SpecialLogisticsSystem.Model.pdb

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Customer.Count">
+    Select count(1) FROM T_Cm_Customer where
+    $and{id = #id#}  $and{customer_name = #customer_name#}  $and{credit_level = #credit_level#}  $and{customer_type = #customer_type#}  $and{emp_id = #emp_id#}  $and{link_id = #link_id#}  $and{sender_id = #sender_id#}  $and{bank_username = #bank_username#}  $and{bank_name = #bank_name#}  $and{bank_number = #bank_number#}  $and{bank_index = #bank_index#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Customer.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_Customer) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{id = #id#}  $and{customer_name = #customer_name#}  $and{credit_level = #credit_level#}  $and{customer_type = #customer_type#}  $and{emp_id = #emp_id#}  $and{link_id = #link_id#}  $and{sender_id = #sender_id#}  $and{bank_username = #bank_username#}  $and{bank_name = #bank_name#}  $and{bank_number = #bank_number#}  $and{bank_index = #bank_index#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Customer.Load">
+    SELECT *
+    FROM   T_Cm_Customer  where
+    $and{id = #id#}  $and{customer_name = #customer_name#}  $and{credit_level = #credit_level#}  $and{customer_type = #customer_type#}  $and{emp_id = #emp_id#}  $and{link_id = #link_id#}  $and{sender_id = #sender_id#}  $and{bank_username = #bank_username#}  $and{bank_name = #bank_name#}  $and{bank_number = #bank_number#}  $and{bank_index = #bank_index#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_Customer.Select">
+    SELECT a.* ,
+    b.para_name AS credit_level_name ,
+    l.link_name ,
+    l.link_mobilephone ,
+    l.link_telephone ,
+    l.link_address ,
+    l.link_area
+    FROM  ((T_Cm_Customer a
+    LEFT JOIN T_Cm_Link l ON a.link_id = l.id)
+    LEFT JOIN T_Cm_Code b ON (a.credit_level = b.para_value
+    AND b.para_type = 'customer_credit'))  where
+    $and{id = #id#}  $and{customer_name like '%$customer_name$%'}  $and{l.link_name like '%$link_name$%'} $and{credit_level = #credit_level#}  $and{customer_type = #customer_type#}
+    $and{emp_id = #emp_id#}  $and{link_id = #link_id#}  $and{sender_id = #sender_id#}  $and{bank_username = #bank_username#}  $and{bank_name = #bank_name#}
+    $and{bank_number = #bank_number#}  $and{bank_index = #bank_index#}
+    $and{link_name like '%$link_name$%'}  $and{link_mobilephone like '%$link_mobilephone$%'} $and{link_address like '%$link_address$%'}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Cm_Customer.Insert">
+    insert into T_Cm_Customer(
+    id
+    ,customer_name
+    ,credit_level
+    ,customer_type
+    ,emp_id
+    ,link_id
+    ,sender_id
+    ,bank_username
+    ,bank_name
+    ,bank_number
+    ,bank_index
+    )values (
+    #id#
+    ,#customer_name#
+    ,#credit_level#
+    ,#customer_type#
+    ,#emp_id#
+    ,#link_id#
+    ,#sender_id#
+    ,#bank_username#
+    ,#bank_name#
+    ,#bank_number#
+    ,#bank_index#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_Customer.Update">
+    update T_Cm_Customer set
+    id=#id#
+    ,customer_name=#customer_name#
+    ,credit_level=#credit_level#
+    ,customer_type=#customer_type#
+    ,emp_id=#emp_id#
+    ,link_id=#link_id#
+    ,sender_id=#sender_id#
+    ,bank_username=#bank_username#
+    ,bank_name=#bank_name#
+    ,bank_number=#bank_number#
+    ,bank_index=#bank_index#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Cm_Customer.Delete">
+    delete
+    FROM T_Cm_Customer
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>

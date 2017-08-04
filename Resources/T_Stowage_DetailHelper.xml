@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<sqlMap 
+	namespace="TStowageDetail" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="SqlMap.xsd">
+	
+	<alias>
+		<typeAlias alias="TStowageDetail" type="MyNamespace.Data.TStowageDetail, MyApp.MyAssembly" />
+	</alias>
+	
+	<resultMaps>
+		<resultMap id="SelectResult" class="TStowageDetail">
+			<result property="Id" column="id" />
+			<result property="Mainid" column="main_id" />
+			<result property="Billid" column="bill_id" />
+			<result property="Productionnumber" column="production_number" />
+		</resultMap>
+	</resultMaps>
+	<statements>
+		<select id="Select" parameterClass="int" resultMap="SelectResult">
+		 	select id,main_id,bill_id,production_number from T_Stowage_Detail
+		 <dynamic prepend="WHERE">
+		 		<isParameterPresent>
+		 		 id =#value#
+		 		</isParameterPresent>
+		 </dynamic>
+		 </select>
+		 
+		 <insert id="Insert" parameterClass="TStowageDetail" resultClass="int">
+		 		insert into T_Stowage_Detail( id,main_id,bill_id,production_number ) values ( #Id#,#Mainid#,#Billid#,#Productionnumber# )
+		 </insert>
+	
+		<update id="Update" parameterClass="TStowageDetail" resultClass="int">
+			update T_Stowage_Detail set main_id=#Mainid#,bill_id=#Billid#,production_number=#Productionnumber# where id=#Id# 
+		</update>
+		
+		<delete id="Delete" parameterClass="int" resultClass="int">
+			delete from T_Stowage_Detail where id=#value# 
+		</delete>	
+	</statements>
+
+</sqlMap>

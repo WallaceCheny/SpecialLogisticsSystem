@@ -1,0 +1,57 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<sqlMap>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_District.Count">
+    Select count(1) FROM T_Cm_District where
+    $and{DistrictID = #DistrictID#}  $and{DistrictName = #DistrictName#}  $and{CityID = #CityID#}  $and{DateCreated = #DateCreated#}  $and{DateUpdated = #DateUpdated#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_District.PageLoad">
+    Select * FROM(
+    Select *
+    ,ROW_NUMBER() Over(order by id desc) as rowNum
+    FROM T_Cm_District) as temptable
+    where rowNum BETWEEN $eg{#pageIndex#-1}*$eq{#pageSize#}+1 and $eq{#pageIndex#}*$eq{#pageSize#}
+    $and{DistrictID = #DistrictID#}  $and{DistrictName = #DistrictName#}  $and{CityID = #CityID#}  $and{DateCreated = #DateCreated#}  $and{DateUpdated = #DateUpdated#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_District.Load">
+    SELECT *
+    FROM   T_Cm_District  where
+    $and{DistrictID = #DistrictID#}  $and{DistrictName = #DistrictName#}  $and{CityID = #CityID#}  $and{DateCreated = #DateCreated#}  $and{DateUpdated = #DateUpdated#}
+  </select>
+  <select id="SpecialLogisticsSystem.Model.T_Cm_District.Select">
+    SELECT  *
+    FROM    (T_Cm_District a
+    LEFT JOIN T_Cm_City b ON a.CityID = b.CityID)
+    LEFT JOIN T_Cm_Province c ON b.ProvinceID = c.ProvinceID  where
+    $and{DistrictID = #DistrictID#}  $and{DistrictName = #DistrictName#}  $and{CityID = #CityID#}  $and{DateCreated = #DateCreated#}  $and{DateUpdated = #DateUpdated#}
+  </select>
+  <insert id="SpecialLogisticsSystem.Model.T_Cm_District.Insert">
+    insert into T_Cm_District(
+    ,DistrictID
+    ,DistrictName
+    ,CityID
+    ,DateCreated
+    ,DateUpdated
+    )values (
+    ,#DistrictID#
+    ,#DistrictName#
+    ,#CityID#
+    ,#DateCreated#
+    ,#DateUpdated#
+    )
+  </insert>
+  <update id="SpecialLogisticsSystem.Model.T_Cm_District.Update">
+    update T_Cm_District set
+    ,DistrictID=#DistrictID#
+    ,DistrictName=#DistrictName#
+    ,CityID=#CityID#
+    ,DateCreated=#DateCreated#
+    ,DateUpdated=#DateUpdated#
+    WHERE
+    id = #id#
+  </update>
+  <delete id="SpecialLogisticsSystem.Model.T_Cm_District.Delete">
+    delete
+    FROM T_Cm_District
+    WHERE id IN(#ids#)
+  </delete>
+</sqlMap>
